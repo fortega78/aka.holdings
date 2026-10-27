@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Kathmandu, 2019: we start filming. — AKA Art Productions</title>
 <meta name="description" content="Nepal — 2019–2021: Kathmandu, 2019: we start filming. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Kathmandu, 2019: we start filming. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-kathmandu-2019">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-kathmandu-2019">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -173,22 +176,22 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
     <p class="sub k">Jessica Stockholder · lokta paper</p>
     <div class="g4">
-      <figure><img src="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.jpg" width="480" height="600" alt="Jessica Stockholder holding a sheet beside the papermaker at the vat, a boom microphone above"><figcaption class="cap">At the vat with the papermaker, on camera.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-j01-stockholder-placing.jpg" width="480" height="600" alt="Jessica Stockholder placing coloured pulp and fibre onto a wet sheet in its mould"><figcaption class="cap">Laying colour into the wet sheet.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-j02-stockholder-pouring.jpg" width="480" height="600" alt="Jessica Stockholder in red gloves pouring red pulp from a bucket onto a tilted mould"><figcaption class="cap">Pouring red pulp onto the mould.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-s02-lokta-painting-kathmandu.jpg" width="480" height="599" alt="Jessica Stockholder in red gloves working coloured pulp and cord into paper on a frame"><figcaption class="cap">Cord and pulp worked into the sheet.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-j05-cable-in-pulp.jpg" width="480" height="600" alt="Black cable pressed into dark grey pulp on a mould"><figcaption class="cap">Cable pressed into the pulp.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-j03-sheets-cords.jpg" width="480" height="600" alt="Moulds of red, black and purple paper with cords embedded, drying on the grass"><figcaption class="cap">The sheets drying on the hillside.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-j06-sheets-laid-out.jpg" width="480" height="600" alt="Dozens of finished lokta sheets in red, blue, black and yellow laid out to dry on a concrete floor"><figcaption class="cap">The finished sheets, laid out to dry, Kathmandu, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.jpg" width="480" height="600" alt="Jessica Stockholder holding a sheet beside the papermaker at the vat, a boom microphone above"></picture><figcaption class="cap">At the vat with the papermaker, on camera.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j01-stockholder-placing.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-j01-stockholder-placing.jpg" width="480" height="600" alt="Jessica Stockholder placing coloured pulp and fibre onto a wet sheet in its mould"></picture><figcaption class="cap">Laying colour into the wet sheet.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j02-stockholder-pouring.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-j02-stockholder-pouring.jpg" width="480" height="600" alt="Jessica Stockholder in red gloves pouring red pulp from a bucket onto a tilted mould"></picture><figcaption class="cap">Pouring red pulp onto the mould.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-s02-lokta-painting-kathmandu.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-s02-lokta-painting-kathmandu.jpg" width="480" height="599" alt="Jessica Stockholder in red gloves working coloured pulp and cord into paper on a frame"></picture><figcaption class="cap">Cord and pulp worked into the sheet.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j05-cable-in-pulp.avif"><img loading="lazy" src="/img/productions/2026-10-27-j05-cable-in-pulp.jpg" width="480" height="600" alt="Black cable pressed into dark grey pulp on a mould"></picture><figcaption class="cap">Cable pressed into the pulp.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j03-sheets-cords.avif"><img loading="lazy" src="/img/productions/2026-10-27-j03-sheets-cords.jpg" width="480" height="600" alt="Moulds of red, black and purple paper with cords embedded, drying on the grass"></picture><figcaption class="cap">The sheets drying on the hillside.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j06-sheets-laid-out.avif"><img loading="lazy" src="/img/productions/2026-10-27-j06-sheets-laid-out.jpg" width="480" height="600" alt="Dozens of finished lokta sheets in red, blue, black and yellow laid out to dry on a concrete floor"></picture><figcaption class="cap">The finished sheets, laid out to dry, Kathmandu, 2019.</figcaption></figure>
           </div>
     <p class="sub k">Vargas-Suárez Universal · Aya Takano</p>
     <div class="g3 kg">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-v01-vsu-paper.jpg" width="480" height="600" alt="Vargas-Suárez Universal brushing medium onto a dark sheet of paper on a rooftop table"><figcaption class="cap">Vargas-Suárez Universal working on paper, Kathmandu, 2019.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-v03-vsu-filmed.jpg" width="480" height="600" alt="Vargas-Suárez Universal working over a long sheet of paper on a rooftop table, filmed by two cameras"><figcaption class="cap">Vargas-Suárez Universal, filmed on the rooftop.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-t04-takano-drawing.jpg" width="480" height="600" alt="Aya Takano standing on a rooftop by her snow-leopard drawing, with dyed wool and colour boxes around her"><figcaption class="cap">Aya Takano with her drawing among the dyed wool.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-t03-takano-colours.jpg" width="480" height="600" alt="Aya Takano and the workshop master choosing wool colours over her drawing"><figcaption class="cap">Choosing the wool colours, knot by knot.</figcaption></figure>
-            <figure><img loading="lazy" src="/img/productions/2026-10-27-v02-takano-vsu-interview.jpg" width="480" height="600" alt="Aya Takano and Vargas-Suárez Universal interviewed at a table in a brick courtyard, a boom microphone above"><figcaption class="cap">Aya Takano and Vargas-Suárez Universal, interviewed for the film.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-f02-filming-swayambhu.jpg" width="480" height="600" alt="The cinematographer showing footage on his camera to Aya Takano at Swayambhunath"><figcaption class="cap">Filming at Swayambhunath, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v01-vsu-paper.avif"><img loading="lazy" src="/img/productions/2026-10-27-v01-vsu-paper.jpg" width="480" height="600" alt="Vargas-Suárez Universal brushing medium onto a dark sheet of paper on a rooftop table"></picture><figcaption class="cap">Vargas-Suárez Universal working on paper, Kathmandu, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v03-vsu-filmed.avif"><img loading="lazy" src="/img/productions/2026-10-27-v03-vsu-filmed.jpg" width="480" height="600" alt="Vargas-Suárez Universal working over a long sheet of paper on a rooftop table, filmed by two cameras"></picture><figcaption class="cap">Vargas-Suárez Universal, filmed on the rooftop.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-t04-takano-drawing.avif"><img loading="lazy" src="/img/productions/2026-10-27-t04-takano-drawing.jpg" width="480" height="600" alt="Aya Takano standing on a rooftop by her snow-leopard drawing, with dyed wool and colour boxes around her"></picture><figcaption class="cap">Aya Takano with her drawing among the dyed wool.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-t03-takano-colours.avif"><img loading="lazy" src="/img/productions/2026-10-27-t03-takano-colours.jpg" width="480" height="600" alt="Aya Takano and the workshop master choosing wool colours over her drawing"></picture><figcaption class="cap">Choosing the wool colours, knot by knot.</figcaption></figure>
+            <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v02-takano-vsu-interview.avif"><img loading="lazy" src="/img/productions/2026-10-27-v02-takano-vsu-interview.jpg" width="480" height="600" alt="Aya Takano and Vargas-Suárez Universal interviewed at a table in a brick courtyard, a boom microphone above"></picture><figcaption class="cap">Aya Takano and Vargas-Suárez Universal, interviewed for the film.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-f02-filming-swayambhu.avif"><img loading="lazy" src="/img/productions/2026-10-27-f02-filming-swayambhu.jpg" width="480" height="600" alt="The cinematographer showing footage on his camera to Aya Takano at Swayambhunath"></picture><figcaption class="cap">Filming at Swayambhunath, 2019.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -214,5 +217,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

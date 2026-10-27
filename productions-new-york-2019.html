@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>The work comes to New York. — AKA Art Productions</title>
 <meta name="description" content="New York — 2019: The work comes to New York. A chapter from AKA Art Productions.">
 <meta property="og:title" content="The work comes to New York. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-new-york-2019">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-new-york-2019">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -171,11 +174,11 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
         <p>The same year we visited Saint Clair Cemin’s studio in Brooklyn and began a textile collaboration with him.</p>
       </div>
     </div>
-    <figure class="wide" style="margin-top:0"><img src="/img/productions/2026-10-27-y01-stellweg-loft.jpg" width="1023" height="768" alt="Large textile works hung in a New York loft with a pressed-tin ceiling, a sofa and bookshelves in front"><figcaption class="cap">The exhibition curated by Carla Stellweg, New York, 2019.</figcaption></figure>
+    <figure class="wide" style="margin-top:0"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y01-stellweg-loft.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-y01-stellweg-loft.jpg" width="1023" height="768" alt="Large textile works hung in a New York loft with a pressed-tin ceiling, a sofa and bookshelves in front"></picture><figcaption class="cap">The exhibition curated by Carla Stellweg, New York, 2019.</figcaption></figure>
     <div class="g3">
-      <figure><img src="/img/productions/2026-10-27-y02-stellweg-felts.jpg" width="480" height="600" alt="Carla Stellweg seated at a table in front of a blue and brown work and a red work that runs onto the floor"><figcaption class="cap">Carla Stellweg with the works, 2019.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-y05-vsu-lobby.jpg" width="480" height="600" alt="A tall blue and white textile work by Vargas-Suárez Universal hung in a double-height building lobby"><figcaption class="cap">Vargas-Suárez Universal, installed in a lobby, New York, 2019.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-y06-cemin-bronzes.jpg" width="480" height="600" alt="Saint Clair Cemin in his Brooklyn studio beside rows of bronze figures on white plinths and a polished steel sculpture"><figcaption class="cap">Saint Clair Cemin in his studio, Brooklyn, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y02-stellweg-felts.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-y02-stellweg-felts.jpg" width="480" height="600" alt="Carla Stellweg seated at a table in front of a blue and brown work and a red work that runs onto the floor"></picture><figcaption class="cap">Carla Stellweg with the works, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y05-vsu-lobby.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-y05-vsu-lobby.jpg" width="480" height="600" alt="A tall blue and white textile work by Vargas-Suárez Universal hung in a double-height building lobby"></picture><figcaption class="cap">Vargas-Suárez Universal, installed in a lobby, New York, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y06-cemin-bronzes.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-y06-cemin-bronzes.jpg" width="480" height="600" alt="Saint Clair Cemin in his Brooklyn studio beside rows of bronze figures on white plinths and a polished steel sculpture"></picture><figcaption class="cap">Saint Clair Cemin in his studio, Brooklyn, 2019.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -201,5 +204,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

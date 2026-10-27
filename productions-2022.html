@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>The works travel. — AKA Art Productions</title>
 <meta name="description" content="2021–2022: Aya Takano at Perrotin Tokyo and Hong Kong, Pedro Friedeberg at Zona Maco, José Bedia, and Dr. Lakra in silk. A chapter from AKA Art Productions.">
 <meta property="og:title" content="The works travel. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-2022">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-2022">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,19 +175,19 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <p class="sub k">Aya Takano · Perrotin</p>
-    <figure class="wide" style="margin-top:0"><img src="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.jpg" width="960" height="720" alt="A large hand-knotted work of three girls hanging in a gallery, a leopard-shaped rug on the floor before two armchairs"><figcaption class="cap">Aya Takano, hand-knotted in Nepal, at Perrotin Tokyo.</figcaption></figure>
-    <figure class="wide" style="margin-top:16px"><img src="/img/productions/2026-10-27-g10-takano-show-room.jpg" width="960" height="639" alt="A gallery room with Aya Takano's hand-knotted works: a leopard-skin shaped piece and a large work of a girl among snow leopards on the walls, ceramics on wooden plinths"><figcaption class="cap">Aya Takano’s hand-knotted works from Nepal, with ceramics, Perrotin.</figcaption></figure>
-    <figure class="wide" style="margin-top:16px"><img src="/img/productions/2026-10-27-g11-takano-shaped-work.jpg" width="960" height="639" alt="A shaped hand-knotted work by Aya Takano of a girl, a bird and a cat on pink flowers, on a white wall beside a seated stone figure"><figcaption class="cap">A shaped work, cut to the drawing: a girl, a bird and a cat.</figcaption></figure>
+    <figure class="wide" style="margin-top:0"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.jpg" width="960" height="720" alt="A large hand-knotted work of three girls hanging in a gallery, a leopard-shaped rug on the floor before two armchairs"></picture><figcaption class="cap">Aya Takano, hand-knotted in Nepal, at Perrotin Tokyo.</figcaption></figure>
+    <figure class="wide" style="margin-top:16px"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g10-takano-show-room.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-g10-takano-show-room.jpg" width="960" height="639" alt="A gallery room with Aya Takano's hand-knotted works: a leopard-skin shaped piece and a large work of a girl among snow leopards on the walls, ceramics on wooden plinths"></picture><figcaption class="cap">Aya Takano’s hand-knotted works from Nepal, with ceramics, Perrotin.</figcaption></figure>
+    <figure class="wide" style="margin-top:16px"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g11-takano-shaped-work.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-g11-takano-shaped-work.jpg" width="960" height="639" alt="A shaped hand-knotted work by Aya Takano of a girl, a bird and a cat on pink flowers, on a white wall beside a seated stone figure"></picture><figcaption class="cap">A shaped work, cut to the drawing: a girl, a bird and a cat.</figcaption></figure>
     <div class="g2">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g04-takano-hanging.jpg" width="480" height="600" alt="Three gallery staff in gloves hanging a large hand-knotted work from ladders"><figcaption class="cap">Hanging the work, Perrotin Tokyo.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g05-takano-with-work.jpg" width="480" height="600" alt="Aya Takano standing in front of a shaped hand-knotted work of a girl, a bird and a cat"><figcaption class="cap">Aya Takano with a shaped work made in Nepal.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g04-takano-hanging.avif"><img loading="lazy" src="/img/productions/2026-10-27-g04-takano-hanging.jpg" width="480" height="600" alt="Three gallery staff in gloves hanging a large hand-knotted work from ladders"></picture><figcaption class="cap">Hanging the work, Perrotin Tokyo.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g05-takano-with-work.avif"><img loading="lazy" src="/img/productions/2026-10-27-g05-takano-with-work.jpg" width="480" height="600" alt="Aya Takano standing in front of a shaped hand-knotted work of a girl, a bird and a cat"></picture><figcaption class="cap">Aya Takano with a shaped work made in Nepal.</figcaption></figure>
     </div>
     <p class="sub k">José Bedia · Pedro Friedeberg · Dr. Lakra · 2022</p>
-    <figure class="wide" style="margin-top:0"><img src="/img/productions/2026-10-27-g07-zona-maco-friedeberg.jpg" width="960" height="720" alt="A yellow art fair booth with Pedro Friedeberg's hand-knotted work of symbols on the floor under gilded chairs, his framed works on the walls and the hand chair"><figcaption class="cap">Pedro Friedeberg’s hand-knotted work at the centre of the booth, Zona Maco, Mexico City, 2022.</figcaption></figure>
+    <figure class="wide" style="margin-top:0"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g07-zona-maco-friedeberg.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-g07-zona-maco-friedeberg.jpg" width="960" height="720" alt="A yellow art fair booth with Pedro Friedeberg's hand-knotted work of symbols on the floor under gilded chairs, his framed works on the walls and the hand chair"></picture><figcaption class="cap">Pedro Friedeberg’s hand-knotted work at the centre of the booth, Zona Maco, Mexico City, 2022.</figcaption></figure>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g06-bedia-felt-2022.jpg" width="720" height="540" alt="A felt work by José Bedia with a figure, stars, plants and a pyramid in black on cream, hanging in a gallery"><figcaption class="cap">José Bedia’s felt from Kyrgyzstan on view, 2022.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g08-lakra-silk.jpg" width="480" height="600" alt="A silk embroidered tapestry with a red face of rays and a wavy striped border, laid on a table"><figcaption class="cap">Dr. Lakra, silk and wool, 2022.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g09-lakra-silk-detail.jpg" width="480" height="600" alt="Close-up of silk chain-stitch embroidery in red, ochre, blue and a spiral"><figcaption class="cap">Detail of the silk stitch.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g06-bedia-felt-2022.avif"><img loading="lazy" src="/img/productions/2026-10-27-g06-bedia-felt-2022.jpg" width="720" height="540" alt="A felt work by José Bedia with a figure, stars, plants and a pyramid in black on cream, hanging in a gallery"></picture><figcaption class="cap">José Bedia’s felt from Kyrgyzstan on view, 2022.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g08-lakra-silk.avif"><img loading="lazy" src="/img/productions/2026-10-27-g08-lakra-silk.jpg" width="480" height="600" alt="A silk embroidered tapestry with a red face of rays and a wavy striped border, laid on a table"></picture><figcaption class="cap">Dr. Lakra, silk and wool, 2022.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g09-lakra-silk-detail.avif"><img loading="lazy" src="/img/productions/2026-10-27-g09-lakra-silk-detail.jpg" width="480" height="600" alt="Close-up of silk chain-stitch embroidery in red, ochre, blue and a spiral"></picture><figcaption class="cap">Detail of the silk stitch.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -210,5 +213,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

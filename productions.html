@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>AKA Art Productions — Made with the artist, by hand</title>
 <meta name="description" content="AKA Art Productions produces work for contemporary artists with master craftspeople since 2017 in Nepal, India, Uzbekistan, Kyrgyzstan, Mali and Mexico: hand-knotted works, silk suzani, felt, bogolan, lokta paper, mother of pearl and carved stone. Two documentaries. AKA Editions. Miami.">
 <meta property="og:title" content="AKA Art Productions — Made with the artist, by hand">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -153,13 +154,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 
@@ -180,7 +183,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </div>
 
 <figure class="bleed rise d3">
-  <img src="/img/productions/2026-10-27s-p01-temple-door.jpg" width="1440" height="960" alt="A hand-knotted black and white rug laid on the temple steps between two stone lions, Patan Durbar Square">
+  <picture><source type="image/avif" srcset="/img/productions/2026-10-27s-p01-temple-door.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27s-p01-temple-door.jpg" width="1440" height="960" alt="A hand-knotted black and white rug laid on the temple steps between two stone lions, Patan Durbar Square"></picture>
   <figcaption class="cap">Hand-knotted in Nepal. Photographed in Patan Durbar Square, June 2020.</figcaption>
 </figure>
 
@@ -238,8 +241,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-o01-totora-peru.jpg" width="480" height="384" alt="Reed boats made of bundled totora standing upright against a sea wall"><figcaption class="cap">Totora reed boats, Peru, 2007.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.jpg" width="480" height="600" alt="Blue watercolour drawings spread on a table by a window over the sea"><figcaption class="cap">Vargas-Suárez Universal’s drawings, Punta Barandúa, Ecuador, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o01-totora-peru.avif"><img loading="lazy" src="/img/productions/2026-10-27-o01-totora-peru.jpg" width="480" height="384" alt="Reed boats made of bundled totora standing upright against a sea wall"></picture><figcaption class="cap">Totora reed boats, Peru, 2007.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.avif"><img loading="lazy" src="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.jpg" width="480" height="600" alt="Blue watercolour drawings spread on a table by a window over the sea"></picture><figcaption class="cap">Vargas-Suárez Universal’s drawings, Punta Barandúa, Ecuador, 2018.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-peru-ecuador">See the full chapter · 4 photos</a></p>
   </section>
@@ -253,8 +256,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-k04-felt-laying-wool.jpg" width="480" height="600" alt="A felt-maker spreading raw white wool over a long table under a wooden roof"><figcaption class="cap">Laying the wool, Kyrgyzstan, 2018.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-k05-felt-master-pressing.jpg" width="480" height="600" alt="A master felt-maker pressing black wool onto a full-size drawing on the workshop table"><figcaption class="cap">The master felt-maker works over the full-size drawing.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k04-felt-laying-wool.avif"><img loading="lazy" src="/img/productions/2026-10-27-k04-felt-laying-wool.jpg" width="480" height="600" alt="A felt-maker spreading raw white wool over a long table under a wooden roof"></picture><figcaption class="cap">Laying the wool, Kyrgyzstan, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k05-felt-master-pressing.avif"><img loading="lazy" src="/img/productions/2026-10-27-k05-felt-master-pressing.jpg" width="480" height="600" alt="A master felt-maker pressing black wool onto a full-size drawing on the workshop table"></picture><figcaption class="cap">The master felt-maker works over the full-size drawing.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-bishkek-2018">See the full chapter · 6 photos</a></p>
   </section>
@@ -268,8 +271,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-y01-stellweg-loft.jpg" width="1023" height="768" alt="Large textile works hung in a New York loft with a pressed-tin ceiling, a sofa and bookshelves in front"><figcaption class="cap">The exhibition curated by Carla Stellweg, New York, 2019.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-y02-stellweg-felts.jpg" width="480" height="600" alt="Carla Stellweg seated at a table in front of a blue and brown work and a red work that runs onto the floor"><figcaption class="cap">Carla Stellweg with the works, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y01-stellweg-loft.avif"><img loading="lazy" src="/img/productions/2026-10-27-y01-stellweg-loft.jpg" width="1023" height="768" alt="Large textile works hung in a New York loft with a pressed-tin ceiling, a sofa and bookshelves in front"></picture><figcaption class="cap">The exhibition curated by Carla Stellweg, New York, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y02-stellweg-felts.avif"><img loading="lazy" src="/img/productions/2026-10-27-y02-stellweg-felts.jpg" width="480" height="600" alt="Carla Stellweg seated at a table in front of a blue and brown work and a red work that runs onto the floor"></picture><figcaption class="cap">Carla Stellweg with the works, 2019.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-new-york-2019">See the full chapter · 4 photos</a></p>
   </section>
@@ -284,8 +287,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q01-cemin-alakiyiz.jpg" width="480" height="599" alt="A felt-maker shaping the black head of a blue and yellow figure in loose wool"><figcaption class="cap">Saint Clair Cemin’s figure, laid in wool.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q05-cemin-finished.jpg" width="460" height="575" alt="The finished felt: a black oval head, two yellow wings and a blue body"><figcaption class="cap">Saint Clair Cemin, finished felt, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q01-cemin-alakiyiz.avif"><img loading="lazy" src="/img/productions/2026-10-27-q01-cemin-alakiyiz.jpg" width="480" height="599" alt="A felt-maker shaping the black head of a blue and yellow figure in loose wool"></picture><figcaption class="cap">Saint Clair Cemin’s figure, laid in wool.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q05-cemin-finished.avif"><img loading="lazy" src="/img/productions/2026-10-27-q05-cemin-finished.jpg" width="460" height="575" alt="The finished felt: a black oval head, two yellow wings and a blue body"></picture><figcaption class="cap">Saint Clair Cemin, finished felt, 2019.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-kyrgyzstan-2019">See the full chapter · 10 photos</a></p>
   </section>
@@ -299,8 +302,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.jpg" width="480" height="600" alt="Jessica Stockholder holding a sheet beside the papermaker at the vat, a boom microphone above"><figcaption class="cap">At the vat with the papermaker, on camera.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-j01-stockholder-placing.jpg" width="480" height="600" alt="Jessica Stockholder placing coloured pulp and fibre onto a wet sheet in its mould"><figcaption class="cap">Laying colour into the wet sheet.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.avif"><img loading="lazy" src="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.jpg" width="480" height="600" alt="Jessica Stockholder holding a sheet beside the papermaker at the vat, a boom microphone above"></picture><figcaption class="cap">At the vat with the papermaker, on camera.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j01-stockholder-placing.avif"><img loading="lazy" src="/img/productions/2026-10-27-j01-stockholder-placing.jpg" width="480" height="600" alt="Jessica Stockholder placing coloured pulp and fibre onto a wet sheet in its mould"></picture><figcaption class="cap">Laying colour into the wet sheet.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-kathmandu-2019">See the full chapter · 13 photos</a></p>
   </section>
@@ -314,8 +317,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n03-nada-booth.jpg" width="960" height="720" alt="An art fair booth: ten framed lokta paper works by Jessica Stockholder on the back wall, a red and blue hand-knotted work on the right, rugs on the floor"><figcaption class="cap">AKA Art Productions at NADA Miami, December 2019.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n04-nada-stockholder.jpg" width="480" height="600" alt="Framed lokta paper works by Jessica Stockholder in blue, coral, red and grey with embedded cords"><figcaption class="cap">Jessica Stockholder, lokta paper, Kathmandu 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n03-nada-booth.avif"><img loading="lazy" src="/img/productions/2026-10-27-n03-nada-booth.jpg" width="960" height="720" alt="An art fair booth: ten framed lokta paper works by Jessica Stockholder on the back wall, a red and blue hand-knotted work on the right, rugs on the floor"></picture><figcaption class="cap">AKA Art Productions at NADA Miami, December 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n04-nada-stockholder.avif"><img loading="lazy" src="/img/productions/2026-10-27-n04-nada-stockholder.jpg" width="480" height="600" alt="Framed lokta paper works by Jessica Stockholder in blue, coral, red and grey with embedded cords"></picture><figcaption class="cap">Jessica Stockholder, lokta paper, Kathmandu 2019.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-nada-miami-2019">See the full chapter · 4 photos</a></p>
   </section>
@@ -329,8 +332,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w01-amorales-carving.jpg" width="480" height="600" alt="A carver trimming the pile around black and grey butterflies on a white hand-knotted work"><figcaption class="cap">Carving Carlos Amorales’ butterflies, Nepal, 2020.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w02-amorales-shears.jpg" width="480" height="600" alt="A carver seated on the work with long shears, black and grey butterflies around him"><figcaption class="cap">The contours cut with shears.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w01-amorales-carving.avif"><img loading="lazy" src="/img/productions/2026-10-27-w01-amorales-carving.jpg" width="480" height="600" alt="A carver trimming the pile around black and grey butterflies on a white hand-knotted work"></picture><figcaption class="cap">Carving Carlos Amorales’ butterflies, Nepal, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w02-amorales-shears.avif"><img loading="lazy" src="/img/productions/2026-10-27-w02-amorales-shears.jpg" width="480" height="600" alt="A carver seated on the work with long shears, black and grey butterflies around him"></picture><figcaption class="cap">The contours cut with shears.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-nepal-2020">See the full chapter · 16 photos</a></p>
   </section>
@@ -344,8 +347,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-z21-latinx-abstract.jpg" width="960" height="720" alt="Gallery view of the exhibition Latinx Abstract with a felt work by Vargas-Suárez Universal on a yellow wall"><figcaption class="cap"><i>Latinx Abstract</i>, New York, 2021.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-z28-crew-annapurna.jpg" width="480" height="600" alt="The film crew with a camera on a tripod at dawn, the Annapurna range behind"><figcaption class="cap">Filming <i>Lokta Kingdom</i> at Poon Hill, 2021.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z21-latinx-abstract.avif"><img loading="lazy" src="/img/productions/2026-10-27-z21-latinx-abstract.jpg" width="960" height="720" alt="Gallery view of the exhibition Latinx Abstract with a felt work by Vargas-Suárez Universal on a yellow wall"></picture><figcaption class="cap"><i>Latinx Abstract</i>, New York, 2021.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z28-crew-annapurna.avif"><img loading="lazy" src="/img/productions/2026-10-27-z28-crew-annapurna.jpg" width="480" height="600" alt="The film crew with a camera on a tripod at dawn, the Annapurna range behind"></picture><figcaption class="cap">Filming <i>Lokta Kingdom</i> at Poon Hill, 2021.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-2021">See the full chapter · 10 photos</a></p>
   </section>
@@ -359,8 +362,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 crop">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g01-latin-nomads-tunnel.jpg" width="480" height="600" alt="A film crew with camera and boom recording two people talking in a vaulted brick tunnel"><figcaption class="cap">Filming in the vaulted cellar of one of Georgia’s leading wineries, 2021.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.jpg" width="480" height="600" alt="Three men, among them the artist Levan Songulashvili, on a stone lookout above Mtskheta in mist"><figcaption class="cap">With Levan Songulashvili, one of Georgia’s best-known artists, above Mtskheta, 2021.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g01-latin-nomads-tunnel.avif"><img loading="lazy" src="/img/productions/2026-10-27-g01-latin-nomads-tunnel.jpg" width="480" height="600" alt="A film crew with camera and boom recording two people talking in a vaulted brick tunnel"></picture><figcaption class="cap">Filming in the vaulted cellar of one of Georgia’s leading wineries, 2021.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.avif"><img loading="lazy" src="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.jpg" width="480" height="600" alt="Three men, among them the artist Levan Songulashvili, on a stone lookout above Mtskheta in mist"></picture><figcaption class="cap">With Levan Songulashvili, one of Georgia’s best-known artists, above Mtskheta, 2021.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-latinx-nomads">See the full chapter · 8 photos and the films</a></p>
   </section>
@@ -374,8 +377,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.jpg" width="960" height="720" alt="A large hand-knotted work by Aya Takano at Perrotin Tokyo"><figcaption class="cap">Aya Takano at Perrotin Tokyo.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g07-zona-maco-friedeberg.jpg" width="960" height="720" alt="Pedro Friedeberg's booth at Zona Maco with his hand-knotted work on the floor"><figcaption class="cap">Pedro Friedeberg, Zona Maco, 2022.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.avif"><img loading="lazy" src="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.jpg" width="960" height="720" alt="A large hand-knotted work by Aya Takano at Perrotin Tokyo"></picture><figcaption class="cap">Aya Takano at Perrotin Tokyo.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g07-zona-maco-friedeberg.avif"><img loading="lazy" src="/img/productions/2026-10-27-g07-zona-maco-friedeberg.jpg" width="960" height="720" alt="Pedro Friedeberg's booth at Zona Maco with his hand-knotted work on the floor"></picture><figcaption class="cap">Pedro Friedeberg, Zona Maco, 2022.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-2022">See the full chapter · 11 photos</a></p>
   </section>
@@ -389,8 +392,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-h04-bedia-2023.jpg" width="960" height="720" alt="José Bedia's animal di sabana in a museum gallery"><figcaption class="cap">José Bedia, 2023.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-h02-lakra-detail.jpg" width="480" height="600" alt="Detail of Dr. Lakra's silk chain stitch"><figcaption class="cap">Dr. Lakra, silk and wool, 2022.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-h04-bedia-2023.avif"><img loading="lazy" src="/img/productions/2026-10-27-h04-bedia-2023.jpg" width="960" height="720" alt="José Bedia's animal di sabana in a museum gallery"></picture><figcaption class="cap">José Bedia, 2023.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-h02-lakra-detail.avif"><img loading="lazy" src="/img/productions/2026-10-27-h02-lakra-detail.jpg" width="480" height="600" alt="Detail of Dr. Lakra's silk chain stitch"></picture><figcaption class="cap">Dr. Lakra, silk and wool, 2022.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-2023">See the full chapter · 8 photos</a></p>
   </section>
@@ -401,7 +404,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <p class="muted">The work in the workshops became two films: one on the papermakers of Nepal, filmed in 2021, and a series on the culture of Georgia. Both can be watched in full.</p>
     </div>
     <div class="film">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-f01-lokta-kingdom-poster.jpg" width="480" height="720" alt="Poster of Lokta Kingdom: a child flying a paper kite under prayer flags against a blue sky"></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-f01-lokta-kingdom-poster.avif"><img loading="lazy" src="/img/productions/2026-10-27-f01-lokta-kingdom-poster.jpg" width="480" height="720" alt="Poster of Lokta Kingdom: a child flying a paper kite under prayer flags against a blue sky"></picture></figure>
       <div>
         <h3 class="serif">Lokta Kingdom</h3>
         <p class="muted">A feature documentary that follows one of the last families making lokta paper in Nepal, and the community determined to keep the craft alive. Directed by Andy Fabrykant; photography by Martin Quirno; executive producer Fabian J. Ortega. Nepal, 2022 · 88 minutes · in Nepali.</p>
@@ -415,10 +418,10 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
     <p class="sub k">Filming Lokta Kingdom · Nepal, 2021</p>
     <div class="g4">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x05-lk-vat-dawn.jpg" width="480" height="600" alt="A papermaker lifting a mould from the vat at dawn, rows of drying frames and prayer flags behind"><figcaption class="cap">At the vat at dawn.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x06-lk-interview.jpg" width="480" height="600" alt="A man in an orange jacket interviewed on a Kathmandu rooftop, camera and boom in the foreground"><figcaption class="cap">An interview on a Kathmandu rooftop.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x07-lk-camera.jpg" width="480" height="600" alt="The director of photography behind a cinema camera on a tripod"><figcaption class="cap">Behind the camera.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x08-lk-still.jpg" width="480" height="600" alt="A frame from the film: a young woman lit by a window"><figcaption class="cap">A frame from the film.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x05-lk-vat-dawn.avif"><img loading="lazy" src="/img/productions/2026-10-27-x05-lk-vat-dawn.jpg" width="480" height="600" alt="A papermaker lifting a mould from the vat at dawn, rows of drying frames and prayer flags behind"></picture><figcaption class="cap">At the vat at dawn.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x06-lk-interview.avif"><img loading="lazy" src="/img/productions/2026-10-27-x06-lk-interview.jpg" width="480" height="600" alt="A man in an orange jacket interviewed on a Kathmandu rooftop, camera and boom in the foreground"></picture><figcaption class="cap">An interview on a Kathmandu rooftop.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x07-lk-camera.avif"><img loading="lazy" src="/img/productions/2026-10-27-x07-lk-camera.jpg" width="480" height="600" alt="The director of photography behind a cinema camera on a tripod"></picture><figcaption class="cap">Behind the camera.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x08-lk-still.avif"><img loading="lazy" src="/img/productions/2026-10-27-x08-lk-still.jpg" width="480" height="600" alt="A frame from the film: a young woman lit by a window"></picture><figcaption class="cap">A frame from the film.</figcaption></figure>
     </div>
   </section>
 
@@ -431,8 +434,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="A large felt work in yellow, green and black on the back wall of an art fair booth, clay bottles on a plinth in front"><figcaption class="cap">kurimanzutto, Art Basel Miami Beach, December 2024.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-a01-shyrdak-detail.jpg" width="480" height="600" alt="Detail of cut felt shapes stitched onto a grey felt ground"><figcaption class="cap">Detail: cut felt, stitched by hand.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a02-shyrdak-art-basel.avif"><img loading="lazy" src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="A large felt work in yellow, green and black on the back wall of an art fair booth, clay bottles on a plinth in front"></picture><figcaption class="cap">kurimanzutto, Art Basel Miami Beach, December 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a01-shyrdak-detail.avif"><img loading="lazy" src="/img/productions/2026-10-27-a01-shyrdak-detail.jpg" width="480" height="600" alt="Detail of cut felt shapes stitched onto a grey felt ground"></picture><figcaption class="cap">Detail: cut felt, stitched by hand.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-amorales-felt">See the full chapter · 3 photos</a></p>
   </section>
@@ -446,8 +449,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth"><figcaption class="cap">Painting the pattern in mud, Mali, 2024.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-m02-bogolan-dye.jpg" width="347" height="347" alt="Buckets and a dye bath in the courtyard of the workshop"><figcaption class="cap">The dye bath, Mali, 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m01-bogolan-mud.avif"><img loading="lazy" src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth"></picture><figcaption class="cap">Painting the pattern in mud, Mali, 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-bogolan-dye.avif"><img loading="lazy" src="/img/productions/2026-10-27-m02-bogolan-dye.jpg" width="347" height="347" alt="Buckets and a dye bath in the courtyard of the workshop"></picture><figcaption class="cap">The dye bath, Mali, 2024.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-mali-bogolan">See the full chapter · 3 photos</a></p>
   </section>
@@ -461,8 +464,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.jpg" width="960" height="720" alt="Two square works by Gabriel de la Mora, one in abalone and one in mother of pearl, hanging side by side in a gallery room"><figcaption class="cap">Abalone and mother of pearl, on view.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n01-mother-of-pearl-udaipur-s.jpg" width="480" height="599" alt="A craftsman setting small tiles of mother of pearl along a drawn grid on a large panel"><figcaption class="cap">Setting mother of pearl, Udaipur.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.avif"><img loading="lazy" src="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.jpg" width="960" height="720" alt="Two square works by Gabriel de la Mora, one in abalone and one in mother of pearl, hanging side by side in a gallery room"></picture><figcaption class="cap">Abalone and mother of pearl, on view.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n01-mother-of-pearl-udaipur-s.avif"><img loading="lazy" src="/img/productions/2026-10-27-n01-mother-of-pearl-udaipur-s.jpg" width="480" height="599" alt="A craftsman setting small tiles of mother of pearl along a drawn grid on a large panel"></picture><figcaption class="cap">Setting mother of pearl, Udaipur.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-pearl-hair-stone">See the full chapter · 8 photos and a film</a></p>
   </section>
@@ -476,8 +479,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-l03-lakra-carver-reference.jpg" width="560" height="700" alt="A carver working from the artist’s printed drawing on the workshop floor"><figcaption class="cap">Carving from the drawing, Kathmandu.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-l09-lakra-finished-front.jpg" width="560" height="700" alt="The finished black stone sculpture: monkey, skull between cobras, ringed column, crocodile and lotus base"><figcaption class="cap">The finished piece, 2025.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-l03-lakra-carver-reference.avif"><img loading="lazy" src="/img/productions/2026-10-27-l03-lakra-carver-reference.jpg" width="560" height="700" alt="A carver working from the artist’s printed drawing on the workshop floor"></picture><figcaption class="cap">Carving from the drawing, Kathmandu.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-l09-lakra-finished-front.avif"><img loading="lazy" src="/img/productions/2026-10-27-l09-lakra-finished-front.jpg" width="560" height="700" alt="The finished black stone sculpture: monkey, skull between cobras, ringed column, crocodile and lotus base"></picture><figcaption class="cap">The finished piece, 2025.</figcaption></figure>
     </div>
     <p class="more"><a class="alt" href="/productions-lakra-stone">See the full chapter · 8 photos and a film</a></p>
   </section>
@@ -491,8 +494,8 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 teaser">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-z01-suzani-indigo.jpg" width="480" height="600" alt="White silk skeins on a rod entering a vat of indigo"><figcaption class="cap">First dip: the white silk enters the indigo, 13 Oct 2025.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working side by side on the black figures of the suzani"><figcaption class="cap">Embroiderers on the same section of the piece, 18 Nov 2025.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z01-suzani-indigo.avif"><img loading="lazy" src="/img/productions/2026-10-27-z01-suzani-indigo.jpg" width="480" height="600" alt="White silk skeins on a rod entering a vat of indigo"></picture><figcaption class="cap">First dip: the white silk enters the indigo, 13 Oct 2025.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z02-suzani-embroidery.avif"><img loading="lazy" src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working side by side on the black figures of the suzani"></picture><figcaption class="cap">Embroiderers on the same section of the piece, 18 Nov 2025.</figcaption></figure>
     </div>
     <dl class="spec">
       <div><dt>Size</dt><dd>1.80 × 12.00 m · 21.6 m²</dd></div>
@@ -563,9 +566,9 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <p class="muted">Numbered pieces made with the same workshops and the same standard. In development now — shown as renders:</p>
     </div>
     <div class="ed">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27s-r01-mahjong-rack.jpg" width="640" height="429" alt="Render of a mahjong rack in dark wood with an onyx front"><h3>AKA Mahjong</h3><p>A mahjong set made by hand, with workshops in Mexico and India.</p><span class="tag">Render · in development</span></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27s-r02-mahjong-case.jpg" width="640" height="426" alt="Render of a round case in hammered copper with a wood lid"><h3>AKA Mahjong · case</h3><p>The round case that holds the set.</p><span class="tag">Render · in development</span></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-r04-lanthorn.jpg" width="640" height="478" alt="Render of Lanthorn: a single tall, narrow column of backlit buffalo-horn plates in a hammered-copper frame on a white wall, with a close-up of the plates"><h3>AKA Luz · Lanthorn</h3><p>One column of light: 36 plates of buffalo horn from Sambhal, India, in a frame of hammered copper from Santa Clara del Cobre, Mexico. About two metres tall; hangs vertical or horizontal.</p><span class="tag">Render · in development</span></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27s-r01-mahjong-rack.avif"><img loading="lazy" src="/img/productions/2026-10-27s-r01-mahjong-rack.jpg" width="640" height="429" alt="Render of a mahjong rack in dark wood with an onyx front"></picture><h3>AKA Mahjong</h3><p>A mahjong set made by hand, with workshops in Mexico and India.</p><span class="tag">Render · in development</span></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27s-r02-mahjong-case.avif"><img loading="lazy" src="/img/productions/2026-10-27s-r02-mahjong-case.jpg" width="640" height="426" alt="Render of a round case in hammered copper with a wood lid"></picture><h3>AKA Mahjong · case</h3><p>The round case that holds the set.</p><span class="tag">Render · in development</span></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-r04-lanthorn.avif"><img loading="lazy" src="/img/productions/2026-10-27-r04-lanthorn.jpg" width="640" height="478" alt="Render of Lanthorn: a single tall, narrow column of backlit buffalo-horn plates in a hammered-copper frame on a white wall, with a close-up of the plates"></picture><h3>AKA Luz · Lanthorn</h3><p>One column of light: 36 plates of buffalo horn from Sambhal, India, in a frame of hammered copper from Santa Clara del Cobre, Mexico. About two metres tall; hangs vertical or horizontal.</p><span class="tag">Render · in development</span></figure>
     </div>
   </section>
 
@@ -594,5 +597,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

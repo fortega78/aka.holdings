@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Back to the felt: Cemin, Bedia, Burgos, Vargas-Suárez. — AKA Art Productions</title>
 <meta name="description" content="Kyrgyzstan — 2019: Back to the felt: Cemin, Bedia, Burgos, Vargas-Suárez. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Back to the felt: Cemin, Bedia, Burgos, Vargas-Suárez. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-kyrgyzstan-2019">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-kyrgyzstan-2019">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -173,16 +176,16 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g4">
-      <figure><img src="/img/productions/2026-10-27-q01-cemin-alakiyiz.jpg" width="480" height="599" alt="A felt-maker shaping the black head of a blue and yellow figure in loose wool"><figcaption class="cap">Saint Clair Cemin’s figure, laid in wool.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-q05-cemin-finished.jpg" width="460" height="575" alt="The finished felt: a black oval head, two yellow wings and a blue body"><figcaption class="cap">Saint Clair Cemin, finished felt, 2019.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-q06-bedia-semana-santa.jpg" width="460" height="575" alt="A long white felt with black drawings of figures, a church and crosses, titled Semana Santa"><figcaption class="cap">José Bedia, <i>Semana Santa</i>, in felt.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-q07-bedia-tronco.jpg" width="460" height="574" alt="A grey-blue felt with a figure drawn in black on a tree trunk"><figcaption class="cap">José Bedia, <i>En el tronco de un árbol</i>, in progress.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q08-bedia-stitching-portrait.jpg" width="460" height="575" alt="A felt-maker in a headscarf stitching the black line of a drawing into white felt"><figcaption class="cap">Finishing José Bedia’s lines by hand.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q02-vsu-blue-laying.jpg" width="480" height="599" alt="Felt-makers laying blue wool over white on a long table, a printed reference in front"><figcaption class="cap">Laying the blue for Vargas-Suárez Universal.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q09-burgos-felt-held.jpg" width="460" height="575" alt="Two felt-makers holding up panels of striped felt in graded colours"><figcaption class="cap">Fabian Burgos’ stripes, panel by panel, 19 July 2019.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-q11-burgos-miami.jpg" width="460" height="575" alt="Fabian Burgos leaning over one of his striped prints on a table in Miami"><figcaption class="cap">Fabian Burgos with his prints, Miami, 2019.</figcaption></figure>
-          <figure><img loading="lazy" src="/img/productions/2026-10-27-b01-bedia-studio.jpg" width="480" height="600" alt="José Bedia kneeling in his studio behind the finished felt En el tronco de un árbol, his paintings on the walls"><figcaption class="cap">José Bedia with <i>En el tronco de un árbol</i>, in his studio, 2019.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-b02-bedia-exhibition.jpg" width="720" height="540" alt="A gallery with José Bedia’s felt Semana Santa hanging on a curved wall, visitors and a sculpture on a plinth"><figcaption class="cap"><i>Semana Santa</i> on view, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q01-cemin-alakiyiz.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-q01-cemin-alakiyiz.jpg" width="480" height="599" alt="A felt-maker shaping the black head of a blue and yellow figure in loose wool"></picture><figcaption class="cap">Saint Clair Cemin’s figure, laid in wool.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q05-cemin-finished.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-q05-cemin-finished.jpg" width="460" height="575" alt="The finished felt: a black oval head, two yellow wings and a blue body"></picture><figcaption class="cap">Saint Clair Cemin, finished felt, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q06-bedia-semana-santa.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-q06-bedia-semana-santa.jpg" width="460" height="575" alt="A long white felt with black drawings of figures, a church and crosses, titled Semana Santa"></picture><figcaption class="cap">José Bedia, <i>Semana Santa</i>, in felt.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q07-bedia-tronco.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-q07-bedia-tronco.jpg" width="460" height="574" alt="A grey-blue felt with a figure drawn in black on a tree trunk"></picture><figcaption class="cap">José Bedia, <i>En el tronco de un árbol</i>, in progress.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q08-bedia-stitching-portrait.avif"><img loading="lazy" src="/img/productions/2026-10-27-q08-bedia-stitching-portrait.jpg" width="460" height="575" alt="A felt-maker in a headscarf stitching the black line of a drawing into white felt"></picture><figcaption class="cap">Finishing José Bedia’s lines by hand.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q02-vsu-blue-laying.avif"><img loading="lazy" src="/img/productions/2026-10-27-q02-vsu-blue-laying.jpg" width="480" height="599" alt="Felt-makers laying blue wool over white on a long table, a printed reference in front"></picture><figcaption class="cap">Laying the blue for Vargas-Suárez Universal.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q09-burgos-felt-held.avif"><img loading="lazy" src="/img/productions/2026-10-27-q09-burgos-felt-held.jpg" width="460" height="575" alt="Two felt-makers holding up panels of striped felt in graded colours"></picture><figcaption class="cap">Fabian Burgos’ stripes, panel by panel, 19 July 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q11-burgos-miami.avif"><img loading="lazy" src="/img/productions/2026-10-27-q11-burgos-miami.jpg" width="460" height="575" alt="Fabian Burgos leaning over one of his striped prints on a table in Miami"></picture><figcaption class="cap">Fabian Burgos with his prints, Miami, 2019.</figcaption></figure>
+          <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-b01-bedia-studio.avif"><img loading="lazy" src="/img/productions/2026-10-27-b01-bedia-studio.jpg" width="480" height="600" alt="José Bedia kneeling in his studio behind the finished felt En el tronco de un árbol, his paintings on the walls"></picture><figcaption class="cap">José Bedia with <i>En el tronco de un árbol</i>, in his studio, 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-b02-bedia-exhibition.avif"><img loading="lazy" src="/img/productions/2026-10-27-b02-bedia-exhibition.jpg" width="720" height="540" alt="A gallery with José Bedia’s felt Semana Santa hanging on a curved wall, visitors and a sculpture on a plinth"></picture><figcaption class="cap"><i>Semana Santa</i> on view, 2020.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -208,5 +211,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

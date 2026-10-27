@@ -1,0 +1,35 @@
+"""Expand image placeholders in src/*.html into <picture> markup -> site root.
+{{pic:NAME|ALT|SIZES|eager}}  -> image from img/v2 (manifest.json: avif + jpg srcset, width/height)
+{{img:/img/path.jpg|ALT|SIZES}} -> legacy image: avif twin at native size if present, jpg fallback
+{{fact:a.b}} -> value from data/facts.json"""
+import json, re, os, sys, glob
+from PIL import Image
+R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+M = json.load(open(f'{R}/img/v2/manifest.json'))
+F = json.load(open(f'{R}/data/facts.json'))
+def pic(m):
+    name, alt, sizes, *rest = m.group(1).split('|') + ['']
+    eager = 'eager' in rest
+    e = M[name]; h = round(e['h'] * 1)
+    ratio = e['h'] / e['w']
+    av = ', '.join(f"/img/v2/{name}-{w}.avif {w}w" for w in e['avif'])
+    jp = ', '.join(f"/img/v2/{name}-{w}.jpg {w}w" for w in e['jpg'])
+    jw = e['jpg'][-1]
+    load = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
+    return (f'<picture><source type="image/avif" srcset="{av}" sizes="{sizes or "100vw"}">'
+            f'<img src="/img/v2/{name}-{jw}.jpg" srcset="{jp}" sizes="{sizes or "100vw"}" width="{jw}" height="{round(jw*ratio)}" alt="{alt}" {load}></picture>')
+def img(m):
+    path, alt, sizes, *rest = m.group(1).split('|') + ['', '']
+    full = R + path; w, h = Image.open(full).size
+    av = path.rsplit('.', 1)[0] + '.avif'
+    s = f' sizes="{sizes}"' if sizes else ''
+    src = f'<source type="image/avif" srcset="{av} {w}w"{s}>' if os.path.exists(R + av) else ''
+    return f'<picture>{src}<img src="{path}" width="{w}" height="{h}" alt="{alt}" loading="lazy" decoding="async"></picture>'
+def fact(m):
+    v = F
+    for k in m.group(1).split('.'): v = v[k]
+    return str(v['value'] if isinstance(v, dict) else v)
+for f in (sys.argv[1:] or glob.glob(f'{R}/src/*.html')):
+    t = open(f).read()
+    t = re.sub(r'\{\{pic:([^}]+)\}\}', pic, t); t = re.sub(r'\{\{img:([^}]+)\}\}', img, t); t = re.sub(r'\{\{fact:([^}]+)\}\}', fact, t)
+    out = f'{R}/{os.path.basename(f)}'; open(out, 'w').write(t); print('rendered', out)

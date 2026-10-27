@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Bogolan: cloth painted with mud. — AKA Art Productions</title>
 <meta name="description" content="Mali — 2024: Bogolan: cloth painted with mud. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Bogolan: cloth painted with mud. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-mali-bogolan">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-mali-bogolan">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,10 +175,10 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g2 sq">
-      <figure><img src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth"><figcaption class="cap">Painting the pattern in mud, Mali, 2024.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-m02-bogolan-dye.jpg" width="347" height="347" alt="Buckets and a dye bath in the courtyard of the workshop"><figcaption class="cap">The dye bath, Mali, 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m01-bogolan-mud.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth"></picture><figcaption class="cap">Painting the pattern in mud, Mali, 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-bogolan-dye.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-m02-bogolan-dye.jpg" width="347" height="347" alt="Buckets and a dye bath in the courtyard of the workshop"></picture><figcaption class="cap">The dye bath, Mali, 2024.</figcaption></figure>
     </div>
-    <figure class="wide"><img src="/img/productions/2026-10-27-m03-bogolan-studio.jpg" width="960" height="640" alt="Four bogolan panels in black on natural cotton hanging in a white studio"><figcaption class="cap">Carlos Amorales’ bogolan works, in the studio.</figcaption></figure>
+    <figure class="wide"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m03-bogolan-studio.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-m03-bogolan-studio.jpg" width="960" height="640" alt="Four bogolan panels in black on natural cotton hanging in a white studio"></picture><figcaption class="cap">Carlos Amorales’ bogolan works, in the studio.</figcaption></figure>
   </section>
   <nav class="pn" aria-label="Chapters">
     <a href="/productions#mali">← All chapters</a>
@@ -200,5 +203,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

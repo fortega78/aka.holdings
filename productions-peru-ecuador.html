@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Before the studio: reed, paper and straw. — AKA Art Productions</title>
 <meta name="description" content="Peru and Ecuador — 2007–2018: Before the studio: reed, paper and straw. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Before the studio: reed, paper and straw. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-peru-ecuador">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-peru-ecuador">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,10 +175,10 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g4">
-      <figure><img src="/img/productions/2026-10-27-o01-totora-peru.jpg" width="480" height="384" alt="Reed boats made of bundled totora standing upright against a sea wall"><figcaption class="cap">Totora reed boats, Peru, 2007.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.jpg" width="480" height="600" alt="Blue watercolour drawings spread on a table by a window over the sea"><figcaption class="cap">Vargas-Suárez Universal’s drawings, Punta Barandúa, Ecuador, 2018.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-o03-toquilla-weaver.jpg" width="480" height="600" alt="A weaver seated among loose straw, weaving a basket by hand"><figcaption class="cap">A weaver at work, Ecuador.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-o04-toquilla-hats.jpg" width="480" height="599" alt="Toquilla straw hats with long loose fibres springing from them"><figcaption class="cap">Paja toquilla, Manabí, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o01-totora-peru.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-o01-totora-peru.jpg" width="480" height="384" alt="Reed boats made of bundled totora standing upright against a sea wall"></picture><figcaption class="cap">Totora reed boats, Peru, 2007.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.jpg" width="480" height="600" alt="Blue watercolour drawings spread on a table by a window over the sea"></picture><figcaption class="cap">Vargas-Suárez Universal’s drawings, Punta Barandúa, Ecuador, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o03-toquilla-weaver.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-o03-toquilla-weaver.jpg" width="480" height="600" alt="A weaver seated among loose straw, weaving a basket by hand"></picture><figcaption class="cap">A weaver at work, Ecuador.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o04-toquilla-hats.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-o04-toquilla-hats.jpg" width="480" height="599" alt="Toquilla straw hats with long loose fibres springing from them"></picture><figcaption class="cap">Paja toquilla, Manabí, 2018.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -200,5 +203,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

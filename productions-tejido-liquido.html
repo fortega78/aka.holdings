@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Tejido Líquido: twelve metres of silk, by hand. — AKA Art Productions</title>
 <meta name="description" content="Uzbekistan — 2025–2026: Tejido Líquido: twelve metres of silk, by hand. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Tejido Líquido: twelve metres of silk, by hand. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-tejido-liquido">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-tejido-liquido">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,9 +175,9 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g3">
-      <figure><img src="/img/productions/2026-10-27-z01-suzani-indigo.jpg" width="480" height="600" alt="White silk skeins on a rod entering a vat of indigo"><figcaption class="cap">First dip: the white silk enters the indigo, 13 Oct 2025.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working side by side on the black figures of the suzani"><figcaption class="cap">Embroiderers on the same section of the piece, 18 Nov 2025.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-z03-suzani-finished.jpg" width="480" height="599" alt="The finished suzani unrolled on the floor, rows of black silhouettes, aeroplanes and an alphabet"><figcaption class="cap">The finished piece, unrolled in Miami, February 2026.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z01-suzani-indigo.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-z01-suzani-indigo.jpg" width="480" height="600" alt="White silk skeins on a rod entering a vat of indigo"></picture><figcaption class="cap">First dip: the white silk enters the indigo, 13 Oct 2025.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z02-suzani-embroidery.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working side by side on the black figures of the suzani"></picture><figcaption class="cap">Embroiderers on the same section of the piece, 18 Nov 2025.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z03-suzani-finished.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-z03-suzani-finished.jpg" width="480" height="599" alt="The finished suzani unrolled on the floor, rows of black silhouettes, aeroplanes and an alphabet"></picture><figcaption class="cap">The finished piece, unrolled in Miami, February 2026.</figcaption></figure>
     </div>
     <dl class="spec">
       <div><dt>Size</dt><dd>1.80 × 12.00 m · 21.6 m²</dd></div>
@@ -207,5 +210,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

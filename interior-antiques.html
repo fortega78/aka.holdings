@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Apartment with Antiques, Samborondón — AKA Interior Design</title>
 <meta name="description" content="A layered home over the river in Samborondón, Ecuador, designed and furnished by Fabian Ortega: family antiques with modern pieces, a dining room for twelve, a bar around a portrait, a study painted like a woven check.">
 <meta property="og:title" content="Apartment with Antiques, Samborondón — AKA Interior Design">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/interior-antiques">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/interior-antiques">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Deep.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /interior v3 · ACA WEB · 2026-10-26 · brand v1.6.1 — Profundo on bone, Bodoni Moda titles, one blue */
@@ -137,13 +138,15 @@ figure img{display:block;width:100%;height:auto}
 </head>
 <body class="interior">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/interior" aria-label="AKA Interior Design"><img src="/assets/AKA_Interior_Design_Small_OnBone.svg" alt="AKA Interior Design"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior" aria-current="page">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -157,26 +160,26 @@ figure img{display:block;width:100%;height:auto}
         <p class="meta">Design · furniture and rugs · antiques and art</p>
       </div>
     </div>
-    <figure style="margin-top:16px"><img loading="lazy" src="/img/interior/2026-10-27-g11-dining-mirror.jpg" width="900" height="675" alt="A double-height dining room: a black lacquer table for twelve, a large black, white and blue painting, a crystal chandelier and a gilded baroque mirror"><figcaption class="cap">The dining room, under the large work and the crystal chandelier.</figcaption></figure>
+    <figure style="margin-top:16px"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g11-dining-mirror.avif"><img loading="lazy" src="/img/interior/2026-10-27-g11-dining-mirror.jpg" width="900" height="675" alt="A double-height dining room: a black lacquer table for twelve, a large black, white and blue painting, a crystal chandelier and a gilded baroque mirror"></picture><figcaption class="cap">The dining room, under the large work and the crystal chandelier.</figcaption></figure>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g09-sunset-living.jpg" width="640" height="799" alt="Living room at sunset: a draped tufted sofa, a chair of stacked wood, a gold stool and a bracket clock, the dining room beyond"><figcaption class="cap">At sunset: draped silk, stacked wood, a bracket clock.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d07-zigzag-living.jpg" width="640" height="800" alt="Draped tufted sofas, two dark armchairs and a brass and glass table on a black and white chevron hide rug"><figcaption class="cap">Chevron hide, brass and glass.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g04-brass-table.jpg" width="640" height="800" alt="Close view of the brass and glass table with amber crystal, a stone sculpture and books, antiques behind"><figcaption class="cap">On the table: amber crystal, stone, books.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g09-sunset-living.avif"><img loading="lazy" src="/img/interior/2026-10-27-g09-sunset-living.jpg" width="640" height="799" alt="Living room at sunset: a draped tufted sofa, a chair of stacked wood, a gold stool and a bracket clock, the dining room beyond"></picture><figcaption class="cap">At sunset: draped silk, stacked wood, a bracket clock.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d07-zigzag-living.avif"><img loading="lazy" src="/img/interior/2026-10-27-d07-zigzag-living.jpg" width="640" height="800" alt="Draped tufted sofas, two dark armchairs and a brass and glass table on a black and white chevron hide rug"></picture><figcaption class="cap">Chevron hide, brass and glass.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g04-brass-table.avif"><img loading="lazy" src="/img/interior/2026-10-27-g04-brass-table.jpg" width="640" height="800" alt="Close view of the brass and glass table with amber crystal, a stone sculpture and books, antiques behind"></picture><figcaption class="cap">On the table: amber crystal, stone, books.</figcaption></figure>
     </div>
-    <figure style="margin-top:16px"><img loading="lazy" src="/img/interior/2026-10-27-g13-living-flowers.jpg" width="900" height="675" alt="Living room with draped tufted sofas, a glass table with orange lilies, a gold vase and a photograph of a theatre over a white console"><figcaption class="cap">The living room toward the entry: a theatre in photograph, a gold vase, lilies.</figcaption></figure>
+    <figure style="margin-top:16px"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g13-living-flowers.avif"><img loading="lazy" src="/img/interior/2026-10-27-g13-living-flowers.jpg" width="900" height="675" alt="Living room with draped tufted sofas, a glass table with orange lilies, a gold vase and a photograph of a theatre over a white console"></picture><figcaption class="cap">The living room toward the entry: a theatre in photograph, a gold vase, lilies.</figcaption></figure>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g02b-bar-room.jpg" width="540" height="675" alt="A marble bar with gold and black stools against a black wall, under a large black and white portrait and globe lights"><figcaption class="cap">The bar: a portrait, a black wall, a branch of light.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g01-office-plaid.jpg" width="640" height="800" alt="A study with blue brushstrokes painted across walls and ceiling like a check, a long red sign and an antique desk"><figcaption class="cap">The study, painted by hand like a woven check.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g08-gold-ceiling.jpg" width="640" height="799" alt="A gold-leaf ceiling with a Murano chandelier over a large colourful abstract work"><figcaption class="cap">Gold leaf above, a Murano chandelier, colour below.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g02b-bar-room.avif"><img loading="lazy" src="/img/interior/2026-10-27-g02b-bar-room.jpg" width="540" height="675" alt="A marble bar with gold and black stools against a black wall, under a large black and white portrait and globe lights"></picture><figcaption class="cap">The bar: a portrait, a black wall, a branch of light.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g01-office-plaid.avif"><img loading="lazy" src="/img/interior/2026-10-27-g01-office-plaid.jpg" width="640" height="800" alt="A study with blue brushstrokes painted across walls and ceiling like a check, a long red sign and an antique desk"></picture><figcaption class="cap">The study, painted by hand like a woven check.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g08-gold-ceiling.avif"><img loading="lazy" src="/img/interior/2026-10-27-g08-gold-ceiling.jpg" width="640" height="799" alt="A gold-leaf ceiling with a Murano chandelier over a large colourful abstract work"></picture><figcaption class="cap">Gold leaf above, a Murano chandelier, colour below.</figcaption></figure>
     </div>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g05-dining-damask.jpg" width="640" height="800" alt="The dining table and pale chairs on a grey and gold damask rug"><figcaption class="cap">The dining room on a damask rug.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-f03-hide-console.jpg" width="640" height="800" alt="A printed hide with a baroque pattern under a stacked black lacquer console, a geometric work in pinks above"><figcaption class="cap">Printed hide, lacquer and a geometric work.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-f02-union-jack-rug.jpg" width="640" height="800" alt="A woven flag rug in faded reds and creams beside gold bar stools"><figcaption class="cap">A woven flag rug by the bar.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g05-dining-damask.avif"><img loading="lazy" src="/img/interior/2026-10-27-g05-dining-damask.jpg" width="640" height="800" alt="The dining table and pale chairs on a grey and gold damask rug"></picture><figcaption class="cap">The dining room on a damask rug.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-f03-hide-console.avif"><img loading="lazy" src="/img/interior/2026-10-27-f03-hide-console.jpg" width="640" height="800" alt="A printed hide with a baroque pattern under a stacked black lacquer console, a geometric work in pinks above"></picture><figcaption class="cap">Printed hide, lacquer and a geometric work.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-f02-union-jack-rug.avif"><img loading="lazy" src="/img/interior/2026-10-27-f02-union-jack-rug.jpg" width="640" height="800" alt="A woven flag rug in faded reds and creams beside gold bar stools"></picture><figcaption class="cap">A woven flag rug by the bar.</figcaption></figure>
     </div>
     <div class="g2">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g06-terrace-river.jpg" width="640" height="800" alt="A terrace with a wicker sofa, two wicker swivel chairs and carved wood ornaments on a taupe wall, the river beyond"><figcaption class="cap">The terrace over the river.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-g07-terrace-through.jpg" width="640" height="800" alt="The terrace seen through the glass door, the river and the city beyond"><figcaption class="cap">From inside, through the glass.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g06-terrace-river.avif"><img loading="lazy" src="/img/interior/2026-10-27-g06-terrace-river.jpg" width="640" height="800" alt="A terrace with a wicker sofa, two wicker swivel chairs and carved wood ornaments on a taupe wall, the river beyond"></picture><figcaption class="cap">The terrace over the river.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g07-terrace-through.avif"><img loading="lazy" src="/img/interior/2026-10-27-g07-terrace-through.jpg" width="640" height="800" alt="The terrace seen through the glass door, the river and the city beyond"></picture><figcaption class="cap">From inside, through the glass.</figcaption></figure>
     </div>
     <p class="credits">Design and furnishing: Fabian Ortega · Our own home, photographed as lived in.</p>
     <div class="next"><a class="alt" href="/interior#ecuador-city">← All projects</a><a class="alt" href="/interior-oceanfront">Oceanfront Apartment, Ecuador →</a></div>
@@ -196,5 +199,6 @@ figure img{display:block;width:100%;height:auto}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

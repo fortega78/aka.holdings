@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Carlos Amorales, in felt. — AKA Art Productions</title>
 <meta name="description" content="Kyrgyzstan → Art Basel — 2022–2024: Carlos Amorales, in felt. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Carlos Amorales, in felt. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-amorales-felt">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-amorales-felt">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,9 +175,9 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g3">
-      <figure><img src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="A large felt work in yellow, green and black on the back wall of an art fair booth, clay bottles on a plinth in front"><figcaption class="cap">kurimanzutto, Art Basel Miami Beach, December 2024.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-a01-shyrdak-detail.jpg" width="480" height="600" alt="Detail of cut felt shapes stitched onto a grey felt ground"><figcaption class="cap">Detail: cut felt, stitched by hand.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-a03-felt-studio.jpg" width="480" height="600" alt="Black and white felt works laid on the floor and pinned to the walls of the artist's studio"><figcaption class="cap">Felt works in the artist’s studio.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a02-shyrdak-art-basel.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="A large felt work in yellow, green and black on the back wall of an art fair booth, clay bottles on a plinth in front"></picture><figcaption class="cap">kurimanzutto, Art Basel Miami Beach, December 2024.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a01-shyrdak-detail.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-a01-shyrdak-detail.jpg" width="480" height="600" alt="Detail of cut felt shapes stitched onto a grey felt ground"></picture><figcaption class="cap">Detail: cut felt, stitched by hand.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a03-felt-studio.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-a03-felt-studio.jpg" width="480" height="600" alt="Black and white felt works laid on the floor and pinned to the walls of the artist's studio"></picture><figcaption class="cap">Felt works in the artist’s studio.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -200,5 +203,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

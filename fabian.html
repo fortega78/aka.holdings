@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Fabian J. Ortega A. — Founder &amp; Operator, AKA Holdings</title>
 <meta name="description" content="Fabian J. Ortega A. Founder & Operator, AKA Holdings. Business and AI transformation leader; former President and CEO of multi-site businesses. Miami.">
 <meta property="og:title" content="Fabian J. Ortega A. — Founder &amp; Operator, AKA Holdings">
@@ -13,9 +14,9 @@
 <meta property="og:url" content="https://aka.holdings/fabian">
 <meta property="og:type" content="profile">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/fabian">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /fabian v2 · ACA WEB · 2026-10-26 */
@@ -56,9 +57,10 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
@@ -157,5 +159,6 @@
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

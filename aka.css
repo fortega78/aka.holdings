@@ -1,4 +1,12 @@
 /* AKA Holdings · aka.holdings · brand v1.6.1 · 2026-10-26 */
+/* fonts: self-hosted (SIL OFL), latin subset — no third-party requests */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/archivo-400.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/archivo-500.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/archivo-600.woff2) format('woff2')}
+@font-face{font-family:'Questrial';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/questrial-400.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/bodoni-moda-400.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/bodoni-moda-400-italic.woff2) format('woff2')}
+
 :root{
   --klein:#1725F5; --deep:#163D91; --ink:#111111; --white:#FFFFFF; --bone:#F5F2EC; --stone:#D8D1C5;
   --graphite:#3A3A3A; --mist:#E8EBFE; --slate:#5B6478;
@@ -192,3 +200,54 @@ body.technologies{--c:var(--klein);--bg:#FFFFFF}
   .case{grid-template-columns:48px 1fr;padding:20px}.case img{width:48px;height:48px}
   .cta+.cta{margin-left:0;display:block}
 }
+
+/* ===== v2 shared components · ACA WEB 2026-10-27 ===== */
+picture{display:block}
+picture img{width:100%;height:auto}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--bg);color:var(--c);padding:8px 14px;z-index:60}
+.skip:focus{left:8px}
+/* header + mobile menu */
+.top{position:relative;z-index:40}
+.menu-btn{display:none;background:none;border:1px solid var(--c);color:var(--c);font:400 11px/1 Questrial,sans-serif;letter-spacing:.3em;text-transform:uppercase;padding:12px 14px 11px;cursor:pointer;align-items:center;gap:10px;min-height:44px}
+.menu-btn i{display:block;width:16px;height:1px;background:currentColor;position:relative}
+.menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;width:16px;height:1px;background:currentColor;transition:transform .25s}
+.menu-btn i::before{top:-5px}.menu-btn i::after{top:5px}
+.menu-btn[aria-expanded=true] i{background:transparent}
+.menu-btn[aria-expanded=true] i::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded=true] i::after{transform:translateY(-5px) rotate(-45deg)}
+.menu-btn:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+@media (max-width:760px){
+  .js .top{flex-direction:row;align-items:center}
+  .js .menu-btn{display:inline-flex}
+  .js nav.idx{display:none}
+  .js body.nav-open nav.idx,.js .nav-open nav.idx{display:flex;position:fixed;inset:0;z-index:-1;flex-direction:column;justify-content:center;gap:6px;padding:96px var(--gutter) 40px;background:var(--bg)}
+  .js .nav-open nav.idx a{font-size:15px;letter-spacing:.25em;padding:14px 0;border-bottom:1px solid var(--line)}
+  .js .nav-open nav.idx a[aria-current]{border-bottom-color:var(--c)}
+  body.nav-open{overflow:hidden}
+}
+/* sticky mobile CTA */
+.mbar{display:none}
+@media (max-width:760px){
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);transition:transform .3s}
+  .mbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;font:400 12px/1 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;background:var(--c);color:var(--bg);text-align:center}
+  .mbar a.ghost{flex:0 0 auto;padding:0 16px;background:transparent;color:var(--c);border:1px solid var(--c)}
+  .mbar.off{transform:translateY(110%)}
+  body.has-mbar footer{padding-bottom:96px}
+}
+/* intake form */
+.intake{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px}
+.intake .full{grid-column:1/-1}
+.intake label{display:block;font:400 11px/1.4 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--c);margin-bottom:8px}
+.intake input,.intake select,.intake textarea{width:100%;font:400 16px/1.4 Archivo,sans-serif;color:var(--txt);background:transparent;border:0;border-bottom:1px solid var(--c);padding:10px 0;border-radius:0;-webkit-appearance:none;appearance:none;min-height:44px}
+.intake select{background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 7px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:24px}
+.intake textarea{min-height:88px;resize:vertical}
+.intake input:focus-visible,.intake select:focus-visible,.intake textarea:focus-visible{outline:2px solid var(--c);outline-offset:4px}
+.intake .hint{font-size:13px;color:var(--sub);margin-top:6px}
+.intake button{font:400 12px/1 Questrial,sans-serif;letter-spacing:.28em;text-transform:uppercase;background:var(--c);color:var(--bg);border:1px solid var(--c);padding:18px 26px 17px;cursor:pointer;min-height:48px}
+.intake button:hover{background:transparent;color:var(--c)}
+.intake button:focus-visible{outline:2px solid var(--c);outline-offset:4px}
+.intake-done{border-top:1px solid var(--c);padding-top:20px}
+.intake-done:focus{outline:none}
+.intake-done p{color:var(--sub);max-width:56ch;margin-top:10px}
+@media (max-width:600px){.intake{grid-template-columns:1fr}}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

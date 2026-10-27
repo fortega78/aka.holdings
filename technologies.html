@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>AKA Technologies — AI systems for real operations</title>
 <meta name="description" content="AKA Technologies, Miami: a fixed-scope AI diagnostic for owners and operators, and the AI systems we run in our own businesses first — CEREBRO, MAGOS, FABI and MULTA, each with its real status.">
 <meta property="og:title" content="AKA Technologies — AI systems for real operations">
 <meta property="og:description" content="Find where the business loses value, redesign the work, then choose and govern the AI. Book a diagnostic.">
 <meta property="og:url" content="https://aka.holdings/technologies">
 <meta property="og:type" content="website">
+<link rel="canonical" href="https://aka.holdings/technologies">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /technologies v3 · ACA WEB · 2026-10-27 (outcomes, fit, two ways, FAQ) · brand v1.6.1: Klein #1725F5 and white, Archivo, JetBrains Mono only for status; no navy */
@@ -144,13 +145,15 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 </head>
 <body class="technologies">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/technologies" aria-label="AKA Technologies"><img src="/assets/AKA_Technologies_Small_Primary.svg" alt="AKA Technologies"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies" aria-current="page">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -361,5 +364,6 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

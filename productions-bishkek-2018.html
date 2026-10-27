@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Bishkek: an artist's drawing, pressed into felt. — AKA Art Productions</title>
 <meta name="description" content="Kyrgyzstan — 2018: Bishkek: an artist's drawing, pressed into felt. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Bishkek: an artist's drawing, pressed into felt. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-bishkek-2018">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-bishkek-2018">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -172,12 +175,12 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       </div>
     </div>
     <div class="g3 kg">
-      <figure><img src="/img/productions/2026-10-27-k04-felt-laying-wool.jpg" width="480" height="600" alt="A felt-maker spreading raw white wool over a long table under a wooden roof"><figcaption class="cap">Laying the wool, Kyrgyzstan, 2018.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-k05-felt-master-pressing.jpg" width="480" height="600" alt="A master felt-maker pressing black wool onto a full-size drawing on the workshop table"><figcaption class="cap">The master felt-maker works over the full-size drawing.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-k06-felt-rolling-yurt.jpg" width="480" height="600" alt="Two felt-makers rolling wool inside a reed mat in a yurt, felt samples hanging behind"><figcaption class="cap">Rolling the felt in a reed mat, inside the yurt.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-k08-felt-master-checking.jpg" width="480" height="600" alt="A felt-maker in a green velvet tunic smoothing a black and white felt panel on the workshop table"><figcaption class="cap">Checking every line of the drawing in the felt.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-k09-felt-review-vsu.jpg" width="480" height="600" alt="Felt-makers and Vargas-Suárez Universal reviewing a black and white felt panel together"><figcaption class="cap">Reviewing a panel with Vargas-Suárez Universal.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-k07-felt-samples-table.jpg" width="480" height="600" alt="Black and white felt samples laid across a long workshop table"><figcaption class="cap">The samples for Vargas-Suárez Universal, Bishkek, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k04-felt-laying-wool.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-k04-felt-laying-wool.jpg" width="480" height="600" alt="A felt-maker spreading raw white wool over a long table under a wooden roof"></picture><figcaption class="cap">Laying the wool, Kyrgyzstan, 2018.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k05-felt-master-pressing.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-k05-felt-master-pressing.jpg" width="480" height="600" alt="A master felt-maker pressing black wool onto a full-size drawing on the workshop table"></picture><figcaption class="cap">The master felt-maker works over the full-size drawing.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k06-felt-rolling-yurt.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-k06-felt-rolling-yurt.jpg" width="480" height="600" alt="Two felt-makers rolling wool inside a reed mat in a yurt, felt samples hanging behind"></picture><figcaption class="cap">Rolling the felt in a reed mat, inside the yurt.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k08-felt-master-checking.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-k08-felt-master-checking.jpg" width="480" height="600" alt="A felt-maker in a green velvet tunic smoothing a black and white felt panel on the workshop table"></picture><figcaption class="cap">Checking every line of the drawing in the felt.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k09-felt-review-vsu.avif"><img loading="lazy" src="/img/productions/2026-10-27-k09-felt-review-vsu.jpg" width="480" height="600" alt="Felt-makers and Vargas-Suárez Universal reviewing a black and white felt panel together"></picture><figcaption class="cap">Reviewing a panel with Vargas-Suárez Universal.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k07-felt-samples-table.avif"><img loading="lazy" src="/img/productions/2026-10-27-k07-felt-samples-table.jpg" width="480" height="600" alt="Black and white felt samples laid across a long workshop table"></picture><figcaption class="cap">The samples for Vargas-Suárez Universal, Bishkek, 2018.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -203,5 +206,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

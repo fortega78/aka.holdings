@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>From Kathmandu to NADA Miami. — AKA Art Productions</title>
 <meta name="description" content="Miami — December 2019: From Kathmandu to NADA Miami. A chapter from AKA Art Productions.">
 <meta property="og:title" content="From Kathmandu to NADA Miami. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-nada-miami-2019">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-nada-miami-2019">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -171,11 +174,11 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
         <p>Around them, on the walls and on the floor, the hand-knotted and felt works we had produced with the artists of the previous two years.</p>
       </div>
     </div>
-    <figure class="wide" style="margin-top:0"><img src="/img/productions/2026-10-27-n03-nada-booth.jpg" width="960" height="720" alt="An art fair booth: ten framed lokta paper works by Jessica Stockholder on the back wall, a red and blue hand-knotted work on the right, rugs on the floor"><figcaption class="cap">AKA Art Productions at NADA Miami, December 2019.</figcaption></figure>
+    <figure class="wide" style="margin-top:0"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n03-nada-booth.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-n03-nada-booth.jpg" width="960" height="720" alt="An art fair booth: ten framed lokta paper works by Jessica Stockholder on the back wall, a red and blue hand-knotted work on the right, rugs on the floor"></picture><figcaption class="cap">AKA Art Productions at NADA Miami, December 2019.</figcaption></figure>
     <div class="g3">
-      <figure><img src="/img/productions/2026-10-27-n04-nada-stockholder.jpg" width="480" height="600" alt="Framed lokta paper works by Jessica Stockholder in blue, coral, red and grey with embedded cords"><figcaption class="cap">Jessica Stockholder, lokta paper, Kathmandu 2019.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-n05-stockholder-framed.jpg" width="480" height="600" alt="A lokta paper work in pink, red, yellow and grey with cords pressed into it, in a pale wood frame"><figcaption class="cap">One of the sheets, framed.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-j04-stockholder-works.jpg" width="480" height="600" alt="Jessica Stockholder in an apron gesturing toward her sheets among the drying moulds"><figcaption class="cap">The same works, drying in Kathmandu.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n04-nada-stockholder.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-n04-nada-stockholder.jpg" width="480" height="600" alt="Framed lokta paper works by Jessica Stockholder in blue, coral, red and grey with embedded cords"></picture><figcaption class="cap">Jessica Stockholder, lokta paper, Kathmandu 2019.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n05-stockholder-framed.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-n05-stockholder-framed.jpg" width="480" height="600" alt="A lokta paper work in pink, red, yellow and grey with cords pressed into it, in a pale wood frame"></picture><figcaption class="cap">One of the sheets, framed.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j04-stockholder-works.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-j04-stockholder-works.jpg" width="480" height="600" alt="Jessica Stockholder in an apron gesturing toward her sheets among the drying moulds"></picture><figcaption class="cap">The same works, drying in Kathmandu.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -201,5 +204,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

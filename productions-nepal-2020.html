@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>New works on the looms. — AKA Art Productions</title>
 <meta name="description" content="Nepal — 2020: New works on the looms. A chapter from AKA Art Productions.">
 <meta property="og:title" content="New works on the looms. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-nepal-2020">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-nepal-2020">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -152,13 +153,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -173,28 +176,28 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
     <p class="sub k">Carlos Amorales · Pedro Friedeberg · Alexandre Arrechea</p>
     <div class="g4">
-      <figure><img src="/img/productions/2026-10-27-w01-amorales-carving.jpg" width="480" height="600" alt="A carver trimming the pile around black and grey butterflies on a white hand-knotted work"><figcaption class="cap">Carving Carlos Amorales’ butterflies, Nepal, 2020.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-w02-amorales-shears.jpg" width="480" height="600" alt="A carver seated on the work with long shears, black and grey butterflies around him"><figcaption class="cap">The contours cut with shears.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-w03-friedeberg-carving.jpg" width="480" height="600" alt="Two women seated on a hand-knotted work of spirals, stars and squares, carving the pile"><figcaption class="cap">Carving Pedro Friedeberg’s symbols.</figcaption></figure>
-      <figure><img src="/img/productions/2026-10-27-w04-friedeberg-finished.jpg" width="480" height="600" alt="A finished hand-knotted work covered in rows of spirals, stars, mazes and impossible figures"><figcaption class="cap">Pedro Friedeberg, finished, 2020.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w05-arrechea-loom.jpg" width="480" height="600" alt="A half-circle of red, turquoise and black emerging on a vertical loom"><figcaption class="cap">Alexandre Arrechea’s circle on the loom.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w07-arrechea-circle.jpg" width="480" height="600" alt="A round hand-knotted work with a red rim, turquoise rays and a city grid at its centre"><figcaption class="cap">The circle, finished.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w06-arrechea-hand.jpg" width="480" height="600" alt="A hand-shaped hand-knotted work in yellow, green and blue on a terrazzo floor, a man seated on it"><figcaption class="cap">Alexandre Arrechea’s hand, cut to its shape.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w08-finishing-edge.jpg" width="480" height="600" alt="Hands binding the yellow edge of a shaped work with a needle and thread"><figcaption class="cap">Binding the edges by hand.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w01-amorales-carving.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-w01-amorales-carving.jpg" width="480" height="600" alt="A carver trimming the pile around black and grey butterflies on a white hand-knotted work"></picture><figcaption class="cap">Carving Carlos Amorales’ butterflies, Nepal, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w02-amorales-shears.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-w02-amorales-shears.jpg" width="480" height="600" alt="A carver seated on the work with long shears, black and grey butterflies around him"></picture><figcaption class="cap">The contours cut with shears.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w03-friedeberg-carving.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-w03-friedeberg-carving.jpg" width="480" height="600" alt="Two women seated on a hand-knotted work of spirals, stars and squares, carving the pile"></picture><figcaption class="cap">Carving Pedro Friedeberg’s symbols.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w04-friedeberg-finished.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27-w04-friedeberg-finished.jpg" width="480" height="600" alt="A finished hand-knotted work covered in rows of spirals, stars, mazes and impossible figures"></picture><figcaption class="cap">Pedro Friedeberg, finished, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w05-arrechea-loom.avif"><img loading="lazy" src="/img/productions/2026-10-27-w05-arrechea-loom.jpg" width="480" height="600" alt="A half-circle of red, turquoise and black emerging on a vertical loom"></picture><figcaption class="cap">Alexandre Arrechea’s circle on the loom.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w07-arrechea-circle.avif"><img loading="lazy" src="/img/productions/2026-10-27-w07-arrechea-circle.jpg" width="480" height="600" alt="A round hand-knotted work with a red rim, turquoise rays and a city grid at its centre"></picture><figcaption class="cap">The circle, finished.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w06-arrechea-hand.avif"><img loading="lazy" src="/img/productions/2026-10-27-w06-arrechea-hand.jpg" width="480" height="600" alt="A hand-shaped hand-knotted work in yellow, green and blue on a terrazzo floor, a man seated on it"></picture><figcaption class="cap">Alexandre Arrechea’s hand, cut to its shape.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w08-finishing-edge.avif"><img loading="lazy" src="/img/productions/2026-10-27-w08-finishing-edge.jpg" width="480" height="600" alt="Hands binding the yellow edge of a shaped work with a needle and thread"></picture><figcaption class="cap">Binding the edges by hand.</figcaption></figure>
     </div>
     <p class="sub k">Jessica Stockholder · By Kind People</p>
     <div class="g4">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w09-stockholder-carving.jpg" width="480" height="600" alt="Four people seated on a large striped hand-knotted work, carving the pile"><figcaption class="cap">Jessica Stockholder’s textile, carved by four hands at once.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w10-stockholder-brushing.jpg" width="480" height="600" alt="A worker brushing loose fibre off a striped red, blue and yellow work"><figcaption class="cap">Brushing the work clean.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w11-lokta-binding.jpg" width="480" height="600" alt="Women in masks binding lokta paper notebooks at long tables"><figcaption class="cap">Binding lokta paper, Kathmandu, 2020.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-w12-bkp-shoot.jpg" width="480" height="600" alt="A photographer framing a model on a Bhaktapur rooftop at dusk"><figcaption class="cap">The By Kind People shoot, Bhaktapur, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w09-stockholder-carving.avif"><img loading="lazy" src="/img/productions/2026-10-27-w09-stockholder-carving.jpg" width="480" height="600" alt="Four people seated on a large striped hand-knotted work, carving the pile"></picture><figcaption class="cap">Jessica Stockholder’s textile, carved by four hands at once.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w10-stockholder-brushing.avif"><img loading="lazy" src="/img/productions/2026-10-27-w10-stockholder-brushing.jpg" width="480" height="600" alt="A worker brushing loose fibre off a striped red, blue and yellow work"></picture><figcaption class="cap">Brushing the work clean.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w11-lokta-binding.avif"><img loading="lazy" src="/img/productions/2026-10-27-w11-lokta-binding.jpg" width="480" height="600" alt="Women in masks binding lokta paper notebooks at long tables"></picture><figcaption class="cap">Binding lokta paper, Kathmandu, 2020.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w12-bkp-shoot.avif"><img loading="lazy" src="/img/productions/2026-10-27-w12-bkp-shoot.jpg" width="480" height="600" alt="A photographer framing a model on a Bhaktapur rooftop at dusk"></picture><figcaption class="cap">The By Kind People shoot, Bhaktapur, 2020.</figcaption></figure>
     </div>
     <p class="sub k">By Kind People · Bhaktapur, 2020</p>
     <div class="g4">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x01-bkp-lokta-portfolios.jpg" width="480" height="600" alt="Two models in Bhaktapur holding lokta paper portfolios"><figcaption class="cap">Lokta paper portfolios, made in Kathmandu.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x02-bkp-tiger-rug.jpg" width="480" height="600" alt="A model seated on a tiger-shaped hand-knotted rug on brick steps, photographer in front"><figcaption class="cap">A hand-knotted tiger rug on the steps.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x03-bkp-temple.jpg" width="480" height="600" alt="Two models on temple steps in Bhaktapur, one in black with a white shawl, one in grey with a pink check shawl"><figcaption class="cap">Shawls woven in Nepal, Bhaktapur Durbar Square.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-x04-bkp-pashmina.jpg" width="480" height="600" alt="A model on a rooftop in a lilac and white scarf"><figcaption class="cap">A hand-dyed scarf at dusk.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x01-bkp-lokta-portfolios.avif"><img loading="lazy" src="/img/productions/2026-10-27-x01-bkp-lokta-portfolios.jpg" width="480" height="600" alt="Two models in Bhaktapur holding lokta paper portfolios"></picture><figcaption class="cap">Lokta paper portfolios, made in Kathmandu.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x02-bkp-tiger-rug.avif"><img loading="lazy" src="/img/productions/2026-10-27-x02-bkp-tiger-rug.jpg" width="480" height="600" alt="A model seated on a tiger-shaped hand-knotted rug on brick steps, photographer in front"></picture><figcaption class="cap">A hand-knotted tiger rug on the steps.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x03-bkp-temple.avif"><img loading="lazy" src="/img/productions/2026-10-27-x03-bkp-temple.jpg" width="480" height="600" alt="Two models on temple steps in Bhaktapur, one in black with a white shawl, one in grey with a pink check shawl"></picture><figcaption class="cap">Shawls woven in Nepal, Bhaktapur Durbar Square.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x04-bkp-pashmina.avif"><img loading="lazy" src="/img/productions/2026-10-27-x04-bkp-pashmina.jpg" width="480" height="600" alt="A model on a rooftop in a lilac and white scarf"></picture><figcaption class="cap">A hand-dyed scarf at dusk.</figcaption></figure>
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
@@ -220,5 +223,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

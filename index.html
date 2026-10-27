@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>AKA Holdings — the intelligence behind art, design and commerce</title>
 <meta name="description" content="AKA Holdings, Miami: three houses — AKA Technologies (AI systems for real operations), AKA Art Productions (work made with artists and master craftspeople) and AKA Interior Design (interiors in Miami). TeHer Art Rugs is part of the group.">
 <meta property="og:title" content="AKA Holdings — the intelligence behind art, design and commerce">
@@ -11,9 +12,9 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://aka.holdings/img/productions/2026-10-26-p01-temple-door.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* / home v2 · ACA WEB · 2026-10-26 · brand v1.6.1: Klein #1725F5 on white, Questrial + Archivo; each unit keeps its own colour only inside its own card image */
@@ -73,9 +74,10 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
@@ -105,7 +107,7 @@
       </span>
     </a>
     <a class="door" href="/productions">
-      <span class="pic"><img src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="A hand-knotted rug on the temple steps, Patan"></span>
+      <span class="pic"><picture><source type="image/avif" srcset="/img/productions/2026-10-26-p01-temple-door.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="A hand-knotted rug on the temple steps, Patan"></picture></span>
       <span class="txt">
         <span class="n">02</span>
         <h2>AKA Art Productions</h2>
@@ -115,7 +117,7 @@
       </span>
     </a>
     <a class="door" href="/interior">
-      <span class="pic"><img src="/img/interior/2026-10-26-e01-living.jpg" width="1800" height="1317" alt="Living room facing the bay, Edgewater, Miami"></span>
+      <span class="pic"><picture><source type="image/avif" srcset="/img/interior/2026-10-26-e01-living.avif"><img loading="lazy" decoding="async" src="/img/interior/2026-10-26-e01-living.jpg" width="1800" height="1317" alt="Living room facing the bay, Edgewater, Miami"></picture></span>
       <span class="txt">
         <span class="n">03</span>
         <h2>AKA Interior Design</h2>
@@ -165,5 +167,6 @@
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

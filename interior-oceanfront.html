@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Oceanfront Apartment, Ecuador — AKA Interior Design</title>
 <meta name="description" content="An apartment over the Pacific on the coast of Ecuador, designed and furnished by Fabian Ortega: linen, red wood, marble, geometric art, a bed framed by tree trunks and a cane pergola on the roof.">
 <meta property="og:title" content="Oceanfront Apartment, Ecuador — AKA Interior Design">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/interior-oceanfront">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/interior-oceanfront">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Deep.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /interior v3 · ACA WEB · 2026-10-26 · brand v1.6.1 — Profundo on bone, Bodoni Moda titles, one blue */
@@ -137,13 +138,15 @@ figure img{display:block;width:100%;height:auto}
 </head>
 <body class="interior">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/interior" aria-label="AKA Interior Design"><img src="/assets/AKA_Interior_Design_Small_OnBone.svg" alt="AKA Interior Design"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior" aria-current="page">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -157,21 +160,21 @@ figure img{display:block;width:100%;height:auto}
         <p class="meta">Design · furniture made to order · art and objects · terrace</p>
       </div>
     </div>
-    <figure><img loading="lazy" src="/img/interior/2026-10-27-d01-living-geometry.jpg" width="1024" height="768" alt="Living room with white sofas in red-wood frames, a marble coffee table with red coral, a wall of geometric works and a blue painted wall"><figcaption class="cap">The living room: linen, red wood, marble and a wall of geometric works.</figcaption></figure>
+    <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d01-living-geometry.avif"><img loading="lazy" src="/img/interior/2026-10-27-d01-living-geometry.jpg" width="1024" height="768" alt="Living room with white sofas in red-wood frames, a marble coffee table with red coral, a wall of geometric works and a blue painted wall"></picture><figcaption class="cap">The living room: linen, red wood, marble and a wall of geometric works.</figcaption></figure>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d09-sofa-missoni.jpg" width="640" height="800" alt="Two white sofas in red-wood frames, Missoni-print armchairs in clear acrylic, a chevron jute rug and the sea beyond"><figcaption class="cap">Linen, red wood and printed acrylic chairs, toward the sea.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d10-round-table-sea.jpg" width="640" height="800" alt="A round marble table with blue chairs under a wooden sunburst pendant, the beach through the window"><figcaption class="cap">A round marble table at the window.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d11-root-console.jpg" width="640" height="800" alt="A teak root console under a geometric work on a blue painted wall, a black door beyond"><figcaption class="cap">A teak root console and a geometric work.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d09-sofa-missoni.avif"><img loading="lazy" src="/img/interior/2026-10-27-d09-sofa-missoni.jpg" width="640" height="800" alt="Two white sofas in red-wood frames, Missoni-print armchairs in clear acrylic, a chevron jute rug and the sea beyond"></picture><figcaption class="cap">Linen, red wood and printed acrylic chairs, toward the sea.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d10-round-table-sea.avif"><img loading="lazy" src="/img/interior/2026-10-27-d10-round-table-sea.jpg" width="640" height="800" alt="A round marble table with blue chairs under a wooden sunburst pendant, the beach through the window"></picture><figcaption class="cap">A round marble table at the window.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d11-root-console.avif"><img loading="lazy" src="/img/interior/2026-10-27-d11-root-console.jpg" width="640" height="800" alt="A teak root console under a geometric work on a blue painted wall, a black door beyond"></picture><figcaption class="cap">A teak root console and a geometric work.</figcaption></figure>
     </div>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d02-dining-sea.jpg" width="640" height="800" alt="Dining table of oak blocks under glass, bare-bulb pendants on black cables, the beach through the window"><figcaption class="cap">The dining table, facing the sea.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d12-dining-sideboard.jpg" width="640" height="800" alt="Oak-block dining table under glass with a rope-bound glass terrarium, a jagged oak sideboard and iron candlesticks beyond"><figcaption class="cap">Oak blocks under glass, and a sideboard cut like a fringe.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d03-cabinet-pool.jpg" width="640" height="800" alt="A chevron oak cabinet with three marbled vases against a blue painted wall, a photograph of a swimming pool beyond"><figcaption class="cap">A chevron cabinet and a pool, in photograph.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d02-dining-sea.avif"><img loading="lazy" src="/img/interior/2026-10-27-d02-dining-sea.jpg" width="640" height="800" alt="Dining table of oak blocks under glass, bare-bulb pendants on black cables, the beach through the window"></picture><figcaption class="cap">The dining table, facing the sea.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d12-dining-sideboard.avif"><img loading="lazy" src="/img/interior/2026-10-27-d12-dining-sideboard.jpg" width="640" height="800" alt="Oak-block dining table under glass with a rope-bound glass terrarium, a jagged oak sideboard and iron candlesticks beyond"></picture><figcaption class="cap">Oak blocks under glass, and a sideboard cut like a fringe.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d03-cabinet-pool.avif"><img loading="lazy" src="/img/interior/2026-10-27-d03-cabinet-pool.jpg" width="640" height="800" alt="A chevron oak cabinet with three marbled vases against a blue painted wall, a photograph of a swimming pool beyond"></picture><figcaption class="cap">A chevron cabinet and a pool, in photograph.</figcaption></figure>
     </div>
     <div class="g3">
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d04-tree-bed.jpg" width="640" height="800" alt="A bed of solid wood framed by four bare tree trunks against a pale blue wall"><figcaption class="cap">The bed, framed by four trunks.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d14-roof-close.jpg" width="640" height="800" alt="Under a cane pergola, a wicker sectional with white cushions, green armchairs and a carved table on patterned tiles"><figcaption class="cap">The roof: cane, wicker and patterned tile.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/interior/2026-10-27-d15-roof-sea.jpg" width="640" height="800" alt="Two woven armchairs and an ottoman on the roof terrace, the beach and the bay behind"><figcaption class="cap">The roof, over the bay.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d04-tree-bed.avif"><img loading="lazy" src="/img/interior/2026-10-27-d04-tree-bed.jpg" width="640" height="800" alt="A bed of solid wood framed by four bare tree trunks against a pale blue wall"></picture><figcaption class="cap">The bed, framed by four trunks.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d14-roof-close.avif"><img loading="lazy" src="/img/interior/2026-10-27-d14-roof-close.jpg" width="640" height="800" alt="Under a cane pergola, a wicker sectional with white cushions, green armchairs and a carved table on patterned tiles"></picture><figcaption class="cap">The roof: cane, wicker and patterned tile.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d15-roof-sea.avif"><img loading="lazy" src="/img/interior/2026-10-27-d15-roof-sea.jpg" width="640" height="800" alt="Two woven armchairs and an ottoman on the roof terrace, the beach and the bay behind"></picture><figcaption class="cap">The roof, over the bay.</figcaption></figure>
     </div>
     <p class="credits">Design and furnishing: Fabian Ortega · Our own home, photographed as lived in.</p>
     <div class="next"><a class="alt" href="/interior#coast">← All projects</a><a class="alt" href="/interior-antiques">Apartment with Antiques, Samborondón →</a></div>
@@ -191,5 +194,6 @@ figure img{display:block;width:100%;height:auto}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

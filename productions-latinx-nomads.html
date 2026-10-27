@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
 <title>Latinx Nomads: filming in Tbilisi and Mtskheta. — AKA Art Productions</title>
 <meta name="description" content="Latinx Nomads, a series filmed in Georgia in October 2021: six Latinx influencers, artist Levan Songulashvili, a former president, chef Tekuna Gachechiladze, Mtskheta and a leading winery. Watch the episode and trailers. A chapter from AKA Art Productions.">
 <meta property="og:title" content="Latinx Nomads: filming in Tbilisi and Mtskheta. — AKA Art Productions">
@@ -11,9 +12,9 @@
 <meta property="og:url" content="https://aka.holdings/productions-latinx-nomads">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/productions-latinx-nomads">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_White.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Questrial&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
 <style>
 /* /productions v4 · ACA WEB · 2026-10-27 (story in chapters) · brand v1.6.1: white on Profundo #163D91, Bodoni Moda titles */
@@ -154,13 +155,15 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </head>
 <body class="productions">
 <div class="wrap">
-  <header class="top rise">
+  <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
-    <nav class="idx" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
-      <a href="/productions" >02 / Art Productions</a>
+      <a href="/productions" aria-current="page">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
     </nav>
   </header>
 </div>
@@ -175,23 +178,23 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
     <p class="sub k">Watch</p>
     <div class="films">
-      <a href="https://vimeo.com/744314897" target="_blank" rel="noopener"><img loading="lazy" src="/img/productions/2026-10-27-v744314897.jpg" width="640" height="360" alt="Title frame of Latinx Nomads, episode 01"><b>Episode 01</b><span>55 min · on Vimeo</span></a>
-      <a href="https://vimeo.com/744316097" target="_blank" rel="noopener"><img loading="lazy" src="/img/productions/2026-10-27-v744316097.jpg" width="640" height="360" alt="A collage of the six Latinx influencers of the series"><b>Trailer</b><span>11 min · on Vimeo</span></a>
-      <a href="https://vimeo.com/744316329" target="_blank" rel="noopener"><img loading="lazy" src="/img/productions/2026-10-27-v744316329.jpg" width="640" height="360" alt="Title frame of the Latinx Nomads trailer"><b>Short trailer</b><span>5 min · on Vimeo</span></a>
+      <a href="https://vimeo.com/744314897" target="_blank" rel="noopener"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v744314897.avif"><img loading="lazy" src="/img/productions/2026-10-27-v744314897.jpg" width="640" height="360" alt="Title frame of Latinx Nomads, episode 01"></picture><b>Episode 01</b><span>55 min · on Vimeo</span></a>
+      <a href="https://vimeo.com/744316097" target="_blank" rel="noopener"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v744316097.avif"><img loading="lazy" src="/img/productions/2026-10-27-v744316097.jpg" width="640" height="360" alt="A collage of the six Latinx influencers of the series"></picture><b>Trailer</b><span>11 min · on Vimeo</span></a>
+      <a href="https://vimeo.com/744316329" target="_blank" rel="noopener"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-v744316329.avif"><img loading="lazy" src="/img/productions/2026-10-27-v744316329.jpg" width="640" height="360" alt="Title frame of the Latinx Nomads trailer"></picture><b>Short trailer</b><span>5 min · on Vimeo</span></a>
     </div>
     <p class="sub k">On location</p>
     <div class="g4">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g01-latin-nomads-tunnel.jpg" width="480" height="600" alt="A film crew with camera and boom recording two people talking in a vaulted brick tunnel"><figcaption class="cap">In the vaulted cellar of one of Georgia’s leading wineries.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n05-latinx-winery-break.jpg" width="480" height="600" alt="Crew members playing table tennis on a stone terrace at the winery, a tractor in the vineyard beyond"><figcaption class="cap">Between takes at the winery.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n03-latinx-ferris-wheel.jpg" width="480" height="600" alt="A camera operator and sound recordist filming two women talking beneath a pink Ferris wheel"><figcaption class="cap">An interview beneath the Ferris wheel.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.jpg" width="480" height="600" alt="Three men, among them the artist Levan Songulashvili, on a stone lookout above Mtskheta in mist"><figcaption class="cap">With Levan Songulashvili, one of Georgia’s best-known artists, above Mtskheta.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g01-latin-nomads-tunnel.avif"><img loading="lazy" src="/img/productions/2026-10-27-g01-latin-nomads-tunnel.jpg" width="480" height="600" alt="A film crew with camera and boom recording two people talking in a vaulted brick tunnel"></picture><figcaption class="cap">In the vaulted cellar of one of Georgia’s leading wineries.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n05-latinx-winery-break.avif"><img loading="lazy" src="/img/productions/2026-10-27-n05-latinx-winery-break.jpg" width="480" height="600" alt="Crew members playing table tennis on a stone terrace at the winery, a tractor in the vineyard beyond"></picture><figcaption class="cap">Between takes at the winery.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n03-latinx-ferris-wheel.avif"><img loading="lazy" src="/img/productions/2026-10-27-n03-latinx-ferris-wheel.jpg" width="480" height="600" alt="A camera operator and sound recordist filming two women talking beneath a pink Ferris wheel"></picture><figcaption class="cap">An interview beneath the Ferris wheel.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.avif"><img loading="lazy" src="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.jpg" width="480" height="600" alt="Three men, among them the artist Levan Songulashvili, on a stone lookout above Mtskheta in mist"></picture><figcaption class="cap">With Levan Songulashvili, one of Georgia’s best-known artists, above Mtskheta.</figcaption></figure>
     </div>
     <div class="g4">
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n04-latinx-mtskheta-ruins.jpg" width="480" height="600" alt="A man climbing stone steps between the ruined walls of a fortress under a grey sky"><figcaption class="cap">Climbing the old walls at Mtskheta.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n06-latinx-palace-garden.jpg" width="480" height="600" alt="White roses in front of a pale palace under restoration, scaffolding on one wing"><figcaption class="cap">A palace garden, Georgia.</figcaption></figure>
-      <figure><img loading="lazy" src="/img/productions/2026-10-27-n07-latinx-park.jpg" width="480" height="600" alt="Cypress and pine trees over a lawn in late afternoon light"><figcaption class="cap">A park, late afternoon.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n04-latinx-mtskheta-ruins.avif"><img loading="lazy" src="/img/productions/2026-10-27-n04-latinx-mtskheta-ruins.jpg" width="480" height="600" alt="A man climbing stone steps between the ruined walls of a fortress under a grey sky"></picture><figcaption class="cap">Climbing the old walls at Mtskheta.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n06-latinx-palace-garden.avif"><img loading="lazy" src="/img/productions/2026-10-27-n06-latinx-palace-garden.jpg" width="480" height="600" alt="White roses in front of a pale palace under restoration, scaffolding on one wing"></picture><figcaption class="cap">A palace garden, Georgia.</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n07-latinx-park.avif"><img loading="lazy" src="/img/productions/2026-10-27-n07-latinx-park.jpg" width="480" height="600" alt="Cypress and pine trees over a lawn in late afternoon light"></picture><figcaption class="cap">A park, late afternoon.</figcaption></figure>
     </div>
-    <figure class="wide" style="margin-top:16px"><img loading="lazy" src="/img/productions/2026-10-27-n08-latinx-tekuna.jpg" width="960" height="720" alt="Chef Tekuna Gachechiladze behind a bar, raising a glass in a toast with a guest"><figcaption class="cap">A toast with chef Tekuna Gachechiladze.</figcaption></figure>
+    <figure class="wide" style="margin-top:16px"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n08-latinx-tekuna.avif"><img loading="lazy" src="/img/productions/2026-10-27-n08-latinx-tekuna.jpg" width="960" height="720" alt="Chef Tekuna Gachechiladze behind a bar, raising a glass in a toast with a guest"></picture><figcaption class="cap">A toast with chef Tekuna Gachechiladze.</figcaption></figure>
   </section>
   <nav class="pn" aria-label="Chapters">
     <a href="/productions#latin-nomads">← All chapters</a>
@@ -216,5 +219,6 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
