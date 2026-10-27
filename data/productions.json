@@ -1,0 +1,132 @@
+{
+ "_about": "Registry of /productions: chapters (sections on productions.html, ids are anchors), films (Vimeo ids used by the embedded players) and the venues list. To add a chapter: add the section to src/productions.html, a row to the chapter index nav, and an entry here. ACA WEB, 2026-10-27.",
+ "chapters": [
+  {
+   "id": "origins",
+   "no": "00",
+   "period": "Peru and Ecuador · 2007–2018",
+   "title": "Before the studio: reed, paper and straw."
+  },
+  {
+   "id": "kyrgyzstan",
+   "no": "01",
+   "period": "Kyrgyzstan · 2018",
+   "title": "Bishkek: an artist’s drawing, pressed into felt."
+  },
+  {
+   "id": "newyork",
+   "no": "02",
+   "period": "New York · 2019",
+   "title": "The work comes to New York."
+  },
+  {
+   "id": "alakiyiz",
+   "no": "03",
+   "period": "Kyrgyzstan · 2019",
+   "title": "Back to the felt: Cemin, Bedia, Burgos, Vargas-Suárez."
+  },
+  {
+   "id": "kathmandu",
+   "no": "04",
+   "period": "Nepal · 2019–2021",
+   "title": "Kathmandu, 2019: we start filming."
+  },
+  {
+   "id": "nada",
+   "no": "05",
+   "period": "Miami · December 2019",
+   "title": "From Kathmandu to NADA Miami."
+  },
+  {
+   "id": "nepal2020",
+   "no": "06",
+   "period": "Nepal · 2020",
+   "title": "New works on the looms."
+  },
+  {
+   "id": "y2021",
+   "no": "07",
+   "period": "New York and Nepal · 2021",
+   "title": "2021: Latinx Abstract, and back to Nepal to film."
+  },
+  {
+   "id": "latin-nomads",
+   "no": "08",
+   "period": "Georgia · October 2021",
+   "title": "Latinx Nomads: filming in Tbilisi and Mtskheta."
+  },
+  {
+   "id": "y2022",
+   "no": "09",
+   "period": "Tokyo · Hong Kong · Mexico City · 2021–2022",
+   "title": "The works travel."
+  },
+  {
+   "id": "y2023",
+   "no": "10",
+   "period": "2022–2024",
+   "title": "Silk, wool and felt, at the scale of painting."
+  },
+  {
+   "id": "films",
+   "no": "11",
+   "period": "Films · 2021–2023",
+   "title": "Two documentaries on art, craft and place."
+  },
+  {
+   "id": "shyrdak",
+   "no": "12",
+   "period": "Kyrgyzstan → Art Basel · 2022–2024",
+   "title": "Carlos Amorales, in felt."
+  },
+  {
+   "id": "mali",
+   "no": "13",
+   "period": "Mali · 2024",
+   "title": "Bogolan: cloth painted with mud."
+  },
+  {
+   "id": "stone",
+   "no": "14",
+   "period": "India · Mexico City · 2024–2025",
+   "title": "Gabriel de la Mora: mother of pearl, abalone and hair."
+  },
+  {
+   "id": "lakra-stone",
+   "no": "15",
+   "period": "Kathmandu · 2025",
+   "title": "Dr. Lakra, carved in black stone in Kathmandu."
+  },
+  {
+   "id": "suzani",
+   "no": "16",
+   "period": "Uzbekistan · 2025–2026",
+   "title": "Tejido Líquido: twelve metres of silk, by hand."
+  }
+ ],
+ "films": {
+  "lokta-kingdom": {
+   "title": "Lokta Kingdom",
+   "year": 2022,
+   "minutes": 88,
+   "language": "Nepali",
+   "festival": "Official Selection, Nepal Cultural International Film Festival 2023",
+   "vimeo": {
+    "film": "743189189",
+    "trailer": "744347101"
+   },
+   "credits": "Dir. Andy Fabrykant · DoP Martin Quirno · EP Fabian J. Ortega"
+  },
+  "latinx-nomads": {
+   "title": "Latinx Nomads",
+   "year": 2021,
+   "format": "series",
+   "vimeo": {
+    "episode01": "744314897",
+    "trailer_long": "744316097",
+    "trailer_short": "744316329"
+   }
+  }
+ },
+ "source": "productions.html chapters 00–16; Vimeo links provided by Fabian (productions-films.html, 27-oct)"
+}

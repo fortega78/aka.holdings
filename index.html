@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>document.documentElement.className+=' js'</script>
-<title>AKA Holdings — the intelligence behind art, design and commerce</title>
-<meta name="description" content="AKA Holdings, Miami: three houses — AKA Technologies (AI systems for real operations), AKA Art Productions (work made with artists and master craftspeople) and AKA Interior Design (interiors in Miami). TeHer Art Rugs is part of the group.">
-<meta property="og:title" content="AKA Holdings — the intelligence behind art, design and commerce">
-<meta property="og:description" content="AI systems, art productions and interiors. Miami.">
+<title>AKA Holdings — AI advisory, systems, art productions and interiors. Miami.</title>
+<meta name="description" content="AKA Holdings, Miami: MAPA, an AI advisory method for owners and operators; AKA Technologies (AI systems run in our own businesses); AKA Art Productions (work made by hand with contemporary artists); AKA Interior Design. TeHer Art Rugs is part of the group.">
+<meta property="og:title" content="AKA Holdings — AI advisory, systems, art productions and interiors">
+<meta property="og:description" content="Every engagement starts with a map. MAPA advisory, AI systems, art productions and interiors. Miami.">
 <meta property="og:url" content="https://aka.holdings/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://aka.holdings/og/home.jpg">
@@ -16,54 +16,63 @@
 <link rel="canonical" href="https://aka.holdings/">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
 <link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="/img/v2/cerebro-demo-1360.avif 1360w" imagesizes="92vw" media="(max-width:700px)" fetchpriority="high">
 <link rel="stylesheet" href="/aka.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/","logo":"https://aka.holdings/assets/AKA_Holdings_Primary.svg","slogan":"The intelligence behind art, design and commerce","email":"fabian@aka.holdings","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Fabian J. Ortega A.","url":"https://aka.holdings/fabian"},"subOrganization":[{"@type":"Organization","name":"AKA Technologies","url":"https://aka.holdings/technologies"},{"@type":"Organization","name":"AKA Art Productions","url":"https://aka.holdings/productions"},{"@type":"ProfessionalService","name":"AKA Interior Design","url":"https://aka.holdings/interior"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/","logo":"https://aka.holdings/assets/AKA_Holdings_Primary.svg","slogan":"The intelligence behind art, design and commerce","email":"fabian@aka.holdings","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Fabian J. Ortega A.","url":"https://aka.holdings/fabian"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"MAPA — AI advisory for owners and operators","url":"https://aka.holdings/mapa"}}],"subOrganization":[{"@type":"Organization","name":"AKA Technologies","url":"https://aka.holdings/technologies"},{"@type":"Organization","name":"AKA Art Productions","url":"https://aka.holdings/productions"},{"@type":"ProfessionalService","name":"AKA Interior Design","url":"https://aka.holdings/interior"}]}</script>
 <style>
-/* / home v3 · ACA WEB · 2026-10-27 · brand v1.6.1: Klein on white; unit colours only inside their own images */
-.h-top{display:grid;grid-template-columns:6fr 6fr;gap:56px;align-items:center;padding:clamp(40px,7vh,88px) 0 40px}
-.h-top .tag{display:block;margin-bottom:22px;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:12px;line-height:2;color:var(--klein)}
-.h-top h1{font:500 clamp(32px,3.6vw,52px)/1.1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:20ch}
-.h-top p{margin-top:18px;color:var(--graphite);max-width:50ch;font-size:clamp(16px,1.3vw,18px)}
-.h-top .act{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:26px;align-items:center}
+/* / home v4 · ACA WEB · 2026-10-27 · MAPA + founder on top (handout §4) · brand v1.6.1: Klein on white */
+.h-top{display:grid;grid-template-columns:6.4fr 5.6fr;gap:56px;align-items:center;padding:clamp(36px,6vh,72px) 0 20px}
+.h-top .tag{display:block;margin-bottom:20px;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:12px;line-height:2;color:var(--klein)}
+.h-top h1{font:500 clamp(34px,3.8vw,56px)/1.06 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:19ch}
+.h-top .mapa-line{margin-top:20px;font:500 17px/1.5 Archivo,sans-serif;color:var(--klein)}
+.h-top .mapa-line span{font-family:Questrial,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;font-size:12px;display:block;color:var(--slate);margin-top:2px}
+.h-top p.lead{margin-top:14px;color:var(--graphite);max-width:52ch;font-size:clamp(15.5px,1.25vw,17.5px)}
+.h-top .act{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:24px;align-items:center}
 .btnk{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;background:var(--klein);color:#fff;font:400 12px/1 Questrial,sans-serif;letter-spacing:.26em;text-transform:uppercase;border:1px solid var(--klein)}
 .btnk:hover{background:#fff;color:var(--klein)}
 .lnk{font:400 11px/1 Questrial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--klein);border-bottom:1px solid var(--klein);padding:12px 0 4px}
-.mosaic{display:grid;grid-template-columns:3fr 2fr;grid-template-rows:1fr 1fr;gap:10px;aspect-ratio:6/5}
-.mosaic a{display:block;overflow:hidden;position:relative}
-.mosaic a:first-child{grid-row:span 2}
-.mosaic picture{width:100%;height:100%}
-.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.mosaic a:hover img{transform:scale(1.03)}
-.mosaic .icons{background:var(--klein);display:flex;align-items:center;justify-content:center;gap:16px}
-.mosaic .icons img{width:36px;height:36px;object-fit:contain}
-.mosaic .lab{position:absolute;left:0;bottom:0;background:#fff;color:var(--klein);font:400 10.5px/1 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;padding:8px 10px}
-.router{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.h-top .proof{border:1px solid var(--line);background:#fff;padding:10px}
+.h-top .proof img,.h-top .proof video{width:100%;height:auto;display:block}
+.proof .d-mob{display:none}
+@media (max-width:700px){.h-top .proof video.d-desk{display:none}.proof .d-mob{display:block}}
+.h-top .proof figcaption{font-size:12.5px;color:var(--graphite);margin-top:8px}
+.record{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:40px;border-top:1px solid var(--klein)}
+.record div{padding:16px 0 18px;border-bottom:1px solid var(--line)}
+.record b{display:block;font:500 clamp(24px,2.4vw,32px)/1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--klein);margin-bottom:6px}
+.record span{font-size:13.5px;color:var(--graphite)}
+.record .k2{grid-column:1/-1;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:11px;color:var(--slate);padding:10px 0 0;border-bottom:none}
+/* four cards */
+.router{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
 .door{display:flex;flex-direction:column;border:1px solid var(--line);background:#fff}
+.door.first{border-color:var(--klein)}
 .door .pic{aspect-ratio:4/3;overflow:hidden;background:var(--klein);display:flex;align-items:center;justify-content:center}
 .door .pic picture{width:100%;height:100%}
 .door .pic img{width:100%;height:100%;object-fit:cover}
-.door .pic.icons{gap:22px}
-.door .pic.shot,.mosaic .shot{background:#fff}
-.door .pic.shot img,.mosaic .shot img{object-fit:cover;object-position:0 0}
-.door .pic.icons img{width:52px;height:52px;object-fit:contain}
-.door .txt{padding:24px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
-.door .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
-.door h2{font-family:Questrial,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:15px;color:var(--klein);line-height:1.6}
-.door .for{font-size:13.5px;color:var(--slate)}
-.door p{font-size:15px;color:var(--graphite)}
-.door .acts{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.door .pic.shot{background:#fff}
+.door .pic.shot img{object-fit:cover;object-position:0 0}
+.door .pic svg{width:100%;height:100%}
+.door .txt{padding:20px 20px 22px;display:flex;flex-direction:column;gap:7px;flex:1}
+.door h2{font-family:Questrial,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.2em;font-size:13.5px;color:var(--klein);line-height:1.6}
+.door .for{font-size:13px;color:var(--slate)}
+.door p{font-size:14px;color:var(--graphite)}
+.door .acts{margin-top:auto;padding-top:14px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.door .acts .btnk{min-height:42px;padding:0 16px;font-size:11px}
+/* teher + founder */
 .also{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
-.also a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;border:1px solid var(--line);padding:20px 24px;background:#fff;min-height:48px}
+.also>a{display:grid;grid-template-columns:200px 1fr;gap:0;border:1px solid var(--line);background:#fff;overflow:hidden}
+.also .ph{height:100%;min-height:160px}
+.also .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.also .bd{padding:20px 24px;display:flex;flex-direction:column;gap:6px;justify-content:center}
+.also b{display:block;font-weight:500;font-size:17px}
+.also span.d{font-size:14px;color:var(--graphite)}
+.also .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--klein);margin-top:6px}
 .also a:hover{border-color:var(--klein)}
-.also b{display:block;font-weight:500;font-size:16px}
-.also span{font-size:14px;color:var(--graphite)}
-.also .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--klein);white-space:nowrap}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:88px;border-top:1px solid var(--klein)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:72px;border-top:1px solid var(--klein)}
 .facts div{padding:22px 0;border-bottom:1px solid var(--line)}
 .facts b{display:block;font:500 clamp(26px,2.6vw,36px)/1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--klein);margin-bottom:8px}
 .facts span{font-size:14px;color:var(--graphite)}
 .facts a{border-bottom:1px solid var(--line)}
-.contact{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:88px 0 24px;align-items:start}
+.contact{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:72px 0 24px;align-items:start}
 .contact h2{font:500 clamp(28px,3vw,40px)/1.1 Archivo,sans-serif;letter-spacing:-.02em;max-width:14ch}
 .clist{border-top:1px solid var(--klein)}
 .clist a{display:grid;grid-template-columns:1fr auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -71,21 +80,21 @@
 .clist span{font-size:14px;color:var(--graphite);display:block}
 .clist .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.26em;font-size:11px;color:var(--klein);white-space:nowrap}
 .clist a:hover b{color:var(--klein)}
+@media (max-width:1060px){.router{grid-template-columns:1fr 1fr}}
 @media (max-width:900px){
   .h-top,.contact{grid-template-columns:1fr;gap:28px}
-  .router{grid-template-columns:1fr}
-  .door{display:grid;grid-template-columns:2fr 3fr}
-  .door .pic{aspect-ratio:auto;min-height:100%}
   .also{grid-template-columns:1fr}
-  .facts{grid-template-columns:1fr 1fr}
+  .facts,.record{grid-template-columns:1fr 1fr;gap:0 24px}
 }
 @media (max-width:600px){
-  .h-top{padding-top:28px}
-  .mosaic{aspect-ratio:4/3}
-  .door{grid-template-columns:1fr}
+  .h-top{padding-top:24px}
+  .router{grid-template-columns:1fr}
   .door .pic{aspect-ratio:16/9}
   .door .txt{padding:18px 18px 20px}
   .btnk{width:100%;justify-content:center}
+  .also>a{grid-template-columns:110px 1fr}
+  .record{grid-template-columns:1fr 1fr;gap:0 18px}
+  .record b{font-size:22px}
 }
 </style>
 </head><body class="home">
@@ -95,6 +104,7 @@
     <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="57" height="36"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
+      <a href="/mapa">MAPA Advisory</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
@@ -105,53 +115,92 @@
   <section class="h-top">
     <div>
       <span class="tag">The intelligence behind art, design and commerce</span>
-      <h1>A Miami group of three houses: AI systems, art productions and interiors.</h1>
-      <p>One operator, three businesses — each with its own clients and its own way to start. AKA Technologies builds AI systems for real operations; AKA Art Productions makes work by hand with contemporary artists; AKA Interior Design designs homes around the art you live with.</p>
-      <div class="act"><a class="btnk" href="#houses">Choose your house</a><a class="lnk" href="#contact">Contact</a></div>
+      <h1>Before any AI tool, we find where your business loses value.</h1>
+      <p class="mapa-line">MAPA<span>Map · Assign · Plan · Automate — every engagement starts with a map.</span></p>
+      <p class="lead">An advisory method built by an operator, not a vendor: we map where your company loses value, who owns it, and which work deserves automation — under written rules. We run it on our own four businesses first; the board on the right is the proof.</p>
+      <div class="act"><a class="btnk" href="/mapa" data-unit="mapa" data-place="home-hero">Get your map</a><a class="lnk" href="/fabian">Meet the founder</a></div>
     </div>
-    <div class="mosaic" aria-label="The three houses">
-      <a href="/interior"><picture><source type="image/avif" srcset="/img/v2/edg-hero-living-800.avif 800w, /img/v2/edg-hero-living-1600.avif 1600w, /img/v2/edg-hero-living-2400.avif 2400w" sizes="(max-width:900px) 60vw, 380px"><img src="/img/v2/edg-hero-living-1600.jpg" srcset="/img/v2/edg-hero-living-800.jpg 800w, /img/v2/edg-hero-living-1600.jpg 1600w" sizes="(max-width:900px) 60vw, 380px" width="1600" height="1066" alt="Interiors: a living room facing the bay in Edgewater, Miami" fetchpriority="high"></picture><span class="lab">Interior Design</span></a>
-      <a href="/productions"><picture><source type="image/avif" srcset="/img/productions/2026-10-26-p01-temple-door.avif 1800w" sizes="(max-width:900px) 40vw, 250px"><img src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="Art Productions: a hand-knotted work on the temple steps, Patan" loading="lazy" decoding="async"></picture><span class="lab">Art Productions</span></a>
-      <a href="/technologies" class="shot" aria-label="AKA Technologies"><picture><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:900px) 40vw, 250px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data" loading="lazy" decoding="async" style="object-position:0 0"></picture><span class="lab">Technologies</span></a>
-    </div>
+    <figure class="proof">
+      <video class="vclip d-desk" width="1360" height="1100" data-poster="/img/v2/cerebro-demo-1360.jpg" muted loop playsinline preload="none" data-webm="/video/2026-10-27-cerebro-demo-clip.webm" data-mp4="/video/2026-10-27-cerebro-demo-clip.mp4" aria-label="CEREBRO dashboard in presentation mode, demo data: the live clock advances and the day’s route moves"></video>
+      <picture class="d-mob"><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w" sizes="92vw"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data: the day’s priority, commitments, decisions waiting, one figure marked as an open question" fetchpriority="high"></picture>
+      <figcaption>CEREBRO — the system that runs our own businesses, in presentation mode. Demo data; screen recording of the demo board.</figcaption>
+    </figure>
   </section>
 
-  <section class="router" id="houses" aria-label="Choose a house">
-    <div class="door">
-      <span class="pic shot"><picture><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:900px) 100vw, 400px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data" loading="lazy" decoding="async" style="object-position:0 0"></picture></span>
+  <section class="record" aria-label="Founder’s operating record">
+    <span class="k2">The founder’s operating record</span>
+    <div><b>$100M+</b><span>annual sales run as President of a vehicle distributor, with about 1,000 people</span></div>
+    <div><b>0 → ~$30M</b><span>a parts company co-founded and grown from zero</span></div>
+    <div><b>100+</b><span>franchised locations built on one operating model</span></div>
+    <div><b>200+</b><span>hospitality units grown from 3, across nine U.S. cities</span></div>
+  </section>
+
+  <section class="router" id="houses" aria-label="What we offer">
+    <div class="door first">
+      <span class="pic" aria-hidden="true">
+        <svg viewBox="0 0 400 300" role="img" aria-label="The MAPA route: Map, Assign, Plan, Automate, each phase closed by a gate">
+          <rect width="400" height="300" fill="#1725F5"/>
+          <g font-family="Archivo,sans-serif" font-weight="500" font-size="44" fill="#fff">
+            <text x="52" y="84">M</text><text x="146" y="84">A</text><text x="240" y="84">P</text><text x="334" y="84">A</text>
+          </g>
+          <g stroke="#fff" stroke-width="1.2" opacity=".85">
+            <line x1="52" y1="104" x2="372" y2="104"/>
+            <line x1="100" y1="92" x2="100" y2="116"/><line x1="194" y1="92" x2="194" y2="116"/><line x1="288" y1="92" x2="288" y2="116"/>
+          </g>
+          <g font-family="Questrial,sans-serif" font-size="12.5" fill="#fff" opacity=".92" letter-spacing="1">
+            <text x="52" y="142">MAP THE LOSS</text>
+            <text x="52" y="172">ASSIGN AN OWNER</text>
+            <text x="52" y="202">PLAN THE WORK</text>
+            <text x="52" y="232">AUTOMATE UNDER RULES</text>
+          </g>
+          <text x="52" y="272" font-family="Archivo,sans-serif" font-size="14" font-style="italic" fill="#fff">Every engagement starts with a map.</text>
+        </svg>
+      </span>
       <div class="txt">
-        <span class="n">01</span>
-        <h2>AKA Technologies</h2>
+        <h2>MAPA Advisory</h2>
         <span class="for">For owners and operators</span>
-        <p>A fixed-scope AI diagnostic: where your business loses value, who owns it, and which tools — under which rules. 4 systems of our own, each with its real status. Pictured: CEREBRO, with demo data.</p>
-        <div class="acts"><a class="btnk" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-unit="technologies" data-place="home-card">Book a diagnostic</a><a class="lnk" href="/technologies">Explore</a></div>
+        <p>Where your business loses value, who owns it, and what deserves AI — four phases, each closed by a gate, ending in five written documents.</p>
+        <div class="acts"><a class="btnk" href="/mapa" data-unit="mapa" data-place="home-card">Get your map</a></div>
       </div>
     </div>
     <div class="door">
-      <span class="pic"><picture><source type="image/avif" srcset="/img/productions/2026-10-26-p01-temple-door.avif 1800w" sizes="(max-width:900px) 100vw, 400px"><img src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="A hand-knotted work on the temple steps, Patan Durbar Square" loading="lazy" decoding="async"></picture></span>
+      <span class="pic shot"><picture><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w" sizes="(max-width:600px) 100vw, 320px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data" loading="lazy" decoding="async"></picture></span>
       <div class="txt">
-        <span class="n">02</span>
+        <h2>AKA Technologies</h2>
+        <span class="for">For operators who need systems</span>
+        <p>4 AI systems of our own, each shown with its real status — one in daily use. Pictured: CEREBRO, with demo data.</p>
+        <div class="acts"><a class="btnk" href="/technologies" data-unit="technologies" data-place="home-card">See the systems</a></div>
+      </div>
+    </div>
+    <div class="door">
+      <span class="pic"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a02-shyrdak-art-basel.avif 480w" sizes="(max-width:600px) 100vw, 320px"><img src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="Carlos Amorales’ large felt work on the back wall of the kurimanzutto booth at Art Basel Miami Beach" loading="lazy" decoding="async"></picture></span>
+      <div class="txt">
         <h2>AKA Art Productions</h2>
         <span class="for">For artists, galleries and collectors</span>
-        <p>Work made by hand with contemporary artists and master craftspeople in 8 countries, shown at Art Basel, Zona Maco and Museo Jumex. Includes AKA Editions.</p>
-        <div class="acts"><a class="btnk" href="/productions#propose" data-unit="productions">Propose a project</a><a class="lnk" href="/productions">Explore</a></div>
+        <p>Work made by hand with master craftspeople in 8 countries. Pictured: Carlos Amorales in felt, with kurimanzutto at Art Basel Miami Beach 2024.</p>
+        <div class="acts"><a class="btnk" href="/productions#propose" data-unit="productions" data-place="home-card">Propose a project</a></div>
       </div>
     </div>
     <div class="door">
-      <span class="pic"><picture><source type="image/avif" srcset="/img/v2/edg-media-wall-800.avif 800w, /img/v2/edg-media-wall-1600.avif 1600w, /img/v2/edg-media-wall-2400.avif 2400w" sizes="(max-width:900px) 100vw, 400px"><img src="/img/v2/edg-media-wall-1600.jpg" srcset="/img/v2/edg-media-wall-800.jpg 800w, /img/v2/edg-media-wall-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 400px" width="1600" height="1066" alt="A media wall in fluted oak with lit niches, a wine wall and the bay, Edgewater, Miami" loading="lazy" decoding="async"></picture></span>
+      <span class="pic"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-h01-blue-check-living.avif 1000w" sizes="(max-width:600px) 100vw, 320px"><img src="/img/interior/2026-10-27-h01-blue-check-living.jpg" width="1000" height="750" alt="A living room built around a Roberto Matta from 1969: marble fireplace, blue and cream check rug" loading="lazy" decoding="async"></picture></span>
       <div class="txt">
-        <span class="n">03</span>
         <h2>AKA Interior Design</h2>
         <span class="for">For homeowners in Miami, Palm Beach and abroad</span>
-        <p>Complete interiors, curated piece by piece: plan, millwork, light, furniture and art.</p>
-        <div class="acts"><a class="btnk" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-unit="interior" data-place="home-card">Book a consultation</a><a class="lnk" href="/interior">Explore</a></div>
+        <p>Homes that begin with the art you live with. Pictured: a living room built around a Roberto Matta, 1969.</p>
+        <div class="acts"><a class="btnk" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-unit="interior" data-place="home-card">Book a consultation</a></div>
       </div>
     </div>
   </section>
 
   <div class="also">
-    <a href="https://teherrugs.com" rel="noopener" target="_blank"><span><b>TeHer Art Rugs</b><span>Artist-designed, hand-knotted rugs and wall hangings. Part of AKA Holdings.</span></span><span class="go">teherrugs.com</span></a>
-    <a href="/fabian"><span><b>Fabian J. Ortega A.</b><span>Founder and operator. Business and AI transformation, from the owner’s seat.</span></span><span class="go">Profile</span></a>
+    <a href="https://teherrugs.com" rel="noopener" target="_blank">
+      <span class="ph"><picture><source type="image/avif" srcset="/img/v2/teher-roll-600.avif 600w, /img/v2/teher-roll-900.avif 900w, /img/v2/teher-roll-1200.avif 1200w" sizes="(max-width:600px) 110px, 200px"><img src="/img/v2/teher-roll-1200.jpg" srcset="/img/v2/teher-roll-600.jpg 600w, /img/v2/teher-roll-1200.jpg 1200w" sizes="(max-width:600px) 110px, 200px" width="1200" height="800" alt="Hands rolling a finished hand-knotted TeHer rug in yellow, black and cream" loading="lazy" decoding="async"></picture></span>
+      <span class="bd"><b>TeHer Art Rugs</b><span class="d">Artist-designed rugs, hand-knotted in Nepal in limited editions — for collectors, designers and the trade. Part of AKA Holdings.</span><span class="go">teherrugs.com</span></span>
+    </a>
+    <a href="/fabian">
+      <span class="ph"><picture><source type="image/avif" srcset="/img/v2/fabian-portrait-400.avif 400w, /img/v2/fabian-portrait-800.avif 800w" sizes="150px"><img src="/img/v2/fabian-portrait-800.jpg" srcset="/img/v2/fabian-portrait-400.jpg 400w, /img/v2/fabian-portrait-800.jpg 800w" sizes="150px" width="800" height="1000" alt="Portrait of Fabian J. Ortega A." loading="lazy" decoding="async"></picture></span>
+      <span class="bd"><b>Fabian J. Ortega A.</b><span class="d">Founder and operator. The person who maps your business has run businesses like it — from the owner’s seat.</span><span class="go">Profile</span></span>
+    </a>
   </div>
 
   <section class="facts" aria-label="The group in facts">
@@ -161,19 +210,20 @@
     <div><b>4</b><span>AI systems of our own — <a href="/technologies#systems">one in daily use, three in build or design</a></span></div>
   </section>
 
-  <section class="how" style="padding-top:88px">
+  <section class="how" style="padding-top:72px">
     <span class="k">How we work</span>
     <div class="cols">
-      <div><b>Operator first</b><p>Every house and every system starts inside a business we run ourselves.</p></div>
-      <div><b>Made with care</b><p>Interiors chosen piece by piece; productions made by hand with the artist; systems governed by people.</p></div>
-      <div><b>Verified, not claimed</b><p>What we report separates what is verified from what is last known and what is still a question.</p></div>
+      <div><b>We run it ourselves first</b><p>Every method and system is used inside our own four businesses before a client ever sees it — and offered with its real status.</p></div>
+      <div><b>You’ll always know what’s real</b><p>Everything we report separates what is verified from what is last known and what is still a question. Nothing is marked done on anyone’s word.</p></div>
+      <div><b>One operator, end to end</b><p>The person who maps your business, designs your home or produces your work is the same one who answers for it.</p></div>
     </div>
   </section>
 
   <section class="contact" id="contact" aria-labelledby="ct">
     <div><span class="k" style="display:block;margin-bottom:18px">Contact</span><h2 id="ct">Start where it fits you.</h2></div>
     <div class="clist">
-      <a href="/technologies#start" data-unit="technologies"><span><b>An AI diagnostic for your business</b><span>AKA Technologies</span></span><span class="go">Start</span></a>
+      <a href="/mapa#start" data-unit="mapa"><span><b>A map of where your business loses value</b><span>MAPA Advisory</span></span><span class="go">Get your map</span></a>
+      <a href="/technologies#start" data-unit="technologies"><span><b>AI systems, built and governed</b><span>AKA Technologies</span></span><span class="go">Start</span></a>
       <a href="/productions#propose" data-unit="productions"><span><b>A production with an artist</b><span>AKA Art Productions</span></span><span class="go">Propose</span></a>
       <a href="/interior#start" data-unit="interior"><span><b>A design consultation for your home</b><span>AKA Interior Design</span></span><span class="go">Start</span></a>
       <a href="mailto:fabian@aka.holdings?subject=aka.holdings"><span><b>Anything else</b><span>fabian@aka.holdings</span></span><span class="go">Write</span></a>
@@ -183,7 +233,7 @@
   <footer>
     <div class="grid">
       <img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="63" height="40">
-      <div class="mid"><span class="k"><a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span><span class="k sub">AKA Editions — limited editions by AKA Art Productions</span></div>
+      <div class="mid"><span class="k"><a href="/mapa">MAPA Advisory</a> · <a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span><span class="k sub">AKA Editions — limited editions by AKA Art Productions</span></div>
       <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
     </div>
   </footer>

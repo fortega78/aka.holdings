@@ -102,3 +102,47 @@
     return 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n') + '\n\n');
   }
 })();
+
+/* ---------- motion v1 (CEREBRO 12:06 #7): reveal, count-up, clip respects reduced motion ---------- */
+(function(){
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* the demo clip loads only after the page is done, on wide screens, when motion is welcome */
+  var wide=window.matchMedia('(min-width:701px)').matches;
+  if(wide){document.querySelectorAll('video.vclip[data-poster]').forEach(function(v){v.poster=v.dataset.poster});}
+  function loadClips(){
+    if(rm||!wide)return;
+    if(navigator.connection&&navigator.connection.saveData)return;
+    document.querySelectorAll('video.vclip[data-webm]').forEach(function(v){
+      var s1=document.createElement('source');s1.src=v.dataset.webm;s1.type='video/webm';
+      var s2=document.createElement('source');s2.src=v.dataset.mp4;s2.type='video/mp4';
+      v.appendChild(s1);v.appendChild(s2);v.load();v.play().catch(function(){});
+    });
+  }
+  if(document.readyState==='complete')setTimeout(loadClips,300);else window.addEventListener('load',function(){setTimeout(loadClips,300)});
+  if(rm||!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('main > section, main .wrap > section, main .wide > section, main .pj, main .ch, main .also, main .sub-pj');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -5% 0px',threshold:0});
+  var vh=window.innerHeight||800;
+  els.forEach(function(el){
+    if(el.getBoundingClientRect().top<vh*.92)return; /* already on screen: never hidden, LCP intact */
+    el.classList.add('rv');io.observe(el);
+  });
+  /* count-up, once, <=0.8s (home operating record) */
+  var cu=document.querySelectorAll('.record b');
+  if(cu.length){
+    var done=false;
+    var io2=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting||done)return; done=true;
+        cu.forEach(function(b){
+          var txt=b.textContent;var m=txt.match(/(\d+)(?!.*\d)/);if(!m)return;
+          var end=parseInt(m[1],10),idx=m.index,pre=txt.slice(0,idx),post=txt.slice(idx+m[1].length);
+          var t0=null;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/800,1);var v=Math.round(end*(1-Math.pow(1-p,3)));b.textContent=pre+v+post;if(p<1)requestAnimationFrame(step)}
+          requestAnimationFrame(step);
+        });
+        io2.disconnect();
+      });
+    },{threshold:.4});
+    io2.observe(cu[0].closest('.record'));
+  }
+})();

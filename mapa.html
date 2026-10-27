@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
+<title>MAPA — Map · Assign · Plan · Automate | AKA advisory</title>
+<meta name="description" content="MAPA is AKA's advisory method: before any AI tool, we map where your business loses value, assign an owner to every loss, redesign the work, and only then automate — under written rules. Get your map.">
+<meta property="og:title" content="MAPA — Map · Assign · Plan · Automate">
+<meta property="og:description" content="Every engagement starts with a map. Before any tool: where the business loses value, who owns it, how the work should change, and under which rules AI may run.">
+<meta property="og:url" content="https://aka.holdings/mapa">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aka.holdings/og/mapa.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/mapa">
+<link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/aka.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"MAPA — AI advisory for owners and operators","serviceType":"Business and AI advisory","provider":{"@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/"},"url":"https://aka.holdings/mapa","description":"MAPA — Map the loss, Assign an owner, Plan the work, Automate under rules. An advisory method that takes a business from diagnosis to governed AI, with five written deliverables.","areaServed":"Remote","availableLanguage":["en","es"],"brand":{"@type":"Brand","name":"MAPA"},"founder":{"@type":"Person","name":"Fabian J. Ortega A.","url":"https://aka.holdings/fabian"}}</script>
+<style>
+/* /mapa v1 · ACA WEB · 2026-10-27 · brand v1.6.1: Klein #1725F5 + white, Archivo + Questrial. One blue. DEC-078/079/080. */
+body.technologies{background-image:none}
+.btn{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);background:var(--klein);color:#fff;transition:background .25s,color .25s}
+.btn:hover{background:#fff;color:var(--klein)}
+.btn.inv{background:#fff;color:var(--klein);border-color:#fff}
+.btn.inv:hover{background:transparent;color:#fff}
+.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;border-bottom:1px solid currentColor;padding-bottom:4px}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.on-blue a:focus-visible,.on-blue .btn:focus-visible{outline-color:#fff}
+.act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:30px}
+.lbl{display:block;margin-bottom:16px}
+.sec{padding:50px 0 8px}
+.sec h2{font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:22ch}
+.two-col{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.two-col p{color:var(--graphite);max-width:58ch}
+.two-col p+p{margin-top:12px}
+
+/* hero */
+.hero-m{background:var(--klein);color:#fff;padding:clamp(48px,7vh,80px) 0 clamp(44px,6vh,64px)}
+.hero-m h1{font:500 clamp(64px,10vw,148px)/.95 Archivo,sans-serif;letter-spacing:-.03em}
+.hero-m .expand{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:clamp(12px,1.3vw,15px);margin-top:18px;display:block;color:rgba(255,255,255,.95)}
+.hero-m .motto{font:500 clamp(21px,2.3vw,30px)/1.25 Archivo,sans-serif;letter-spacing:-.01em;margin-top:34px;max-width:22ch}
+.hero-m .lead{margin-top:18px;font-size:clamp(16px,1.4vw,19px);line-height:1.55;max-width:52ch;color:rgba(255,255,255,.92)}
+.hero-m .where{margin-top:20px;font-size:14px;color:rgba(255,255,255,.85)}
+.hero-m .grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
+.hero-m .route-mini{border-top:1px solid rgba(255,255,255,.5)}
+.hero-m .route-mini div{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.3);align-items:baseline}
+.hero-m .route-mini b{font:500 22px/1 Archivo,sans-serif}
+.hero-m .route-mini span{font-size:14px;color:rgba(255,255,255,.9)}
+
+/* why a map */
+.why p{font-size:clamp(16px,1.45vw,19px);line-height:1.6;color:var(--ink);max-width:62ch}
+.why p+p{margin-top:14px}
+.why .sig{margin-top:18px;font-size:14px;color:var(--slate)}
+
+/* the route */
+.phase{border:1px solid var(--line);border-left:none;border-right:none;margin-top:-1px}
+.phase summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:17px 0;min-height:44px}
+.phase summary::-webkit-details-marker{display:none}
+.phase summary .l{font:500 clamp(28px,3vw,40px)/1 Archivo,sans-serif;color:var(--klein);letter-spacing:-.02em}
+.phase summary b{font:500 clamp(19px,2vw,26px)/1.2 Archivo,sans-serif;color:var(--ink)}
+.phase summary .q{display:block;font-weight:400;font-size:15px;color:var(--graphite);margin-top:4px;max-width:52ch}
+.phase summary::after{content:"+";font:400 26px/1 Archivo,sans-serif;color:var(--klein);align-self:center}
+.phase[open] summary::after{content:"–"}
+.phase .body{display:grid;grid-template-columns:1.5fr 1fr;gap:20px 48px;padding:4px 0 30px}
+.phase .fld{padding-top:14px;border-top:1px solid var(--line)}
+.phase .fld .k{font-size:10.5px;letter-spacing:.24em;display:block;margin-bottom:8px}
+.phase .fld p{font-size:15px;color:var(--graphite);max-width:60ch}
+.phase .fld.gate p{color:var(--ink);font-weight:500}
+.phase .side{display:flex;flex-direction:column;gap:20px}
+.verified{border:1px solid var(--klein);padding:22px 26px;margin-top:28px;display:grid;grid-template-columns:5fr 7fr;gap:40px;background:#fff}
+.verified h3{font:500 22px/1.2 Archivo,sans-serif}
+.verified p{font-size:15px;color:var(--graphite);margin-top:10px;max-width:46ch}
+.states{list-style:none;display:grid;gap:10px}
+.states li{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px;color:var(--graphite);align-items:baseline}
+.ladder{display:flex;gap:6px;margin-top:16px;align-items:flex-end}
+.ladder i{flex:1;background:var(--mist);border:1px solid var(--line);font:400 11px/1 Questrial,sans-serif;letter-spacing:.1em;color:var(--klein);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-style:normal}
+.ladder i:nth-child(1){height:28px}.ladder i:nth-child(2){height:40px}.ladder i:nth-child(3){height:52px}.ladder i:nth-child(4){height:64px}.ladder i:nth-child(5){height:76px}
+.ladder-cap{font-size:13px;color:var(--slate);margin-top:10px}
+
+/* state marks */
+.stv,.stl,.stq{display:inline-flex;width:18px;height:18px;border-radius:50%;align-items:center;justify-content:center;font:500 11px/1 Archivo,sans-serif;vertical-align:-3px}
+.stv{background:var(--klein);color:#fff}
+.stl{border:1px solid var(--klein);color:var(--klein);background:#fff}
+.stq{border:1px dashed var(--slate);color:var(--slate);background:#fff}
+
+/* compass */
+.compass{display:grid;grid-template-columns:minmax(230px,264px) 1fr;gap:48px;align-items:center;margin-top:28px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cgrid div{border-top:2px solid var(--klein);padding-top:14px}
+.cgrid b{display:block;font-weight:500;font-size:17px}
+.cgrid p{font-size:14.5px;color:var(--graphite);margin-top:4px}
+.credit{font-size:13px;color:var(--slate);margin-top:20px}
+
+/* deliverables + samples */
+.docs5{list-style:none;counter-reset:d;border-top:1px solid var(--klein);margin-top:28px}
+.docs5 li{counter-increment:d;display:grid;grid-template-columns:52px 1.1fr 1.9fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.docs5 li::before{content:"0" counter(d);font-family:Questrial,sans-serif;letter-spacing:.2em;font-size:12px;color:var(--klein)}
+.docs5 b{font-weight:500;font-size:17px}
+.docs5 span{font-size:14.5px;color:var(--graphite)}
+.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.sample{border:1px solid var(--line);background:#fff;padding:0;display:flex;flex-direction:column}
+.sample .head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.sample .head b{font:400 11px/1 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--klein)}
+.sample .tag{font:400 9.5px/1 Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);border:1px solid var(--line);padding:4px 7px}
+.sample .bd{padding:15px 16px;font-size:13px;color:var(--graphite);flex:1}
+.sample table{width:100%;border-collapse:collapse;font-size:13px}
+.sample th{font:400 10px/1.3 Questrial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);text-align:left;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+.sample td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
+.sample td.mut{color:var(--graphite)}
+.sample .big{font:500 21px/1.1 Archivo,sans-serif;color:var(--ink)}
+.zone{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:0}
+.z-g{background:#2E7D32}.z-y{background:#C99700}.z-r{background:#B3261E}.z-b{background:#111;outline:1px solid #111;position:relative}
+.zrow{display:grid;grid-template-columns:132px 1fr;gap:8px 14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
+.zrow b{font-weight:500;color:var(--ink)}
+.zrow span{color:var(--graphite)}
+
+/* ways to work */
+.ways3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.ways3>div{border:1px solid var(--line);padding:22px;background:#fff;display:flex;flex-direction:column}
+.ways3>div:nth-child(2){border-color:var(--klein)}
+.ways3 .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
+.ways3 b{display:block;font:500 25px/1.1 Archivo,sans-serif;margin:10px 0 6px}
+.ways3 .ph{font-size:13px;color:var(--slate);margin-bottom:12px}
+.ways3 p{font-size:15px;color:var(--graphite)}
+.ways3 ul{list-style:none;margin:14px 0 4px;border-top:1px solid var(--line)}
+.ways3 li{font-size:14px;color:var(--graphite);padding:8px 0;border-bottom:1px solid var(--line)}
+.ways3 .for{font-size:13.5px;color:var(--slate);margin-top:12px}
+.ways3 .act{margin-top:auto;padding-top:18px}
+
+/* first 30 days */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:24px;border-top:1px solid var(--klein);margin-top:30px}
+.steps li{padding-top:16px}
+.steps .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein);display:block;margin-bottom:8px}
+.steps b{display:block;font-weight:500;font-size:16.5px;margin-bottom:6px}
+.steps p{font-size:14px;color:var(--graphite)}
+
+/* need / don't */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.duo>div{border:1px solid var(--line);padding:18px 22px;background:#fff}
+.duo>div:first-child{border-color:var(--klein)}
+.duo b{display:block;font-weight:500;font-size:17px;margin-bottom:10px}
+.duo ul{list-style:none}
+.duo li{font-size:15px;color:var(--graphite);padding:8px 0;border-top:1px solid var(--line)}
+
+/* rules */
+.rules{columns:2;column-gap:48px;margin-top:30px;border-top:1px solid var(--klein);padding-top:6px}
+.rules li{list-style:none;break-inside:avoid;display:grid;grid-template-columns:28px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--graphite)}
+.rules .n{font-family:Questrial,sans-serif;letter-spacing:.14em;font-size:11px;color:var(--klein);padding-top:3px}
+.rules b{color:var(--ink);font-weight:500}
+
+/* sources */
+.srcs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+.srcs>div{border-top:2px solid var(--klein);padding-top:16px}
+.srcs b{display:block;font-weight:500;font-size:17px}
+.srcs .s{display:block;font-size:12.5px;color:var(--slate);margin:2px 0 10px}
+.srcs p{font-size:14.5px;color:var(--graphite)}
+.insp{font-size:13px;color:var(--slate);margin-top:22px;max-width:72ch}
+
+/* products */
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.prods>div{border:1px solid var(--line);background:#fff;padding:22px}
+.prods .st{display:inline-block;font:400 10.5px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--klein);border:1px solid var(--klein);padding:4px 8px 3px;margin-bottom:14px}
+.prods .st.live{background:var(--klein);color:#fff}
+.prods b{display:block;font:500 23px/1.1 Archivo,sans-serif;margin-bottom:8px}
+.prods p{font-size:14.5px;color:var(--graphite)}
+.pat{font-size:13px;color:var(--slate);margin-top:20px;max-width:72ch}
+
+/* faq */
+.faq{margin-top:26px;border-top:1px solid var(--klein)}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{cursor:pointer;font-weight:500;font-size:16.5px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:28px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--klein);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;font-size:15px;color:var(--graphite);max-width:64ch}
+
+/* instruments */
+.instr{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.instr ul{list-style:none;border-top:1px solid var(--klein)}
+.instr li{display:grid;grid-template-columns:44px 1fr auto;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);align-items:center}
+.instr li img{width:34px;height:34px}
+.instr b{font-weight:500;font-size:16px;display:block}
+.instr span{font-size:13.5px;color:var(--graphite)}
+.instr .st2{font:400 10.5px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.18em;color:var(--klein);border:1px solid var(--klein);padding:3px 7px;white-space:nowrap}
+.instr .st2.live{background:var(--klein);color:#fff}
+.demo{margin-top:22px;border:1px solid var(--line);background:#fff;padding:10px;max-width:470px}
+.demo img{width:100%;height:auto;display:block}
+.demo figcaption{font-size:13px;color:var(--graphite);margin-top:10px;max-width:80ch}
+
+/* close + form */
+.close-m{background:var(--klein);color:#fff;margin-top:72px;padding:56px 0 64px}
+.close-m h2{font:500 clamp(30px,3.6vw,48px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;max-width:18ch}
+.close-m .intake-wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start;margin-top:8px}
+.close-m .intake label{color:#fff}
+.close-m .intake input,.close-m .intake select,.close-m .intake textarea{color:#fff;border-bottom-color:rgba(255,255,255,.7)}
+.close-m .intake select{color:#fff}
+.close-m .intake select option{color:#111}
+.close-m .intake button{background:#fff;color:var(--klein);border-color:#fff}
+.close-m .intake button:hover{background:transparent;color:#fff}
+.close-m .intake-done{border-top-color:#fff}
+.close-m .intake-done p{color:rgba(255,255,255,.92)}
+.close-m p.side{margin-top:16px;color:rgba(255,255,255,.9);max-width:40ch}
+.close-m a.mail{border-bottom:1px solid rgba(255,255,255,.6)}
+
+details.acc>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:baseline;min-height:44px;padding-top:8px}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::after{content:"+";font:400 20px/1 Archivo,sans-serif;color:var(--klein)}
+details.acc[open]>summary::after{content:"–"}
+@media (min-width:761px){details.acc>summary{cursor:default;min-height:0;padding-top:0}details.acc>summary::after{display:none}}
+
+@media (max-width:900px){
+  .hero-m .grid,.two-col,.verified,.compass,.instr,.close-m .intake-wrap{grid-template-columns:1fr;gap:28px}
+  .samples,.duo{grid-template-columns:1fr}
+  .ways3,.srcs,.prods{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .rules{columns:1}
+  .phase summary{grid-template-columns:52px 1fr auto}
+  .phase .body{grid-template-columns:1fr}
+  .docs5 li{grid-template-columns:40px 1fr}
+  .docs5 li span{grid-column:2}
+}
+@media (max-width:600px){
+  .hero-m h1{font-size:clamp(72px,24vw,110px)}
+  .btn{width:100%;text-align:center}
+  .sec{padding:38px 0 6px}
+  .hero-m{padding:40px 0 40px}
+}
+@media (max-width:760px){
+  .why p{font-size:15.5px}
+  .hero-m .route-mini div{padding:9px 0}
+  .intake{gap:14px 20px}
+  .duo>div{padding:14px 18px}
+  .compass svg,.ladder,.ladder-cap,.insp,.pat{display:none}
+  .steps{grid-template-columns:1fr 1fr;gap:18px 16px}
+  .steps p{font-size:13.5px}
+  .ways3 ul{display:none}
+  .ways3>div{padding:18px}
+  .demo picture{display:block;max-height:440px;overflow:auto;-webkit-overflow-scrolling:touch}
+  .prods>div{padding:18px}
+}
+
+/* motion (CEREBRO 12:06 #7): phases unfold, gate line completes, needle turns */
+@media (prefers-reduced-motion: no-preference){
+  .phase[open] .body{animation:phIn .35s ease both}
+  @keyframes phIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .phase .fld.gate{position:relative}
+  .phase[open] .fld.gate::before{content:"";position:absolute;top:-1px;left:0;height:2px;background:var(--klein);animation:gateIn .55s .25s both}
+  @keyframes gateIn{from{width:0}to{width:100%}}
+  #needle{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+}
+.cgrid [role=button]{cursor:pointer}
+.cgrid [role=button]:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.cgrid .on{background:var(--mist)}
+.cgrid>div{padding:14px 10px 10px;margin:-14px -10px -10px;border-top-width:2px}
+</style>
+</head>
+<body class="technologies has-mbar">
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="57" height="36"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
+      <a href="/mapa" aria-current="page">MAPA Advisory</a>
+      <a href="/technologies">01 / Technologies</a>
+      <a href="/productions">02 / Art Productions</a>
+      <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
+    </nav>
+  </header>
+</div>
+
+<main id="main">
+<section class="hero-m on-blue" style="margin-top:28px" data-hide-bar>
+  <div class="wrap grid">
+    <div class="rise d1">
+      <h1>MAPA</h1>
+      <span class="expand">Map · Assign · Plan · Automate</span>
+      <p class="motto">Every engagement starts with a map.</p>
+      <p class="lead">Before any tool, we locate where your business loses value, who owns it, how the work should change — and under which rules AI may run.</p>
+      <div class="act">
+        <a class="btn inv" href="#start" data-place="hero">Get your map</a>
+        <a class="alt" href="#route">See how it works</a>
+      </div>
+      <p class="where">For owners and operators · Miami · English and Spanish</p>
+    </div>
+    <div class="route-mini rise d2" aria-label="The four phases">
+      <div><b>M</b><span>Map the loss — measured, not assumed.</span></div>
+      <div><b>A</b><span>Assign an owner — with real authority.</span></div>
+      <div><b>P</b><span>Plan the work — on paper, before any tool.</span></div>
+      <div><b>A</b><span>Automate under rules — written and approved first.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="sec why" aria-labelledby="why-h">
+    <span class="k lbl">Why a map first</span>
+    <h2 id="why-h" class="vh">Why a map first</h2>
+    <p>I have spent more than twenty years operating businesses — a $100M vehicle distributor with a thousand people, a franchise network of more than a hundred locations, a hospitality platform of two hundred units, and today the four businesses of AKA. In every one of them, the expensive problems were never where the software demo pointed.</p>
+    <p>They were in handoffs nobody owned, in data that arrived too late to matter, in decisions that had an outcome but no owner. So before we ever talk about AI, we make a map.</p>
+    <p class="sig">— Fabian J. Ortega A., <a href="/fabian" style="border-bottom:1px solid var(--line)">founder</a></p>
+  </section>
+
+  <section class="sec" id="route" aria-labelledby="rt-h">
+    <div class="two-col" style="margin-bottom:34px">
+      <div>
+        <span class="k lbl">How it works</span>
+        <h2 id="rt-h">The route: four phases, each closed by a gate nobody skips.</h2>
+      </div>
+      <p>Including us. Open each phase for what happens, what you take away, and the gate that closes it. The detail — every instrument and template — lives in the Manual.</p>
+    </div>
+
+    <details class="phase">
+      <summary><span class="l">M</span><span><b>Map the loss</b><span class="q">Where does this business lose value — measured, not assumed?</span></span></summary>
+      <div class="body">
+        <div>
+          <div class="fld"><span class="k">What we do</span><p>We interrogate the work as it actually happens, not as the org chart says it happens: six questions, pushed past the symptom until the answer names the condition producing the problem. Every loss gets coordinates on the nine elements where work can break — from roles and handoffs to data, timing and accountability — and a confidence state. Missing evidence never stops the map and never gets invented: it is logged as a gap, with what it blocks and who unblocks it.</p></div>
+          <div class="fld"><span class="k">What you take away</span><p>The loss map: one page per loss — its cost, its coordinates, who suffers it, since when — plus the gap register.</p></div>
+        </div>
+        <div class="side">
+          <div class="fld gate"><span class="k">The gate</span><p>Every loss has a figure or is honestly marked as a question. Nothing is “estimated.”</p></div>
+          <div class="fld"><span class="k">Compass bearing</span><p>Framing — what problem, for whom?</p></div>
+        </div>
+      </div>
+    </details>
+    <details class="phase">
+      <summary><span class="l">A</span><span><b>Assign an owner</b><span class="q">Who owns each loss — with the authority to change what produces it?</span></span></summary>
+      <div class="body">
+        <div>
+          <div class="fld"><span class="k">What we do</span><p>Every loss gets one named owner — and we check the thing most diagnostics skip: whether that person has the authority to change what produces the loss. A target being met is not proof the system works; it is often the measure of someone’s heroics compensating for it. Both the authority gaps and the masking workarounds go on record, and the decision ledger opens: every decision the engagement takes or defers gets an ID, an owner, a deadline and the cost of not deciding.</p></div>
+          <div class="fld"><span class="k">What you take away</span><p>The owner table — one named person per loss, their real authority, the workarounds found — and the opened decision ledger.</p></div>
+        </div>
+        <div class="side">
+          <div class="fld gate"><span class="k">The gate</span><p>No loss without an owner. If nobody can own it, we don’t build anything for it.</p></div>
+          <div class="fld"><span class="k">Compass bearing</span><p>Accounting — who answers for it?</p></div>
+        </div>
+      </div>
+    </details>
+    <details class="phase">
+      <summary><span class="l">P</span><span><b>Plan the work</b><span class="q">How should the work happen — with or without AI — and which work first?</span></span></summary>
+      <div class="body">
+        <div>
+          <div class="fld"><span class="k">What we do</span><p>Before any tool is named, we redesign the work on paper and ask what capability the problem actually requires — description, explanation, prediction, recommendation, or generation. Many losses close right here, without AI: a sequence fix, a role fix. And because hours are the scarcest resource in an operator-led company, nothing gets ours — or yours — on a hunch: every candidate intervention is scored on our own impact model before it starts, ranked by expected value, and committed to in writing with its metric, its baseline and its kill criterion set in advance. Three initiatives active at most; one income priority at a time.</p></div>
+          <div class="fld"><span class="k">What you take away</span><p>The redesigned work on paper, plus the scored, ranked portfolio — at most three committed initiatives, pre-registered.</p></div>
+        </div>
+        <div class="side">
+          <div class="fld gate"><span class="k">The gate</span><p>The owner approves the redesign before a single tool is chosen — and no score, no hours.</p></div>
+          <div class="fld"><span class="k">Compass bearing</span><p>Orienting — what capability?</p></div>
+        </div>
+      </div>
+    </details>
+    <details class="phase">
+      <summary><span class="l">A</span><span><b>Automate under rules</b><span class="q">What runs, what does it decide alone, what stays with a person — and how will we know it worked?</span></span></summary>
+      <div class="body">
+        <div>
+          <div class="fld"><span class="k">What we do</span><p>Only now does AI enter, and it enters contained. We write the rulebook first: what the system may decide alone, what stays with a person, what it must never touch, what gets logged, and what fails closed. Any step that would combine untrusted input, sensitive data and the power to act on the world gets a human in the loop — no exceptions. Every automated action starts low on an autonomy ladder and earns each level with evidence; anything irreversible never runs without approval.</p></div>
+          <div class="fld"><span class="k">What you take away</span><p>The rulebook: every action classified into zones, the approval contract, the kill switches, the blocked list, and the success metrics with their baselines.</p></div>
+        </div>
+        <div class="side">
+          <div class="fld gate"><span class="k">The gate</span><p>The rules are written and approved before the first agent runs. No exceptions — our own systems included.</p></div>
+          <div class="fld"><span class="k">Compass bearing</span><p>Judging and accounting — is it working, and who answers?</p></div>
+        </div>
+      </div>
+    </details>
+
+    <div class="verified">
+      <div>
+        <h3>After the route: verified operation.</h3>
+        <p>The system lives under the same compass we used to build it, reports in three states, and its autonomy moves one level at a time — in both directions. Autonomy is earned, never assumed.</p>
+        <div class="ladder" aria-label="Autonomy ladder, levels 0 to 4"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i></div>
+        <p class="ladder-cap">The autonomy ladder: one level per four clean weeks, demotion on any incident. Irreversible actions cap at level 2 without approval.</p>
+      </div>
+      <ul class="states">
+        <li><span class="stv">✓</span><span><b>Verified</b> — confirmed against the log or the receiving system, not the agent’s self-report.</span></li>
+        <li><span class="stl">○</span><span><b>Last known</b> — true at a stated date, not reconfirmed since.</span></li>
+        <li><span class="stq">?</span><span><b>Open question</b> — honestly unknown. Never enters a sum, never averaged away.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="cp-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">The compass</span>
+        <h2 id="cp-h">Four readings, taken at every point of the route.</h2>
+      </div>
+      <p>Governance is not a gate at the end — it is a thread through the whole engagement. Four readings, each a question with a named answer.</p>
+    </div>
+    <div class="compass">
+      <svg viewBox="-12 -12 344 344" role="img" aria-label="The MAPA compass: framing north, orienting east, judging south, accounting west" style="width:100%;height:auto">
+        <circle cx="160" cy="160" r="150" fill="none" stroke="#1725F5" stroke-width="1.5"/>
+        <circle cx="160" cy="160" r="104" fill="none" stroke="#1725F5" stroke-width="1" opacity=".35"/>
+        <g stroke="#1725F5" stroke-width="1"><line x1="160" y1="22" x2="160" y2="80"/><line x1="160" y1="240" x2="160" y2="298"/><line x1="22" y1="160" x2="80" y2="160"/><line x1="240" y1="160" x2="298" y2="160"/></g>
+        <g id="needle" style="transform-origin:160px 160px"><polygon points="160,96 174,160 160,224 146,160" fill="#1725F5"/><polygon points="160,96 174,160 146,160" fill="#111"/></g>
+        <circle cx="160" cy="160" r="7" fill="#fff" stroke="#1725F5" stroke-width="2"/>
+        <g font-family="Questrial,sans-serif" font-size="12" letter-spacing="2.5" fill="#1725F5" text-anchor="middle">
+          <text x="160" y="10">FRAMING</text>
+          <text x="160" y="326">JUDGING</text>
+                  </g>
+        <g font-family="Questrial,sans-serif" font-size="12" letter-spacing="2.5" fill="#1725F5">
+          <text x="306" y="164" text-anchor="start" transform="rotate(90 306 160)">ORIENTING</text>
+          <text x="14" y="164" text-anchor="end" transform="rotate(-90 14 160)">ACCOUNTING</text>
+        </g>
+      </svg>
+      <div>
+        <div class="cgrid" id="cgrid">
+          <div role="button" tabindex="0" data-deg="0" class="on"><b>Framing</b><p>What problem is this solving, and for whom?</p></div>
+          <div role="button" tabindex="0" data-deg="90"><b>Orienting</b><p>What capability does it actually require?</p></div>
+          <div role="button" tabindex="0" data-deg="180"><b>Judging</b><p>Is it working, against the criteria we set?</p></div>
+          <div role="button" tabindex="0" data-deg="270"><b>Accounting</b><p>Who answers for it?</p></div>
+        </div>
+        <p class="credit">The four readings come from the governance framework of Boston University’s MS in AI in Business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="deliverables" aria-labelledby="dl-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">What you take away</span>
+        <h2 id="dl-h">Five written documents. Not slides.</h2>
+      </div>
+      <p>Every engagement leaves instruments you keep and your own software can enforce — not a deck that ages in a drawer. Below, a sample page of each kind, with fictional data.</p>
+    </div>
+    <ol class="docs5">
+      <li><b>The loss map</b><span>One page per loss: cost, coordinates, who suffers it, confidence state.</span></li>
+      <li><b>The owner table</b><span>One named owner per loss, with their real authority checked.</span></li>
+      <li><b>The redesigned work</b><span>The future state on paper, human/AI boundary drawn, approved by the owner.</span></li>
+      <li><b>The rulebook</b><span>What runs alone, what needs a person, what is blocked outright.</span></li>
+      <li><b>The operation board</b><span>Three states, costs, autonomy levels and open questions — alive after we leave.</span></li>
+    </ol>
+    <details class="acc"><summary><span class="k">The sample pages</span></summary><div class="samples">
+      <div class="sample">
+        <div class="head"><b>Loss map · one page</b><span class="tag">Sample · fictional data</span></div>
+        <div class="bd">
+          <span class="big">L-03 · Quotes answered too late</span>
+          <table style="margin-top:14px">
+            <tr><th>Cost</th><th>State</th><th>Coordinates</th></tr>
+            <tr><td>$9,400 / month in lost orders</td><td><span class="stv">✓</span> measured</td><td class="mut">Handoffs · timing · accountability</td></tr>
+            <tr><td>Hours lost chasing approvals</td><td><span class="stq">?</span> open question</td><td class="mut">Roles · judgment points</td></tr>
+          </table>
+          <p style="margin-top:10px">Structural answer: quotes wait on a price check only one person can give.</p>
+        </div>
+      </div>
+      <div class="sample">
+        <div class="head"><b>Owner table · one row</b><span class="tag">Sample · fictional data</span></div>
+        <div class="bd">
+          <table>
+            <tr><th>Loss</th><th>Owner</th><th>Authority</th><th>Workaround found</th></tr>
+            <tr><td>L-03 · late quotes</td><td>Operations lead</td><td>Can change pricing rules: yes. Can change staffing: no — flagged.</td><td class="mut">Sales re-checks every price by phone; target still met, by heroics.</td></tr>
+          </table>
+          <p style="margin-top:10px">Accountability without authority is itself a finding.</p>
+        </div>
+      </div>
+      <div class="sample">
+        <div class="head"><b>Rulebook · one fragment</b><span class="tag">Sample · fictional data</span></div>
+        <div class="bd">
+          <div class="zrow"><b><span class="zone z-g"></span>Auto-allowed</b><span>Draft the quote from the price list. Runs and logs its reason.</span></div>
+          <div class="zrow"><b><span class="zone z-y"></span>Batch approval</b><span>Send quotes under $5,000 — one click reviews the batch.</span></div>
+          <div class="zrow"><b><span class="zone z-r"></span>Explicit approval</b><span>Any discount beyond list. Stops until a named person decides.</span></div>
+          <div class="zrow" style="border-bottom:none"><b><span class="zone z-b"></span>Blocked</b><span>Changing a price silently. No pathway exists in the system at all.</span></div>
+        </div>
+      </div>
+      <div class="sample">
+        <div class="head"><b>Operation board · one week</b><span class="tag">Sample · fictional data</span></div>
+        <div class="bd">
+          <table>
+            <tr><th>Metric</th><th>This week</th><th>State</th></tr>
+            <tr><td>Quotes answered same day</td><td>41 of 44</td><td><span class="stv">✓</span> verified</td></tr>
+            <tr><td>Cost per quote drafted</td><td>$0.18</td><td><span class="stv">✓</span> verified</td></tr>
+            <tr><td>Reply rate on reminders</td><td>as of Oct 3</td><td><span class="stl">○</span> last known</td></tr>
+            <tr><td>Why Tuesday dipped</td><td>—</td><td><span class="stq">?</span> open question</td></tr>
+          </table>
+          <p style="margin-top:10px">Autonomy this week: drafting at level 3 · sending at level 1.</p>
+        </div>
+      </div>
+    </div></details>
+  </section>
+
+  <section class="sec" id="ways" aria-labelledby="wy-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">How to hire it</span>
+        <h2 id="wy-h">Three ways to work with us.</h2>
+      </div>
+      <p>Each one ends with documents you keep, whoever you build with afterwards. Scope and fee are agreed in writing before we start.</p>
+    </div>
+    <div class="ways3">
+      <div>
+        <span class="n">01</span><b>The Map</b><span class="ph">Phases M · A — the diagnosis</span>
+        <p>We locate where the business loses value and who owns it, before you decide anything.</p>
+        <ul><li>The loss map, with every figure sourced or marked</li><li>The owner table, authority checked</li></ul>
+        <p class="for">For the owner who wants to know where value is lost before committing to anything.</p>
+        <div class="act"><a class="btn" href="#start" data-choice="The Map">Get your map</a></div>
+      </div>
+      <div>
+        <span class="n">02</span><b>The Route</b><span class="ph">The full M·A·P·A — diagnosis + design</span>
+        <p>The complete method: map, owners, the work redesigned, and the rules written.</p>
+        <ul><li>All five documents</li><li>The rulebook, approved by you</li><li>The scored portfolio: at most 3 initiatives, 1 income priority</li></ul>
+        <p class="for">For the owner who is going to implement.</p>
+        <div class="act"><a class="btn" href="#start" data-choice="The Route">Talk about the route</a></div>
+      </div>
+      <div>
+        <span class="n">03</span><b>The Operation</b><span class="ph">The system, running under its rules</span>
+        <p>The route, running: the operation board with its three states, the weekly ritual, and autonomy earned one level at a time.</p>
+        <ul><li>The operation board, alive</li><li>The weekly truth session</li><li>The autonomy ladder, enforced</li></ul>
+        <p class="for">For the owner who has walked the route.</p>
+        <div class="act"><a class="btn" href="#start" data-choice="The Operation">Talk about operation</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fd-h">
+    <span class="k lbl">What happens when you write</span>
+    <h2 id="fd-h">From your message to a decision — in the open.</h2>
+    <ol class="steps">
+      <li><span class="n">1</span><b>A first call</b><p>Thirty minutes. How the business runs, where you suspect value is lost, whether a map makes sense.</p></li>
+      <li><span class="n">2</span><b>Written scope</b><p>What we will map, how long it takes, what we need from you — agreed before any work starts.</p></li>
+      <li><span class="n">3</span><b>The map</b><p>The work interrogated where it happens; every figure sourced or marked as a question.</p></li>
+      <li><span class="n">4</span><b>The readout</b><p>The map read with you, the owner — losses, owners, and what they mean.</p></li>
+      <li><span class="n">5</span><b>Your decision</b><p>Continue to the route, stop, or change course. The map is yours either way.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" aria-labelledby="nd-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Honest terms</span>
+        <h2 id="nd-h">What we need from you — and what we don’t do.</h2>
+      </div>
+      <p>A diagnostic is only as honest as its access. These terms are why the map comes back true.</p>
+    </div>
+    <div class="duo">
+      <div>
+        <b>We need</b>
+        <ul>
+          <li>Access to the real work and the people who do it — not only the org chart.</li>
+          <li>An owner with the authority to decide, on your side.</li>
+          <li>The data you already have, even if it is messy. Finding out what it is worth is part of the map.</li>
+        </ul>
+      </div>
+      <div>
+        <b>We don’t do</b>
+        <ul>
+          <li>Tool demos before the map.</li>
+          <li>Promises of results without a way to measure them.</li>
+          <li>Projects with no owner on the client side.</li>
+          <li>Automating the irreversible without explicit approval.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="rules" aria-labelledby="rl-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">The rules of navigation</span>
+        <h2 id="rl-h">The frameworks are taught; the rules are earned.</h2>
+      </div>
+      <p>Fourteen operating rules, written by correcting real mistakes in our own operations. Anyone can list four phases — these are what we run them with.</p>
+    </div>
+    <details class="acc"><summary><span class="k">The fourteen rules</span></summary>
+    <ul class="rules">
+      <li><span class="n">01</span><span><b>Precedence of sources.</b> Measured beats system data beats mail beats inference.</span></li>
+      <li><span class="n">02</span><span><b>Intention ≠ fact.</b> Scheduled is not done — for people and for agents alike.</span></li>
+      <li><span class="n">03</span><span><b>Three states, always visible.</b> Verified · last known · open question. A question never enters a sum.</span></li>
+      <li><span class="n">04</span><span><b>One loss, one owner.</b> No owner, no build.</span></li>
+      <li><span class="n">05</span><span><b>The work before the tool.</b> The redesign is approved before a tool is named.</span></li>
+      <li><span class="n">06</span><span><b>Rules before the first agent.</b> The rulebook is written and approved before anything runs.</span></li>
+      <li><span class="n">07</span><span><b>The autonomy ladder.</b> 0–4, one level at a time, both directions. Irreversible caps at 2.</span></li>
+      <li><span class="n">08</span><span><b>The decision ledger.</b> Every decision gets an ID, an owner, a deadline and the cost of not deciding.</span></li>
+      <li><span class="n">09</span><span><b>Contradictions get a closing date.</b> Never averaged — registered, owned, closed.</span></li>
+      <li><span class="n">10</span><span><b>Rhythm.</b> Daily · weekly with at most three priorities · close. The ritual reads the pre-registered metrics.</span></li>
+      <li><span class="n">11</span><span><b>The gap register.</b> Missing evidence never stops the work and never gets invented.</span></li>
+      <li><span class="n">12</span><span><b>Pre-registration.</b> Metric, baseline, kill criterion — before launch, never retroactively.</span></li>
+      <li><span class="n">13</span><span><b>The two-currency budget.</b> Hours and capital are different currencies; in an operator-led company, hours bind.</span></li>
+      <li><span class="n">14</span><span><b>Anti-babysitting.</b> If approvals eat more than ~10 minutes a day, the calibration is wrong — recalibrate by a logged decision, never by bypassing.</span></li>
+    </ul>
+    </details>
+  </section>
+
+  <section class="sec" id="sources" aria-labelledby="sc-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Where MAPA comes from</span>
+        <h2 id="sc-h">Studied twice, and run in our own businesses.</h2>
+      </div>
+      <p>The frameworks come from two graduate programs; the rules and instruments come from operating four businesses with them. That is the difference: authored and operated, not only studied.</p>
+    </div>
+    <details class="acc"><summary><span class="k">The three sources</span></summary><div class="srcs">
+      <div>
+        <b>BU Questrom</b><span class="s">MS in AI in Business · Prof. Paul Carlile</span>
+        <p>The diagnostic science: the six-question survey, the nine elements of the work-system, and governance as four stages of leadership — the compass.</p>
+      </div>
+      <div>
+        <b>UT Austin McCombs</b><span class="s">PGP in AI Agents &amp; GenAI</span>
+        <p>The agent engineering: the deployment gate, containment patterns, and the discipline that no step may combine untrusted input, sensitive data and the power to act.</p>
+      </div>
+      <div>
+        <b>AKA’s own operations</b><span class="s">Four businesses, one operator</span>
+        <p>Our impact model for deciding which work deserves hours, the decision ledger, and the earned-autonomy ladder — written by correcting real mistakes, and in use today.</p>
+      </div>
+    </div></details>
+    <p class="insp">Public scholarship behind the method includes work-system theory (Steven Alter), Meta’s Rule of Two, and — the declared inspiration for our impact model — Mittal &amp; Sawhney, <i>The Return on AI</i>.</p>
+  </section>
+
+  <section class="sec" id="products" aria-labelledby="pr-h">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">One method, three products</span>
+        <h2 id="pr-h">Take the method the way that fits you.</h2>
+      </div>
+      <p>MAPA is written down, teachable, and buildable — the same method in three forms, each with its honest status.</p>
+    </div>
+    <div class="prods">
+      <div><span class="st live">In use — delivered with every engagement</span><b>The Manual</b><p>The method written down, with every instrument and template included — the documents an engagement runs on.</p></div>
+      <div><span class="st">In preparation</span><b>The Course</b><p>Learn it the only way it can honestly be taught: by running it on your own company. You leave with your five documents.</p></div>
+      <div><span class="st">In build</span><b>The Agent</b><p>The method as governed software, operating at the autonomy it has earned — and never sold before the map exists, because a tool before the diagnosis is exactly the failure this method prevents.</p></div>
+    </div>
+    <p class="pat">The governance patterns underneath — approval tiers, kill-switch registry, autonomy ladder — are published under license as part of our open layer.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="fq-h">
+    <span class="k lbl">Questions owners ask first</span>
+    <h2 id="fq-h">Asked before every map.</h2>
+    <div class="faq">
+      <details><summary>What if AI isn’t the answer for my business?</summary><p>Then the map says so, in writing, and shows what to fix first without it. Many of the losses we find close with a sequence fix or a role fix — no tool at all. That finding costs less than the tool would have.</p></details>
+      <details><summary>Do I need clean data before we start?</summary><p>No. Part of the map is finding out what data you actually have, where it lives and who owns it. Messy data is a finding, not a blocker.</p></details>
+      <details><summary>Are you going to sell me software?</summary><p>The map stands on its own and is yours to act on with anyone. If the route points to a system, we can build it — but nothing we build enters before the map exists, by our own rule.</p></details>
+      <details><summary>Why not just use platform X?</summary><p>Own the brain, rent the muscles. The parts that determine the outcome — strategy, rules, measurement, memory — you should own; commodity capabilities you rent. A rented decision layer aligns your company to the industry average; an owned one aligns it to your business.</p></details>
+      <details><summary>How do you treat our data?</summary><p>The rules are written before anything runs: what may be seen, by whom, hard separation between businesses, and a person approving anything irreversible. We run our own four businesses under the same rules.</p></details>
+      <details><summary>How long does it take, and what does it cost?</summary><p>Scope, duration and fee are agreed in writing before we start, sized to your business. The first call is where we set them.</p></details>
+      <details><summary>Can we work in Spanish?</summary><p>Yes — the map, the documents and the meetings, in English, Spanish or both.</p></details>
+    </div>
+  </section>
+
+  <section class="sec" id="instruments" aria-labelledby="in-h">
+    <div class="instr">
+      <div>
+        <span class="k lbl">The instruments</span>
+        <h2 id="in-h">The method travels with its own systems.</h2>
+        <p style="margin-top:18px;color:var(--graphite);max-width:44ch">CEREBRO, MAGOS, FABI and MULTA are instruments of the method, not the method. Each is shown with its real status — because that is rule number three.</p>
+        <div class="act"><a class="alt" href="/technologies" style="color:var(--klein)">See the systems</a></div>
+      </div>
+      <div>
+        <ul>
+          <li><img width="240" height="240" src="/assets/CEREBRO_Icon_Primary.svg" alt=""><span><b>CEREBRO</b><span>The founder’s verified morning brief and operations board.</span></span><span class="st2 live">In daily use</span></li>
+          <li><img width="240" height="240" src="/assets/MAGOS_Icon_Primary.svg" alt=""><span><b>MAGOS</b><span>Multi-agent orchestration with per-brand isolation.</span></span><span class="st2">In build</span></li>
+          <li><img width="240" height="240" src="/assets/FABI_Icon_Primary.svg" alt=""><span><b>FABI</b><span>The governed specialist agents MAGOS directs.</span></span><span class="st2">In build</span></li>
+          <li><img width="240" height="240" src="/assets/MULTA_Icon_Primary.svg" alt=""><span><b>MULTA</b><span>Tolls, tickets and fines for car-sharing fleets.</span></span><span class="st2">In design</span></li>
+        </ul>
+        <figure class="demo">
+          <picture><source media="(max-width:700px)" type="image/avif" srcset="/img/v2/cerebro-demo-m-390.avif 390w, /img/v2/cerebro-demo-m-780.avif 780w" sizes="calc(100vw - 40px)"><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:1300px) 92vw, 640px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode with demo data: the day’s one priority, commitments due today, decisions waiting, and one figure honestly marked as a question" loading="lazy" decoding="async"></picture>
+          <figcaption>CEREBRO in presentation mode. Demo data. Structure, states and rules are those of the system in daily use. It runs in Spanish, the founder’s working language.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="close-m on-blue" id="start" aria-labelledby="st-h" data-hide-bar>
+  <div class="wrap">
+    <span class="k lbl" style="color:#fff">Get your map</span>
+    <div class="intake-wrap">
+      <div>
+        <h2 id="st-h">Tell us where you think the value is lost.</h2>
+        <p class="side">Two minutes. Then pick a time for the first call. Or go straight to the <a class="mail" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-side">calendar</a>, or write to <a class="mail" href="mailto:fabian@aka.holdings?subject=MAPA%20%E2%80%94%20get%20your%20map">fabian@aka.holdings</a>.</p>
+      </div>
+      <div>
+        <form class="intake" data-unit="mapa" data-subject="MAPA — get your map · aka.holdings" novalidate>
+          <div><label for="m-name">Your name</label><input id="m-name" name="Name" autocomplete="name" required></div>
+          <div><label for="m-email">Email</label><input id="m-email" name="Email" type="email" autocomplete="email" required></div>
+          <div><label for="m-co">Company</label><input id="m-co" name="Company" autocomplete="organization" required></div>
+          <div><label for="m-size">Size</label><select id="m-size" name="Size" required><option value="">Choose</option><option>1–10 people</option><option>11–50 people</option><option>51–200 people</option><option>200+ people</option></select></div>
+          <div><label for="m-sector">Sector</label><select id="m-sector" name="Sector" required><option value="">Choose</option><option>Multi-site operations or franchise</option><option>Fleet, mobility or logistics</option><option>Brand, retail or e-commerce</option><option>Hospitality or real estate</option><option>Professional services</option><option>Other</option></select></div>
+          <div><label for="m-what">What are you looking for?</label><select id="m-what" name="Looking for" required><option value="">Choose</option><option>The Map</option><option>The Route</option><option>The Operation</option><option>Not sure yet</option></select></div>
+          <div class="full"><label for="m-loss">Where do you think the business loses value?</label><textarea id="m-loss" name="Where value is lost" required placeholder="A handoff that breaks, a report nobody trusts, time spent chasing payments…"></textarea></div>
+          <div><label for="m-how">How did you hear about us?</label><input id="m-how" name="How you found us" placeholder="A referral, LinkedIn, search…"></div>
+          <div style="align-self:end"><button type="submit">Send and pick a time</button></div>
+        </form>
+        <div class="intake-done" tabindex="-1" hidden>
+          <span class="k" style="color:#fff">Thank you</span>
+          <p>Your message is ready to send to fabian@aka.holdings — if your email app opened, press send. Now pick a time for the first call:</p>
+          <div class="act"><a class="btn inv" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-done">Pick a time</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="wrap">
+  <footer>
+    <div class="grid">
+      <img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="57" height="36">
+      <div class="mid"><span class="k">MAPA — the advisory method of AKA</span><span class="k sub"><a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span></div>
+      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
+    </div>
+  </footer>
+</div>
+<nav class="mbar" aria-label="Quick actions"><a href="#start" data-place="mbar">Get your map</a><a class="ghost" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="mbar-cal">Call</a></nav>
+<script src="/assets/site.js" defer></script>
+<script>
+/* cgrid turn: the needle points to the reading you touch */
+(function(){var n=document.getElementById('needle');var g=document.getElementById('cgrid');if(!n||!g)return;
+g.querySelectorAll('[role=button]').forEach(function(c){function go(){g.querySelectorAll('.on').forEach(function(x){x.classList.remove('on')});c.classList.add('on');n.style.transform='rotate('+c.dataset.deg+'deg)'}
+c.addEventListener('click',go);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});});})();
+</script>
+</body>
+</html>

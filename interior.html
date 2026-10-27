@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>document.documentElement.className+=' js'</script>
-<title>AKA Interior Design — Interiors in Miami, curated piece by piece</title>
-<meta name="description" content="We design homes in Miami, Palm Beach and abroad around the art and the pieces you live with, from the floor plan to the last book on the shelf. Book a design consultation.">
+<title>AKA Interior Design — Homes that begin with the art you live with</title>
+<meta name="description" content="We design homes in Miami, Palm Beach and abroad around the art and the pieces you live with — from the floor plan to the last book on the shelf. Book a design consultation.">
 <link rel="canonical" href="https://aka.holdings/interior">
-<meta property="og:title" content="AKA Interior Design — Interiors, curated piece by piece">
+<meta property="og:title" content="AKA Interior Design — Homes that begin with the art you live with">
 <meta property="og:description" content="Homes in Miami, Palm Beach and abroad, designed around the art you live with. Book a design consultation.">
 <meta property="og:image" content="https://aka.holdings/og/interior.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -15,14 +15,14 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Deep.svg">
-<link rel="preload" as="image" type="image/avif" imagesrcset="/img/v2/edgf-hero-living-800.avif 800w, /img/v2/edgf-hero-living-1600.avif 1600w, /img/v2/edgf-hero-living-2400.avif 2400w" imagesizes="(max-width:700px) 100vw, 60vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" imagesrcset="/img/v2/edgf-hero-living-800.avif 800w, /img/v2/edgf-hero-living-1600.avif 1600w, /img/v2/edgf-hero-living-2400.avif 2400w" imagesizes="(max-width:1400px) 100vw, 1360px" fetchpriority="high">
 <link rel="stylesheet" href="/aka.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"AKA Interior Design","description":"Interior design studio: homes designed around the art you live with, from the floor plan to the last piece.","url":"https://aka.holdings/interior","image":"https://aka.holdings/og/interior.jpg","email":"fabian@aka.holdings","areaServed":["Miami","Palm Beach","Remote"],"address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"founder":{"@type":"Person","name":"Fabian J. Ortega A.","url":"https://aka.holdings/fabian"},"parentOrganization":{"@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/"},"knowsLanguage":["en","es"]}</script>
 <style>
-/* /interior v7 "monograph" · ACA WEB · 27-oct-2026
-   Brand v1.6.1 unchanged: Profundo #163D91 on bone #F5F2EC, Bodoni Moda (titles, never < 24 px), Archivo (text), Questrial only in nav and buttons.
-   Principles: photographs are shown whole (never cropped to a shape) and large; rows size each photo by its own proportions so heights match;
-   one statement per project; labels only where they carry information; one button at the top, one at the end. */
+/* /interior v8 · ACA WEB · 27-oct-2026 — the monograph system (v7) kept: photographs whole, never cropped to a shape;
+   rows size each photo by its own proportions. v8: full-width hero, proof strip, What we do differently,
+   own homes with room to breathe, Quito final design, Bristol proposal. Brand v1.6.1 unchanged:
+   Profundo #163D91 on bone #F5F2EC, Bodoni Moda titles, Archivo text, Questrial nav/buttons. */
 body.interior{background-image:none;--ink2:#2B2B2B;--rule:#D8D1C5}
 .wide{max-width:1360px;margin:0 auto;padding:0 var(--gutter)}
 figure{margin:0}
@@ -41,32 +41,48 @@ figure{margin:0}
 .plates + .plates{margin-top:14px}
 .pl{flex:var(--r) 1 0;min-width:0}
 .pl img{display:block;width:100%;height:auto}
-.lead-row{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;margin-bottom:14px}
-@media (max-width:980px){.lead-row{grid-template-columns:1fr}.lead-row>span{display:none}}
 .pl figcaption{font-size:13.5px;line-height:1.5;color:var(--graphite);margin-top:10px;max-width:52ch;padding-right:8px}
 .pl figcaption i{font-style:italic}
 
-/* hero */
-.hero-i{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:end;padding:44px 0 0}
-.hero-i h1{font:400 clamp(52px,6.4vw,104px)/.94 'Bodoni Moda',serif;letter-spacing:-.025em;color:var(--deep)}
-.hero-i .lead{font-size:18px;line-height:1.6;color:var(--ink2);margin-top:32px;max-width:34ch}
-.hero-i .act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:30px}
-.hero-i .where{font-size:14px;color:var(--graphite);margin-top:22px}
+/* hero: the photograph takes the whole width */
+.hero-i{padding:40px 0 0}
+.hero-i .head{display:grid;grid-template-columns:minmax(300px,6.5fr) 5.5fr;gap:48px;align-items:end;padding-bottom:34px}
+.hero-i h1{font:400 clamp(52px,6.8vw,112px)/.94 'Bodoni Moda',serif;letter-spacing:-.025em;color:var(--deep)}
+.hero-i .lead{font-size:18px;line-height:1.6;color:var(--ink2);max-width:44ch}
+.hero-i .act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:24px}
+.hero-i .where{font-size:14px;color:var(--graphite);margin-top:18px}
+.hero-i .plates figcaption{max-width:none}
+
+/* proof strip: four rooms, full frame */
+.strip{margin-top:14px}
 
 /* a project */
-.pj{padding-top:136px}
-.pj-head{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:baseline;margin-bottom:40px}
+.pj{padding-top:128px}
+.pj-head{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:baseline;margin-bottom:38px}
 .pj-head h2{font:400 clamp(40px,4.4vw,68px)/1 'Bodoni Moda',serif;letter-spacing:-.015em;color:var(--deep)}
+.pj-head h3{font:400 clamp(26px,2.6vw,38px)/1.1 'Bodoni Moda',serif;color:var(--deep)}
 .pj-head .facts{font-size:14px;color:var(--graphite);margin-top:14px}
 .pj-head p{font-size:17.5px;line-height:1.65;color:var(--ink2);max-width:58ch}
 .pj-head p + p{margin-top:12px}
 .pj-head .more{margin-top:18px}
+.sub-pj{padding-top:72px}
 .adds{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;margin-top:56px}
 .adds h3{font:400 28px/1.15 'Bodoni Moda',serif;color:var(--deep)}
 .adds dl{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
 .adds dt{font-weight:500;color:var(--ink)}
 .adds dt span{display:block;font-weight:400;font-size:14px;color:var(--graphite);margin-top:2px}
 .adds dd{margin:6px 0 0;font-size:15.5px;line-height:1.6;color:var(--ink2)}
+
+/* what we do differently */
+.diff{margin-top:144px;border-top:1px solid var(--deep);padding-top:48px}
+.diff>h2{font:400 clamp(36px,3.8vw,56px)/1.04 'Bodoni Moda',serif;color:var(--deep);letter-spacing:-.01em;max-width:18ch}
+.diff .intro{font-size:17px;line-height:1.6;color:var(--ink2);max-width:58ch;margin-top:18px}
+.diff-row{display:grid;grid-template-columns:minmax(300px,4.6fr) 7.4fr;gap:48px;margin-top:64px;align-items:start}
+.diff-row:nth-child(odd){grid-template-columns:7.4fr minmax(300px,4.6fr)}
+.diff-row:nth-child(odd) .txt{order:2}
+.diff-row .n{font:400 15px/1 'Bodoni Moda',serif;color:var(--deep);display:block;margin-bottom:12px;letter-spacing:.1em}
+.diff-row h3{font:400 clamp(24px,2.4vw,34px)/1.15 'Bodoni Moda',serif;color:var(--deep);max-width:16ch}
+.diff-row p{font-size:16px;line-height:1.65;color:var(--ink2);margin-top:14px;max-width:44ch}
 
 /* how we work: a real sequence, so it is numbered */
 .how-i{margin-top:144px;border-top:1px solid var(--deep);padding-top:48px;display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px}
@@ -88,12 +104,15 @@ figure{margin:0}
 .start-i .side a{border-bottom:1px solid var(--rule)}
 
 @media (max-width:980px){
-  .hero-i,.pj-head,.adds,.how-i,.svc-i,.start-i{grid-template-columns:1fr;gap:24px}
+  .hero-i .head,.pj-head,.adds,.how-i,.svc-i,.start-i{grid-template-columns:1fr;gap:24px}
+  .diff-row,.diff-row:nth-child(odd){grid-template-columns:1fr;gap:20px}
+  .diff-row:nth-child(odd) .txt{order:0}
   .svc-i .note,.svc-i .entry{grid-column:1}
   .pj{padding-top:96px}
+  .sub-pj{padding-top:64px}
 }
 @media (max-width:700px){
-  .hero-i{padding-top:28px}
+  .hero-i{padding-top:24px}
   .hero-i h1{font-size:clamp(48px,14vw,64px)}
   .plates{flex-wrap:wrap;gap:10px}
   .plates.keep{flex-wrap:nowrap}
@@ -112,6 +131,7 @@ figure{margin:0}
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
+      <a href="/mapa">MAPA Advisory</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior" aria-current="page">03 / Interior Design</a>
@@ -123,17 +143,25 @@ figure{margin:0}
 
 <main id="main" class="wide">
   <section class="hero-i" data-hide-bar>
-    <div>
-      <h1>Interiors, curated piece by piece.</h1>
-      <p class="lead">We design homes in Miami, Palm Beach and abroad around the art and the pieces you live with — from the floor plan to the last book on the shelf.</p>
-      <div class="act">
-        <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="hero">Book a consultation</a>
-        <a class="tl" href="#edgewater">See the work</a>
+    <div class="head">
+      <h1>A home begins with one piece.</h1>
+      <div>
+        <p class="lead">The painting you inherited, the chair you saved for, the rug made for you. We design the home around it — plan, millwork, light and furniture — so every room has a reason to look the way it looks.</p>
+        <div class="act">
+          <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="hero">Book a consultation</a>
+          <a class="tl" href="#edgewater">See the work</a>
+        </div>
+        <p class="where">Miami and Palm Beach, on site · anywhere else, remote · in English and Spanish.</p>
       </div>
-      <p class="where">In English and Spanish. On site in Miami and Palm Beach; remote anywhere else.</p>
     </div>
-    <div class="plates">
-      <figure class="pl" style="--r:1.3583"><picture><source type="image/avif" srcset="/img/v2/edgf-hero-living-800.avif 800w, /img/v2/edgf-hero-living-1600.avif 1600w, /img/v2/edgf-hero-living-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-hero-living-1600.jpg" srcset="/img/v2/edgf-hero-living-800.jpg 800w, /img/v2/edgf-hero-living-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1178" alt="Living room facing the bay in Edgewater, Miami: a long pale sectional, a sculptural coffee table and a gradient relief on the wall" fetchpriority="high"></picture><figcaption>Edgewater, Miami. The gradient relief above the sofa set the palette for the whole apartment.</figcaption></figure>
+    <div class="plates keep">
+      <figure class="pl" style="--r:1.3583"><picture><source type="image/avif" srcset="/img/v2/edgf-hero-living-800.avif 800w, /img/v2/edgf-hero-living-1600.avif 1600w, /img/v2/edgf-hero-living-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-hero-living-1600.jpg" srcset="/img/v2/edgf-hero-living-800.jpg 800w, /img/v2/edgf-hero-living-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1178" alt="Living room facing the bay in Edgewater, Miami: a long pale sectional, a sculptural coffee table and a gradient relief on the wall" fetchpriority="high"></picture><figcaption>Edgewater, Miami — full service, completed 2026. The gradient relief above the sofa set the palette for the whole apartment.</figcaption></figure>
+    </div>
+    <div class="plates strip">
+      <figure class="pl" style="--r:1.3333"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-h01-blue-check-living.avif 1000w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-h01-blue-check-living.jpg" width="1000" height="750" alt="A living room with a marble fireplace, a large work on paper with blue arcs above it and a blue and cream check rug" loading="lazy" decoding="async"></picture><figcaption>Coconut Cove, Miami: a Roberto Matta (1969) over the fireplace.</figcaption></figure>
+      <figure class="pl" style="--r:1.4993"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g14-villa-arch.avif 1081w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g14-villa-arch.jpg" width="1081" height="721" alt="A vaulted living room with pale marble floors and two tall carved figures framing an arched window onto the water" loading="lazy" decoding="async"></picture><figcaption>A vaulted house on the water.</figcaption></figure>
+      <figure class="pl" style="--r:1.3652"><picture><source type="image/avif" srcset="/img/v2/edgf-media-wall-800.avif 800w, /img/v2/edgf-media-wall-1600.avif 1600w, /img/v2/edgf-media-wall-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-media-wall-1600.jpg" srcset="/img/v2/edgf-media-wall-800.jpg 800w, /img/v2/edgf-media-wall-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1172" alt="A media wall in fluted oak with lit niches, a wine wall and the bay, Edgewater, Miami" loading="lazy" decoding="async"></picture><figcaption>Edgewater: millwork in fluted oak, from kitchen to bay.</figcaption></figure>
+      <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g15-up-chair.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g15-up-chair.jpg" width="640" height="800" alt="Gaetano Pesce’s Donna chair in red and cream stripes with its ball ottoman on a marble floor" loading="lazy" decoding="async"></picture><figcaption>Gaetano Pesce’s Donna chair.</figcaption></figure>
     </div>
   </section>
 
@@ -148,13 +176,14 @@ figure{margin:0}
         <p class="more"><a class="tl" href="/interior-edgewater">See the whole apartment</a></p>
       </div>
     </div>
-    <div class="lead-row"><span aria-hidden="true"></span><div class="plates">
-      <figure class="pl" style="--r:1.3552"><picture><source type="image/avif" srcset="/img/v2/edgf-long-view-800.avif 800w, /img/v2/edgf-long-view-1600.avif 1600w, /img/v2/edgf-long-view-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-long-view-1600.jpg" srcset="/img/v2/edgf-long-view-800.jpg 800w, /img/v2/edgf-long-view-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1181" alt="Living room, fluted-oak wall with a wine rack and lit niches, kitchen and the bay in one room" loading="lazy" decoding="async"></picture><figcaption>One room from the kitchen to the bay, tied together by a wall of fluted oak.</figcaption></figure>
-    </div></div>
     <div class="plates">
-      <figure class="pl" style="--r:0.7723"><picture><source type="image/avif" srcset="/img/v2/edgf-kitchen-600.avif 600w, /img/v2/edgf-kitchen-900.avif 900w, /img/v2/edgf-kitchen-1200.avif 1200w, /img/v2/edgf-kitchen-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-kitchen-1200.jpg" srcset="/img/v2/edgf-kitchen-600.jpg 600w, /img/v2/edgf-kitchen-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1554" alt="Kitchen bar with stools under a globe chandelier, a wine wall in oak and a bouclé armchair" loading="lazy" decoding="async"></picture><figcaption>The kitchen bar, with the wine wall built into the millwork.</figcaption></figure>
+      <figure class="pl" style="--r:1.3552"><picture><source type="image/avif" srcset="/img/v2/edgf-long-view-800.avif 800w, /img/v2/edgf-long-view-1600.avif 1600w, /img/v2/edgf-long-view-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-long-view-1600.jpg" srcset="/img/v2/edgf-long-view-800.jpg 800w, /img/v2/edgf-long-view-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1181" alt="Living room, fluted-oak wall with a wine rack and lit niches, kitchen and the bay in one room" loading="lazy" decoding="async"></picture><figcaption>One room from the kitchen to the bay, tied together by a wall of fluted oak.</figcaption></figure>
       <figure class="pl" style="--r:0.7463"><picture><source type="image/avif" srcset="/img/v2/edgf-sofa-bay-600.avif 600w, /img/v2/edgf-sofa-bay-900.avif 900w, /img/v2/edgf-sofa-bay-1200.avif 1200w, /img/v2/edgf-sofa-bay-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-sofa-bay-1200.jpg" srcset="/img/v2/edgf-sofa-bay-600.jpg 600w, /img/v2/edgf-sofa-bay-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1608" alt="The sectional and an oval travertine coffee table, the bay through the glass" loading="lazy" decoding="async"></picture><figcaption>Travertine, bouclé and a plum throw.</figcaption></figure>
-      <figure class="pl" style="--r:0.7597"><picture><source type="image/avif" srcset="/img/v2/edgf-terrace-600.avif 600w, /img/v2/edgf-terrace-900.avif 900w, /img/v2/edgf-terrace-1200.avif 1200w, /img/v2/edgf-terrace-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-terrace-1200.jpg" srcset="/img/v2/edgf-terrace-600.jpg 600w, /img/v2/edgf-terrace-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1579" alt="Terrace dining table in stone with woven chairs over the bay" loading="lazy" decoding="async"></picture><figcaption>The terrace, over the bay.</figcaption></figure>
+    </div>
+    <div class="plates">
+      <figure class="pl" style="--r:0.7509"><picture><source type="image/avif" srcset="/img/v2/edgf-living-600.avif 600w, /img/v2/edgf-living-900.avif 900w, /img/v2/edgf-living-1200.avif 1200w, /img/v2/edgf-living-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-living-1200.jpg" srcset="/img/v2/edgf-living-600.jpg 600w, /img/v2/edgf-living-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1598" alt="The living room from the window: the sectional, the relief and the entry beyond" loading="lazy" decoding="async"></picture><figcaption>The relief that set the palette.</figcaption></figure>
+      <figure class="pl" style="--r:0.7500"><picture><source type="image/avif" srcset="/img/v2/edgf-niche-600.avif 600w, /img/v2/edgf-niche-900.avif 900w, /img/v2/edgf-niche-1200.avif 1200w, /img/v2/edgf-niche-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-niche-1200.jpg" srcset="/img/v2/edgf-niche-600.jpg 600w, /img/v2/edgf-niche-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1600" alt="A lit niche in the fluted-oak wall holding ceramics" loading="lazy" decoding="async"></picture><figcaption>A lit niche in the millwork.</figcaption></figure>
+      <figure class="pl" style="--r:0.7372"><picture><source type="image/avif" srcset="/img/v2/edgf-entry-600.avif 600w, /img/v2/edgf-entry-900.avif 900w, /img/v2/edgf-entry-1200.avif 1200w, /img/v2/edgf-entry-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-entry-1200.jpg" srcset="/img/v2/edgf-entry-600.jpg 600w, /img/v2/edgf-entry-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1628" alt="The entry in fluted oak with a bench and a mirror" loading="lazy" decoding="async"></picture><figcaption>The entry.</figcaption></figure>
     </div>
   </section>
 
@@ -162,20 +191,20 @@ figure{margin:0}
     <div class="pj-head">
       <div>
         <h2 id="p2">A collector’s apartment, Miami</h2>
-        <p class="facts">Collection styling. Proposal, 2026.</p>
+        <p class="facts">Collection styling. Completed 2026.</p>
       </div>
       <div>
-        <p>More than twenty works in one open room. Nothing leaves the collection and nothing is added to it. The proposal rearranges and lights the art, and changes only what sits around it: a few pieces with a signature, warm textures, and one colour taken from the paintings.</p>
-        <p class="more"><a class="tl" href="/interior-collector">See the proposal, piece by piece</a></p>
+        <p>More than twenty works in one open room. Nothing left the collection and nothing was added to it. We rearranged and lit the art, and changed only what sits around it: a few pieces with a signature, warm textures, and one colour taken from the paintings.</p>
+        <p class="more"><a class="tl" href="/interior-collector">See it piece by piece, with the reason for each</a></p>
       </div>
     </div>
     <div class="plates">
-      <figure class="pl" style="--r:0.7525"><picture><source type="image/avif" srcset="/img/v2/colf-living-600.avif 600w, /img/v2/colf-living-900.avif 900w, /img/v2/colf-living-1200.avif 1200w, /img/v2/colf-living-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-living-1200.jpg" srcset="/img/v2/colf-living-600.jpg 600w, /img/v2/colf-living-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1595" alt="Open living room: a patterned blue rug, a cognac leather lounge chair, a pine coffee table and a tall colourful work" loading="lazy" decoding="async"></picture><figcaption>The living room as it is today.</figcaption></figure>
+      <figure class="pl" style="--r:0.7525"><picture><source type="image/avif" srcset="/img/v2/colf-living-600.avif 600w, /img/v2/colf-living-900.avif 900w, /img/v2/colf-living-1200.avif 1200w, /img/v2/colf-living-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-living-1200.jpg" srcset="/img/v2/colf-living-600.jpg 600w, /img/v2/colf-living-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1595" alt="Open living room: a patterned blue rug, a cognac leather lounge chair, a pine coffee table and a tall colourful work" loading="lazy" decoding="async"></picture><figcaption>The living room, hung and lit around the collection.</figcaption></figure>
       <figure class="pl" style="--r:0.7475"><picture><source type="image/avif" srcset="/img/v2/colf-window-600.avif 600w, /img/v2/colf-window-900.avif 900w, /img/v2/colf-window-1200.avif 1200w, /img/v2/colf-window-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-window-1200.jpg" srcset="/img/v2/colf-window-600.jpg 600w, /img/v2/colf-window-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1605" alt="Curved window wall with a round work, velvet armchairs and a cognac sofa" loading="lazy" decoding="async"></picture><figcaption>The window wall and the round work.</figcaption></figure>
-      <figure class="pl" style="--r:0.7448"><picture><source type="image/avif" srcset="/img/v2/colf-dining-600.avif 600w, /img/v2/colf-dining-900.avif 900w, /img/v2/colf-dining-1200.avif 1200w, /img/v2/colf-dining-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-dining-1200.jpg" srcset="/img/v2/colf-dining-600.jpg 600w, /img/v2/colf-dining-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1611" alt="Dining table with caned chairs and a gold sculpture at its centre, framed works on the kitchen wall" loading="lazy" decoding="async"></picture><figcaption>The dining table: the proposal leaves the bronze alone at its centre.</figcaption></figure>
+      <figure class="pl" style="--r:0.7448"><picture><source type="image/avif" srcset="/img/v2/colf-dining-600.avif 600w, /img/v2/colf-dining-900.avif 900w, /img/v2/colf-dining-1200.avif 1200w, /img/v2/colf-dining-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-dining-1200.jpg" srcset="/img/v2/colf-dining-600.jpg 600w, /img/v2/colf-dining-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1611" alt="Dining table with caned chairs and a gold sculpture at its centre, framed works on the kitchen wall" loading="lazy" decoding="async"></picture><figcaption>The dining table: the bronze sits alone at its centre.</figcaption></figure>
     </div>
     <div class="adds">
-      <h3>What the proposal adds, and why</h3>
+      <h3>What we added, and why</h3>
       <dl>
         <div><dt>Spaghetti vase<span>Gaetano Pesce, Fish Design</span></dt><dd>The only object on the pine coffee table. Its red is the red of the tiger in the painting above.</dd></div>
         <div><dt>Panthella 160 lamp<span>Verner Panton, Louis Poulsen</span></dt><dd>Chrome, on the amber cart under the painting: the only new metal, next to the cantilever chairs.</dd></div>
@@ -189,40 +218,116 @@ figure{margin:0}
     <div class="pj-head">
       <div>
         <h2 id="p3">Our own homes</h2>
-        <p class="facts">Miami and Ecuador.</p>
+        <p class="facts">Miami and Ecuador, since 2018.</p>
       </div>
       <div>
-        <p>Before designing for clients, Fabian designed the homes he lives in. In Coconut Cove, a living room built around a Roberto Matta from 1969 and a José Bedia from the 1980s. In Ecuador, an apartment over the Pacific and another over the river, furnished with family antiques.</p>
-        <p class="more"><a class="tl" href="/interior-oceanfront">Over the Pacific, Ecuador</a> &nbsp; <a class="tl" href="/interior-antiques">Over the river, Samborondón</a></p>
+        <p>Before designing for clients, Fabian designed the homes he lives in. In Coconut Cove, a living room built around a Roberto Matta from 1969 and a José Bedia from the 1980s. In Ecuador, an apartment over the Pacific and another over the river, furnished with family antiques. They are the portfolio we are judged by — and the standard every client project has to meet.</p>
       </div>
     </div>
     <div class="plates">
-      <figure class="pl" style="--r:1.3333"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-h01-blue-check-living.avif 1000w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-h01-blue-check-living.jpg" width="1000" height="750" alt="A living room with a marble fireplace, a large work on paper with blue arcs above it and a blue and cream check rug" loading="lazy" decoding="async"></picture><figcaption>Coconut Cove, Miami: a Roberto Matta (1969) and a José Bedia (1980s).</figcaption></figure>
-      <figure class="pl" style="--r:1.4993"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g14-villa-arch.avif 1081w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g14-villa-arch.jpg" width="1081" height="721" alt="A vaulted living room with pale marble floors and two tall carved figures framing an arched window onto the water" loading="lazy" decoding="async"></picture><figcaption>A vaulted house on the water.</figcaption></figure>
-    </div>
-    <div class="plates">
-      <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g15-up-chair.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g15-up-chair.jpg" width="640" height="800" alt="Gaetano Pesce’s Donna chair in red and cream stripes with its ball ottoman on a marble floor" loading="lazy" decoding="async"></picture><figcaption>Gaetano Pesce’s Donna chair.</figcaption></figure>
+      <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-h02-mayimbe-sofa.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-h02-mayimbe-sofa.jpg" width="640" height="800" alt="A living room sofa under a large dark painting by José Bedia" loading="lazy" decoding="async"></picture><figcaption>Coconut Cove: a José Bedia from the 1980s over the sofa.</figcaption></figure>
       <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-h03-chrome-sculpture.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-h03-chrome-sculpture.jpg" width="640" height="800" alt="Supercuia, a polished chrome sculpture by Saint Clair Cemin, on a turned wood stool" loading="lazy" decoding="async"></picture><figcaption><i>Supercuia</i>, by Saint Clair Cemin.</figcaption></figure>
-      <figure class="pl" style="--r:1.3333"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d01-living-geometry.avif 1024w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d01-living-geometry.jpg" width="1024" height="768" alt="Living room with white sofas in red-wood frames, a marble table and a wall of geometric works" loading="lazy" decoding="async"></picture><figcaption>Over the Pacific, Ecuador, 2018.</figcaption></figure>
-      <figure class="pl" style="--r:0.8010"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g09-sunset-living.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g09-sunset-living.jpg" width="640" height="799" alt="Living room at sunset with a draped tufted sofa and a gold stool" loading="lazy" decoding="async"></picture><figcaption>Over the river, Samborondón, 2018.</figcaption></figure>
+    </div>
+
+    <div class="sub-pj" id="oceanfront">
+      <div class="pj-head">
+        <div>
+          <h3>Oceanfront, Ecuador</h3>
+          <p class="facts">Our own home. 2018.</p>
+        </div>
+        <div>
+          <p>An apartment over the Pacific: linen and red wood against the sea, a wall of geometric works, a dining table of oak blocks under glass, and a roof of cane, wicker and patterned tile.</p>
+          <p class="more"><a class="tl" href="/interior-oceanfront">See the whole apartment</a></p>
+        </div>
+      </div>
+      <div class="plates">
+        <figure class="pl" style="--r:1.3333"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d01-living-geometry.avif 1024w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d01-living-geometry.jpg" width="1024" height="768" alt="Living room with white sofas in red-wood frames, a marble coffee table with red coral, a wall of geometric works and a blue painted wall" loading="lazy" decoding="async"></picture><figcaption>The living room: linen, red wood, marble and a wall of geometric works.</figcaption></figure>
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d10-round-table-sea.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d10-round-table-sea.jpg" width="640" height="800" alt="A round marble table with blue chairs under a wooden sunburst pendant, the beach through the window" loading="lazy" decoding="async"></picture><figcaption>A round marble table at the window.</figcaption></figure>
+      </div>
+      <div class="plates">
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d02-dining-sea.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d02-dining-sea.jpg" width="640" height="800" alt="Dining table of oak blocks under glass, bare-bulb pendants on black cables, the beach through the window" loading="lazy" decoding="async"></picture><figcaption>The dining table, facing the sea.</figcaption></figure>
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d04-tree-bed.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d04-tree-bed.jpg" width="640" height="800" alt="A bed of solid wood framed by four bare tree trunks against a pale blue wall" loading="lazy" decoding="async"></picture><figcaption>The bed, framed by four trunks.</figcaption></figure>
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-d14-roof-close.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-d14-roof-close.jpg" width="640" height="800" alt="Under a cane pergola, a wicker sectional with white cushions, green armchairs and a carved table on patterned tiles" loading="lazy" decoding="async"></picture><figcaption>The roof: cane, wicker and patterned tile.</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="sub-pj" id="antiques">
+      <div class="pj-head">
+        <div>
+          <h3>Apartment with antiques, Samborondón</h3>
+          <p class="facts">Our own home. 2018.</p>
+        </div>
+        <div>
+          <p>Over the river: family antiques against contemporary work — draped silk sofas on a chevron hide, a gold-leaf ceiling under a Murano chandelier, and a study painted by hand like a woven check.</p>
+          <p class="more"><a class="tl" href="/interior-antiques">See the whole apartment</a></p>
+        </div>
+      </div>
+      <div class="plates">
+        <figure class="pl" style="--r:1.3333"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g11-dining-mirror.avif 900w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g11-dining-mirror.jpg" width="900" height="675" alt="A double-height dining room: a black lacquer table for twelve, a large black, white and blue painting, a crystal chandelier and a gilded baroque mirror" loading="lazy" decoding="async"></picture><figcaption>The dining room, under the large work and the crystal chandelier.</figcaption></figure>
+        <figure class="pl" style="--r:0.8010"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g09-sunset-living.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g09-sunset-living.jpg" width="640" height="799" alt="Living room at sunset: a draped tufted sofa, a chair of stacked wood, a gold stool and a bracket clock, the dining room beyond" loading="lazy" decoding="async"></picture><figcaption>At sunset: draped silk, stacked wood, a bracket clock.</figcaption></figure>
+      </div>
+      <div class="plates">
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g01-office-plaid.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g01-office-plaid.jpg" width="640" height="800" alt="A study with blue brushstrokes painted across walls and ceiling like a check, a long red sign and an antique desk" loading="lazy" decoding="async"></picture><figcaption>The study, painted by hand like a woven check.</figcaption></figure>
+        <figure class="pl" style="--r:0.8010"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g08-gold-ceiling.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g08-gold-ceiling.jpg" width="640" height="799" alt="A gold-leaf ceiling with a Murano chandelier over a large colourful abstract work" loading="lazy" decoding="async"></picture><figcaption>Gold leaf above, a Murano chandelier, colour below.</figcaption></figure>
+        <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/interior/2026-10-27-g06-terrace-river.avif 640w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/interior/2026-10-27-g06-terrace-river.jpg" width="640" height="800" alt="A terrace with a wicker sofa, two wicker swivel chairs and carved wood ornaments on a taupe wall, the river beyond" loading="lazy" decoding="async"></picture><figcaption>The terrace over the river.</figcaption></figure>
+      </div>
     </div>
   </section>
 
   <section class="pj" id="quito" aria-labelledby="p5">
     <div class="pj-head">
       <div>
-        <h2 id="p5">From plan to home</h2>
-        <p class="facts">Quito, designed from Miami. Proposal, 2026.</p>
+        <h2 id="p5">Quito, designed from Miami</h2>
+        <p class="facts">Full design, remote. Designed 2026 · awaiting installation.</p>
       </div>
       <div>
-        <p>Every project starts on paper. For a family apartment in Quito we measured the plan from the architect’s files, placed every piece to scale — twenty-four seats in four groups that can see each other — and rendered the rooms to decide before anything was bought.</p>
-        <p class="more"><a class="tl" href="/interior-quito">See the plans and the proposal</a></p>
+        <p>A family apartment in Quito, designed to the last piece without a single site visit. The plan was rebuilt from the architect’s files and verified in centimetres; twenty-four seats sit in four groups that see each other; every piece was chosen, priced and placed to scale before anything was bought. The design is final and approved — installation is next.</p>
+        <p class="more"><a class="tl" href="/interior-quito">See the plans and the design</a></p>
       </div>
     </div>
     <div class="plates">
-      <figure class="pl" style="--r:1.5779"><picture><source type="image/avif" srcset="/img/v2/qto-plan-measured-800.avif 800w, /img/v2/qto-plan-measured-1600.avif 1600w, /img/v2/qto-plan-measured-2400.avif 2400w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qto-plan-measured-1600.jpg" srcset="/img/v2/qto-plan-measured-800.jpg 800w, /img/v2/qto-plan-measured-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="1014" alt="Measured plan of the apartment in centimetres, drawn from the architect’s files" loading="lazy" decoding="async"></picture><figcaption>1. The plan, measured in centimetres.</figcaption></figure>
-      <figure class="pl" style="--r:0.8000"><picture><source type="image/avif" srcset="/img/v2/qto-plan-furnished-600.avif 600w, /img/v2/qto-plan-furnished-900.avif 900w, /img/v2/qto-plan-furnished-1200.avif 1200w, /img/v2/qto-plan-furnished-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qto-plan-furnished-1200.jpg" srcset="/img/v2/qto-plan-furnished-600.jpg 600w, /img/v2/qto-plan-furnished-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1500" alt="Furnished plan to scale: terrace, living, dining, kitchen and entry, each piece numbered" loading="lazy" decoding="async"></picture><figcaption>2. Every piece placed to scale.</figcaption></figure>
-      <figure class="pl" style="--r:1.6043"><picture><source type="image/avif" srcset="/img/v2/qto-render-dining-800.avif 800w, /img/v2/qto-render-dining-1184.avif 1184w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qto-render-dining-1184.jpg" srcset="/img/v2/qto-render-dining-800.jpg 800w, /img/v2/qto-render-dining-1184.jpg 1184w" sizes="(max-width:700px) 100vw, 60vw" width="1184" height="738" alt="Render of the proposed dining room: an oval table in oak and cane, a round mirror and wall lights" loading="lazy" decoding="async"></picture><figcaption>3. A render, to decide before buying.</figcaption></figure>
+      <figure class="pl" style="--r:0.9931"><picture><source type="image/avif" srcset="/img/v2/qtf-plan-final-600.avif 600w, /img/v2/qtf-plan-final-900.avif 900w, /img/v2/qtf-plan-final-1200.avif 1200w, /img/v2/qtf-plan-final-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qtf-plan-final-1200.jpg" srcset="/img/v2/qtf-plan-final-600.jpg 600w, /img/v2/qtf-plan-final-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1208" alt="Final furnished plan of the Quito apartment: terrace, living room, dining room, kitchen and entry, every piece numbered to its own sheet" loading="lazy" decoding="async"></picture><figcaption>1. The final plan: every piece verified in centimetres, numbered to its own sheet.</figcaption></figure>
+      <figure class="pl" style="--r:1.7768"><picture><source type="image/avif" srcset="/img/v2/qtf-render-dining-800.avif 800w, /img/v2/qtf-render-dining-1600.avif 1600w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qtf-render-dining-1600.jpg" srcset="/img/v2/qtf-render-dining-800.jpg 800w, /img/v2/qtf-render-dining-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="900" alt="Render of the dining room: a felt triptych designed by the studio above a wood table with cane and leather chairs" loading="lazy" decoding="async"></picture><figcaption>2. Render — the dining room, with a felt triptych designed by us.</figcaption></figure>
+    </div>
+    <div class="plates">
+      <figure class="pl" style="--r:2.3337"><picture><source type="image/avif" srcset="/img/v2/qtf-felt-800.avif 800w, /img/v2/qtf-felt-1600.avif 1600w, /img/v2/qtf-felt-1900.avif 1900w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qtf-felt-1600.jpg" srcset="/img/v2/qtf-felt-800.jpg 800w, /img/v2/qtf-felt-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 60vw" width="1600" height="686" alt="Render of the full felt work: a quilted wool composition in cream and brown, 3.16 by 1.25 metres, designed by AKA" loading="lazy" decoding="async"></picture><figcaption>3. Render — the work itself: felt by hand, 316 × 125 cm — our design, in prototype with the workshops of AKA Art Productions.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="pj" id="bristol" aria-labelledby="p6">
+    <div class="pj-head">
+      <div>
+        <h2 id="p6">Bristol Tower 505, Miami</h2>
+        <p class="facts">Whole apartment. Proposal.</p>
+      </div>
+      <div>
+        <p>A full apartment in Bristol Tower, Brickell: living room, dining room, both bedrooms, a study corner and the terrace. The proposal furnishes it room by room — cane and walnut against travertine inside, a terrace set up for cooking and long evenings outside — with every piece selected and budgeted.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="diff" aria-labelledby="diff-h">
+    <h2 id="diff-h">What we do differently</h2>
+    <p class="intro">Plenty of studios make beautiful rooms. These five habits are ours — and each one has a project behind it, not a promise.</p>
+    <div class="diff-row">
+      <div class="txt"><span class="n">I</span><h3>We enter through the art.</h3><p>The first question is never the sofa — it is the piece the home will be built around. In Coconut Cove that was a Roberto Matta from 1969; in the collector’s apartment, twenty works that only needed to be seen properly.</p></div>
+      <div class="plates keep"><figure class="pl" style="--r:0.7520"><picture><source type="image/avif" srcset="/img/v2/colf-entry-wall-600.avif 600w, /img/v2/colf-entry-wall-900.avif 900w, /img/v2/colf-entry-wall-1200.avif 1200w, /img/v2/colf-entry-wall-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-entry-wall-1200.jpg" srcset="/img/v2/colf-entry-wall-600.jpg 600w, /img/v2/colf-entry-wall-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1596" alt="A wall of framed works over a bronze sculpture in the collector’s apartment" loading="lazy" decoding="async"></picture><figcaption>The collector’s apartment: the art decides, everything else follows.</figcaption></figure></div>
+    </div>
+    <div class="diff-row">
+      <div class="txt"><span class="n">II</span><h3>Every piece comes with its reason, in writing.</h3><p>Not a mood board — a list where each piece carries the argument for its presence: why this red, why chrome, why nothing else on the table. You approve reasons, not vibes.</p></div>
+      <div class="plates keep"><figure class="pl" style="--r:0.7607"><picture><source type="image/avif" srcset="/img/v2/colf-bronze-600.avif 600w, /img/v2/colf-bronze-900.avif 900w, /img/v2/colf-bronze-1200.avif 1200w, /img/v2/colf-bronze-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/colf-bronze-1200.jpg" srcset="/img/v2/colf-bronze-600.jpg 600w, /img/v2/colf-bronze-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1577" alt="The dining table with caned chairs and the gold bronze alone at its centre" loading="lazy" decoding="async"></picture><figcaption>From the collector’s apartment list: “the bronze sits alone at its centre.”</figcaption></figure></div>
+    </div>
+    <div class="diff-row">
+      <div class="txt"><span class="n">III</span><h3>The plan is verified before a dollar is spent.</h3><p>We rebuild the architect’s plan in centimetres and place every piece to scale — clearances, door swings, rug sizes. In Quito that meant six dining chairs instead of eight, caught on paper, not in the freight elevator.</p></div>
+      <div class="plates keep"><figure class="pl" style="--r:0.9931"><picture><source type="image/avif" srcset="/img/v2/qtf-plan-final-600.avif 600w, /img/v2/qtf-plan-final-900.avif 900w, /img/v2/qtf-plan-final-1200.avif 1200w, /img/v2/qtf-plan-final-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qtf-plan-final-1200.jpg" srcset="/img/v2/qtf-plan-final-600.jpg 600w, /img/v2/qtf-plan-final-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1208" alt="The final furnished plan of the Quito apartment, every piece numbered" loading="lazy" decoding="async"></picture><figcaption>Quito: the final plan, verified in centimetres.</figcaption></figure></div>
+    </div>
+    <div class="diff-row">
+      <div class="txt"><span class="n">IV</span><h3>We can make the piece that doesn’t exist.</h3><p>Through AKA Art Productions we work with master craftspeople in eight countries — so when the right work cannot be bought, it can be made. For Quito we designed a felt triptych and sized it to the wall.</p></div>
+      <div class="plates keep"><figure class="pl" style="--r:0.7500"><picture><source type="image/avif" srcset="/img/v2/qtf-felt-b-540.avif 540w, /img/v2/qtf-felt-b-1080.avif 1080w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/qtf-felt-b-1080.jpg" srcset="/img/v2/qtf-felt-b-540.jpg 540w, /img/v2/qtf-felt-b-1080.jpg 1080w" sizes="(max-width:700px) 100vw, 60vw" width="1080" height="1440" alt="Centre panel of the felt triptych designed by AKA: quilted cream wool with a brown circuit-like figure" loading="lazy" decoding="async"></picture><figcaption>Render — the centre panel of the Quito felt work.</figcaption></figure></div>
+    </div>
+    <div class="diff-row">
+      <div class="txt"><span class="n">V</span><h3>One person, from the first plan to the last book.</h3><p>Measuring, proposal, trade purchasing, deliveries, installers, millwork and the final styling — one interlocutor for all of it. Edgewater ran this way, end to end — to the photograph above.</p></div>
+      <div class="plates keep"><figure class="pl" style="--r:0.7723"><picture><source type="image/avif" srcset="/img/v2/edgf-kitchen-600.avif 600w, /img/v2/edgf-kitchen-900.avif 900w, /img/v2/edgf-kitchen-1200.avif 1200w, /img/v2/edgf-kitchen-1800.avif 1800w" sizes="(max-width:700px) 100vw, 60vw"><img src="/img/v2/edgf-kitchen-1200.jpg" srcset="/img/v2/edgf-kitchen-600.jpg 600w, /img/v2/edgf-kitchen-1200.jpg 1200w" sizes="(max-width:700px) 100vw, 60vw" width="1200" height="1554" alt="Kitchen bar with stools under a globe chandelier, a wine wall in oak and a bouclé armchair" loading="lazy" decoding="async"></picture><figcaption>Edgewater: the kitchen bar, the wine wall built into the millwork.</figcaption></figure></div>
     </div>
   </section>
 
@@ -241,7 +346,7 @@ figure{margin:0}
     <ul>
       <li><b>A consultation</b>For a home that almost works: one visit and a written plan of what to keep, move and buy.</li>
       <li><b>One room</b>Furnished plan, palette, render and the list of every piece at designer pricing.</li>
-      <li><b>Remote design</b>For homes outside Miami: we design, buy online and coordinate shipping.</li>
+      <li><b>Remote design</b>For homes outside Miami: we design, buy online and coordinate shipping — the way Quito was designed.</li>
       <li><b>The whole home</b>Construction, millwork, furniture and art, with one point of contact from the first plan to the last book.</li>
     </ul>
     <p class="note">Fees depend on the size of the home and the scope; we propose them after the first conversation. Furniture and art are bought at designer pricing.</p>
@@ -278,7 +383,7 @@ figure{margin:0}
   <footer>
     <div class="grid">
       <img src="/assets/AKA_Interior_Design_Small_OnBone.svg" alt="AKA Interior Design" width="66" height="40">
-      <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub"><a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span></div>
+      <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub"><a href="/mapa">MAPA Advisory</a> · <a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span></div>
       <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
     </div>
   </footer>

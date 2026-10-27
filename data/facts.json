@@ -1,31 +1,132 @@
 {
   "_about": "Single source of figures for aka.holdings. Every page reads its numbers from here (build check: tools/check_facts.py). No entry without a source. ACA WEB, 2026-10-27.",
   "group": {
-    "houses": {"value": 3, "label": "houses, one operator", "source": "LINEAMIENTOS-AKA.md §1 (AKA Holdings 00_MARCA)"}
+    "houses": {
+      "value": 3,
+      "label": "houses, one operator",
+      "source": "LINEAMIENTOS-AKA.md \u00a71 (AKA Holdings 00_MARCA)"
+    }
   },
   "productions": {
-    "countries": {"value": 8, "list": ["Peru", "Ecuador", "Kyrgyzstan", "Nepal", "India", "Mali", "Uzbekistan", "Mexico"], "label": "countries where we have produced with master craftspeople", "source": "productions.html chapters 00–16 + AKA Editions (Santa Clara del Cobre, Mexico); ACAWEB/productions/2026-10-27-F1-ADDENDA-v4.md"},
-    "venues": {"value": 11, "list": ["Art Basel Miami Beach", "Art Basel Paris", "Art Week Tokyo", "FIAC Paris", "Zona Maco", "Perrotin Tokyo · Perrotin Hong Kong", "NADA Miami", "Museo Jumex", "Albarrán Bourdais, Madrid", "kurimanzutto out east, East Hampton", "Carla Stellweg, New York"], "label": "fairs, museums and galleries where work we produced has been shown", "source": "productions.html «Where the work has been shown»; ACAWEB/productions/2026-10-27-F1-ADDENDA-archivo.md, -v4.md"},
-    "founded": {"value": 2017, "source": "CV 2026-10-26 (Founder, AKA Art Productions, 2017 – present)"},
-    "first_exploration": {"value": 2007, "source": "productions.html chapter 00 (Peru, 2007); dato de Fabian 27-oct"},
-    "first_artist_project": {"value": 2018, "source": "productions.html chapter 01 (Bishkek, Sept 2018)"},
-    "chapters": {"value": 17, "source": "productions.html, chapters 00–16"}
+    "countries": {
+      "value": 8,
+      "list": [
+        "Peru",
+        "Ecuador",
+        "Kyrgyzstan",
+        "Nepal",
+        "India",
+        "Mali",
+        "Uzbekistan",
+        "Mexico"
+      ],
+      "label": "countries where we have produced with master craftspeople",
+      "source": "productions.html chapters 00\u201316 + AKA Editions (Santa Clara del Cobre, Mexico); ACAWEB/productions/2026-10-27-F1-ADDENDA-v4.md"
+    },
+    "venues": {
+      "value": 11,
+      "list": [
+        "Art Basel Miami Beach",
+        "Art Basel Paris",
+        "Art Week Tokyo",
+        "FIAC Paris",
+        "Zona Maco",
+        "Perrotin Tokyo \u00b7 Perrotin Hong Kong",
+        "NADA Miami",
+        "Museo Jumex",
+        "Albarr\u00e1n Bourdais, Madrid",
+        "kurimanzutto out east, East Hampton",
+        "Carla Stellweg, New York"
+      ],
+      "label": "fairs, museums and galleries where work we produced has been shown",
+      "source": "productions.html \u00abWhere the work has been shown\u00bb; ACAWEB/productions/2026-10-27-F1-ADDENDA-archivo.md, -v4.md"
+    },
+    "founded": {
+      "value": 2017,
+      "source": "CV 2026-10-26 (Founder, AKA Art Productions, 2017 \u2013 present)"
+    },
+    "first_exploration": {
+      "value": 2007,
+      "source": "productions.html chapter 00 (Peru, 2007); dato de Fabian 27-oct"
+    },
+    "first_artist_project": {
+      "value": 2018,
+      "source": "productions.html chapter 01 (Bishkek, Sept 2018)"
+    },
+    "chapters": {
+      "value": 17,
+      "source": "productions.html, chapters 00\u201316"
+    }
   },
   "interior": {
-    "own_homes_since": {"value": 2018, "source": "interior.html Projects 02–03 (Ecuador 2018, own homes, Fabian 27-oct 04:57)"},
-    "trade_accounts": {"value": "more than ten", "source": "AKA Interior Design/AKA-ESTADO.md (12 approved trade accounts); auditoría 26-oct"},
-    "projects_on_page": {"value": 6, "list": ["Edgewater Residence", "Collector's Apartment", "Other homes", "Oceanfront Apartment", "Apartment with Antiques", "Quito Residence"], "source": "interior.html"}
+    "own_homes_since": {
+      "value": 2018,
+      "source": "interior.html Projects 02\u201303 (Ecuador 2018, own homes, Fabian 27-oct 04:57)"
+    },
+    "trade_accounts": {
+      "value": "more than ten",
+      "source": "AKA Interior Design/AKA-ESTADO.md (12 approved trade accounts); auditor\u00eda 26-oct"
+    },
+    "projects_on_page": {
+      "value": 7,
+      "list": [
+        "Edgewater Residence",
+        "Collector's Apartment",
+        "Own homes (Coconut Cove)",
+        "Oceanfront Apartment",
+        "Apartment with Antiques",
+        "Quito Residence",
+        "Bristol Tower 505"
+      ],
+      "source": "interior.html, 2026-10-27 v8"
+    }
   },
   "technologies": {
-    "systems": {"value": 4, "in_daily_use": 1, "in_build": 2, "in_design": 1, "detail": {"CEREBRO": "In daily use", "MAGOS": "In build", "FABI": "In build", "MULTA": "In design"}, "source": "LINEAMIENTOS-AKA.md §1; CV 2026-10-26 (CEREBRO in daily use; MAGOS and FABI in build; MULTA in design)"}
+    "systems": {
+      "value": 4,
+      "in_daily_use": 1,
+      "in_build": 2,
+      "in_design": 1,
+      "detail": {
+        "CEREBRO": "In daily use",
+        "MAGOS": "In build",
+        "FABI": "In build",
+        "MULTA": "In design"
+      },
+      "source": "LINEAMIENTOS-AKA.md \u00a71; CV 2026-10-26 (CEREBRO in daily use; MAGOS and FABI in build; MULTA in design)"
+    }
   },
   "founder": {
-    "president_sales": {"value": "$100M+", "label": "annual sales as President of a vehicle distributor", "source": "CV 2026-10-26, AngloAutomotriz / ABP Group"},
-    "employees": {"value": "about 1,000", "source": "CV 2026-10-26"},
-    "group_size": {"value": "about $130M", "source": "CV 2026-10-26"},
-    "cofounded_growth": {"value": "0 → ~$30M", "source": "CV 2026-10-26, Cetivehiculos / 1800 Partes"},
-    "franchise_locations": {"value": "100+", "source": "CV 2026-10-26"},
-    "hospitality_units": {"value": "200+", "from": 3, "cities": "nine U.S. cities", "source": "CV 2026-10-26, Nuovo Properties"},
-    "board_years": {"value": "more than 15", "source": "CV 2026-10-26"}
+    "president_sales": {
+      "value": "$100M+",
+      "label": "annual sales as President of a vehicle distributor",
+      "source": "CV 2026-10-26, AngloAutomotriz / ABP Group"
+    },
+    "employees": {
+      "value": "about 1,000",
+      "source": "CV 2026-10-26"
+    },
+    "group_size": {
+      "value": "about $130M",
+      "source": "CV 2026-10-26"
+    },
+    "cofounded_growth": {
+      "value": "0 \u2192 ~$30M",
+      "source": "CV 2026-10-26, Cetivehiculos / 1800 Partes"
+    },
+    "franchise_locations": {
+      "value": "100+",
+      "source": "CV 2026-10-26"
+    },
+    "hospitality_units": {
+      "value": "200+",
+      "from": 3,
+      "cities": "nine U.S. cities",
+      "source": "CV 2026-10-26, Nuovo Properties"
+    },
+    "board_years": {
+      "value": "more than 15",
+      "source": "CV 2026-10-26"
+    }
   }
 }

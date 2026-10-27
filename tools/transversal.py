@@ -2,7 +2,7 @@
 menu, site.js, AVIF <picture> for /img/*.jpg. Idempotent."""
 import re, os, sys, glob
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NAV = [('/', 'AKA Holdings'), ('/technologies', '01 / Technologies'), ('/productions', '02 / Art Productions'), ('/interior', '03 / Interior Design'), ('/fabian', 'Fabian')]
+NAV = [('/', 'AKA Holdings'), ('/mapa', 'MAPA Advisory'), ('/technologies', '01 / Technologies'), ('/productions', '02 / Art Productions'), ('/interior', '03 / Interior Design'), ('/fabian', 'Fabian')]
 def unit_of(name):
     for u in ('interior', 'productions', 'technologies', 'fabian'):
         if name.startswith(u): return '/' + u

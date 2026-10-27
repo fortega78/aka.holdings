@@ -11,7 +11,7 @@
    800,
    1600
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_02.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_sala_02.heic",
   "edits": [
    "verticals {'segs': 89, 'rot_deg': -2.15, 'keystone_d_over_h': np.float32(-16.1), 'crop_lost': 0.198}",
    "white balance (neutral highlights)",
@@ -32,7 +32,7 @@
    800,
    1600
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_01.jpeg",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_sala_01.jpeg",
   "edits": [
    "verticals {'segs': 110, 'rot_deg': -0.66, 'keystone_d_over_h': np.float32(-17.9), 'crop_lost': 0.115}",
    "crop [0.2, 0, 1, 1]",
@@ -51,7 +51,7 @@
   "jpg": [
    800
   ],
-  "src": "Active Projects/AKA Interior Design/Proyecto Isabelita Duran/Planos y Fotos del Dept/Salaapertura a terraza y cocina .JPG",
+  "src": "Active Projects/AKA Interior Design/quito-project/Planos y Fotos del Dept/Salaapertura a terraza y cocina .JPG",
   "edits": [
    "verticals {'segs': 40, 'rot_deg': -0.95, 'keystone_d_over_h': np.float32(26.3), 'crop_lost': 0.111}",
    "white balance (neutral highlights)",
@@ -161,7 +161,7 @@
    800,
    1600
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_02.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_sala_02.heic",
   "edits": [
    "verticals {'segs': 89, 'rot_deg': -2.15, 'keystone_d_over_h': np.float32(-16.1), 'crop_lost': 0.198}",
    "white balance (neutral highlights)",
@@ -181,7 +181,7 @@
    800,
    1600
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_01.jpeg",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_sala_01.jpeg",
   "edits": [
    "verticals {'segs': 110, 'rot_deg': -0.66, 'keystone_d_over_h': np.float32(-17.9), 'crop_lost': 0.115}",
    "white balance (neutral highlights)",
@@ -201,7 +201,7 @@
    800,
    1600
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_07.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_sala_07.heic",
   "edits": [
    "verticals {'segs': 99, 'rot_deg': -0.38, 'keystone_d_over_h': np.float32(-19.0), 'crop_lost': 0.1}",
    "white balance (neutral highlights)",
@@ -222,7 +222,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_cocina_09.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/[cliente]/2026-09-03_[cliente]_cocina_09.heic",
   "edits": [
    "verticals {'segs': 153, 'rot_deg': 2.47, 'keystone_d_over_h': np.float32(5.2), 'crop_lost': 0.276}",
    "white balance (neutral highlights)",
@@ -243,7 +243,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0025.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_[cliente]_entrega-y-estilizado/orig/2026-09-25_2026-09_[cliente]_entrega-y-estilizado_0025.heic",
   "edits": [
    "verticals {'segs': 20, 'rot_deg': -1.1, 'keystone_d_over_h': np.float32(2.3), 'crop_lost': 0.431}",
    "white balance (neutral highlights)",
@@ -264,7 +264,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0022.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_[cliente]_entrega-y-estilizado/orig/2026-09-25_2026-09_[cliente]_entrega-y-estilizado_0022.heic",
   "edits": [
    "verticals {'segs': 37, 'rot_deg': -0.68, 'keystone_d_over_h': np.float32(2.1), 'crop_lost': 0.44}",
    "white balance (neutral highlights)",
@@ -285,7 +285,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0014.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_[cliente]_entrega-y-estilizado/orig/2026-09-25_2026-09_[cliente]_entrega-y-estilizado_0014.heic",
   "edits": [
    "verticals {'segs': 138, 'rot_deg': -1.76, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.312}",
    "white balance (neutral highlights)",
@@ -306,7 +306,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0020.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_[cliente]_entrega-y-estilizado/orig/2026-09-25_2026-09_[cliente]_entrega-y-estilizado_0020.heic",
   "edits": [
    "white balance (neutral highlights)",
    "exposure/shadows/highlights",
@@ -326,7 +326,7 @@
    600,
    1200
   ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0002.heic",
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_[cliente]_entrega-y-estilizado/orig/2026-09-25_2026-09_[cliente]_entrega-y-estilizado_0002.heic",
   "edits": [
    "verticals {'segs': 98, 'rot_deg': 0.13, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.276}",
    "white balance (neutral highlights)",
@@ -487,6 +487,144 @@
   "src": "ACAWEB/_desde-cerebro/2026-10-27-cerebro-demo-presentar-390.png",
   "edits": [
    "none (UI capture, demo data)"
+  ]
+ },
+ "qtf-plan-final": {
+  "w": 2160,
+  "h": 2175,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Quito project final PDF 2026-08-06, plan card, header with building/unit removed (R25, CEREBRO 11:58 #1)",
+  "edits": [
+   "card crop",
+   "identifying header removed"
+  ]
+ },
+ "qtf-zonas": {
+  "w": 2160,
+  "h": 2175,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Quito project final PDF 2026-08-06, plan card, header with building/unit removed (R25, CEREBRO 11:58 #1)",
+  "edits": [
+   "card crop",
+   "identifying header removed"
+  ]
+ },
+ "qtf-render-dining": {
+  "w": 1672,
+  "h": 941,
+  "avif": [
+   800,
+   1600
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "quito-project/AKA-FOA1.png (studio render)",
+  "edits": [
+   "as rendered"
+  ]
+ },
+ "qtf-felt": {
+  "w": 1916,
+  "h": 821,
+  "avif": [
+   800,
+   1600,
+   1900
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "quito-project/AKA-FOA2.png (studio render, felt work)",
+  "edits": [
+   "as rendered"
+  ]
+ },
+ "qtf-felt-a": {
+  "w": 1086,
+  "h": 1448,
+  "avif": [
+   540,
+   1080
+  ],
+  "jpg": [
+   540,
+   1080
+  ],
+  "src": "AKA-FOA1-Left.png",
+  "edits": [
+   "as rendered"
+  ]
+ },
+ "qtf-felt-b": {
+  "w": 1086,
+  "h": 1448,
+  "avif": [
+   540,
+   1080
+  ],
+  "jpg": [
+   540,
+   1080
+  ],
+  "src": "AKA-FOA1-Middle.png",
+  "edits": [
+   "as rendered"
+  ]
+ },
+ "qtf-felt-c": {
+  "w": 1086,
+  "h": 1448,
+  "avif": [
+   540,
+   1080
+  ],
+  "jpg": [
+   540,
+   1080
+  ],
+  "src": "AKA-FOA1-Right.png",
+  "edits": [
+   "as rendered"
+  ]
+ },
+ "teher-roll": {
+  "w": 2576,
+  "h": 1717,
+  "avif": [
+   600,
+   900,
+   1200
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "01_WEB/ACAWEB/_desde-cerebro/teher/2026-10-27-teher-02-rolling-rug.jpg (Fabian, 12:05)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
   ]
  }
 }

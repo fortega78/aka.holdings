@@ -251,3 +251,20 @@ picture img{width:100%;height:auto}
 .intake-done p{color:var(--sub);max-width:56ch;margin-top:10px}
 @media (max-width:600px){.intake{grid-template-columns:1fr}}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== motion v1 · CEREBRO 12:06 #7 · subtle, never decorative ===== */
+@media (prefers-reduced-motion: no-preference){
+  .js .rv{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}
+  .js .rv-in{opacity:1;transform:none}
+  body.interior .hero-i .plates.keep .pl{overflow:hidden}
+  body.interior .hero-i .plates.keep img{animation:heroZoom 20s ease-out forwards}
+  body.productions .bleed{overflow:hidden}
+  body.productions .bleed img{animation:heroZoom 20s ease-out forwards}
+  @keyframes heroZoom{to{transform:scale(1.03)}}
+}
+@media (prefers-reduced-motion: reduce){
+  .rise{animation:none}
+}
+@media (max-width:760px){
+  .rise{animation:none} /* phones paint the hero at once; the reveal below the fold is motion enough */
+}
