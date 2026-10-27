@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/aka.css">
 <style>
-/* /technologies v2 · ACA WEB · 2026-10-26 · brand v1.6.1: Klein #1725F5 and white, Archivo, JetBrains Mono only for status; no navy */
+/* /technologies v3 · ACA WEB · 2026-10-27 (outcomes, fit, two ways, FAQ) · brand v1.6.1: Klein #1725F5 and white, Archivo, JetBrains Mono only for status; no navy */
 body.technologies{background-image:none}
 .btn{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);background:var(--klein);color:#fff;transition:background .25s,color .25s}
 .btn:hover{background:#fff;color:var(--klein)}
@@ -103,11 +103,34 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .close-t .right p{margin-top:14px;font-size:14px}
 .close-t a.mail{border-bottom:1px solid rgba(255,255,255,.6)}
 
+.out{list-style:none;border-top:1px solid var(--klein)}
+.out li{padding:16px 0;border-bottom:1px solid var(--line)}
+.out b{display:block;font-weight:500;font-size:18px;color:var(--ink);margin-bottom:4px}
+.out span{font-size:15px;color:var(--graphite)}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.fit>div{border:1px solid var(--line);padding:26px;background:#fff}
+.fit>div:first-child{border-color:var(--klein)}
+.fit b{display:block;font-weight:500;font-size:17px;margin-bottom:10px}
+.fit ul{list-style:none}
+.fit li{font-size:15px;color:var(--graphite);padding:8px 0;border-top:1px solid var(--line)}
+.ways{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.ways>div{border-top:2px solid var(--klein);padding:22px 0 0}
+.ways .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
+.ways b{display:block;font:500 24px/1.15 Archivo,sans-serif;margin:8px 0 10px}
+.ways p{font-size:15px;color:var(--graphite);max-width:52ch}
+.ways .act{margin-top:22px}
+.faq{margin-top:28px;border-top:1px solid var(--klein)}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:500;font-size:17px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--klein);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;font-size:15px;color:var(--graphite);max-width:64ch}
 @media (max-width:900px){
   .hero-t .grid,.two-col,.founder-t,.close-t .grid{grid-template-columns:1fr;gap:32px}
   .terms,.principles,.tools{grid-template-columns:1fr}
   .gov{grid-template-columns:1fr 1fr}
-  .sys{grid-template-columns:1fr}
+  .sys,.fit,.ways{grid-template-columns:1fr}
   .close-t .right{text-align:left}
 }
 @media (max-width:600px){
@@ -175,6 +198,39 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
       <div><b>Built in-house first</b><p>What we recommend is what we run ourselves. The systems below are the proof — and the limits.</p></div>
     </div>
     <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a></div>
+  </section>
+
+  <section class="sec" id="outcome" aria-labelledby="oc">
+    <div class="two-col">
+      <div><span class="k lbl">What you leave with</span><h2 id="oc">A written answer, not a slide of possibilities.</h2></div>
+      <div>
+        <ul class="out">
+          <li><b>A map of where value is lost</b><span>Each handoff, delay and blind spot, with what it costs where it can be measured.</span></li>
+          <li><b>An owner for every loss</b><span>Named inside your company, so the fix has someone to answer for it.</span></li>
+          <li><b>The work, redesigned</b><span>How the process should run — with or without AI. Many fixes need no AI at all.</span></li>
+          <li><b>The tools, and their rules</b><span>Which tool for which step, what it may decide alone, what stays with a person, and how we will know it worked.</span></li>
+          <li><b>A clear next step — or a reason to stop</b><span>If AI is not the answer for your business today, we say so in writing.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fit">
+    <span class="k lbl">Who it is for</span>
+    <h2 id="fit">For the owner, not the IT department.</h2>
+    <div class="fit">
+      <div><b>A good fit</b><ul><li>Owners and operators of growing businesses: multi-site operations, fleets, brands and commerce.</li><li>Leaders who carry a P&amp;L and want to know where AI pays — and where it does not.</li><li>Teams that work in English, Spanish or both.</li></ul></div>
+      <div><b>Not a fit</b><ul><li>A chatbot demo or a tool already chosen, looking for a reason.</li><li>Projects with no owner on the client side.</li><li>Work that cannot be measured once it runs.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="ways">
+    <span class="k lbl">Two ways to work with us</span>
+    <h2 id="ways">Advice first. Systems when they are earned.</h2>
+    <div class="ways">
+      <div><span class="n">01</span><b>The diagnostic</b><p>Advisory, fixed scope. Where value is lost, who owns it, how the work should change and which tools — under which rules. Yours to act on with us or with anyone.</p><div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a></div></div>
+      <div><span class="n">02</span><b>Systems, built and governed</b><p>When the diagnostic points to a system, we build it on what we already run ourselves — the stack behind CEREBRO, MAGOS, FABI and MULTA — adapted to your business, with the same governance and the same honest status.</p><div class="act"><a class="alt" href="#systems">See the systems</a></div></div>
+    </div>
   </section>
 
   <section class="sec" aria-labelledby="gv">
@@ -251,6 +307,19 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
       <div><b>Operator first</b><p>Every system starts inside a business we run, and is offered with its real status — never a prototype sold as a product.</p></div>
       <div><b>Human-governed</b><p>Agents act within defined boundaries; people approve what is irreversible. Autonomy is earned level by level.</p></div>
       <div><b>Verified, not claimed</b><p>Reports separate verified facts from last-known data and open questions. Nothing is marked done on someone’s word.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fq">
+    <span class="k lbl">Questions</span>
+    <h2 id="fq">What owners ask first.</h2>
+    <div class="faq">
+      <details><summary>What if AI isn’t the answer for my business?</summary><p>Then the diagnostic says so, in writing, and shows what to fix first without it. Many of the losses we find are solved by changing the work, not by adding a tool.</p></details>
+      <details><summary>Do I need clean data or an AI team before we start?</summary><p>No. Part of the diagnostic is finding out what data you actually have, where it lives and who owns it. We work with what is there.</p></details>
+      <details><summary>Will you try to sell me software?</summary><p>The diagnostic stands on its own. If it points to a system, we can build it — but the recommendation is yours to act on with us or with anyone.</p></details>
+      <details><summary>How do you keep our data safe?</summary><p>Rules are written before anything runs: what data an agent may see, hard separation between businesses, and people approving anything irreversible.</p></details>
+      <details><summary>How long does it take, and what does it cost?</summary><p>Scope, duration and fee are agreed before we start, sized to your business. The first call is where we set them.</p></details>
+      <details><summary>Can we work in Spanish?</summary><p>Yes — the diagnostic, the documents and the meetings, in English, Spanish or both.</p></details>
     </div>
   </section>
 
