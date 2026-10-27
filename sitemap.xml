@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://aka.holdings/</loc></url>
-<url><loc>https://aka.holdings/interior</loc></url>
-<url><loc>https://aka.holdings/productions</loc></url>
-<url><loc>https://aka.holdings/technologies</loc></url>
-<url><loc>https://aka.holdings/fabian</loc></url>
+<url><loc>https://aka.holdings/fabian</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+<url><loc>https://aka.holdings/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority></url>
+<url><loc>https://aka.holdings/interior</loc><lastmod>2026-10-27</lastmod><priority>0.9</priority></url>
+<url><loc>https://aka.holdings/interior-antiques</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/interior-collector</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/interior-edgewater</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/interior-oceanfront</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/interior-quito</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions</loc><lastmod>2026-10-27</lastmod><priority>0.9</priority></url>
+<url><loc>https://aka.holdings/productions-2021</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-2022</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-2023</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-amorales-felt</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-bishkek-2018</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-films</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-kathmandu-2019</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-kyrgyzstan-2019</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-lakra-stone</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-latinx-nomads</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-mali-bogolan</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-nada-miami-2019</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-nepal-2020</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-new-york-2019</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-pearl-hair-stone</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-peru-ecuador</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/productions-tejido-liquido</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+<url><loc>https://aka.holdings/technologies</loc><lastmod>2026-10-27</lastmod><priority>0.9</priority></url>
 </urlset>

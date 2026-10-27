@@ -1,14 +1,57 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<script>document.documentElement.className+=' js'</script><title>AKA Holdings — Not found</title><link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg"><link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/aka.css"></head>
-<body><div class="wrap"><header class="top"><a href="/" aria-label="AKA Holdings"><img width="214" height="135" src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings"></a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
+<title>Page not found — AKA Holdings</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="This page does not exist. Choose a house: AKA Technologies, AKA Art Productions or AKA Interior Design.">
+<link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
+<link rel="stylesheet" href="/aka.css">
+<style>
+.nf{padding:clamp(48px,9vh,110px) 0 48px;max-width:760px}
+.nf h1{font:500 clamp(32px,4vw,52px)/1.1 Archivo,sans-serif;letter-spacing:-.02em;margin-top:18px}
+.nf p{color:var(--graphite);margin-top:16px;max-width:52ch}
+.houses{border-top:1px solid var(--klein);margin-top:32px}
+.houses a{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);min-height:48px}
+.houses b{font-weight:500;font-size:18px}
+.houses span{font-size:14px;color:var(--graphite);display:block}
+.houses .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.26em;font-size:11px;color:var(--klein)}
+</style>
+</head>
+<body class="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="57" height="36"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
-      <a href="/" aria-current="page">AKA Holdings</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
       <a href="/fabian">Fabian</a>
-    </nav></header>
-<section class="hero"><span class="k">404</span><h1 style="margin-top:24px">This page does not exist.</h1><a class="cta" href="/">AKA Holdings</a></section></div><script src="/assets/site.js" defer></script>
-</body></html>
+    </nav>
+  </header>
+  <main id="main" class="nf">
+    <span class="k">404 · Page not found</span>
+    <h1>This page does not exist — the three houses do.</h1>
+    <p>The address may have changed. Start from the house you came for, or write to <a href="mailto:fabian@aka.holdings" style="border-bottom:1px solid var(--line)">fabian@aka.holdings</a>.</p>
+    <nav class="houses" aria-label="The three houses">
+      <a href="/technologies"><span class="k">01</span><span><b>AKA Technologies</b><span>AI systems for real operations · AI diagnostic</span></span><span class="go">Go</span></a>
+      <a href="/productions"><span class="k">02</span><span><b>AKA Art Productions</b><span>Work made with artists, by hand · AKA Editions</span></span><span class="go">Go</span></a>
+      <a href="/interior"><span class="k">03</span><span><b>AKA Interior Design</b><span>Interiors in Miami, curated piece by piece</span></span><span class="go">Go</span></a>
+      <a href="/"><span class="k">—</span><span><b>AKA Holdings</b><span>The group</span></span><span class="go">Home</span></a>
+    </nav>
+  </main>
+  <footer>
+    <div class="grid">
+      <img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="63" height="40">
+      <div class="mid"><span class="k">Technologies · Art Productions · Interior Design · TeHer Art Rugs</span></div>
+      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
+    </div>
+  </footer>
+</div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

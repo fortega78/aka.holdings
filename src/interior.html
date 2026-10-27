@@ -33,15 +33,15 @@ figure{margin:0}
 .ix-top{padding:clamp(40px,7vh,88px) 0 clamp(28px,4vh,44px);display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
 .ix-top h1{font-size:clamp(44px,6.2vw,92px);line-height:.98;letter-spacing:-.02em;color:var(--deep);max-width:12ch}
 .ix-top .lead{font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:var(--graphite);max-width:44ch}
-.bleed img{width:100%;height:auto;max-height:86vh;object-fit:cover}
+.bleed img{width:100%;height:auto;max-height:72vh;object-fit:cover}
 .bleed .cap{padding:0 var(--gutter);max-width:1240px;margin:10px auto 0}
 /* proof strip */
-.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:56px}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
 .proof img{aspect-ratio:4/5;object-fit:cover}
 .proof .cap{font-size:12px}
 /* index */
 .index{margin:8px 0 0;border-top:1px solid var(--deep)}
-.index a{display:grid;grid-template-columns:2.2fr 1.4fr .6fr 1.2fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding-left .3s}
+.index a{display:grid;grid-template-columns:2.2fr 1.4fr .6fr 1.2fr;gap:24px;padding:11px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding-left .3s}
 .index a:hover{padding-left:10px}
 .index .t{font:400 clamp(24px,1.9vw,26px)/1.2 'Bodoni Moda',serif;color:var(--deep)}
 .index span{font-size:14px;color:var(--graphite)}
@@ -100,6 +100,10 @@ figure{margin:0}
 .svc{display:grid;grid-template-columns:4fr 8fr;gap:48px;padding:72px 0 16px}
 .svc h2{font-size:clamp(32px,3.2vw,44px);line-height:1.1;color:var(--deep)}
 .svc .list .item b{font:400 24px/1.25 'Bodoni Moda',serif;color:var(--deep)}
+.svc .list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.svc .list .item{grid-template-columns:40px 1fr;gap:6px 14px}
+.svc .list .item p{grid-column:2}
+@media (max-width:600px){.svc .list{grid-template-columns:1fr}}
 .svc .entry{margin-top:22px;padding:18px 20px;border:1px solid var(--deep);color:var(--graphite);font-size:15px}
 .svc .entry b{color:var(--deep);font-weight:500}
 /* about */
@@ -267,7 +271,7 @@ figure{margin:0}
     <div class="txt qhead">
       <div>
         <span class="no">Project 05</span>
-        <h2 class="serif" id="p5">Quito Residence: from plan to home.</h2>
+        <h2 class="serif" id="p5">From plan to home: Quito Residence.</h2>
         <span class="mline">2026 · Remote design · Plan and proposal</span>
       </div>
       <div>
@@ -276,10 +280,10 @@ figure{margin:0}
       </div>
     </div>
     <div class="p2h">
-      <figure>{{pic:qto-empty|The empty apartment: a long living room opening to the terrace and the kitchen|(max-width:900px) 50vw, 300px}}<figcaption><b>Before</b>The empty apartment.</figcaption></figure>
-      <figure class="contain">{{pic:qto-plan-measured|Measured plan of the apartment in centimetres, drawn from the architect’s files|(max-width:900px) 50vw, 300px}}<figcaption><b>Plan</b>Measured in centimetres.</figcaption></figure>
-      <figure class="contain">{{pic:qto-plan-furnished|Furnished plan to scale: terrace, living, dining, kitchen and entry, each piece numbered|(max-width:900px) 50vw, 300px}}<figcaption><b>Plan · furnished</b>Every piece, to scale.</figcaption></figure>
-      <figure>{{pic:qto-render-dining|Render of the proposed dining room: an oval table for ten in oak and cane, a round mirror and wall lights|(max-width:900px) 50vw, 300px}}<figcaption><b>Render · proposal</b>The dining room, proposed.</figcaption></figure>
+      <figure class="contain">{{pic:qto-plan-measured|Measured plan of the apartment in centimetres, drawn from the architect’s files|(max-width:900px) 50vw, 300px}}<figcaption><b>1 · Plan</b>Measured from the architect’s files.</figcaption></figure>
+      <figure class="contain">{{pic:qto-plan-furnished|Furnished plan to scale: terrace, living, dining, kitchen and entry, each piece numbered|(max-width:900px) 50vw, 300px}}<figcaption><b>2 · Plan · furnished</b>Every piece to scale.</figcaption></figure>
+      <figure>{{pic:qto-render-dining|Render of the proposed dining room: an oval table in oak and cane, a round mirror and wall lights|(max-width:900px) 50vw, 300px}}<figcaption><b>3 · Render · proposal</b>Decided before buying.</figcaption></figure>
+      <figure>{{pic:edg-long-view|An installed home: the Edgewater apartment, living room, fluted oak column and kitchen|(max-width:900px) 50vw, 300px}}<figcaption><b>4 · Installed</b>Edgewater, Miami.</figcaption></figure>
     </div>
   </section>
 </div>
@@ -289,15 +293,60 @@ figure{margin:0}
     <span class="k lbl">How we work</span>
     <h2 class="serif" id="how">Four steps, one point of contact.</h2>
     <ol>
-      <li><span class="n">1</span><b>Consultation</b>At your home or online. We measure, listen and leave with scope and priorities: what to keep, what to move, what to buy and in what order.
-        <figure class="contain">{{pic:qto-plan-measured|Measured plan of the Quito apartment|(max-width:600px) 100vw, (max-width:900px) 50vw, 280px}}<figcaption>Plan · Quito</figcaption></figure></li>
-      <li><span class="n">2</span><b>Proposal</b>A furnished plan to scale, the palette and every piece with its reason. You approve it before spending.
-        <figure class="contain">{{pic:qto-plan-furnished|Furnished plan of the Quito apartment|(max-width:600px) 100vw, (max-width:900px) 50vw, 280px}}<figcaption>Plan · furnished · Quito</figcaption></figure></li>
-      <li><span class="n">3</span><b>Purchasing</b>Through our trade accounts at more than ten furniture, lighting and textile brands: you see the retail price next to yours.
-        <figure>{{pic:qto-render-living|Render of the proposed living room in Quito: a cognac sofa, a pale rug and the terrace beyond|(max-width:600px) 100vw, (max-width:900px) 50vw, 280px}}<figcaption>Render · proposal · Quito</figcaption></figure></li>
-      <li><span class="n">4</span><b>Installation</b>Deliveries, installers and millwork coordinated, and the home styled down to the last book.
-        <figure>{{pic:edg-long-view|The Edgewater apartment installed: living room, fluted oak column and kitchen in one continuous room|(max-width:600px) 100vw, (max-width:900px) 50vw, 280px}}<figcaption>Installed · Edgewater</figcaption></figure></li>
+      <li><span class="n">1</span><b>Consultation</b>At your home or online. We measure, listen and leave with scope and priorities: what to keep, what to move, what to buy and in what order.</li>
+      <li><span class="n">2</span><b>Proposal</b>A furnished plan to scale, the palette and every piece with its reason. You approve it before spending.</li>
+      <li><span class="n">3</span><b>Purchasing</b>Through our trade accounts at more than ten furniture, lighting and textile brands: you see the retail price next to yours.</li>
+      <li><span class="n">4</span><b>Installation</b>Deliveries, installers and millwork coordinated, and the home styled down to the last book.</li>
     </ol>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="svc" aria-labelledby="svc">
+    <div>
+      <span class="k lbl">Services</span>
+      <h2 class="serif" id="svc">It starts with a consultation.</h2>
+    </div>
+    <div>
+      <div class="list">
+        <div class="item"><span class="k">01</span><b>Design consultation</b><p>At your home or online. You leave with a written plan: what to keep, what to move, what to buy and in what order.</p></div>
+        <div class="item"><span class="k">02</span><b>One room</b><p>Furnished plan, palette, render and a list of every piece at designer pricing.</p></div>
+        <div class="item"><span class="k">03</span><b>Remote design</b><p>For homes outside Miami: we design, select, buy online and coordinate shipping. In English and Spanish.</p></div>
+        <div class="item"><span class="k">04</span><b>Full-service project</b><p>Construction, millwork, furniture and art, from the first plan to the last book.</p></div>
+      </div>
+      <p class="entry" data-price hidden><b>Design consultation:</b> 90 minutes at your home in Miami, $400; or 60 minutes online, $250 — credited toward your project.</p>
+      <p class="note">Fees depend on the size of the home and the scope. Tell us about yours and we will propose the right one. Furniture and art are purchased at designer pricing, with the retail price shown next to yours.</p>
+    </div>
+  </section>
+
+
+  <section class="start" id="start" aria-labelledby="start-h" data-hide-bar>
+    <div class="side">
+      <h2 class="serif" id="start-h">Let’s start with your home.</h2>
+      <p>Two minutes. Tell us where the home is and what you want to solve; then pick a time for the consultation.</p>
+      <p style="font-size:14.5px">Every project is led by <a href="/fabian" style="border-bottom:1px solid var(--line)">Fabian Ortega</a>, from the consultation to the installation — the same eye behind AKA Art Productions, whose work has been shown at Art Basel Miami Beach and Museo Jumex.</p>
+      <div class="act"><a class="alt" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-side">Or go straight to the calendar</a></div>
+      <p style="font-size:14px">Or write to <a href="mailto:fabian@aka.holdings?subject=Interior%20consultation" style="border-bottom:1px solid var(--line)">fabian@aka.holdings</a>.</p>
+    </div>
+    <div>
+      <form class="intake" data-unit="interior" data-subject="Interior consultation · aka.holdings" novalidate>
+        <div><label for="f-name">Your name</label><input id="f-name" name="Name" autocomplete="name" required></div>
+        <div><label for="f-email">Email</label><input id="f-email" name="Email" type="email" autocomplete="email" required></div>
+        <div><label for="f-where">Where is the home?</label><select id="f-where" name="Location" required><option value="">Choose</option><option>Miami</option><option>Palm Beach</option><option>Elsewhere in the U.S.</option><option>Latin America</option><option>Other</option></select></div>
+        <div><label for="f-type">Type of space</label><select id="f-type" name="Space" required><option value="">Choose</option><option>Condo or apartment</option><option>House</option><option>New development or model unit</option><option>Office or other</option></select></div>
+        <div><label for="f-scope">Scope</label><select id="f-scope" name="Scope" required><option value="">Choose</option><option>One room</option><option>Several rooms</option><option>The whole home</option><option>Art and collection styling</option><option>Remote design</option></select></div>
+        <div><label for="f-budget">Investment range</label><select id="f-budget" name="Investment range" required><option value="">Choose</option><option>Under $5K</option><option>$5K–15K</option><option>$15K–50K</option><option>$50K+</option><option>Not sure yet</option></select><p class="hint">Design, furniture and art together.</p></div>
+        <div><label for="f-when">When do you want to start?</label><select id="f-when" name="Timing"><option value="">Choose</option><option>Within 3 months</option><option>3–6 months</option><option>Later</option></select></div>
+        <div><label for="f-src">How did you hear about us?</label><select id="f-src" name="Source"><option value="">Choose</option><option>Instagram</option><option>A referral</option><option>Google</option><option>Other</option></select></div>
+        <div class="full"><label for="f-msg">Anything else? (optional)</label><textarea id="f-msg" name="Message" placeholder="A work you want to live with, a room that does not work, a date to meet…"></textarea></div>
+        <div class="full"><button type="submit">Send and pick a time</button></div>
+      </form>
+      <div class="intake-done" tabindex="-1" hidden>
+        <span class="k">Thank you</span>
+        <p>Your details are ready to send to fabian@aka.holdings — if your email app opened, press send. Now pick a time for the consultation:</p>
+        <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-done">Pick a time</a></div>
+      </div>
+    </div>
   </section>
 </div>
 </main>
