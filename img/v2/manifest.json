@@ -42,287 +42,6 @@
    "crop ratio 1.500"
   ]
  },
- "edg-long-view": {
-  "w": 3117,
-  "h": 2300,
-  "avif": [
-   800,
-   1600,
-   2400
-  ],
-  "jpg": [
-   800,
-   1600
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_07.heic",
-  "edits": [
-   "verticals {'segs': 99, 'rot_deg': -0.38, 'keystone_d_over_h': np.float32(-19.0), 'crop_lost': 0.1}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance"
-  ]
- },
- "edg-kitchen": {
-  "w": 2222,
-  "h": 2777,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_cocina_09.heic",
-  "edits": [
-   "verticals {'segs': 153, 'rot_deg': 2.47, 'keystone_d_over_h': np.float32(5.2), 'crop_lost': 0.276}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "edg-living": {
-  "w": 2116,
-  "h": 2645,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0025.heic",
-  "edits": [
-   "verticals {'segs': 20, 'rot_deg': -1.1, 'keystone_d_over_h': np.float32(2.3), 'crop_lost': 0.431}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "edg-sofa-bay": {
-  "w": 2115,
-  "h": 2643,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0022.heic",
-  "edits": [
-   "verticals {'segs': 37, 'rot_deg': -0.68, 'keystone_d_over_h': np.float32(2.1), 'crop_lost': 0.44}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "edg-terrace": {
-  "w": 2182,
-  "h": 2727,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0014.heic",
-  "edits": [
-   "verticals {'segs': 138, 'rot_deg': -1.76, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.312}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "edg-niche": {
-  "w": 2400,
-  "h": 3000,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0020.heic",
-  "edits": [
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "edg-entry": {
-  "w": 2182,
-  "h": 2727,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0002.heic",
-  "edits": [
-   "verticals {'segs': 98, 'rot_deg': 0.13, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.276}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "col-living": {
-  "w": 2271,
-  "h": 2838,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /1d6bd15e-1c98-4f52-91d5-2feae98f36de.JPG",
-  "edits": [
-   "verticals {'segs': 25, 'rot_deg': 0.92, 'keystone_d_over_h': np.float32(8.4), 'crop_lost': 0.173}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "col-window": {
-  "w": 2285,
-  "h": 2856,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /951dea3d-1ff1-41c8-a284-06a9b76afb41.JPG",
-  "edits": [
-   "verticals {'segs': 40, 'rot_deg': 2.08, 'keystone_d_over_h': np.float32(-94.8), 'crop_lost': 0.154}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "col-dining": {
-  "w": 2270,
-  "h": 2837,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /d1f3c316-07e8-4ff5-9f73-ad4c433c8f44.JPG",
-  "edits": [
-   "verticals {'segs': 58, 'rot_deg': 0.34, 'keystone_d_over_h': np.float32(8.3), 'crop_lost': 0.16}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "col-bronze": {
-  "w": 2213,
-  "h": 2766,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /d11cf5e3-f8c0-4504-ab11-6f93a2701c06.JPG",
-  "edits": [
-   "verticals {'segs': 44, 'rot_deg': 1.74, 'keystone_d_over_h': np.float32(5.1), 'crop_lost': 0.267}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
- "col-wave": {
-  "w": 3046,
-  "h": 2169,
-  "avif": [
-   800,
-   1600,
-   2400
-  ],
-  "jpg": [
-   800,
-   1600
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /IMG_1858.HEIC",
-  "edits": [
-   "verticals {'segs': 54, 'rot_deg': 1.95, 'keystone_d_over_h': np.float32(9.6), 'crop_lost': 0.221}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance"
-  ]
- },
- "col-entry-wall": {
-  "w": 2308,
-  "h": 2885,
-  "avif": [
-   600,
-   900,
-   1200,
-   1800
-  ],
-  "jpg": [
-   600,
-   1200
-  ],
-  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /IMG_1855.HEIC",
-  "edits": [
-   "verticals {'segs': 35, 'rot_deg': 0.66, 'keystone_d_over_h': np.float32(12.6), 'crop_lost': 0.123}",
-   "white balance (neutral highlights)",
-   "exposure/shadows/highlights",
-   "vibrance",
-   "crop ratio 0.800"
-  ]
- },
  "qto-empty": {
   "w": 1241,
   "h": 916,
@@ -428,6 +147,346 @@
   "edits": [
    "crop 4:5 centred",
    "resize"
+  ]
+ },
+ "edgf-hero-living": {
+  "w": 3010,
+  "h": 2216,
+  "avif": [
+   800,
+   1600,
+   2400
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_02.heic",
+  "edits": [
+   "verticals {'segs': 89, 'rot_deg': -2.15, 'keystone_d_over_h': np.float32(-16.1), 'crop_lost': 0.198}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-media-wall": {
+  "w": 3114,
+  "h": 2281,
+  "avif": [
+   800,
+   1600,
+   2400
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_01.jpeg",
+  "edits": [
+   "verticals {'segs': 110, 'rot_deg': -0.66, 'keystone_d_over_h': np.float32(-17.9), 'crop_lost': 0.115}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-long-view": {
+  "w": 3117,
+  "h": 2300,
+  "avif": [
+   800,
+   1600,
+   2400
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_sala_07.heic",
+  "edits": [
+   "verticals {'segs': 99, 'rot_deg': -0.38, 'keystone_d_over_h': np.float32(-19.0), 'crop_lost': 0.1}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-kitchen": {
+  "w": 2222,
+  "h": 2877,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/03_SELECCIONES/interior/a-editar/melina-brokmeier/2026-09-03_melina-brokmeier_cocina_09.heic",
+  "edits": [
+   "verticals {'segs': 153, 'rot_deg': 2.47, 'keystone_d_over_h': np.float32(5.2), 'crop_lost': 0.276}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-living": {
+  "w": 2116,
+  "h": 2818,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0025.heic",
+  "edits": [
+   "verticals {'segs': 20, 'rot_deg': -1.1, 'keystone_d_over_h': np.float32(2.3), 'crop_lost': 0.431}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-sofa-bay": {
+  "w": 2115,
+  "h": 2834,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0022.heic",
+  "edits": [
+   "verticals {'segs': 37, 'rot_deg': -0.68, 'keystone_d_over_h': np.float32(2.1), 'crop_lost': 0.44}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-terrace": {
+  "w": 2182,
+  "h": 2872,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0014.heic",
+  "edits": [
+   "verticals {'segs': 138, 'rot_deg': -1.76, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.312}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-niche": {
+  "w": 2400,
+  "h": 3200,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0020.heic",
+  "edits": [
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "edgf-entry": {
+  "w": 2182,
+  "h": 2960,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Mac Backup/AKA-ARCHIVO/01_MAESTRO/2026-09_melina-brokmeier_entrega-y-estilizado/orig/2026-09-25_2026-09_melina-brokmeier_entrega-y-estilizado_0002.heic",
+  "edits": [
+   "verticals {'segs': 98, 'rot_deg': 0.13, 'keystone_d_over_h': np.float32(4.0), 'crop_lost': 0.276}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-living": {
+  "w": 2271,
+  "h": 3018,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /1d6bd15e-1c98-4f52-91d5-2feae98f36de.JPG",
+  "edits": [
+   "verticals {'segs': 25, 'rot_deg': 0.92, 'keystone_d_over_h': np.float32(8.4), 'crop_lost': 0.173}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-window": {
+  "w": 2285,
+  "h": 3057,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /951dea3d-1ff1-41c8-a284-06a9b76afb41.JPG",
+  "edits": [
+   "verticals {'segs': 40, 'rot_deg': 2.08, 'keystone_d_over_h': np.float32(-94.8), 'crop_lost': 0.154}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-dining": {
+  "w": 2270,
+  "h": 3048,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /d1f3c316-07e8-4ff5-9f73-ad4c433c8f44.JPG",
+  "edits": [
+   "verticals {'segs': 58, 'rot_deg': 0.34, 'keystone_d_over_h': np.float32(8.3), 'crop_lost': 0.16}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-bronze": {
+  "w": 2213,
+  "h": 2909,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /d11cf5e3-f8c0-4504-ab11-6f93a2701c06.JPG",
+  "edits": [
+   "verticals {'segs': 44, 'rot_deg': 1.74, 'keystone_d_over_h': np.float32(5.1), 'crop_lost': 0.267}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-wave": {
+  "w": 3046,
+  "h": 2169,
+  "avif": [
+   800,
+   1600,
+   2400
+  ],
+  "jpg": [
+   800,
+   1600
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /IMG_1858.HEIC",
+  "edits": [
+   "verticals {'segs': 54, 'rot_deg': 1.95, 'keystone_d_over_h': np.float32(9.6), 'crop_lost': 0.221}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "colf-entry-wall": {
+  "w": 2308,
+  "h": 3069,
+  "avif": [
+   600,
+   900,
+   1200,
+   1800
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "Active Projects/AKA Interior Design/Depa Nico /Fotos actuales /IMG_1855.HEIC",
+  "edits": [
+   "verticals {'segs': 35, 'rot_deg': 0.66, 'keystone_d_over_h': np.float32(12.6), 'crop_lost': 0.123}",
+   "white balance (neutral highlights)",
+   "exposure/shadows/highlights",
+   "vibrance"
+  ]
+ },
+ "cerebro-demo": {
+  "w": 2720,
+  "h": 2200,
+  "avif": [
+   1360,
+   2720
+  ],
+  "jpg": [
+   1360
+  ],
+  "src": "ACAWEB/_desde-cerebro/2026-10-27-cerebro-demo-presentar-1360.png",
+  "edits": [
+   "none (UI capture, demo data)"
+  ]
+ },
+ "cerebro-demo-m": {
+  "w": 780,
+  "h": 2800,
+  "avif": [
+   390,
+   780
+  ],
+  "jpg": [
+   390
+  ],
+  "src": "ACAWEB/_desde-cerebro/2026-10-27-cerebro-demo-presentar-390.png",
+  "edits": [
+   "none (UI capture, demo data)"
   ]
  }
 }

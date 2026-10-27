@@ -25,13 +25,30 @@ def img(m):
     s = f' sizes="{sizes}"' if sizes else ''
     src = f'<source type="image/avif" srcset="{av} {w}w"{s}>' if os.path.exists(R + av) else ''
     return f'<picture>{src}<img src="{path}" width="{w}" height="{h}" alt="{alt}" loading="lazy" decoding="async"></picture>'
+
+def fig(m):
+    """{{fig:NAME|alt|caption}} / {{fig:/img/legacy.jpg|alt|caption}} -> plate that keeps the photo's full frame; in a .plates row, width is proportional to aspect ratio so heights match and nothing is cropped."""
+    name, alt, cap, *rest = m.group(1).split('|') + ['', '']
+    eager = 'eager' in rest
+    if name.startswith('/'):
+        w, h = Image.open(R + name).size
+        inner = img(re.match(r'(.*)', f'{name}|{alt}|(max-width:700px) 100vw, 60vw'))
+        if eager: inner = inner.replace('loading="lazy" decoding="async"', 'fetchpriority="high"')
+        native = ''
+    else:
+        e = M[name]; w, h = e['w'], e['h']
+        inner = pic(re.match(r'(.*)', f'{name}|{alt}|(max-width:700px) 100vw, 60vw' + ('|eager' if eager else '')))
+        native = ''
+    c = f'<figcaption>{cap}</figcaption>' if cap else ''
+    return f'<figure class="pl" style="--r:{w/h:.4f}{native}">{inner}{c}</figure>'
+
 def fact(m):
     v = F
     for k in m.group(1).split('.'): v = v[k]
     return str(v['value'] if isinstance(v, dict) else v)
 for f in ([a for a in sys.argv[1:] if not a.startswith('--')] or ([] if '--svg' in sys.argv else glob.glob(f'{R}/src/*.html'))):
     t = open(f).read()
-    t = re.sub(r'\{\{pic:([^}]+)\}\}', pic, t); t = re.sub(r'\{\{img:([^}]+)\}\}', img, t); t = re.sub(r'\{\{fact:([^}]+)\}\}', fact, t)
+    t = re.sub(r'\{\{fig:([^}]+)\}\}', fig, t); t = re.sub(r'\{\{pic:([^}]+)\}\}', pic, t); t = re.sub(r'\{\{img:([^}]+)\}\}', img, t); t = re.sub(r'\{\{fact:([^}]+)\}\}', fact, t)
     out = f'{R}/{os.path.basename(f)}'; open(out, 'w').write(t); print('rendered', out)
 
 # ---- post-pass on every page: intrinsic size for SVG logos without width/height (prevents layout shift) ----

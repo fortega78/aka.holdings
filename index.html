@@ -43,6 +43,8 @@
 .door .pic picture{width:100%;height:100%}
 .door .pic img{width:100%;height:100%;object-fit:cover}
 .door .pic.icons{gap:22px}
+.door .pic.shot,.mosaic .shot{background:#fff}
+.door .pic.shot img,.mosaic .shot img{object-fit:cover;object-position:0 0}
 .door .pic.icons img{width:52px;height:52px;object-fit:contain}
 .door .txt{padding:24px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
 .door .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
@@ -110,18 +112,18 @@
     <div class="mosaic" aria-label="The three houses">
       <a href="/interior"><picture><source type="image/avif" srcset="/img/v2/edg-hero-living-800.avif 800w, /img/v2/edg-hero-living-1600.avif 1600w, /img/v2/edg-hero-living-2400.avif 2400w" sizes="(max-width:900px) 60vw, 380px"><img src="/img/v2/edg-hero-living-1600.jpg" srcset="/img/v2/edg-hero-living-800.jpg 800w, /img/v2/edg-hero-living-1600.jpg 1600w" sizes="(max-width:900px) 60vw, 380px" width="1600" height="1066" alt="Interiors: a living room facing the bay in Edgewater, Miami" fetchpriority="high"></picture><span class="lab">Interior Design</span></a>
       <a href="/productions"><picture><source type="image/avif" srcset="/img/productions/2026-10-26-p01-temple-door.avif 1800w" sizes="(max-width:900px) 40vw, 250px"><img src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="Art Productions: a hand-knotted work on the temple steps, Patan" loading="lazy" decoding="async"></picture><span class="lab">Art Productions</span></a>
-      <a href="/technologies" class="icons" aria-label="AKA Technologies"><img src="/assets/CEREBRO_Icon_Reversed.svg" alt="" width="36" height="36"><img src="/assets/MAGOS_Icon_Reversed.svg" alt="" width="36" height="36"><img src="/assets/FABI_Icon_Reversed.svg" alt="" width="36" height="36"><img src="/assets/MULTA_Icon_Reversed.svg" alt="" width="36" height="36"><span class="lab">Technologies</span></a>
+      <a href="/technologies" class="shot" aria-label="AKA Technologies"><picture><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:900px) 40vw, 250px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data" loading="lazy" decoding="async" style="object-position:0 0"></picture><span class="lab">Technologies</span></a>
     </div>
   </section>
 
   <section class="router" id="houses" aria-label="Choose a house">
     <div class="door">
-      <span class="pic icons" aria-hidden="true"><img src="/assets/CEREBRO_Icon_Reversed.svg" alt="" width="52" height="52"><img src="/assets/MAGOS_Icon_Reversed.svg" alt="" width="52" height="52"><img src="/assets/FABI_Icon_Reversed.svg" alt="" width="52" height="52"><img src="/assets/MULTA_Icon_Reversed.svg" alt="" width="52" height="52"></span>
+      <span class="pic shot"><picture><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:900px) 100vw, 400px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode, demo data" loading="lazy" decoding="async" style="object-position:0 0"></picture></span>
       <div class="txt">
         <span class="n">01</span>
         <h2>AKA Technologies</h2>
         <span class="for">For owners and operators</span>
-        <p>A fixed-scope AI diagnostic: where your business loses value, who owns it, and which tools — under which rules. 4 systems of our own, each with its real status.</p>
+        <p>A fixed-scope AI diagnostic: where your business loses value, who owns it, and which tools — under which rules. 4 systems of our own, each with its real status. Pictured: CEREBRO, with demo data.</p>
         <div class="acts"><a class="btnk" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-unit="technologies" data-place="home-card">Book a diagnostic</a><a class="lnk" href="/technologies">Explore</a></div>
       </div>
     </div>

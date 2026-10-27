@@ -7,7 +7,6 @@
     ga4: '',            // GA4 measurement ID, e.g. 'G-XXXXXXX' (fabian@akaeditions.com) — pending, see _HACIA-CEREBRO.md
     clarity: '',        // Microsoft Clarity project ID — pending
     formEndpoint: '',   // Formspree/Tally endpoint (POST). Empty = the form composes an email instead.
-    consultPrice: false,// true only if Instagram post P02 publishes the consultation price (decision 27-oct)
     calendar: 'https://calendar.app.google/4LDyrF8XGdGuoazj6',
     email: 'fabian@aka.holdings'
   };
@@ -49,8 +48,9 @@
     v.addEventListener('play', function () { track('video_play', { video: v.currentSrc.split('/').pop() }); }, { once: true });
   });
 
-  /* ---------- consultation price (one switch) ---------- */
-  document.querySelectorAll('[data-price]').forEach(function (el) { el.hidden = !CONFIG.consultPrice; });
+
+  /* ---------- accordions: open on desktop, closed on phones ---------- */
+  if (window.matchMedia('(min-width:761px)').matches) document.querySelectorAll('details.acc').forEach(function (d) { d.open = true; });
 
   /* ---------- mobile menu ---------- */
   var btn = document.querySelector('.menu-btn'), nav = document.getElementById('site-nav');

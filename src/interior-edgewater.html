@@ -4,60 +4,129 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>document.documentElement.className+=' js'</script>
-<title>Edgewater Residence, Miami — AKA Interior Design</title>
-<meta name="description" content="A bay-front apartment in Edgewater, Miami, designed end to end by AKA Interior Design: living room, kitchen, entry and study with custom millwork.">
+<title>Edgewater, Miami — AKA Interior Design</title>
+<meta name="description" content="A bay-front apartment in Edgewater, Miami, designed end to end by AKA Interior Design: living room, kitchen, entry and study with custom millwork in fluted oak.">
 <link rel="canonical" href="https://aka.holdings/interior-edgewater">
-<meta property="og:title" content="Edgewater Residence, Miami — AKA Interior Design">
-<meta property="og:description" content="A bay-front apartment in Edgewater, Miami, designed end to end by AKA Interior Design: living room, kitchen, entry and study with custom millwork.">
+<meta property="og:title" content="Edgewater, Miami — AKA Interior Design">
+<meta property="og:description" content="A bay-front apartment in Edgewater, Miami, designed end to end by AKA Interior Design: living room, kitchen, entry and study with custom millwork in fluted oak.">
 <meta property="og:image" content="https://aka.holdings/og/interior.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://aka.holdings/interior-edgewater">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Deep.svg">
-<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="/img/v2/edgf-hero-living-800.avif 800w, /img/v2/edgf-hero-living-1600.avif 1600w, /img/v2/edgf-hero-living-2400.avif 2400w" imagesizes="(max-width:700px) 100vw, 60vw" fetchpriority="high">
 <link rel="stylesheet" href="/aka.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Edgewater, Miami", "description": "A bay-front apartment in Edgewater, Miami, designed end to end by AKA Interior Design: living room, kitchen, entry and study with custom millwork in fluted oak.", "url": "https://aka.holdings/interior-edgewater", "creator": {"@type": "Organization", "name": "AKA Interior Design", "url": "https://aka.holdings/interior", "parentOrganization": {"@type": "Organization", "name": "AKA Holdings", "url": "https://aka.holdings/"}}, "author": {"@type": "Person", "name": "Fabian J. Ortega A.", "url": "https://aka.holdings/fabian"}, "inLanguage": "en"}</script>
 <style>
-body.interior{background-image:none}
+/* /interior v7 "monograph" · ACA WEB · 27-oct-2026
+   Brand v1.6.1 unchanged: Profundo #163D91 on bone #F5F2EC, Bodoni Moda (titles, never < 24 px), Archivo (text), Questrial only in nav and buttons.
+   Principles: photographs are shown whole (never cropped to a shape) and large; rows size each photo by its own proportions so heights match;
+   one statement per project; labels only where they carry information; one button at the top, one at the end. */
+body.interior{background-image:none;--ink2:#2B2B2B;--rule:#D8D1C5}
+.wide{max-width:1360px;margin:0 auto;padding:0 var(--gutter)}
 figure{margin:0}
-.serif{font-family:'Bodoni Moda',serif}
-.cap{font-size:12.5px;line-height:1.5;color:var(--graphite);margin-top:10px;max-width:60ch}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:var(--deep);color:var(--bone);font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:16px 26px 15px;border:1px solid var(--deep)}
+.serif{font-family:'Bodoni Moda',serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:var(--deep);color:var(--bone);font:400 12px/1 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.24em;padding:0 26px;border:1px solid var(--deep);transition:background .2s,color .2s}
 .btn:hover{background:transparent;color:var(--deep)}
-.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--deep);border-bottom:1px solid var(--deep);padding:12px 0 4px}
-.sp-head{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:end;padding:clamp(40px,7vh,80px) 0 36px}
-.sp-head .no{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--deep);display:block;margin-bottom:14px}
-.sp-head h1{font-size:clamp(36px,4.6vw,64px);line-height:1.02;color:var(--deep);letter-spacing:-.01em}
-.sp-head .mline{display:block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--deep);margin-top:16px}
-.sp-head p{color:var(--graphite);max-width:58ch}
+.tl{color:var(--deep);font-size:16px;border-bottom:1px solid currentColor;padding-bottom:2px}
+.tl:hover{border-bottom-color:transparent}
+.top .book{display:none}
+@media (min-width:761px){.top .book{display:inline-flex;min-height:40px;padding:0 18px;font-size:11px}}
+.top{gap:24px}
+.top nav.idx{margin-left:auto}
+
+/* plates: full-frame photographs, rows sized by aspect ratio */
+.plates{display:flex;gap:14px;align-items:flex-start}
+.plates + .plates{margin-top:14px}
+.pl{flex:var(--r) 1 0;min-width:0}
+.pl img{display:block;width:100%;height:auto}
+.lead-row{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;margin-bottom:14px}
+@media (max-width:980px){.lead-row{grid-template-columns:1fr}.lead-row>span{display:none}}
+.pl figcaption{font-size:13.5px;line-height:1.5;color:var(--graphite);margin-top:10px;max-width:52ch;padding-right:8px}
+.pl figcaption i{font-style:italic}
+
+/* hero */
+.hero-i{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:end;padding:44px 0 0}
+.hero-i h1{font:400 clamp(52px,6.4vw,104px)/.94 'Bodoni Moda',serif;letter-spacing:-.025em;color:var(--deep)}
+.hero-i .lead{font-size:18px;line-height:1.6;color:var(--ink2);margin-top:32px;max-width:34ch}
+.hero-i .act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:30px}
+.hero-i .where{font-size:14px;color:var(--graphite);margin-top:22px}
+
+/* a project */
+.pj{padding-top:136px}
+.pj-head{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:baseline;margin-bottom:40px}
+.pj-head h2{font:400 clamp(40px,4.4vw,68px)/1 'Bodoni Moda',serif;letter-spacing:-.015em;color:var(--deep)}
+.pj-head .facts{font-size:14px;color:var(--graphite);margin-top:14px}
+.pj-head p{font-size:17.5px;line-height:1.65;color:var(--ink2);max-width:58ch}
+.pj-head p + p{margin-top:12px}
+.pj-head .more{margin-top:18px}
+.adds{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;margin-top:56px}
+.adds h3{font:400 28px/1.15 'Bodoni Moda',serif;color:var(--deep)}
+.adds dl{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
+.adds dt{font-weight:500;color:var(--ink)}
+.adds dt span{display:block;font-weight:400;font-size:14px;color:var(--graphite);margin-top:2px}
+.adds dd{margin:6px 0 0;font-size:15.5px;line-height:1.6;color:var(--ink2)}
+
+/* how we work: a real sequence, so it is numbered */
+.how-i{margin-top:144px;border-top:1px solid var(--deep);padding-top:48px;display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px}
+.how-i h2,.svc-i h2,.start-i h2{font:400 clamp(36px,3.6vw,54px)/1.04 'Bodoni Moda',serif;color:var(--deep);letter-spacing:-.01em}
+.how-i ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:36px 48px;counter-reset:s}
+.how-i li{counter-increment:s;font-size:15.5px;line-height:1.6;color:var(--ink2)}
+.how-i li::before{content:counter(s);display:block;font:400 44px/1 'Bodoni Moda',serif;color:var(--deep);margin-bottom:10px}
+.how-i li b{display:block;font:400 26px/1.15 'Bodoni Moda',serif;color:var(--deep);margin-bottom:8px}
+
+.svc-i{margin-top:120px;display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px}
+.svc-i ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:30px 48px}
+.svc-i li{font-size:15.5px;line-height:1.6;color:var(--ink2)}
+.svc-i li b{display:block;font:400 26px/1.15 'Bodoni Moda',serif;color:var(--deep);margin-bottom:8px}
+.svc-i .note{grid-column:2;font-size:14.5px;color:var(--graphite);margin-top:6px;max-width:64ch}
+.svc-i .entry{grid-column:2;font-size:15.5px;color:var(--ink2)}
+
+.start-i{margin-top:136px;background:#fff;padding:64px clamp(24px,5vw,72px);display:grid;grid-template-columns:minmax(260px,4fr) 8fr;gap:48px}
+.start-i .side p{font-size:16px;line-height:1.6;color:var(--ink2);margin-top:18px;max-width:34ch}
+.start-i .side .small{font-size:14px;color:var(--graphite)}
+.start-i .side a{border-bottom:1px solid var(--rule)}
+
+@media (max-width:980px){
+  .hero-i,.pj-head,.adds,.how-i,.svc-i,.start-i{grid-template-columns:1fr;gap:24px}
+  .svc-i .note,.svc-i .entry{grid-column:1}
+  .pj{padding-top:96px}
+}
+@media (max-width:700px){
+  .hero-i{padding-top:28px}
+  .hero-i h1{font-size:clamp(48px,14vw,64px)}
+  .plates{flex-wrap:wrap;gap:10px}
+  .plates.keep{flex-wrap:nowrap}
+  .plates:not(.keep) .pl{flex-basis:100%}
+  .adds dl,.how-i ol,.svc-i ul{grid-template-columns:1fr}
+  .btn{width:100%}
+  .start-i{padding:40px 20px}
+}
+.sp-head{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;align-items:end;padding:44px 0 40px}
+.sp-head h1{font:400 clamp(40px,4.2vw,66px)/1 'Bodoni Moda',serif;letter-spacing:-.015em;color:var(--deep);overflow-wrap:break-word;hyphens:auto}
+.sp-head .facts{font-size:14px;color:var(--graphite);margin-top:14px}
+.sp-head p{font-size:17.5px;line-height:1.65;color:var(--ink2);max-width:58ch}
 .sp-head p+p{margin-top:12px}
-.sp-head .act{display:flex;flex-wrap:wrap;gap:14px 26px;margin-top:22px;align-items:center}
-.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.grid .w6{grid-column:span 6}.grid .w4{grid-column:span 4}.grid .w3{grid-column:span 3}.grid .w2{grid-column:span 2}
-.grid .t img{aspect-ratio:4/5;object-fit:cover}
-.lab{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:10.5px;color:var(--bone);background:var(--deep);padding:5px 8px 4px;margin:10px 8px 0 0;vertical-align:middle}
-.paper{background:#fff;border:1px solid var(--line)}
-.block{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:64px 0 8px}
-.block h2{font-size:clamp(28px,2.8vw,38px);line-height:1.1;color:var(--deep)}
-.rows{border-top:1px solid var(--deep)}
-.rowi{display:grid;grid-template-columns:5fr 7fr;gap:28px;padding:18px 0;border-bottom:1px solid var(--line)}
-.rowi b{display:block;font-weight:500;font-size:16.5px;color:var(--ink)}
-.rowi span{display:block;font-size:13.5px;color:var(--graphite);margin-top:2px}
-.rowi p{color:var(--graphite);font-size:15px}
-.rowi p em{font-family:'Bodoni Moda',serif;font-style:italic;font-size:17px;color:var(--deep)}
-.credits{font-size:12.5px;color:var(--graphite);margin-top:28px;padding-top:14px;border-top:1px solid var(--line)}
-.next{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;margin-top:20px}
-.close{border-top:1px solid var(--deep);border-bottom:1px solid var(--deep);padding:48px 0;margin-top:64px;display:grid;grid-template-columns:7fr 5fr;gap:32px;align-items:center}
-.close h2{font-size:clamp(32px,3.4vw,46px);line-height:1.08;color:var(--deep)}
-.close p{margin-top:12px;color:var(--graphite);max-width:52ch}
-.close .act{display:flex;justify-content:flex-end}
-@media (max-width:900px){.sp-head,.block,.close,.rowi{grid-template-columns:1fr;gap:14px}.close .act{justify-content:flex-start}.grid .w4,.grid .w3{grid-column:span 6}.grid .w2{grid-column:span 3}}
-@media (max-width:600px){.grid{gap:8px}.btn{width:100%}}
+.sp-head .more{margin-top:18px}
+.credits{font-size:13.5px;color:var(--graphite);margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);max-width:80ch}
+.next{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:18px}
+.close-i{margin-top:96px;background:#fff;padding:48px clamp(24px,5vw,72px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.close-i h2{font:400 clamp(32px,3.4vw,48px)/1.05 'Bodoni Moda',serif;color:var(--deep)}
+.close-i .act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+.sub-block{display:grid;grid-template-columns:minmax(300px,4.2fr) 7.8fr;gap:48px;margin-top:72px}
+.sub-block h2{font:400 clamp(30px,3vw,44px)/1.05 'Bodoni Moda',serif;color:var(--deep)}
+.sub-block dl{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
+.sub-block dt{font-weight:500;color:var(--ink)}
+.sub-block dt span{display:block;font-weight:400;font-size:14px;color:var(--graphite);margin-top:2px}
+.sub-block dd{margin:6px 0 0;font-size:15.5px;line-height:1.6;color:var(--ink2)}
+@media (max-width:980px){.sp-head,.sub-block{grid-template-columns:1fr;gap:20px}}
+@media (max-width:700px){.sub-block dl{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="interior has-mbar">
 <a class="skip" href="#main">Skip to content</a>
-<div class="wrap">
+<div class="wide">
   <header class="top">
     <a href="/interior" aria-label="AKA Interior Design"><img src="/assets/AKA_Interior_Design_Small_OnBone.svg" alt="AKA Interior Design" width="59" height="36"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
@@ -68,36 +137,30 @@ figure{margin:0}
       <a href="/interior" aria-current="page">03 / Interior Design</a>
       <a href="/fabian">Fabian</a>
     </nav>
+    <a class="btn book" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="header">Book a consultation</a>
   </header>
 </div>
-<main id="main" class="wrap">
+
+<main id="main" class="wide">
   <section class="sp-head" data-hide-bar>
-    <div><span class="no">Project 01</span><h1 class="serif">Edgewater Residence, Miami.</h1><span class="mline">Miami · 2026 · Residential · Full service</span></div>
-    <div><p>A bay-front apartment in Edgewater, designed end to end: living room, kitchen, entry and study, with custom millwork throughout. A gradient relief above the sofa sets the palette for the whole home; fluted oak, lit niches and a wine wall turn the media wall into one piece of furniture joined to the kitchen.</p><p>Coordinated with the building’s requirements and a general contractor; purchasing, deliveries and installation run by the studio.</p>
-      <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="sub-top">Book a consultation</a><a class="alt" href="/interior#edgewater">All projects</a></div>
-    </div>
+    <div><h1>Edgewater, Miami</h1><p class="facts">Full service. Completed 2026.</p></div>
+    <div><p>A bay-front apartment designed end to end: living room, kitchen, entry and study. Custom millwork in fluted oak runs from the kitchen to the living room and holds the television, a wine wall and lit niches.</p><p>The gradient relief above the sofa set the palette for every room. The work was coordinated with the building and a general contractor; purchasing, deliveries and installation were run by the studio.</p><p class="more"><a class="tl" href="/interior#edgewater">All projects</a></p></div>
   </section>
-<div class="grid">
-<figure class="w6">{{pic:edg-hero-living|Living room facing the bay: a long pale sectional, a sculptural coffee table and a gradient relief on the wall|(max-width:900px) 100vw, 1180px|eager}}<figcaption class="cap">The living room. A gradient relief above the sofa sets the palette for the whole home.</figcaption></figure>
-<figure class="w3">{{pic:edg-media-wall|Media wall in fluted oak with lit niches and a wine wall, a brass and smoked-glass pendant|(max-width:900px) 100vw, 590px}}<figcaption class="cap">The media wall: one piece of custom millwork, joined to the kitchen.</figcaption></figure>
-<figure class="w3">{{pic:edg-long-view|One continuous room: living room, fluted oak column and kitchen|(max-width:900px) 100vw, 590px}}<figcaption class="cap">One continuous room, read from end to end.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-kitchen|Kitchen island with stools under a globe chandelier and a bouclé armchair|(max-width:900px) 50vw, 390px}}<figcaption class="cap">Kitchen and bar.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-living|A pale sectional with a plum throw, a sculptural coffee table and a textured rug|(max-width:900px) 50vw, 390px}}<figcaption class="cap">Living room.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-sofa-bay|The sectional and the coffee table, the bay through the glass|(max-width:900px) 50vw, 390px}}<figcaption class="cap">Toward the bay.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-entry|The entry: a round backlit mirror on fluted oak and a shelf|(max-width:900px) 50vw, 390px}}<figcaption class="cap">The entry.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-niche|Two white ceramic vases in a fluted oak niche|(max-width:900px) 50vw, 390px}}<figcaption class="cap">A niche in the millwork.</figcaption></figure>
-<figure class="w2 t">{{pic:edg-terrace|Terrace dining table in stone with woven chairs over the bay|(max-width:900px) 50vw, 390px}}<figcaption class="cap">Terrace.</figcaption></figure>
-</div>
-  <p class="credits">Design: AKA Interior Design — Fabian Ortega · Custom millwork, purchasing and installation coordinated by the studio · Photographs: phone, edited for light and verticals only.</p>
-  <div class="next"><a class="alt" href="/interior#edgewater">← All projects</a><a class="alt" href="/interior-collector">Collector’s Apartment, Miami →</a></div>
-  <section class="close" aria-labelledby="start" data-hide-bar>
-    <div><h2 class="serif" id="start">Let’s start with your home.</h2><p>Pick a time, or tell us about the home first. Or write to <a href="mailto:fabian@aka.holdings?subject=Interior%20consultation" style="border-bottom:1px solid var(--line)">fabian@aka.holdings</a>.</p></div>
-    <div class="act" style="gap:18px;flex-wrap:wrap"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="sub-close">Book a consultation</a><a class="alt" href="/interior#start">Tell us about your home</a></div>
+    <div class="lead-row"><span aria-hidden="true"></span><div class="plates">{{fig:edgf-hero-living|Living room facing the bay: a long pale sectional with a plum throw, a sculptural coffee table and a gradient relief on the wall|The gradient relief above the sofa set the palette for the apartment.|eager}}</div></div>
+    <div class="plates">{{fig:edgf-long-view|Living room, fluted-oak wall and kitchen in one room, the bay beyond|One room from the kitchen to the bay.}}{{fig:edgf-media-wall|Media wall in fluted oak with lit niches and a wine wall under a brass and smoked-glass pendant|The wall of fluted oak: wine, niches and the television in one piece.}}</div>
+    <div class="plates">{{fig:edgf-kitchen|Kitchen bar with stools under a globe chandelier and a bouclé armchair|The kitchen bar.}}{{fig:edgf-living|A pale sectional with a plum throw, a sculptural coffee table and a textured rug|Living room.}}{{fig:edgf-sofa-bay|The sectional and an oval travertine coffee table|Travertine, bouclé and a plum throw.}}</div>
+    <div class="plates">{{fig:edgf-entry|The entry: a round backlit mirror on fluted oak and a floating shelf|The entry.}}{{fig:edgf-niche|Two white ceramic vases in a fluted-oak niche|A niche in the millwork.}}{{fig:edgf-terrace|Terrace dining table in stone with woven chairs over the bay|The terrace, over the bay.}}</div>
+
+  <p class="credits">Design: AKA Interior Design, Fabian Ortega. Photographs taken by phone at delivery, corrected only for light and verticals.</p>
+  <nav class="next" aria-label="More projects"><a class="tl" href="/interior-collector">Next: a collector’s apartment, Miami</a></nav>
+  <section class="close-i" aria-labelledby="start" data-hide-bar>
+    <h2 id="start">Tell us about your home</h2>
+    <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="sub-close">Book a consultation</a><a class="tl" href="/interior#start">Or use the form</a></div>
   </section>
 </main>
-<div class="wrap">
+<div class="wide">
   <footer>
-    <div class="grid" style="display:grid">
+    <div class="grid">
       <img src="/assets/AKA_Interior_Design_Small_OnBone.svg" alt="AKA Interior Design" width="66" height="40">
       <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub"><a href="/technologies">Technologies</a> · <a href="/productions">Art Productions</a> · <a href="/interior">Interior Design</a> · <a href="https://teherrugs.com" target="_blank" rel="noopener">TeHer Art Rugs</a></span></div>
       <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
