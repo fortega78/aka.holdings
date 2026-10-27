@@ -971,5 +971,784 @@
    "crop (desk removed)",
    "contrast"
   ]
+ },
+ "r4-edg-living-relief-day": {
+  "w": 2400,
+  "h": 1900,
+  "avif": [
+   700,
+   1300,
+   2400
+  ],
+  "jpg": [
+   700,
+   1300,
+   2400
+  ],
+  "src": "o-er_fotos-septiembre_0035.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [156, 156, 156])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-edg-kitchen-to-bay": {
+  "w": 1800,
+  "h": 1388,
+  "avif": [
+   700,
+   1300,
+   1800
+  ],
+  "jpg": [
+   700,
+   1300,
+   1800
+  ],
+  "src": "o-er_fotos-septiembre_0032.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [156, 155, 156])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-edg-media-wall-wide": {
+  "w": 1400,
+  "h": 1077,
+  "avif": [
+   700,
+   1300,
+   1400
+  ],
+  "jpg": [
+   700,
+   1300,
+   1400
+  ],
+  "src": "o-er_fotos-septiembre_0013.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [153, 154, 154])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-edg-media-wall-45": {
+  "w": 900,
+  "h": 1125,
+  "avif": [
+   700,
+   900
+  ],
+  "jpg": [
+   700,
+   900
+  ],
+  "src": "o-er_fotos-septiembre_0013.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [147, 147, 146])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-edg-sofa-bay": {
+  "w": 1400,
+  "h": 1867,
+  "avif": [
+   700,
+   1300,
+   1400
+  ],
+  "jpg": [
+   700,
+   1300,
+   1400
+  ],
+  "src": "o-melina-brokmeier_sala_04.jpg",
+  "edits": [
+   "white balance (neutral patch [183, 183, 184])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-edg-terrace": {
+  "w": 1400,
+  "h": 1867,
+  "avif": [
+   700,
+   1300,
+   1400
+  ],
+  "jpg": [
+   700,
+   1300,
+   1400
+  ],
+  "src": "o-ina-brokmeier_terraza_18.jpg",
+  "edits": [
+   "white balance (neutral patch [173, 178, 180])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-wave-entry": {
+  "w": 2400,
+  "h": 1900,
+  "avif": [
+   700,
+   1300,
+   2400
+  ],
+  "jpg": [
+   700,
+   1300,
+   2400
+  ],
+  "src": "o-IMG_1858.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [183, 182, 182])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-wave-45": {
+  "w": 900,
+  "h": 1125,
+  "avif": [
+   700,
+   900
+  ],
+  "jpg": [
+   700,
+   900
+  ],
+  "src": "o-IMG_1858.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [184, 182, 183])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-living-round-work": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "o-c-4ec6-b799-a4dc1051921d.jpg",
+  "edits": [
+   "white balance (neutral patch [159, 158, 158])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-living": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "o-8-4f52-91d5-2feae98f36de.jpg",
+  "edits": [
+   "white balance (neutral patch [159, 157, 157])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-dining-to-living": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "o-6-48fc-a10d-0c126547e543.jpg",
+  "edits": [
+   "white balance (neutral patch [150, 150, 150])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-col-bedroom-neon-close": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-col-bedroom-neon-close.jpg",
+  "edits": [
+   "white balance (neutral patch [142, 140, 140])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-living-sea-view": {
+  "w": 1249,
+  "h": 960,
+  "avif": [
+   700,
+   1249
+  ],
+  "jpg": [
+   700,
+   1249
+  ],
+  "src": "2026-10-27-pb-living-sea-view.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [171, 171, 171])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-living-floral-chairs": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-pb-living-floral-chairs.jpg",
+  "edits": [
+   "white balance (neutral patch [170, 170, 170])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-living-floral-45": {
+  "w": 900,
+  "h": 1125,
+  "avif": [
+   700,
+   900
+  ],
+  "jpg": [
+   700,
+   900
+  ],
+  "src": "2026-10-27-pb-living-floral-chairs.jpg",
+  "edits": [
+   "white balance (neutral patch [169, 170, 169])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-living-geometric-wall-sofas": {
+  "w": 958,
+  "h": 1024,
+  "avif": [
+   700,
+   958
+  ],
+  "jpg": [
+   700,
+   958
+  ],
+  "src": "2026-10-27-pb-living-geometric-wall-sofas.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [203, 203, 203])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-dining-wood-table-pendants": {
+  "w": 1087,
+  "h": 1600,
+  "avif": [
+   700,
+   1087
+  ],
+  "jpg": [
+   700,
+   1087
+  ],
+  "src": "2026-10-27-pb-dining-wood-table-pendants.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [178, 178, 178])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-sunburst-geometric-wall": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-pb-sunburst-geometric-wall.jpg",
+  "edits": [
+   "white balance (neutral patch [184, 184, 184])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-stair-ink-splashes": {
+  "w": 768,
+  "h": 532,
+  "avif": [
+   700,
+   768
+  ],
+  "jpg": [
+   700,
+   768
+  ],
+  "src": "2026-10-27-pb-stair-ink-splashes.jpg",
+  "edits": [
+   "white balance (neutral patch [204, 204, 204])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-terrace-oars-sunset": {
+  "w": 960,
+  "h": 1280,
+  "avif": [
+   700,
+   960
+  ],
+  "jpg": [
+   700,
+   960
+  ],
+  "src": "2026-10-27-pb-terrace-oars-sunset.jpg",
+  "edits": [
+   "white balance (neutral patch [184, 189, 189])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-tree-bed": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-pb-tree-bed.jpg",
+  "edits": [
+   "white balance (neutral patch [182, 182, 182])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-pb-roof-pergola-lounge": {
+  "w": 768,
+  "h": 1024,
+  "avif": [
+   700,
+   768
+  ],
+  "jpg": [
+   700,
+   768
+  ],
+  "src": "2026-10-27-pb-roof-pergola-lounge.jpg",
+  "edits": [
+   "white balance (neutral patch [193, 193, 193])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-sunset-living": {
+  "w": 640,
+  "h": 799,
+  "avif": [
+   640
+  ],
+  "jpg": [
+   640
+  ],
+  "src": "2026-10-27-g09-sunset-living.jpg",
+  "edits": [
+   "white balance (neutral patch [172, 171, 170])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-sunset-45": {
+  "w": 639,
+  "h": 799,
+  "avif": [
+   639
+  ],
+  "jpg": [
+   639
+  ],
+  "src": "2026-10-27-g09-sunset-living.jpg",
+  "edits": [
+   "white balance (neutral patch [172, 171, 170])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-dining-neon-wide": {
+  "w": 1600,
+  "h": 1217,
+  "avif": [
+   700,
+   1300,
+   1600
+  ],
+  "jpg": [
+   700,
+   1300,
+   1600
+  ],
+  "src": "2026-10-27-ant-dining-neon-wide.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [176, 172, 168])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-red-opart-chair": {
+  "w": 1200,
+  "h": 1599,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-ant-red-opart-chair.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [171, 171, 171])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-gold-ceiling": {
+  "w": 640,
+  "h": 799,
+  "avif": [
+   640
+  ],
+  "jpg": [
+   640
+  ],
+  "src": "2026-10-27-g08-gold-ceiling.jpg",
+  "edits": [
+   "white balance (neutral patch [174, 174, 174])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-ant-bar-portrait": {
+  "w": 614,
+  "h": 768,
+  "avif": [
+   614
+  ],
+  "jpg": [
+   614
+  ],
+  "src": "2026-10-27-g03-bar-portrait.jpg",
+  "edits": [
+   "white balance (neutral patch [216, 216, 216])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-arch": {
+  "w": 1081,
+  "h": 721,
+  "avif": [
+   700,
+   1081
+  ],
+  "jpg": [
+   700,
+   1081
+  ],
+  "src": "2026-10-27-g14-villa-arch.jpg",
+  "edits": [
+   "white balance (neutral patch [156, 157, 156])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-hall-vault-portrait": {
+  "w": 1400,
+  "h": 2040,
+  "avif": [
+   700,
+   1300,
+   1400
+  ],
+  "jpg": [
+   700,
+   1300,
+   1400
+  ],
+  "src": "2026-10-27-villa-hall-vault-portrait.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [173, 173, 173])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-vault-45": {
+  "w": 900,
+  "h": 1125,
+  "avif": [
+   700,
+   900
+  ],
+  "jpg": [
+   700,
+   900
+  ],
+  "src": "2026-10-27-villa-hall-vault-portrait.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [173, 174, 175])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-hall-symmetry-doors": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-villa-hall-symmetry-doors.jpg",
+  "edits": [
+   "white balance (neutral patch [151, 151, 152])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-living-grey-sofa": {
+  "w": 1200,
+  "h": 1766,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-villa-living-grey-sofa.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [160, 155, 149])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-villa-hall-round-ottoman": {
+  "w": 1200,
+  "h": 1765,
+  "avif": [
+   700,
+   1200
+  ],
+  "jpg": [
+   700,
+   1200
+  ],
+  "src": "2026-10-27-villa-hall-round-ottoman.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [188, 188, 188])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-stockholder-lokta-work": {
+  "w": 1024,
+  "h": 1536,
+  "avif": [
+   700,
+   1024
+  ],
+  "jpg": [
+   700,
+   1024
+  ],
+  "src": "2026-10-27-stockholder-lokta-work.jpg",
+  "edits": [
+   "white balance (neutral patch [246, 246, 246])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-qto-plan-32": {
+  "w": 1224,
+  "h": 816,
+  "avif": [
+   700,
+   1224
+  ],
+  "jpg": [
+   700,
+   1224
+  ],
+  "src": "qtf-plan-final (crop to the drawing, 3:2)",
+  "edits": [
+   "crop to drawing"
+  ],
+  "r4": true
+ },
+ "r4-cc-matta": {
+  "w": 985,
+  "h": 750,
+  "avif": [
+   700,
+   985
+  ],
+  "jpg": [
+   700,
+   985
+  ],
+  "src": "2026-10-27-h01-blue-check-living.jpg",
+  "edits": [
+   "verticals",
+   "white balance (neutral patch [163, 163, 163])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
+ },
+ "r4-cc-bedia": {
+  "w": 640,
+  "h": 800,
+  "avif": [
+   640
+  ],
+  "jpg": [
+   640
+  ],
+  "src": "2026-10-27-h02-mayimbe-sofa.jpg",
+  "edits": [
+   "white balance (neutral patch [175, 175, 175])",
+   "shadows/highlights",
+   "vibrance",
+   "unsharp"
+  ],
+  "r4": true
  }
 }

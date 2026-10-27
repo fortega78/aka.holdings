@@ -268,3 +268,10 @@ picture img{width:100%;height:auto}
 @media (max-width:760px){
   .rise{animation:none} /* phones paint the hero at once; the reveal below the fold is motion enough */
 }
+/* R4 §2.1 · header in one line from 1024 to 1920 px */
+@media (min-width:1024px){
+  nav.idx{flex-wrap:nowrap;gap:clamp(14px,1.6vw,26px)}
+  nav.idx a{letter-spacing:.18em;font-size:10.5px;white-space:nowrap}
+  .top .book,.top .btn{white-space:nowrap;flex:none}
+  .top{flex-wrap:nowrap}
+}

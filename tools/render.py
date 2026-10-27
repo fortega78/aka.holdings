@@ -30,14 +30,15 @@ def fig(m):
     """{{fig:NAME|alt|caption}} / {{fig:/img/legacy.jpg|alt|caption}} -> plate that keeps the photo's full frame; in a .plates row, width is proportional to aspect ratio so heights match and nothing is cropped."""
     name, alt, cap, *rest = m.group(1).split('|') + ['', '']
     eager = 'eager' in rest
+    sz = next((x[2:] for x in rest if x.startswith('s=')), '(max-width:700px) 100vw, 60vw')
     if name.startswith('/'):
         w, h = Image.open(R + name).size
-        inner = img(re.match(r'(.*)', f'{name}|{alt}|(max-width:700px) 100vw, 60vw'))
+        inner = img(re.match(r'(.*)', f'{name}|{alt}|{sz}'))
         if eager: inner = inner.replace('loading="lazy" decoding="async"', 'fetchpriority="high"')
         native = ''
     else:
         e = M[name]; w, h = e['w'], e['h']
-        inner = pic(re.match(r'(.*)', f'{name}|{alt}|(max-width:700px) 100vw, 60vw' + ('|eager' if eager else '')))
+        inner = pic(re.match(r'(.*)', f'{name}|{alt}|{sz}' + ('|eager' if eager else '')))
         native = ''
     c = f'<figcaption>{cap}</figcaption>' if cap else ''
     return f'<figure class="pl" style="--r:{w/h:.4f}{native}">{inner}{c}</figure>'
