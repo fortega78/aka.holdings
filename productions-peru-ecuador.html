@@ -151,10 +151,12 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 </style>
 <style>.pn{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:56px;padding-top:20px;border-top:1px solid #fff;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px}.pn a:hover{text-decoration:underline;text-underline-offset:4px}</style>
 </head>
-<body class="productions">
+<body class="productions has-mbar">
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
   <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img width="230" height="130" src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
@@ -166,9 +168,10 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
   </header>
 </div>
 <div class="wrap">
-  <section class="ch" id="origins" aria-labelledby="c0">
+  <main id="main">
+<section class="ch" id="origins" aria-labelledby="c0">
     <div class="ch-head">
-      <div><span class="no">00</span><span class="k">Peru and Ecuador · 2007–2018</span><h2 class="serif" id="c0">Before the studio: reed, paper and straw.</h2></div>
+      <div><span class="no">00</span><span class="k">Peru and Ecuador · 2007–2018</span><h1 class="serif" id="c0" style="font-size:clamp(34px,4vw,58px);line-height:1.04">Before the studio: reed, paper and straw.</h1><p class="ptop" style="margin-top:18px"><a class="alt" href="/productions#propose">Propose a project</a></p></div>
       <div class="muted">
         <p>The exploration began in Peru in 2007, among the reed boats of the coast — <i>caballitos de totora</i>, built by hand the same way for centuries.</p>
         <p>In 2018, in Ecuador, Vargas-Suárez Universal spent days drawing on paper by the sea at Punta Barandúa, and in Manabí we went to the weavers of <i>paja toquilla</i>, the fine straw of the Panama hat. Each trip asked the same question: what can an artist make here, by hand, that could not be made anywhere else?</p>
@@ -182,7 +185,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </section>
   <nav class="pn" aria-label="Chapters">
-    <a href="/productions#origins">← All chapters</a>
+    <a href="/productions#story">← All chapters</a>
     <a href="/productions-bishkek-2018">Bishkek: an artist’s drawing, pressed into felt. →</a>
   </nav>
   <section class="paths" aria-label="Start a conversation" style="grid-template-columns:1fr">
@@ -190,12 +193,13 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <span class="k lbl">Artists, galleries &amp; collectors</span>
       <h2 class="serif">Propose a project.</h2>
       <p>Tell us about the work, the size and the timeline. We will propose the technique and the workshop.</p>
-      <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Propose a project</a></div>
+      <div class="act"><a class="btn" href="/productions#propose">Propose a project</a></div>
       <p class="mail muted">or <a href="mailto:fabian@aka.holdings?subject=Production%20proposal%20%E2%80%94%20aka.holdings">fabian@aka.holdings</a></p>
     </div>
   </section>
 
-  <footer>
+  </main>
+<footer>
     <div class="grid">
       <img width="230" height="130" src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions">
       <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub">AKA Editions — limited editions by AKA Art Productions</span></div>
@@ -203,6 +207,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<nav class="mbar" aria-label="Quick actions"><a href="/productions#propose" data-place="mbar">Propose a project</a><a class="ghost" href="/productions#story">Story</a></nav>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>

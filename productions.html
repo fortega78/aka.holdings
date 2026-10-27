@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>document.documentElement.className+=' js'</script>
 <title>AKA Art Productions — Made with the artist, by hand</title>
-<meta name="description" content="AKA Art Productions produces work for contemporary artists with master craftspeople since 2017 in Nepal, India, Uzbekistan, Kyrgyzstan, Mali and Mexico: hand-knotted works, silk suzani, felt, bogolan, lokta paper, mother of pearl and carved stone. Two documentaries. AKA Editions. Miami.">
+<meta name="description" content="AKA Art Productions produces work for contemporary artists with master craftspeople since 2017 in Nepal, India, Uzbekistan, Kyrgyzstan, Mali, Mexico, Peru and Ecuador: hand-knotted works, silk suzani, felt, bogolan, lokta paper, mother of pearl and carved stone. Two documentaries. AKA Editions. Miami.">
 <meta property="og:title" content="AKA Art Productions — Made with the artist, by hand">
 <meta property="og:description" content="Since 2017: felt in Kyrgyzstan, lokta paper in Kathmandu, bogolan in Mali, a 12-metre silk suzani in Uzbekistan. Propose a project.">
-<meta property="og:image" content="https://aka.holdings/img/productions/2026-10-26-p01-temple-door.jpg">
+<meta property="og:image" content="https://aka.holdings/og/productions.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://aka.holdings/productions">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -150,9 +151,38 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
   .btn{width:100%;text-align:center}
   .paths>div{padding:24px}
 }
+
+/* v6 · 27-oct: featured works, compact story, intake */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px;margin-top:8px}
+.feat a{display:flex;flex-direction:column;gap:12px}
+.feat picture,.feat img{width:100%}
+.feat img{aspect-ratio:4/5;object-fit:cover;transition:opacity .3s}
+.feat a:hover img{opacity:.88}
+.feat .who{font:400 24px/1.15 'Bodoni Moda',serif;color:#fff}
+.feat .what{font-size:14.5px;color:rgba(255,255,255,.82)}
+.feat .where{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:10.5px;color:#fff;opacity:.85}
+.feat .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.26em;font-size:10.5px;color:#fff;border-bottom:1px solid rgba(255,255,255,.6);align-self:flex-start;padding:8px 0 3px}
+.need{display:grid;grid-template-columns:5fr 7fr;gap:48px;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.3)}
+.need ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.need li{font-size:15px;color:rgba(255,255,255,.86);padding-left:16px;position:relative}
+.need li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:#fff}
+.story{list-style:none;border-top:1px solid rgba(255,255,255,.5);columns:2;column-gap:48px}
+.story li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.18)}
+.story a{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:12px 0;align-items:baseline}
+.story a:hover .t{text-decoration:underline}
+.story .y{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10.5px;color:#fff;opacity:.85}
+.story .t{font-size:15px;color:#fff}
+.intake-wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.intake button{background:#fff;color:var(--deep);border-color:#fff}
+.intake button:hover{background:transparent;color:#fff}
+.intake select option{color:#111}
+.ptop{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:22px}
+@media (max-width:900px){.feat{grid-template-columns:1fr 1fr}.need,.intake-wrap{grid-template-columns:1fr;gap:20px}.story{columns:1}}
+@media (max-width:600px){.feat{gap:22px 10px}.feat .who{font-size:24px}.need ul{grid-template-columns:1fr}.story a{grid-template-columns:1fr;gap:2px}}
 </style>
 </head>
-<body class="productions">
+<body class="productions has-mbar">
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
   <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img width="230" height="130" src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
@@ -165,30 +195,31 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <a href="/fabian">Fabian</a>
     </nav>
   </header>
-
-  <section class="ap-top">
-    <div class="rise d1">
+<main id="main">
+  <section class="ap-top" data-hide-bar>
+    <div >
       <span class="k lbl">AKA Art Productions</span>
       <h1 class="serif">Made with the artist, by hand.</h1>
     </div>
-    <div class="rise d2">
-      <p class="lead muted">Since a first exploration in Peru in 2007, we have travelled with contemporary artists to the places where a technique is still alive — Ecuador, Kyrgyzstan, Nepal, Mali, India, Uzbekistan — and produced the work there, by hand, with the master craftspeople who keep it.</p>
+    <div >
+      <p class="lead muted">Since a first exploration in Peru in 2007, we have travelled with contemporary artists to the places where a technique is still alive — Peru, Ecuador, Kyrgyzstan, Nepal, India, Mali, Uzbekistan and Mexico — and produced the work there, by hand, with the master craftspeople who keep it.</p>
       <div class="act">
-        <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Propose a project</a>
-        <a class="alt" href="#origins">Read the story</a>
+        <a class="btn" href="#propose" data-place="hero">Propose a project</a>
+        <a class="alt" href="#propose">Ask about AKA Editions</a>
       </div>
       <p class="where muted">Miami · English and Spanish</p>
     </div>
   </section>
 </div>
 
-<figure class="bleed rise d3">
-  <picture><source type="image/avif" srcset="/img/productions/2026-10-27s-p01-temple-door.avif"><img loading="lazy" decoding="async" src="/img/productions/2026-10-27s-p01-temple-door.jpg" width="1440" height="960" alt="A hand-knotted black and white rug laid on the temple steps between two stone lions, Patan Durbar Square"></picture>
+<figure class="bleed">
+  <picture><source type="image/avif" srcset="/img/productions/2026-10-27s-p01-temple-door.avif"><img fetchpriority="high" src="/img/productions/2026-10-27s-p01-temple-door.jpg" width="1440" height="960" alt="A hand-knotted black and white rug laid on the temple steps between two stone lions, Patan Durbar Square"></picture>
   <figcaption class="cap">Hand-knotted in Nepal. Photographed in Patan Durbar Square, June 2020.</figcaption>
 </figure>
 
 <div class="wrap">
-  <section class="shown" aria-labelledby="sh">
+  <div class="wrap">
+  <section class="shown" id="shown" aria-labelledby="sh">
     <div>
       <span class="k lbl">Where the work has been shown</span>
       <h2 class="serif" id="sh">Work we produced, on the walls of the art world.</h2>
@@ -208,332 +239,19 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <li>Carla Stellweg, New York</li>
     </ul>
   </section>
-
-  <nav class="chap-idx" aria-label="Chapters">
-    <span class="k lbl">The story, in order</span>
-    <ol>
-      <li><a href="#origins"><span>2007–18</span>Peru and Ecuador · reed, paper, straw</a></li>
-      <li><a href="#kyrgyzstan"><span>2018</span>Bishkek · felt</a></li>
-      <li><a href="#newyork"><span>2019</span>New York · Stellweg, Cemin</a></li>
-      <li><a href="#alakiyiz"><span>2019</span>Kyrgyzstan · Cemin, Bedia, Burgos</a></li>
-      <li><a href="#kathmandu"><span>2019</span>Kathmandu · Takano, Stockholder, filming</a></li>
-      <li><a href="#nada"><span>2019</span>NADA Miami</a></li>
-      <li><a href="#nepal2020"><span>2020</span>Nepal · new works on the looms</a></li>
-      <li><a href="#y2021"><span>2021</span>Latinx Abstract · filming in Nepal</a></li>
-      <li><a href="#latin-nomads"><span>2021</span>Georgia · filming Latinx Nomads</a></li>
-      <li><a href="#y2022"><span>2021–22</span>Perrotin · Zona Maco · Bedia</a></li>
-      <li><a href="#y2023"><span>2022–24</span>Lakra · Bedia · Takano · Orlanieta</a></li>
-      <li><a href="#films"><span>2021–23</span>Two films</a></li>
-      <li><a href="#shyrdak"><span>2022–24</span>Carlos Amorales · felt</a></li>
-      <li><a href="#mali"><span>2024</span>Mali · bogolan</a></li>
-      <li><a href="#stone"><span>2024–25</span>Gabriel de la Mora · pearl, abalone, hair</a></li>
-      <li><a href="#lakra-stone"><span>2025</span>Kathmandu · Dr. Lakra in stone</a></li>
-      <li><a href="#suzani"><span>2025–26</span>Uzbekistan · Tejido Líquido</a></li>
-    </ol>
-  </nav>
-
-  <section class="ch" id="origins" aria-labelledby="c0">
-    <div class="ch-head">
-      <div><span class="no">00</span><span class="k">Peru and Ecuador · 2007–2018</span><h2 class="serif" id="c0">Before the studio: reed, paper and straw.</h2></div>
-      <div class="muted">
-        <p>The exploration began in Peru in 2007, among the reed boats of the coast — <i>caballitos de totora</i>, built by hand the same way for centuries.</p>
-        <p>In 2018, in Ecuador, Vargas-Suárez Universal spent days drawing on paper by the sea at Punta Barandúa, and in Manabí we went to the weavers of <i>paja toquilla</i>, the fine straw of the Panama hat. Each trip asked the same question: what can an artist make here, by hand, that could not be made anywhere else?</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o01-totora-peru.avif"><img loading="lazy" src="/img/productions/2026-10-27-o01-totora-peru.jpg" width="480" height="384" alt="Reed boats made of bundled totora standing upright against a sea wall"></picture><figcaption class="cap">Totora reed boats, Peru, 2007.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.avif"><img loading="lazy" src="/img/productions/2026-10-27-o02-vsu-ecuador-drawings.jpg" width="480" height="600" alt="Blue watercolour drawings spread on a table by a window over the sea"></picture><figcaption class="cap">Vargas-Suárez Universal’s drawings, Punta Barandúa, Ecuador, 2018.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-peru-ecuador">See the full chapter · 4 photos</a></p>
-  </section>
-
-  <section class="ch" id="kyrgyzstan" aria-labelledby="c1">
-    <div class="ch-head">
-      <div><span class="no">01</span><span class="k">Kyrgyzstan · 2018</span><h2 class="serif" id="c1">Bishkek: an artist’s drawing, pressed into felt.</h2></div>
-      <div class="muted">
-        <p>In September 2018 we made our first trip to Kyrgyzstan, to the felt-makers of <i>ala-kiyiz</i> and <i>shyrdak</i> — wool laid, wetted, rolled and pressed by hand, one of the oldest textile techniques in Central Asia. It was where AKA’s work with artists truly began.</p>
-        <p>The first project was with Vargas-Suárez Universal: his drawings were laid out full size on the workshop table, and a master felt-maker built them up in black and white wool, sample by sample, until the felt could hold every line.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k04-felt-laying-wool.avif"><img loading="lazy" src="/img/productions/2026-10-27-k04-felt-laying-wool.jpg" width="480" height="600" alt="A felt-maker spreading raw white wool over a long table under a wooden roof"></picture><figcaption class="cap">Laying the wool, Kyrgyzstan, 2018.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-k05-felt-master-pressing.avif"><img loading="lazy" src="/img/productions/2026-10-27-k05-felt-master-pressing.jpg" width="480" height="600" alt="A master felt-maker pressing black wool onto a full-size drawing on the workshop table"></picture><figcaption class="cap">The master felt-maker works over the full-size drawing.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-bishkek-2018">See the full chapter · 6 photos</a></p>
-  </section>
-
-  <section class="ch" id="newyork" aria-labelledby="cny">
-    <div class="ch-head">
-      <div><span class="no">02</span><span class="k">New York · 2019</span><h2 class="serif" id="cny">The work comes to New York.</h2></div>
-      <div class="muted">
-        <p>In 2019 the textile works we produced with Vargas-Suárez Universal were shown in New York, in an exhibition curated by Carla Stellweg in her own space: large pieces hung wall to wall, in the rooms where people live with art. One of them went on to hang in the double-height lobby of a new building in Manhattan.</p>
-        <p>The same year we visited Saint Clair Cemin’s studio in Brooklyn and began a textile collaboration with him.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y01-stellweg-loft.avif"><img loading="lazy" src="/img/productions/2026-10-27-y01-stellweg-loft.jpg" width="1023" height="768" alt="Large textile works hung in a New York loft with a pressed-tin ceiling, a sofa and bookshelves in front"></picture><figcaption class="cap">The exhibition curated by Carla Stellweg, New York, 2019.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-y02-stellweg-felts.avif"><img loading="lazy" src="/img/productions/2026-10-27-y02-stellweg-felts.jpg" width="480" height="600" alt="Carla Stellweg seated at a table in front of a blue and brown work and a red work that runs onto the floor"></picture><figcaption class="cap">Carla Stellweg with the works, 2019.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-new-york-2019">See the full chapter · 4 photos</a></p>
-  </section>
-
-  <section class="ch" id="alakiyiz" aria-labelledby="cak">
-    <div class="ch-head">
-      <div><span class="no">03</span><span class="k">Kyrgyzstan · 2019</span><h2 class="serif" id="cak">Back to the felt: Cemin, Bedia, Burgos, Vargas-Suárez.</h2></div>
-      <div class="muted">
-        <p>In 2019 we went back to Kyrgyzstan with new drawings. The felt-makers built them in <i>ala-kiyiz</i> — loose wool laid by colour on the table, then wetted, rolled and pressed until it binds into a single cloth.</p>
-        <p>For Saint Clair Cemin, a figure in blue, yellow and black taken from his painting on paper. For José Bedia, his drawings — <i>Semana Santa</i>, <i>En el tronco de un árbol</i> — in black wool, every line finished by hand. For Fabian Burgos, his bands of colour, each stripe felted in a gradient and pieced into the whole. For Vargas-Suárez Universal, the clouded blue of the work that later hung in New York.</p>
-        <p>Back in Miami, Burgos laid the finished felt beside his prints to compare them, and José Bedia received his pieces in his studio. In 2020 Bedia’s felts were exhibited, <i>Semana Santa</i> among them.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q01-cemin-alakiyiz.avif"><img loading="lazy" src="/img/productions/2026-10-27-q01-cemin-alakiyiz.jpg" width="480" height="599" alt="A felt-maker shaping the black head of a blue and yellow figure in loose wool"></picture><figcaption class="cap">Saint Clair Cemin’s figure, laid in wool.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-q05-cemin-finished.avif"><img loading="lazy" src="/img/productions/2026-10-27-q05-cemin-finished.jpg" width="460" height="575" alt="The finished felt: a black oval head, two yellow wings and a blue body"></picture><figcaption class="cap">Saint Clair Cemin, finished felt, 2019.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-kyrgyzstan-2019">See the full chapter · 10 photos</a></p>
-  </section>
-
-  <section class="ch" id="kathmandu" aria-labelledby="c2">
-    <div class="ch-head">
-      <div><span class="no">04</span><span class="k">Nepal · 2019–2021</span><h2 class="serif" id="c2">Kathmandu, 2019: we start filming.</h2></div>
-      <div class="muted">
-        <p>Lokta paper is made in the Himalayan foothills from the inner bark of the lokta bush. In 2019 we brought artists to Kathmandu and began filming their projects: Aya Takano in Tibetan hand-knotting, Jessica Stockholder in lokta paper. Jessica Stockholder made her own sheets and worked into them — tearing, layering, adding colour — learning the paper as she went. Vargas-Suárez Universal joined us for a work on paper. Aya Takano’s drawing went onto the loom, knot by knot, with our weavers.</p>
-        <p>Stockholder’s works were later shown by her galleries; Takano’s series was shown in Paris, Tokyo and Hong Kong. In 2021, hand-knotted tapestries we produced in Kathmandu for Carlos Amorales and Dr. Lakra were shown by kurimanzutto in East Hampton.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.avif"><img loading="lazy" src="/img/productions/2026-10-27-s01-lokta-vat-kathmandu.jpg" width="480" height="600" alt="Jessica Stockholder holding a sheet beside the papermaker at the vat, a boom microphone above"></picture><figcaption class="cap">At the vat with the papermaker, on camera.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-j01-stockholder-placing.avif"><img loading="lazy" src="/img/productions/2026-10-27-j01-stockholder-placing.jpg" width="480" height="600" alt="Jessica Stockholder placing coloured pulp and fibre onto a wet sheet in its mould"></picture><figcaption class="cap">Laying colour into the wet sheet.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-kathmandu-2019">See the full chapter · 13 photos</a></p>
-  </section>
-
-  <section class="ch" id="nada" aria-labelledby="cnd">
-    <div class="ch-head">
-      <div><span class="no">05</span><span class="k">Miami · December 2019</span><h2 class="serif" id="cnd">From Kathmandu to NADA Miami.</h2></div>
-      <div class="muted">
-        <p>That December, the works came to Miami. At NADA Miami 2019, AKA Art Productions showed Jessica Stockholder’s lokta works — ten sheets made by her own hand in Kathmandu — on one wall of the booth.</p>
-        <p>Around them, on the walls and on the floor, the hand-knotted and felt works we had produced with the artists of the previous two years.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n03-nada-booth.avif"><img loading="lazy" src="/img/productions/2026-10-27-n03-nada-booth.jpg" width="960" height="720" alt="An art fair booth: ten framed lokta paper works by Jessica Stockholder on the back wall, a red and blue hand-knotted work on the right, rugs on the floor"></picture><figcaption class="cap">AKA Art Productions at NADA Miami, December 2019.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n04-nada-stockholder.avif"><img loading="lazy" src="/img/productions/2026-10-27-n04-nada-stockholder.jpg" width="480" height="600" alt="Framed lokta paper works by Jessica Stockholder in blue, coral, red and grey with embedded cords"></picture><figcaption class="cap">Jessica Stockholder, lokta paper, Kathmandu 2019.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-nada-miami-2019">See the full chapter · 4 photos</a></p>
-  </section>
-
-  <section class="ch" id="nepal2020" aria-labelledby="c20">
-    <div class="ch-head">
-      <div><span class="no">06</span><span class="k">Nepal · 2020</span><h2 class="serif" id="c20">New works on the looms.</h2></div>
-      <div class="muted">
-        <p>In 2020 three new projects went onto the looms in Nepal: Carlos Amorales’ black butterflies, Pedro Friedeberg’s rows of symbols, and Alexandre Arrechea’s works — among them a hand and a circle, each cut to its own shape. After the knotting, every piece is carved by hand: the pile is trimmed around each contour so the drawing stands up from the surface, then the edges are bound.</p>
-        <p>Jessica Stockholder’s textile work advanced on the same floors, and she kept experimenting in lokta. That year we also staged a photo shoot in Bhaktapur with By Kind People — lokta paper, hand-knotted rugs and woven shawls worn and carried through the old city — to bring Nepal’s local crafts to a wider public.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w01-amorales-carving.avif"><img loading="lazy" src="/img/productions/2026-10-27-w01-amorales-carving.jpg" width="480" height="600" alt="A carver trimming the pile around black and grey butterflies on a white hand-knotted work"></picture><figcaption class="cap">Carving Carlos Amorales’ butterflies, Nepal, 2020.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-w02-amorales-shears.avif"><img loading="lazy" src="/img/productions/2026-10-27-w02-amorales-shears.jpg" width="480" height="600" alt="A carver seated on the work with long shears, black and grey butterflies around him"></picture><figcaption class="cap">The contours cut with shears.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-nepal-2020">See the full chapter · 16 photos</a></p>
-  </section>
-
-  <section class="ch" id="y2021" aria-labelledby="c21">
-    <div class="ch-head">
-      <div><span class="no">07</span><span class="k">New York and Nepal · 2021</span><h2 class="serif" id="c21">2021: Latinx Abstract, and back to Nepal to film.</h2></div>
-      <div class="muted">
-        <p>In 2021 a work by Vargas-Suárez Universal made with the felt-makers of Kyrgyzstan was shown in <i>Latinx Abstract</i>, curated by Elisabeth Ferrer, in New York.</p>
-        <p>The same year we went back to Nepal to film <i>Lokta Kingdom</i>: at the drying fields above Kathmandu at dawn, in the workshops where the paper is bound, and up into the hills where the lokta bush grows — by jeep along mountain roads and on foot to Ghorepani and Poon Hill, under Annapurna.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z21-latinx-abstract.avif"><img loading="lazy" src="/img/productions/2026-10-27-z21-latinx-abstract.jpg" width="960" height="720" alt="Gallery view of the exhibition Latinx Abstract with a felt work by Vargas-Suárez Universal on a yellow wall"></picture><figcaption class="cap"><i>Latinx Abstract</i>, New York, 2021.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z28-crew-annapurna.avif"><img loading="lazy" src="/img/productions/2026-10-27-z28-crew-annapurna.jpg" width="480" height="600" alt="The film crew with a camera on a tripod at dawn, the Annapurna range behind"></picture><figcaption class="cap">Filming <i>Lokta Kingdom</i> at Poon Hill, 2021.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-2021">See the full chapter · 10 photos</a></p>
-  </section>
-
-  <section class="ch" id="latin-nomads" aria-labelledby="cln">
-    <div class="ch-head">
-      <div><span class="no">08</span><span class="k">Georgia · October 2021</span><h2 class="serif" id="cln">Latinx Nomads: filming in Tbilisi and Mtskheta.</h2></div>
-      <div class="muted">
-        <p>In October 2021 we took the camera to Georgia to film <i>Latinx Nomads</i>: six Latinx influencers discovering the country’s art and culture, with interviews with a former president of Georgia and Tekuna Gachechiladze, the country’s best-known chef, with several restaurants.</p>
-        <p>We filmed in Tbilisi; at Mtskheta, the old capital above the meeting of two rivers; and in the vaulted cellar of one of Georgia’s leading wineries.</p>
-      </div>
-    </div>
-    <div class="g2 crop">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g01-latin-nomads-tunnel.avif"><img loading="lazy" src="/img/productions/2026-10-27-g01-latin-nomads-tunnel.jpg" width="480" height="600" alt="A film crew with camera and boom recording two people talking in a vaulted brick tunnel"></picture><figcaption class="cap">Filming in the vaulted cellar of one of Georgia’s leading wineries, 2021.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.avif"><img loading="lazy" src="/img/productions/2026-10-27-g02-latin-nomads-mtskheta.jpg" width="480" height="600" alt="Three men, among them the artist Levan Songulashvili, on a stone lookout above Mtskheta in mist"></picture><figcaption class="cap">With Levan Songulashvili, one of Georgia’s best-known artists, above Mtskheta, 2021.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-latinx-nomads">See the full chapter · 8 photos and the films</a></p>
-  </section>
-
-  <section class="ch" id="y2022" aria-labelledby="c22">
-    <div class="ch-head">
-      <div><span class="no">09</span><span class="k">Tokyo · Hong Kong · Mexico City · 2021–2022</span><h2 class="serif" id="c22">The works travel.</h2></div>
-      <div class="muted">
-        <p>In autumn 2021 Aya Takano showed the works we made with her in Nepal at Perrotin Tokyo, and in 2022 at Perrotin Hong Kong.</p>
-        <p>In 2022 José Bedia’s felts from Kyrgyzstan were exhibited again; Pedro Friedeberg’s hand-knotted work from Nepal lay at the centre of his booth at Zona Maco, Mexico City; and Dr. Lakra’s first tapestry with us was embroidered in silk and wool.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.avif"><img loading="lazy" src="/img/productions/2026-10-27-g03-takano-perrotin-tokyo.jpg" width="960" height="720" alt="A large hand-knotted work by Aya Takano at Perrotin Tokyo"></picture><figcaption class="cap">Aya Takano at Perrotin Tokyo.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-g07-zona-maco-friedeberg.avif"><img loading="lazy" src="/img/productions/2026-10-27-g07-zona-maco-friedeberg.jpg" width="960" height="720" alt="Pedro Friedeberg's booth at Zona Maco with his hand-knotted work on the floor"></picture><figcaption class="cap">Pedro Friedeberg, Zona Maco, 2022.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-2022">See the full chapter · 11 photos</a></p>
-  </section>
-
-  <section class="ch" id="y2023" aria-labelledby="c23">
-    <div class="ch-head">
-      <div><span class="no">10</span><span class="k">2022–2024</span><h2 class="serif" id="c23">Silk, wool and felt, at the scale of painting.</h2></div>
-      <div class="muted">
-        <p>Dr. Lakra’s tapestry was embroidered in silk and wool in 2022: a red deity of chains and teeth over a river, every surface filled with chain stitch. Felt followed — a dragon above a skeleton, laid in wool.</p>
-        <p>In 2023 José Bedia’s works were on view again, and Aya Takano’s hand-knotted works from Nepal went up on gallery walls. In 2024 Edgar Orlanieta’s triptych was made in felt: a cross, a dove and a sun, drawn in wool and stitched by hand.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-h04-bedia-2023.avif"><img loading="lazy" src="/img/productions/2026-10-27-h04-bedia-2023.jpg" width="960" height="720" alt="José Bedia's animal di sabana in a museum gallery"></picture><figcaption class="cap">José Bedia, 2023.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-h02-lakra-detail.avif"><img loading="lazy" src="/img/productions/2026-10-27-h02-lakra-detail.jpg" width="480" height="600" alt="Detail of Dr. Lakra's silk chain stitch"></picture><figcaption class="cap">Dr. Lakra, silk and wool, 2022.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-2023">See the full chapter · 8 photos</a></p>
-  </section>
-
-  <section class="ch" id="films" aria-labelledby="c3">
-    <div class="ch-head">
-      <div><span class="no">11</span><span class="k">Films · 2021–2023</span><h2 class="serif" id="c3">Two documentaries on art, craft and place.</h2></div>
-      <p class="muted">The work in the workshops became two films: one on the papermakers of Nepal, filmed in 2021, and a series on the culture of Georgia. Both can be watched in full.</p>
-    </div>
-    <div class="film">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-f01-lokta-kingdom-poster.avif"><img loading="lazy" src="/img/productions/2026-10-27-f01-lokta-kingdom-poster.jpg" width="480" height="720" alt="Poster of Lokta Kingdom: a child flying a paper kite under prayer flags against a blue sky"></picture></figure>
-      <div>
-        <h3 class="serif">Lokta Kingdom</h3>
-        <p class="muted">A feature documentary that follows one of the last families making lokta paper in Nepal, and the community determined to keep the craft alive. Directed by Andy Fabrykant; photography by Martin Quirno; executive producer Fabian J. Ortega. Nepal, 2022 · 88 minutes · in Nepali.</p>
-        <p class="award">Official Selection · Nepal Cultural International Film Festival 2023</p>
-        <div class="act"><a class="btn" href="https://vimeo.com/743189189" target="_blank" rel="noopener">Watch the film · 88 min</a><a class="alt" href="https://vimeo.com/744347101" target="_blank" rel="noopener">Trailer</a></div>
-        <hr>
-        <h3 class="serif">Latinx Nomads</h3>
-        <p class="muted">A series filmed in Tbilisi and Mtskheta, made to bring Georgia’s art and culture to a wider audience — with interviews from its public and cultural life, among them a former president of Georgia and Tekuna Gachechiladze, the country’s best-known chef, with several restaurants.</p>
-        <div class="act"><a class="btn" href="https://vimeo.com/744314897" target="_blank" rel="noopener">Watch episode 01 · 55 min</a><a class="alt" href="/productions-latinx-nomads">Trailers and photos</a></div>
-      </div>
-    </div>
-    <p class="sub k">Filming Lokta Kingdom · Nepal, 2021</p>
-    <div class="g4">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x05-lk-vat-dawn.avif"><img loading="lazy" src="/img/productions/2026-10-27-x05-lk-vat-dawn.jpg" width="480" height="600" alt="A papermaker lifting a mould from the vat at dawn, rows of drying frames and prayer flags behind"></picture><figcaption class="cap">At the vat at dawn.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x06-lk-interview.avif"><img loading="lazy" src="/img/productions/2026-10-27-x06-lk-interview.jpg" width="480" height="600" alt="A man in an orange jacket interviewed on a Kathmandu rooftop, camera and boom in the foreground"></picture><figcaption class="cap">An interview on a Kathmandu rooftop.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x07-lk-camera.avif"><img loading="lazy" src="/img/productions/2026-10-27-x07-lk-camera.jpg" width="480" height="600" alt="The director of photography behind a cinema camera on a tripod"></picture><figcaption class="cap">Behind the camera.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-x08-lk-still.avif"><img loading="lazy" src="/img/productions/2026-10-27-x08-lk-still.jpg" width="480" height="600" alt="A frame from the film: a young woman lit by a window"></picture><figcaption class="cap">A frame from the film.</figcaption></figure>
+  <section class="sec" id="works" aria-labelledby="fw">
+    <span class="k lbl">Selected works</span>
+    <h2 class="serif" id="fw">Six works, six techniques.</h2>
+    <div class="feat">
+      <a href="/productions-amorales-felt"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a02-shyrdak-art-basel.avif 480w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="Carlos Amorales’ large felt work on the back wall of an art fair booth" loading="lazy" decoding="async"></picture><span class="who">Carlos Amorales</span><span class="what">Felt · shyrdak and ala-kiyiz</span><span class="where">Kyrgyzstan → kurimanzutto, Art Basel Miami Beach · 2024</span><span class="go">See the chapter</span></a>
+      <a href="/productions-pearl-hair-stone"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.avif 960w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.jpg" width="960" height="720" alt="Two square works by Gabriel de la Mora in abalone and mother of pearl, side by side in a gallery" loading="lazy" decoding="async"></picture><span class="who">Gabriel de la Mora</span><span class="what">Mother of pearl, abalone · human hair</span><span class="where">Udaipur, India → Zona Maco · Museo Jumex · 2024–25</span><span class="go">See the chapter</span></a>
+      <a href="/productions-lakra-stone"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-l09-lakra-finished-front.avif 560w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-l09-lakra-finished-front.jpg" width="560" height="700" alt="Dr. Lakra’s finished black stone sculpture: monkey, skull between cobras, ringed column, crocodile and lotus base" loading="lazy" decoding="async"></picture><span class="who">Dr. Lakra</span><span class="what">Black stone, carved by hand</span><span class="where">Kathmandu, Nepal · 2025</span><span class="go">See the chapter</span></a>
+      <a href="/productions-tejido-liquido"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z02-suzani-embroidery.avif 480w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working on the black figures of a twelve-metre silk suzani" loading="lazy" decoding="async"></picture><span class="who">Carlos Amorales · Tejido Líquido</span><span class="what">Silk suzani, 1.80 × 12 m</span><span class="where">Uzbekistan · 2025–26 · next: AMIL, Lima</span><span class="go">See the chapter</span></a>
+      <a href="/productions-films"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-f01-lokta-kingdom-poster.avif 480w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-f01-lokta-kingdom-poster.jpg" width="480" height="720" alt="Poster of Lokta Kingdom: a child flying a paper kite under prayer flags" loading="lazy" decoding="async"></picture><span class="who">Lokta Kingdom</span><span class="what">Feature documentary · lokta paper</span><span class="where">Nepal · 2022 · Official Selection, Nepal Cultural International Film Festival 2023</span><span class="go">See the chapter</span></a>
+      <a href="/productions-mali-bogolan"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m01-bogolan-mud.avif 347w" sizes="(max-width:900px) 50vw, 390px"><img src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth" loading="lazy" decoding="async"></picture><span class="who">Carlos Amorales · Dreamachine</span><span class="what">Bogolan · cotton painted with mud</span><span class="where">Mali → Albarrán Bourdais, Madrid · 2024</span><span class="go">See the chapter</span></a>
     </div>
   </section>
-
-  <section class="ch" id="shyrdak" aria-labelledby="c4">
-    <div class="ch-head">
-      <div><span class="no">12</span><span class="k">Kyrgyzstan → Art Basel · 2022–2024</span><h2 class="serif" id="c4">Carlos Amorales, in felt.</h2></div>
-      <div class="muted">
-        <p>Four years after the first trip, the felt-makers made Carlos Amorales’ first piece in Kyrgyz felt, in May 2022. The series that followed brings <i>ala-kiyiz</i> and <i>shyrdak</i> — pressed and cut wool — to the scale of a painting.</p>
-        <p><i>Jungle Star (Universe)</i>, 289 × 203 cm, was shown by kurimanzutto at Art Basel Miami Beach, 4–8 December 2024. Other works in the series have been shown at international art fairs.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a02-shyrdak-art-basel.avif"><img loading="lazy" src="/img/productions/2026-10-27-a02-shyrdak-art-basel.jpg" width="480" height="600" alt="A large felt work in yellow, green and black on the back wall of an art fair booth, clay bottles on a plinth in front"></picture><figcaption class="cap">kurimanzutto, Art Basel Miami Beach, December 2024.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-a01-shyrdak-detail.avif"><img loading="lazy" src="/img/productions/2026-10-27-a01-shyrdak-detail.jpg" width="480" height="600" alt="Detail of cut felt shapes stitched onto a grey felt ground"></picture><figcaption class="cap">Detail: cut felt, stitched by hand.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-amorales-felt">See the full chapter · 3 photos</a></p>
-  </section>
-
-  <section class="ch" id="mali" aria-labelledby="c5">
-    <div class="ch-head">
-      <div><span class="no">13</span><span class="k">Mali · 2024</span><h2 class="serif" id="c5">Bogolan: cloth painted with mud.</h2></div>
-      <div class="muted">
-        <p><i>Bogolanfini</i> is Mali’s mud cloth: cotton dyed with plants, then painted, line by line, with fermented mud. With artisans in Mali we translated Carlos Amorales’ forms into the technique.</p>
-        <p><i>Dreamachine</i>, cotton painted with mud, 160 × 120 cm, was shown at Albarrán Bourdais, Madrid, in 2024.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m01-bogolan-mud.avif"><img loading="lazy" src="/img/productions/2026-10-27-m01-bogolan-mud.jpg" width="347" height="347" alt="Hands painting a pattern in dark mud onto cotton cloth"></picture><figcaption class="cap">Painting the pattern in mud, Mali, 2024.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-bogolan-dye.avif"><img loading="lazy" src="/img/productions/2026-10-27-m02-bogolan-dye.jpg" width="347" height="347" alt="Buckets and a dye bath in the courtyard of the workshop"></picture><figcaption class="cap">The dye bath, Mali, 2024.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-mali-bogolan">See the full chapter · 3 photos</a></p>
-  </section>
-
-  <section class="ch" id="stone" aria-labelledby="c6">
-    <div class="ch-head">
-      <div><span class="no">14</span><span class="k">India · Mexico City · 2024–2025</span><h2 class="serif" id="c6">Gabriel de la Mora: mother of pearl, abalone and hair.</h2></div>
-      <div class="muted">
-        <p>In Udaipur, craftspeople cut mother of pearl and abalone into small tiles and set them one by one on a drawn grid. With Gabriel de la Mora we produced works in both materials there; they were shown at Zona Maco, Mexico City.</p>
-        <p>We also produced his hanging works in human hair, 90 × 60 cm, woven and washed by hand. They were shown at Museo Jumex, Mexico City, in <i>La Petite Mort</i> (2025–26).</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.avif"><img loading="lazy" src="/img/productions/2026-10-27-m02-gdlm-pearl-abalone-on-view.jpg" width="960" height="720" alt="Two square works by Gabriel de la Mora, one in abalone and one in mother of pearl, hanging side by side in a gallery room"></picture><figcaption class="cap">Abalone and mother of pearl, on view.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n01-mother-of-pearl-udaipur-s.avif"><img loading="lazy" src="/img/productions/2026-10-27-n01-mother-of-pearl-udaipur-s.jpg" width="480" height="599" alt="A craftsman setting small tiles of mother of pearl along a drawn grid on a large panel"></picture><figcaption class="cap">Setting mother of pearl, Udaipur.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-pearl-hair-stone">See the full chapter · 8 photos and a film</a></p>
-  </section>
-
-  <section class="ch" id="lakra-stone" aria-labelledby="clk">
-    <div class="ch-head">
-      <div><span class="no">15</span><span class="k">Kathmandu · 2025</span><h2 class="serif" id="clk">Dr. Lakra, carved in black stone in Kathmandu.</h2></div>
-      <div class="muted">
-        <p>Dr. Lakra drew a column of creatures: a monkey on a coiled cap, a skull held between two hooded cobras, a ringed spine, and a crocodile curled around a lotus base. We took the drawing to stone carvers in Kathmandu and had it cut, by hand, in black ballistic stone.</p>
-        <p>Each part was roughed out of its own block with hammer and chisel, the artist’s printed drawing on the floor beside the carver, then refined, fitted and finished. Revisions travelled between the studio and the workshop until every scale and ring matched the drawing.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-l03-lakra-carver-reference.avif"><img loading="lazy" src="/img/productions/2026-10-27-l03-lakra-carver-reference.jpg" width="560" height="700" alt="A carver working from the artist’s printed drawing on the workshop floor"></picture><figcaption class="cap">Carving from the drawing, Kathmandu.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-l09-lakra-finished-front.avif"><img loading="lazy" src="/img/productions/2026-10-27-l09-lakra-finished-front.jpg" width="560" height="700" alt="The finished black stone sculpture: monkey, skull between cobras, ringed column, crocodile and lotus base"></picture><figcaption class="cap">The finished piece, 2025.</figcaption></figure>
-    </div>
-    <p class="more"><a class="alt" href="/productions-lakra-stone">See the full chapter · 8 photos and a film</a></p>
-  </section>
-
-  <section class="ch" id="suzani" aria-labelledby="c7">
-    <div class="ch-head">
-      <div><span class="no">16</span><span class="k">Uzbekistan · 2025–2026</span><h2 class="serif" id="c7">Tejido Líquido: twelve metres of silk, by hand.</h2></div>
-      <div class="muted">
-        <p>Silk was always the goal. From 2018 we wrote to, called and visited more than twenty-five groups of artisans, looking for someone able to embroider silk at the scale we had in mind. In 2022 we found the workshop of Bahodir and his daughter Aisha in Uzbekistan, who weave their own cloth and raise their own silkworms.</p>
-        <p>For Carlos Amorales we produced <i>Tejido Líquido</i>: a suzani of 1.80 × 12 m, embroidered in <i>bigiz saima</i>, the hook stitch of the Fergana Valley, with hand-dyed silk on silk-and-cotton cloth woven by the workshop. The black is built up from successive indigo baths. In the collections and sources we consulted, we have not found a suzani of comparable size.</p>
-      </div>
-    </div>
-    <div class="g2 teaser">
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z01-suzani-indigo.avif"><img loading="lazy" src="/img/productions/2026-10-27-z01-suzani-indigo.jpg" width="480" height="600" alt="White silk skeins on a rod entering a vat of indigo"></picture><figcaption class="cap">First dip: the white silk enters the indigo, 13 Oct 2025.</figcaption></figure>
-      <figure><picture><source type="image/avif" srcset="/img/productions/2026-10-27-z02-suzani-embroidery.avif"><img loading="lazy" src="/img/productions/2026-10-27-z02-suzani-embroidery.jpg" width="480" height="600" alt="Two embroiderers working side by side on the black figures of the suzani"></picture><figcaption class="cap">Embroiderers on the same section of the piece, 18 Nov 2025.</figcaption></figure>
-    </div>
-    <dl class="spec">
-      <div><dt>Size</dt><dd>1.80 × 12.00 m · 21.6 m²</dd></div>
-      <div><dt>Hands</dt><dd>36 embroiderers in nine teams of four</dd></div>
-      <div><dt>Time</dt><dd>Six months, from design in August 2025 to delivery in February 2026</dd></div>
-      <div><dt>Workshop</dt><dd>Bahodir and Aisha · Tashkent and Namangan</dd></div>
-      <div><dt>Silk</dt><dd>King Silk, Fergana Valley, dyed by hand with natural dyes</dd></div>
-      <div><dt>First shown</dt><dd>AMIL, Lima · curated by Cuauhtémoc Medina · opening 19 November 2026</dd></div>
-    </dl>
-    <p class="more"><a class="alt" href="/productions-tejido-liquido">See the full chapter · 3 photos</a></p>
-  </section>
-
-  <section class="sec" id="artists" aria-labelledby="ar">
-    <span class="k lbl">Artists</span>
-    <h2 class="serif" id="ar">The artists we have produced with.</h2>
-    <div class="index">
-      <div class="row2"><b class="a">Carlos Amorales</b><span class="w">Hand-knotted works · felt · bogolan · silk suzani · lokta paper</span><span class="t">Nepal · Kyrgyzstan · Mali · Uzbekistan</span><span class="y">Since 2019</span></div>
-      <div class="row2"><b class="a">Gabriel de la Mora</b><span class="w">Works in human hair and mother of pearl</span><span class="t">India</span><span class="y">2024–25</span></div>
-      <div class="row2"><b class="a">Dr. Lakra</b><span class="w">Hand-knotted tapestries · sculpture in black ballistic stone</span><span class="t">Nepal</span><span class="y">2021–25</span></div>
-      <div class="row2"><b class="a">Jessica Stockholder</b><span class="w">Lokta paper, made and worked by hand</span><span class="t">Nepal</span><span class="y">2019</span></div>
-      <div class="row2"><b class="a">Vargas-Suárez Universal</b><span class="w">Felt · paper · lokta paper</span><span class="t">Ecuador · Kyrgyzstan · Nepal</span><span class="y">2018–19</span></div>
-      <div class="row2"><b class="a">Aya Takano</b><span class="w">Hand-knotted textile series</span><span class="t">Nepal</span><span class="y">2019–20</span></div>
-      <div class="row2"><b class="a">Saint Clair Cemin</b><span class="w">Ala-kiyiz felt</span><span class="t">Kyrgyzstan</span><span class="y">2019</span></div>
-      <div class="row2"><b class="a">José Bedia</b><span class="w">Ala-kiyiz felt</span><span class="t">Kyrgyzstan</span><span class="y">2019</span></div>
-      <div class="row2"><b class="a">Fabian Burgos</b><span class="w">Ala-kiyiz felt</span><span class="t">Kyrgyzstan</span><span class="y">2019</span></div>
-      <div class="row2"><b class="a">Alexandre Arrechea</b><span class="w">Shaped hand-knotted works · Ripples · stone</span><span class="t">Nepal</span><span class="y">2020–24</span></div>
-      <div class="row2"><b class="a">Abraham Cruzvillegas</b><span class="w">Lokta collage</span><span class="t">Nepal</span><span class="y">2023</span></div>
-      <div class="row2"><b class="a">Iván Krassoievitch</b><span class="w">Four Tibetan hand-knotted tapestries, Himalayan wool, 220 × 90 cm, for Proyectos Monclova</span><span class="t">Nepal</span><span class="y">2026</span></div>
-      <div class="row2"><b class="a">Janaina Tschäpe</b><span class="w">Two hand-knotted works, 154 × 229 and 152 × 229 cm</span><span class="t">Nepal</span><span class="y">2025</span></div>
-      <div class="row2"><b class="a">Pedro Friedeberg</b><span class="w">Hand-knotted works, 183 × 122 cm</span><span class="t">Nepal</span><span class="y">2020–24</span></div>
-      <div class="row2"><b class="a">Pablo Siquier</b><span class="w">Hand-knotted work</span><span class="t">Nepal</span><span class="y">2025</span></div>
-      <div class="row2"><b class="a">Edgar Orlanieta</b><span class="w">Hand-knotted works · felt triptych</span><span class="t">Nepal · Kyrgyzstan</span><span class="y">2024</span></div>
-      <div class="row2"><b class="a">Eli Sudbrack</b><span class="w">Hand-knotted works</span><span class="t">Nepal</span><span class="y">2024</span></div>
-            <div class="row2"><b class="a">Minerva Cuevas</b><span class="w">Tibetan hand-knotted work in wool, bamboo silk and yak hair</span><span class="t">Nepal</span><span class="y">In production</span></div>
-    </div>
-  </section>
-
-  <section class="sec" aria-labelledby="pr">
+<section class="sec" aria-labelledby="pr">
     <span class="k lbl">How a production works</span>
     <h2 class="serif" id="pr">The artist leads. We translate the drawing into a technique and a workshop.</h2>
     <ol class="steps">
@@ -543,23 +261,42 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <li><span class="n">4</span><b>Production</b>Made by hand in the workshop, with documentation for each piece.</li>
       <li><span class="n">5</span><b>Delivery</b>Finishing, shipping and delivery handled end to end.</li>
     </ol>
-  </section>
-
-  <section class="sec" aria-labelledby="cr">
-    <span class="k lbl">Crafts</span>
-    <h2 class="serif" id="cr">Eight techniques passed down for generations.</h2>
-    <div class="craft">
-      <div><b>Hand-knotting</b><p>Nepal. Tibetan knots in Himalayan wool, with silk and yak hair.</p></div>
-      <div><b>Suzani embroidery</b><p>Uzbekistan. Hand embroidery in silk on silk-and-cotton atlas.</p></div>
-      <div><b>Felt</b><p>Kyrgyzstan. Shyrdak and ala-kiyiz, in Tien Shan wool.</p></div>
-      <div><b>Bogolan</b><p>Mali. Cotton dyed with plants and painted with fermented mud.</p></div>
-      <div><b>Lokta paper</b><p>Nepal. Paper from the bark of the lokta bush, made by the artists.</p></div>
-      <div><b>Mother of pearl and abalone</b><p>India. Inlay set by hand, tile by tile.</p></div>
-      <div><b>Stone</b><p>Nepal. Sculpture carved by hand; jade mosaic in development in Mexico and India.</p></div>
-      <div><b>Hair</b><p>India. Works in human hair with Gabriel de la Mora.</p></div>
+    <div class="need">
+      <div><b style="font:400 24px/1.2 'Bodoni Moda',serif;color:#fff">What we need from the artist.</b></div>
+      <ul>
+        <li>The drawing or file, at the best resolution you have.</li>
+        <li>Final size, and where the work will hang or stand.</li>
+        <li>Colours, materials or references that matter to you.</li>
+        <li>A date: when the work has to be ready, and where.</li>
+        <li>Who approves samples on your side.</li>
+        <li>Shipping address and any exhibition requirements.</li>
+      </ul>
     </div>
+    <p class="note2 muted" style="margin-top:22px">Timelines depend on the technique, the size and the workshop; we set them with you after the samples.</p>
   </section>
-
+  <section class="sec" id="story" aria-labelledby="sto">
+    <span class="k lbl">The story, in order</span>
+    <h2 class="serif" id="sto">From Peru in 2007 to Tejido Líquido.</h2>
+    <ol class="story">
+      <li><a href="/productions-peru-ecuador"><span class="y">2007–18</span><span class="t">Peru and Ecuador · reed, paper, straw</span></a></li>
+      <li><a href="/productions-bishkek-2018"><span class="y">2018</span><span class="t">Bishkek · felt</span></a></li>
+      <li><a href="/productions-new-york-2019"><span class="y">2019</span><span class="t">New York · Stellweg, Cemin</span></a></li>
+      <li><a href="/productions-kyrgyzstan-2019"><span class="y">2019</span><span class="t">Kyrgyzstan · Cemin, Bedia, Burgos</span></a></li>
+      <li><a href="/productions-kathmandu-2019"><span class="y">2019</span><span class="t">Kathmandu · Takano, Stockholder, filming</span></a></li>
+      <li><a href="/productions-nada-miami-2019"><span class="y">2019</span><span class="t">NADA Miami</span></a></li>
+      <li><a href="/productions-nepal-2020"><span class="y">2020</span><span class="t">Nepal · new works on the looms</span></a></li>
+      <li><a href="/productions-2021"><span class="y">2021</span><span class="t">Latinx Abstract · filming in Nepal</span></a></li>
+      <li><a href="/productions-latinx-nomads"><span class="y">2021</span><span class="t">Georgia · filming Latinx Nomads</span></a></li>
+      <li><a href="/productions-2022"><span class="y">2021–22</span><span class="t">Perrotin · Zona Maco · Bedia</span></a></li>
+      <li><a href="/productions-2023"><span class="y">2022–24</span><span class="t">Lakra · Bedia · Takano · Orlanieta</span></a></li>
+      <li><a href="/productions-films"><span class="y">2021–23</span><span class="t">Two films</span></a></li>
+      <li><a href="/productions-amorales-felt"><span class="y">2022–24</span><span class="t">Carlos Amorales · felt</span></a></li>
+      <li><a href="/productions-mali-bogolan"><span class="y">2024</span><span class="t">Mali · bogolan</span></a></li>
+      <li><a href="/productions-pearl-hair-stone"><span class="y">2024–25</span><span class="t">Gabriel de la Mora · pearl, abalone, hair</span></a></li>
+      <li><a href="/productions-lakra-stone"><span class="y">2025</span><span class="t">Kathmandu · Dr. Lakra in stone</span></a></li>
+      <li><a href="/productions-tejido-liquido"><span class="y">2025–26</span><span class="t">Uzbekistan · Tejido Líquido</span></a></li>
+    </ol>
+  </section>
   <section class="sec" aria-labelledby="ed">
     <div class="essay-head">
       <div><span class="k lbl">AKA Editions</span><h2 class="serif" id="ed">Limited editions by AKA Art Productions.</h2></div>
@@ -572,22 +309,37 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </section>
 
-  <section class="paths" aria-label="Start a conversation">
-    <div>
-      <span class="k lbl">Artists &amp; galleries</span>
-      <h2 class="serif">Propose a project.</h2>
-      <p>Tell us about the work, the size and the timeline. We will propose the technique and the workshop.</p>
-      <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Propose a project</a></div>
-      <p class="mail muted">or <a href="mailto:fabian@aka.holdings?subject=Production%20proposal%20%E2%80%94%20aka.holdings%2Fproductions">fabian@aka.holdings</a></p>
-    </div>
-    <div>
-      <span class="k lbl">Collectors &amp; designers</span>
-      <h2 class="serif">Ask about AKA Editions.</h2>
-      <p>Editions in development, commissions for a specific space, and pieces made to measure.</p>
-      <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Ask about Editions</a></div>
-      <p class="mail muted">or <a href="mailto:fabian@aka.holdings?subject=AKA%20Editions%20%E2%80%94%20aka.holdings%2Fproductions">fabian@aka.holdings</a></p>
+  <section class="sec" id="propose" aria-labelledby="pp" data-hide-bar>
+    <div class="intake-wrap">
+      <div>
+        <span class="k lbl">Artists, galleries, collectors</span>
+        <h2 class="serif" id="pp">Propose a project, or ask about AKA Editions.</h2>
+        <p class="muted" style="margin-top:16px;max-width:40ch">Tell us about the work; we will propose the technique and the workshop, then a time to talk. Or go straight to the <a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-side" style="border-bottom:1px solid rgba(255,255,255,.5)">calendar</a>, or write to <a href="mailto:fabian@aka.holdings?subject=Production%20proposal" style="border-bottom:1px solid rgba(255,255,255,.5)">fabian@aka.holdings</a>.</p>
+      </div>
+      <div>
+        <form class="intake" data-unit="productions" data-subject="Production proposal · aka.holdings" novalidate>
+          <div><label for="p-name">Your name</label><input id="p-name" name="Name" autocomplete="name" required></div>
+          <div><label for="p-email">Email</label><input id="p-email" name="Email" type="email" autocomplete="email" required></div>
+          <div><label for="p-who">You are</label><select id="p-who" name="You are" required><option value="">Choose</option><option>An artist</option><option>A gallery</option><option>A collector</option><option>A designer or architect</option><option>Other</option></select></div>
+          <div><label for="p-what">Interest</label><select id="p-what" name="Interest" required><option value="">Choose</option><option>A new production</option><option>AKA Editions</option><option>A commission for a space</option></select></div>
+          <div><label for="p-tech">Technique, if you have one in mind</label><select id="p-tech" name="Technique"><option value="">Not sure yet</option><option>Hand-knotting</option><option>Felt</option><option>Silk embroidery (suzani)</option><option>Bogolan</option><option>Lokta paper</option><option>Mother of pearl or abalone</option><option>Carved stone</option><option>Other</option></select></div>
+          <div><label for="p-size">Approximate size</label><input id="p-size" name="Size" placeholder="e.g. 200 × 300 cm"></div>
+          <div class="full"><label for="p-work">The work</label><textarea id="p-work" name="The work" required placeholder="The drawing or idea, where it will be shown, anything that matters."></textarea></div>
+          <div><label for="p-date">Needed by</label><input id="p-date" name="Needed by" placeholder="Month and year"></div>
+          <div style="align-self:end"><button type="submit">Send and pick a time</button></div>
+        </form>
+        <div class="intake-done" tabindex="-1" hidden>
+          <span class="k">Thank you</span>
+          <p>Your proposal is ready to send to fabian@aka.holdings — if your email app opened, press send. Now pick a time to talk:</p>
+          <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-done">Pick a time</a></div>
+        </div>
+      </div>
     </div>
   </section>
+
+</div>
+</main>
+<div class="wrap">
 
   <footer>
     <div class="grid">
@@ -597,6 +349,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<nav class="mbar" aria-label="Quick actions"><a href="#propose" data-place="mbar">Propose a project</a><a class="ghost" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="mbar-cal">Call</a></nav>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>

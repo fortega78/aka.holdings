@@ -153,10 +153,12 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 <style>.pn{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:56px;padding-top:20px;border-top:1px solid #fff;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px}.pn a:hover{text-decoration:underline;text-underline-offset:4px}</style>
 <style>.vid{max-width:360px}.vid video{display:block;width:100%;height:auto;background:#000}</style>
 </head>
-<body class="productions">
+<body class="productions has-mbar">
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
   <header class="top">
     <a href="/productions" aria-label="AKA Art Productions"><img width="230" height="130" src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
       <a href="/">AKA Holdings</a>
@@ -168,9 +170,10 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
   </header>
 </div>
 <div class="wrap">
-  <section class="ch" id="latin-nomads" aria-labelledby="cln">
+  <main id="main">
+<section class="ch" id="latin-nomads" aria-labelledby="cln">
     <div class="ch-head">
-      <div><span class="no">08</span><span class="k">Georgia · October 2021</span><h2 class="serif" id="cln">Latinx Nomads: filming in Tbilisi and Mtskheta.</h2></div>
+      <div><span class="no">08</span><span class="k">Georgia · October 2021</span><h1 class="serif" id="cln" style="font-size:clamp(34px,4vw,58px);line-height:1.04">Latinx Nomads: filming in Tbilisi and Mtskheta.</h1><p class="ptop" style="margin-top:18px"><a class="alt" href="/productions#propose">Propose a project</a></p></div>
       <div class="muted">
         <p>In October 2021 we took the camera to Georgia to film <i>Latinx Nomads</i>: six Latinx influencers discovering the country’s art and culture, made to bring Georgia to a wider audience.</p>
         <p>The series includes interviews with a former president of Georgia and with Tekuna Gachechiladze, the country’s best-known chef, with several restaurants. We filmed in Tbilisi; at Mtskheta, the old capital above the meeting of two rivers; and in the vaulted cellar of one of Georgia’s leading wineries.</p>
@@ -197,7 +200,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     <figure class="wide" style="margin-top:16px"><picture><source type="image/avif" srcset="/img/productions/2026-10-27-n08-latinx-tekuna.avif"><img loading="lazy" src="/img/productions/2026-10-27-n08-latinx-tekuna.jpg" width="960" height="720" alt="Chef Tekuna Gachechiladze behind a bar, raising a glass in a toast with a guest"></picture><figcaption class="cap">A toast with chef Tekuna Gachechiladze.</figcaption></figure>
   </section>
   <nav class="pn" aria-label="Chapters">
-    <a href="/productions#latin-nomads">← All chapters</a>
+    <a href="/productions#story">← All chapters</a>
     <a href="/productions-2021">← 2021: Latinx Abstract, and back to Nepal to film.</a>
     <a href="/productions-2022">The works travel. →</a>
   </nav>
@@ -206,12 +209,13 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
       <span class="k lbl">Artists, galleries &amp; collectors</span>
       <h2 class="serif">Propose a project.</h2>
       <p>Tell us about the work, the size and the timeline. We will propose the technique and the workshop.</p>
-      <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Propose a project</a></div>
+      <div class="act"><a class="btn" href="/productions#propose">Propose a project</a></div>
       <p class="mail muted">or <a href="mailto:fabian@aka.holdings?subject=Production%20proposal%20%E2%80%94%20aka.holdings">fabian@aka.holdings</a></p>
     </div>
   </section>
 
-  <footer>
+  </main>
+<footer>
     <div class="grid">
       <img width="230" height="130" src="/assets/AKA_Art_Productions_Small_White.svg" alt="AKA Art Productions">
       <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub">AKA Editions — limited editions by AKA Art Productions</span></div>
@@ -219,6 +223,7 @@ a:focus-visible{outline:2px solid #fff;outline-offset:4px}
     </div>
   </footer>
 </div>
+<nav class="mbar" aria-label="Quick actions"><a href="/productions#propose" data-place="mbar">Propose a project</a><a class="ghost" href="/productions#story">Story</a></nav>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>
