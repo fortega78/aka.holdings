@@ -17,6 +17,42 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/aka.css">
+<style>
+/* /fabian v2 · ACA WEB · 2026-10-26 */
+.fx-hero{display:grid;grid-template-columns:7fr 5fr;gap:64px;padding:clamp(56px,9vh,104px) 0 clamp(48px,7vh,72px);align-items:start}
+.fx-hero .who{display:block;margin-bottom:22px}
+.fx-hero h1{font:500 clamp(34px,4.6vw,62px)/1.06 Archivo,sans-serif;letter-spacing:-.022em;color:var(--ink);max-width:15ch}
+.fx-hero .lead{margin-top:26px;font-size:clamp(17px,1.5vw,19px);line-height:1.55;color:var(--graphite);max-width:52ch}
+.fx-act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px;margin-top:34px}
+.btn{display:inline-block;background:var(--klein);color:#fff;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);transition:background .25s,color .25s}
+.btn:hover{background:#fff;color:var(--klein)}
+.btn:focus-visible,.alt:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--klein);border-bottom:1px solid var(--klein);padding-bottom:4px}
+.fx-hero .logi{margin-top:26px;font-size:14px;color:var(--slate);max-width:52ch}
+.ledger{border-top:1px solid var(--klein);margin-top:6px}
+.ledger div{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
+.ledger b{font:500 clamp(26px,2.5vw,34px)/1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--klein);white-space:nowrap}
+.ledger span{font-size:14.5px;line-height:1.45;color:var(--graphite)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;border-top:1px solid var(--klein);padding-top:24px}
+.steps li{color:var(--graphite);font-size:15.5px;max-width:34ch}
+.steps .k{display:block;margin-bottom:10px}
+.steps b{display:block;color:var(--ink);font-weight:500;font-size:17px;margin-bottom:6px}
+.close{border-top:1px solid var(--klein);border-bottom:1px solid var(--klein);padding:44px 0;margin-top:72px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.close h2{font:500 clamp(24px,2.6vw,34px)/1.2 Archivo,sans-serif;letter-spacing:-.015em;max-width:24ch}
+.close p{margin-top:10px;color:var(--graphite);font-size:15px;max-width:56ch}
+.close .fx-act{margin-top:0;justify-content:flex-end}
+@media (max-width:900px){
+  .fx-hero{grid-template-columns:1fr;gap:44px}
+  .steps{grid-template-columns:1fr;gap:26px}
+  .close{grid-template-columns:1fr}.close .fx-act{justify-content:flex-start}
+}
+@media (max-width:600px){
+  .fx-hero h1{font-size:clamp(32px,9vw,40px)}
+  .ledger div{grid-template-columns:132px 1fr;gap:12px}
+  .ledger b{font-size:22px}
+  .btn{width:100%;text-align:center}
+}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -31,28 +67,34 @@
     </nav>
   </header>
 
-  <section class="unit-hero" style="align-items:start">
+  <section class="fx-hero">
     <div class="rise d1">
-      <span class="k" style="display:block;margin-bottom:18px">Founder &amp; Operator, AKA Holdings</span>
-      <h1 style="font:400 clamp(30px,3.4vw,48px)/1.1 Archivo,sans-serif;letter-spacing:-.01em;white-space:nowrap">Fabian J. Ortega A.</h1>
-      <p style="margin-top:22px;font-size:clamp(17px,1.6vw,20px);line-height:1.5;max-width:40ch;color:var(--graphite)">Business &amp; AI transformation leader. Multi-site operating models. Former President and CEO.</p>
-      <a class="cta" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><a class="cta" href="https://www.linkedin.com/in/fabianortegaa" rel="me noopener" target="_blank">LinkedIn</a><a class="cta" href="https://github.com/fortega78" rel="me noopener" target="_blank">GitHub</a>
-    </div>
-    <div class="rise d2">
-      <div class="aka-block">
-        <span class="k lg">Looking for</span>
-        <span class="k">AI strategy &amp; operations roles</span>
-        <p>Senior operating roles where AI has to run inside a real business: transformation, operations, chief of staff, strategy. Based in Miami; U.S. and Latin America.</p>
+      <span class="k who">Fabian J. Ortega A.</span>
+      <h1>Business and AI transformation, from the owner's seat.</h1>
+      <p class="lead">Former President of a $100M+ vehicle distributor with about 1,000 people and co-founding CEO of a company grown from zero to about $30M. Open to Director and VP roles in business and AI transformation and operations.</p>
+      <div class="fx-act">
+        <a class="btn" href="mailto:fabian@aka.holdings?subject=Interview%20request%20%E2%80%94%20aka.holdings%2Ffabian&amp;body=Role%3A%0ACompany%3A%0ATimes%20that%20work%20for%20a%20call%20(ET)%3A%0A">Request a call</a>
+        <a class="alt" href="/cv/2026-10-26-Fabian-Ortega-CV.pdf" download>Download CV (PDF)</a>
       </div>
+      <p class="logi">Based in Miami. Remote or hybrid; onsite in Florida. English and Spanish, native.</p>
+    </div>
+    <div class="ledger rise d2" aria-label="Operating record">
+      <div><b>$100M+</b><span>annual sales as President of a vehicle distributor with about 1,000 employees</span></div>
+      <div><b>0 → ~$30M</b><span>parts and distribution company I co-founded and led as CEO</span></div>
+      <div><b>100+</b><span>franchised locations built and run on one operating model</span></div>
+      <div><b>200+</b><span>hospitality units across nine U.S. cities, grown from 3</span></div>
     </div>
   </section>
 
-  <div class="band rise d3">
-    <span class="k">Miami</span>
-    <span class="k">Profile</span>
-  </div>
+  <span class="k h2k" style="margin-top:8px">How I lead change</span>
+  <ol class="steps">
+    <li><span class="k">1</span><b>Find the loss</b>Where the business actually loses value, and who owns the problem.</li>
+    <li><span class="k">2</span><b>Redesign the work</b>Change how the work is done before choosing any tool.</li>
+    <li><span class="k">3</span><b>Choose the tool and govern it</b>What the system may decide alone, what stays with a person, and how we'll know it worked.</li>
+  </ol>
 
-  <section class="cv">
+  <span class="k h2k">Profile</span>
+  <section class="cv" style="padding-top:0">
     <div>
       <p class="summary">I have run and built multi-site businesses from the owner's seat: President of a vehicle distributor with about 1,000 people and $100M+ in annual sales, co-founder and CEO of a parts company grown from zero to about $30M with a 100+ site franchise network, and co-founder of a hospitality platform grown to 200+ units in nine U.S. cities. More than 15 years on boards in the United States and Latin America.</p>
       <p class="summary" style="margin-top:18px">I lead change the same way every time: find where the business loses value and who owns the problem, redesign the work, then choose the tool — increasingly AI — and govern it. Today I own and operate AKA Holdings and build its AI systems; inaugural cohort of Boston University's MS in AI in Business. Bilingual English and Spanish.</p>
@@ -60,7 +102,7 @@
     <aside>
       <div class="block"><span class="k">Now</span><p>Founder &amp; Operator, AKA Holdings — AKA Interior Design, AKA Art Productions, AKA Technologies; TeHer Art Rugs, part of AKA Holdings.</p></div>
       <div class="block"><span class="k">Studying</span><p>MS in AI in Business, Boston University Questrom (in progress, inaugural cohort).</p></div>
-      <div class="block"><span class="k">Open source</span><p>framecheck — tests whether an AI initiative is framed well enough to be judged. m4a — experiment design for low-volume, high-ticket commerce (Apache-2.0, 2026).</p></div>
+      <div class="block"><span class="k">Open source</span><p>framecheck — tests whether an AI initiative is framed well enough to be judged. m4a — experiment design for low-volume, high-ticket commerce (Apache-2.0, 2026). <a href="https://github.com/fortega78" rel="me noopener" target="_blank" style="border-bottom:1px solid var(--line)">GitHub</a></p></div>
     </aside>
   </section>
 
@@ -75,7 +117,7 @@
 
   <span class="k h2k">Experience</span>
   <div class="xp">
-    <div class="job"><div><b>Founder &amp; Operator</b><span class="k sub">AKA Holdings · Miami · 2026 – present</span></div><div><p>Own and govern a holding of operating companies in art, design and technology, and lead their AI adoption under a written governance framework: budgets, legal and privacy rules, brand standards, price limits, approval thresholds and escalation.</p><p>Designed the group's AI systems under AKA Technologies: CEREBRO in daily use; MAGOS and FABI in build; MULTA in design.</p></div></div>
+    <div class="job"><div><b>Founder &amp; Operator</b><span class="k sub">AKA Holdings · Miami · 2026 – present</span></div><div><p>Own and govern a holding of operating companies in art, design and technology, and lead their AI adoption under a written governance framework: budgets, legal and privacy rules, brand standards, price limits, approval thresholds and escalation.</p><p>Designed the group's AI systems under <a href="/technologies" style="border-bottom:1px solid var(--line)">AKA Technologies</a>: CEREBRO in daily use; MAGOS and FABI in build; MULTA in design.</p></div></div>
     <div class="job"><div><b>President</b><span class="k sub">AngloAutomotriz / ABP Group · Ecuador · 2004 – 2020</span></div><div><p>Led the group's vehicle distribution company (General Motors, Suzuki and Isuzu Trucks, GM parts distribution and authorized workshops) across six dealerships nationally: about 1,000 employees and $100M+ in annual sales, within a group of about $130M. Reported to the board and its chairman.</p><p>Expanded the brand portfolio by winning manufacturer representations from four countries, then built the OEM standards, commercial processes, CRM, pricing and channel expansion each brand required. Vice President, Development, 2004–2005.</p></div></div>
     <div class="job"><div><b>CEO &amp; Co-Founder</b><span class="k sub">Cetivehiculos / 1800 Partes · Ecuador · 2002 – 2017</span></div><div><p>Co-founded and led the group's parts, aftermarket and vehicle company, growing it from zero to about $30M in annual sales with a team of about 120, serving 2,000+ B2B customers a month across 25+ vehicle brands.</p><p>Built and operated a national franchised battery-center network of 100+ locations on one operating model. Held the Peugeot franchise for Ecuador; sold Mercedes-Benz; represented AC Delco, KYB and about fifteen further parts brands; supplied the General Motors plant and other national assemblers.</p></div></div>
     <div class="job"><div><b>Co-Founder &amp; Chief Growth Officer</b><span class="k sub">Nuovo Properties · United States, nine cities · 2015 – 2022</span></div><div><p>Grew a furnished-rental and hospitality platform from 3 apartments to 200+ units across nine U.S. cities. Led growth strategy, revenue management and pricing, marketplace distribution, customer experience and CRM. Wound the business down when COVID ended the model.</p></div></div>
@@ -96,16 +138,22 @@
     <div class="block"><b>Certifications</b><p>Anthropic Academy: Claude 101, Introduction to Subagents, AI Fluency: Frameworks &amp; Foundations (2026). Disney Institute: Disney's Approach to Quality Service. General Motors, Peugeot and KYB manufacturer training programs.</p><p><b>Coursework projects (2026)</b>Two evaluated agentic workflows (n8n) for support-ticket triage and grounded market intelligence, UT McCombs program.</p><p><b>Skills</b>Business transformation · operating-model redesign · multi-site and franchise operations · P&amp;L leadership · AI strategy and governance · revenue management and pricing · DTC and e-commerce · go-to-market · board governance · change management · KPI and executive dashboards · U.S.–Latin America · English and Spanish, native fluency.</p></div>
   </section>
 
-  <a class="founder" href="mailto:fabian@aka.holdings" style="margin-top:64px">
-    <div><span class="k">Contact</span><span class="name">fabian@aka.holdings</span></div>
-    <span class="go">Write</span>
-  </a>
+  <section class="close">
+    <div>
+      <h2>Hiring for business and AI transformation?</h2>
+      <p>Write with the role and a few times that work. I reply from fabian@aka.holdings.</p>
+    </div>
+    <div class="fx-act">
+      <a class="btn" href="mailto:fabian@aka.holdings?subject=Interview%20request%20%E2%80%94%20aka.holdings%2Ffabian&amp;body=Role%3A%0ACompany%3A%0ATimes%20that%20work%20for%20a%20call%20(ET)%3A%0A">Request a call</a>
+      <a class="alt" href="/cv/2026-10-26-Fabian-Ortega-CV.pdf" download>Download CV (PDF)</a>
+    </div>
+  </section>
 
   <footer>
     <div class="grid">
       <img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings">
       <div class="mid"><span class="k">Interior Design · Art Productions · Technologies · TeHer Art Rugs</span><span class="k sub">AKA — the intelligence behind art, design and commerce</span></div>
-      <div><a class="k" href="https://www.linkedin.com/in/fabianortegaa" rel="me noopener" target="_blank">LinkedIn</a><span class="k sub">Miami</span></div>
+      <div><a class="k" href="https://www.linkedin.com/in/fabianortegaa" rel="me noopener" target="_blank">LinkedIn</a><a class="k" href="https://github.com/fortega78" rel="me noopener" target="_blank">GitHub</a><span class="k sub">Miami</span></div>
     </div>
   </footer>
 </div>
