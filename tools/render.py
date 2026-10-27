@@ -29,7 +29,24 @@ def fact(m):
     v = F
     for k in m.group(1).split('.'): v = v[k]
     return str(v['value'] if isinstance(v, dict) else v)
-for f in (sys.argv[1:] or glob.glob(f'{R}/src/*.html')):
+for f in ([a for a in sys.argv[1:] if not a.startswith('--')] or ([] if '--svg' in sys.argv else glob.glob(f'{R}/src/*.html'))):
     t = open(f).read()
     t = re.sub(r'\{\{pic:([^}]+)\}\}', pic, t); t = re.sub(r'\{\{img:([^}]+)\}\}', img, t); t = re.sub(r'\{\{fact:([^}]+)\}\}', fact, t)
     out = f'{R}/{os.path.basename(f)}'; open(out, 'w').write(t); print('rendered', out)
+
+# ---- post-pass on every page: intrinsic size for SVG logos without width/height (prevents layout shift) ----
+def svg_dims(html):
+    def fix(m):
+        tag = m.group(0)
+        if ' width=' in tag: return tag
+        p = R + m.group(1)
+        if not os.path.exists(p): return tag
+        vb = re.search(r'viewBox="([\d.\s-]+)"', open(p).read())
+        if not vb: return tag
+        _, _, w, h = [float(x) for x in vb.group(1).split()]
+        return tag.replace('<img ', f'<img width="{round(w)}" height="{round(h)}" ', 1)
+    return re.sub(r'<img [^>]*src="(/assets/[^"]+\.svg)"[^>]*>', fix, html)
+if __name__ == '__main__' and '--svg' in sys.argv:
+    for f in glob.glob(f'{R}/*.html'):
+        t = open(f).read(); t2 = svg_dims(t)
+        if t2 != t: open(f, 'w').write(t2); print('svg dims', os.path.basename(f))

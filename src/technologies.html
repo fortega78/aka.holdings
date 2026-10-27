@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.className+=' js'</script>
+<title>AKA Technologies — AI systems for real operations</title>
+<meta name="description" content="AKA Technologies, Miami: a fixed-scope AI diagnostic for owners and operators, and the AI systems we run in our own businesses first — CEREBRO, MAGOS, FABI and MULTA, each with its real status.">
+<meta property="og:title" content="AKA Technologies — AI systems for real operations">
+<meta property="og:description" content="Find where the business loses value, redesign the work, then choose and govern the AI. Book a diagnostic.">
+<meta property="og:url" content="https://aka.holdings/technologies">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aka.holdings/og/technologies.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aka.holdings/technologies">
+<link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/aka.css">
+<style>
+/* /technologies v3 · ACA WEB · 2026-10-27 (outcomes, fit, two ways, FAQ) · brand v1.6.1: Klein #1725F5 and white, Archivo + Questrial (no mono on the public site); no navy */
+body.technologies{background-image:none}
+.btn{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);background:var(--klein);color:#fff;transition:background .25s,color .25s}
+.btn:hover{background:#fff;color:var(--klein)}
+.btn.inv{background:#fff;color:var(--klein);border-color:#fff}
+.btn.inv:hover{background:transparent;color:#fff}
+.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;border-bottom:1px solid currentColor;padding-bottom:4px}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.on-blue a:focus-visible,.on-blue .btn:focus-visible{outline-color:#fff}
+.act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:34px}
+.lbl{display:block;margin-bottom:18px}
+.st{display:inline-block;font:400 10.5px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--klein);border:1px solid var(--klein);padding:4px 8px 3px;background:transparent}
+.st.live{background:var(--klein);color:#fff}
+
+/* hero on Klein */
+.hero-t{background:var(--klein);color:#fff;padding:clamp(56px,9vh,104px) 0 clamp(56px,8vh,88px)}
+.hero-t .k{color:#fff;opacity:.9}
+.hero-t h1{font:500 clamp(40px,5.6vw,80px)/1.02 Archivo,sans-serif;letter-spacing:-.025em;max-width:13ch}
+.hero-t .lead{margin-top:28px;font-size:clamp(17px,1.5vw,20px);line-height:1.55;max-width:46ch;color:rgba(255,255,255,.92)}
+.hero-t .grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
+.hero-t .facts{border-top:1px solid rgba(255,255,255,.5)}
+.hero-t .facts div{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.3);align-items:baseline}
+.hero-t .facts b{font:500 26px/1 Archivo,sans-serif;letter-spacing:-.02em}
+.hero-t .facts span{font-size:14px;line-height:1.45;color:rgba(255,255,255,.9)}
+.hero-t .facts a{border-bottom:1px solid rgba(255,255,255,.6)}
+.hero-t .where{margin-top:20px;font-size:14px;color:rgba(255,255,255,.85)}
+
+/* sections */
+.sec{padding:96px 0 24px}
+.sec h2{font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:20ch}
+.two-col{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.two-col p{color:var(--graphite);max-width:58ch}
+.two-col p+p{margin-top:12px}
+
+/* diagnostic */
+.qs{list-style:none;border-top:1px solid var(--klein);margin-top:8px}
+.qs li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.qs .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein);padding-top:5px}
+.qs b{display:block;font-weight:500;font-size:19px;color:var(--ink);margin-bottom:4px}
+.qs p{font-size:15px;color:var(--graphite)}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.terms div{border:1px solid var(--line);padding:22px}
+.terms b{display:block;font-weight:500;font-size:16px;margin-bottom:6px}
+.terms p{font-size:14.5px;color:var(--graphite)}
+
+/* governance */
+.gov{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px}
+.gov div{border-top:2px solid var(--klein);padding-top:16px}
+.gov b{display:block;font-weight:500;font-size:17px;margin-bottom:6px}
+.gov p{font-size:14.5px;color:var(--graphite)}
+
+/* systems */
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;font-size:13px;color:var(--graphite);align-items:center}
+.sys{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.card{border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;gap:14px;background:#fff}
+.card .head{display:flex;gap:18px;align-items:center}
+.card .head img{width:56px;height:56px}
+.card h3{font:500 26px/1 Archivo,sans-serif;letter-spacing:-.01em}
+.card .d{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.24em;font-size:11px;color:var(--slate);margin-top:6px;display:block}
+.card p{font-size:15px;color:var(--graphite)}
+.card ul{list-style:none;border-top:1px solid var(--line)}
+.card li{font-size:14px;color:var(--graphite);padding:9px 0;border-bottom:1px solid var(--line)}
+.card .sig{height:15px;width:auto;margin-top:auto;opacity:.9}
+.card.live{border-color:var(--klein)}
+
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:28px;border-top:1px solid var(--klein)}
+.tools div{padding:20px 0;border-bottom:1px solid var(--line)}
+.tools b{display:block;font-weight:500;font-size:16px;margin-bottom:4px}
+.tools p{font-size:14.5px;color:var(--graphite)}
+.tools a{border-bottom:1px solid var(--line)}
+
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px}
+.principles div{border-top:1px solid var(--klein);padding-top:18px}
+.principles b{display:block;font-weight:500;font-size:19px;margin-bottom:6px}
+.principles p{font-size:15px;color:var(--graphite)}
+
+.founder-t{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:96px 0 24px}
+.founder-t ul{list-style:none;border-top:1px solid var(--klein)}
+.founder-t li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--graphite)}
+.founder-t p{color:var(--graphite);max-width:56ch}
+
+.close-t{background:var(--klein);color:#fff;margin-top:96px;padding:72px 0}
+.close-t .grid{display:grid;grid-template-columns:7fr 5fr;gap:40px;align-items:center}
+.close-t h2{font:500 clamp(32px,3.8vw,52px)/1.05 Archivo,sans-serif;letter-spacing:-.02em;max-width:16ch}
+.close-t p{margin-top:14px;color:rgba(255,255,255,.9);max-width:50ch}
+.close-t .right{text-align:right}
+.close-t .right p{margin-top:14px;font-size:14px}
+.close-t a.mail{border-bottom:1px solid rgba(255,255,255,.6)}
+
+.out{list-style:none;border-top:1px solid var(--klein)}
+.out li{padding:16px 0;border-bottom:1px solid var(--line)}
+.out b{display:block;font-weight:500;font-size:18px;color:var(--ink);margin-bottom:4px}
+.out span{font-size:15px;color:var(--graphite)}
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.fit>div{border:1px solid var(--line);padding:26px;background:#fff}
+.fit>div:first-child{border-color:var(--klein)}
+.fit b{display:block;font-weight:500;font-size:17px;margin-bottom:10px}
+.fit ul{list-style:none}
+.fit li{font-size:15px;color:var(--graphite);padding:8px 0;border-top:1px solid var(--line)}
+.ways{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.ways>div{border-top:2px solid var(--klein);padding:22px 0 0}
+.ways .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
+.ways b{display:block;font:500 24px/1.15 Archivo,sans-serif;margin:8px 0 10px}
+.ways p{font-size:15px;color:var(--graphite);max-width:52ch}
+.ways .act{margin-top:22px}
+.faq{margin-top:28px;border-top:1px solid var(--klein)}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:500;font-size:17px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--klein);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;font-size:15px;color:var(--graphite);max-width:64ch}
+@media (max-width:900px){
+  .hero-t .grid,.two-col,.founder-t,.close-t .grid{grid-template-columns:1fr;gap:32px}
+  .terms,.principles,.tools{grid-template-columns:1fr}
+  .gov{grid-template-columns:1fr 1fr}
+  .sys,.fit,.ways{grid-template-columns:1fr}
+  .close-t .right{text-align:left}
+}
+@media (max-width:600px){
+  .hero-t h1{font-size:clamp(38px,11vw,48px)}
+  .gov{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+  .card{padding:22px}
+  .hero-t .facts div{grid-template-columns:96px 1fr}
+}
+
+/* v4 · 27-oct: format, cases, intake */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid var(--klein);margin-top:8px}
+.steps li{padding-top:18px}
+.steps .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein);display:block;margin-bottom:10px}
+.steps b{display:block;font-weight:500;font-size:18px;margin-bottom:6px}
+.steps p{font-size:15px;color:var(--graphite)}
+.cases2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.cases2>*{min-width:0}
+.case2{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.case2 .vis{background:#fff;border-bottom:1px solid var(--line);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.case2 .vis picture,.case2 .vis img{width:100%;height:100%;object-fit:contain}
+.case2 .vis.k2{background:var(--klein)}
+.case2 .vis.k2 img{width:min(320px,78%);height:auto}
+.case2 .body{padding:24px}
+.case2 .body .k{font-size:11px;display:block;margin-bottom:10px}
+.case2 h3{font-weight:500;font-size:21px;line-height:1.25;margin-bottom:14px}
+.case2 dl{display:grid;grid-template-columns:110px 1fr;gap:8px 16px;font-size:15px}
+.case2 dt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:10.5px;color:var(--klein);padding-top:4px}
+.case2 dd{color:var(--graphite);margin:0}
+.case2 .cap{font-size:12px;color:var(--slate);margin-top:14px}
+.intake-wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.intake button{background:var(--klein);border-color:var(--klein)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.cases2,.intake-wrap{grid-template-columns:1fr;gap:24px}}
+@media (max-width:600px){.steps{grid-template-columns:1fr}.case2 dl{grid-template-columns:1fr;gap:2px}.case2 dt{padding-top:10px}}
+</style>
+</head>
+<body class="technologies has-mbar">
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a href="/technologies" aria-label="AKA Technologies"><img src="/assets/AKA_Technologies_Small_Primary.svg" alt="AKA Technologies"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
+    <nav class="idx" id="site-nav" aria-label="Main">
+      <a href="/">AKA Holdings</a>
+      <a href="/technologies" aria-current="page">01 / Technologies</a>
+      <a href="/productions">02 / Art Productions</a>
+      <a href="/interior">03 / Interior Design</a>
+      <a href="/fabian">Fabian</a>
+    </nav>
+  </header>
+</div>
+
+<main id="main">
+<section class="hero-t on-blue" style="margin-top:28px" data-hide-bar>
+  <div class="wrap grid">
+    <div class="rise d1">
+      <span class="k" style="display:block;margin-bottom:22px">AKA Technologies · AI systems for real operations</span>
+      <h1>An AI diagnostic for owners and operators.</h1>
+      <p class="lead">We find where your business loses value, redesign the work, and only then choose the AI — and the rules it runs under. We build in our own businesses first, and show the real status of every system.</p>
+      <div class="act">
+        <a class="btn inv" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="hero">Book a diagnostic</a>
+        <a class="alt" href="#start">Tell us about your business</a>
+      </div>
+      <p class="where">Miami · for owners and operators · English and Spanish</p>
+    </div>
+    <div class="facts rise d2" aria-label="Founder’s operating record"><span class="k" style="display:block;padding:0 0 12px;color:#fff">Founder’s operating record</span>
+      <div><b>$100M+</b><span>annual sales run as President of a vehicle distributor with about 1,000 people</span></div>
+      <div><b>100+</b><span>franchised locations built on one operating model</span></div>
+      <div><b>4</b><span>AI systems of our own, each shown with its real status</span></div>
+      <div><b>1</b><span>of our systems in daily use today. <a href="#systems" style="padding:6px 0">See which</a></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="sec" id="diagnostic" aria-labelledby="dx">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">The AI diagnostic</span>
+        <h2 id="dx">Before any tool: where does the business lose value?</h2>
+        <p style="margin-top:20px">AI doesn’t transform a company. A company that changes how it works does — and AI makes that change faster, cheaper and easier to get wrong.</p>
+        <p>The diagnostic is a fixed-scope engagement for owners and operators, in English or Spanish. It answers four questions, in this order.</p>
+      </div>
+      <ol class="qs">
+        <li><span class="n">1</span><div><b>Where is value lost?</b><p>The handoffs, delays and blind spots that cost money or time — measured where possible, not assumed.</p></div></li>
+        <li><span class="n">2</span><div><b>Who owns the problem?</b><p>Every loss gets an owner. Without one, no system will fix it.</p></div></li>
+        <li><span class="n">3</span><div><b>How should the work change?</b><p>The work is redesigned on paper first. Many fixes need no AI at all.</p></div></li>
+        <li><span class="n">4</span><div><b>Which tool, under which rules?</b><p>Only then the tool — and what it may decide alone, what stays with a person, and how we will know it worked.</p></div></li>
+      </ol>
+    </div>
+    <div class="terms">
+      <div><b>Fixed scope</b><p>Scope, duration and fee are agreed before we start.</p></div>
+      <div><b>Operator-led</b><p>Run by someone who has carried a P&amp;L across multi-site businesses — not by a vendor with a product to place.</p></div>
+      <div><b>Built in-house first</b><p>What we recommend is what we run ourselves. The systems below are the proof — and the limits.</p></div>
+    </div>
+    <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a></div>
+  </section>
+
+  <section class="sec" id="outcome" aria-labelledby="oc">
+    <div class="two-col">
+      <div><span class="k lbl">What you leave with</span><h2 id="oc">A written answer, not a slide of possibilities.</h2></div>
+      <div>
+        <ul class="out">
+          <li><b>A map of where value is lost</b><span>Each handoff, delay and blind spot, with what it costs where it can be measured.</span></li>
+          <li><b>An owner for every loss</b><span>Named inside your company, so the fix has someone to answer for it.</span></li>
+          <li><b>The work, redesigned</b><span>How the process should run — with or without AI. Many fixes need no AI at all.</span></li>
+          <li><b>The tools, and their rules</b><span>Which tool for which step, what it may decide alone, what stays with a person, and how we will know it worked.</span></li>
+          <li><b>A clear next step — or a reason to stop</b><span>If AI is not the answer for your business today, we say so in writing.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec" id="format" aria-labelledby="fm">
+    <span class="k lbl">How the diagnostic runs</span>
+    <h2 id="fm">From a first call to a written answer.</h2>
+    <ol class="steps">
+      <li><span class="n">1</span><b>A first call</b><p>We hear how the business runs and where you suspect value is lost, and decide together whether a diagnostic makes sense.</p></li>
+      <li><span class="n">2</span><b>Scope in writing</b><p>Areas, people involved, duration and fee — agreed and signed before any work starts.</p></li>
+      <li><span class="n">3</span><b>The work</b><p>Conversations with the owner and the team, a walk through the real process, and a look at the data you already have.</p></li>
+      <li><span class="n">4</span><b>The readout</b><p>The written answer above, in a working session. Then you act on it alone, with us, or not at all.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="cases" aria-labelledby="cs">
+    <span class="k lbl">Inside our own businesses</span>
+    <h2 id="cs">Problem, system, what changed.</h2>
+    <div class="cases2">
+      <article class="case2">
+        <div class="vis">{{pic:qto-plan-furnished|Furnished plan to scale of an apartment in Quito, each piece numbered, produced with the studio’s planning tools|(max-width:900px) 100vw, 590px}}</div>
+        <div class="body">
+          <span class="k">AKA Interior Design · Quito, 2026</span>
+          <h3>Designing a home in another country, without guessing.</h3>
+          <dl>
+            <dt>Problem</dt><dd>A family apartment in Quito, designed from Miami: no site visits, every piece bought online and shipped.</dd>
+            <dt>System</dt><dd>The plan rebuilt from the architect’s drawings in centimetres; furniture placed to scale and checked for clearances, door swings and rug sizes; sourcing from a fixed bank of stores with dated prices.</dd>
+            <dt>What changed</dt><dd>Decisions were caught on the plan before money was spent — for example, six dining chairs instead of eight, because the chosen chair is 63.5 cm wide and eight would have overlapped by 2.5 cm.</dd>
+          </dl>
+          <p class="cap">Plan produced by the studio’s tools. <a href="/interior-quito" style="border-bottom:1px solid var(--line)">See the project</a></p>
+        </div>
+      </article>
+      <article class="case2">
+        <div class="vis k2"><img src="/assets/CEREBRO_Lockup_Horizontal_Reversed.svg" alt="CEREBRO by AKA Technologies" width="300" height="96"></div>
+        <div class="body">
+          <span class="k">AKA Holdings · CEREBRO · in daily use</span>
+          <h3>One operator, four businesses, one verified morning brief.</h3>
+          <dl>
+            <dt>Problem</dt><dd>Commitments, orders and conversations spread across email, WhatsApp and calendars of four businesses — with no single, trustworthy picture each morning.</dd>
+            <dt>System</dt><dd>A scheduled agent drafts the brief at 5:45 AM from the sources; a 15-minute ritual verifies it; every figure is marked verified, last known or still a question.</dd>
+            <dt>What changed</dt><dd>The day starts from one checked page instead of five inboxes, and nothing is marked done on someone’s word.</dd>
+          </dl>
+          <p class="cap">Screens of the live dashboard are shown in meetings, not here: they carry client and personal data.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fit">
+    <span class="k lbl">Who it is for</span>
+    <h2 id="fit">For the owner, not the IT department.</h2>
+    <div class="fit">
+      <div><b>A good fit</b><ul><li>Owners and operators of growing businesses: multi-site operations, fleets, brands and commerce.</li><li>Leaders who carry a P&amp;L and want to know where AI pays — and where it does not.</li><li>Teams that work in English, Spanish or both.</li></ul></div>
+      <div><b>Not a fit</b><ul><li>A chatbot demo or a tool already chosen, looking for a reason.</li><li>Projects with no owner on the client side.</li><li>Work that cannot be measured once it runs.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="ways">
+    <span class="k lbl">Two ways to work with us</span>
+    <h2 id="ways">Advice first. Systems when they are earned.</h2>
+    <div class="ways">
+      <div><span class="n">01</span><b>The diagnostic</b><p>Advisory, fixed scope. Where value is lost, who owns it, how the work should change and which tools — under which rules. Yours to act on with us or with anyone.</p><div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a></div></div>
+      <div><span class="n">02</span><b>Systems, built and governed</b><p>When the diagnostic points to a system, we build it on what we already run ourselves — the stack behind CEREBRO, MAGOS, FABI and MULTA — adapted to your business, with the same governance and the same honest status.</p><div class="act"><a class="alt" href="#systems">See the systems</a></div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="gv">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Governance</span>
+        <h2 id="gv">Rules are written before the first agent runs.</h2>
+      </div>
+      <p>Budgets, approval thresholds, legal and privacy rules, data separation and escalation are on paper before anything runs. Agents act inside defined boundaries; people approve what is irreversible; autonomy is earned level by level.</p>
+    </div>
+    <div class="gov">
+      <div><b>Boundaries</b><p>Each agent has a defined seat, scope and measurable output.</p></div>
+      <div><b>Data separation</b><p>Hard separation by brand: one business never sees another’s data.</p></div>
+      <div><b>Autonomy ladder</b><p>Human-in-the-loop first; more autonomy only after it has been earned.</p></div>
+      <div><b>Verified, not claimed</b><p>Reports separate what is verified, what is last known and what is still a question.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="systems" aria-labelledby="sy">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Systems</span>
+        <h2 id="sy">Four systems, each with its real status.</h2>
+      </div>
+      <div>
+        <p>Built first for our own art, design and commerce businesses, then for clients. Each system was designed by the founder.</p>
+        <div class="legend"><span class="st live">In daily use</span> running in our operation · <span class="st">In build</span> being built · <span class="st">In design</span> being specified</div>
+      </div>
+    </div>
+    <div class="sys">
+      <article class="card live">
+        <div class="head"><img src="/assets/CEREBRO_Icon_Primary.svg" alt=""><div><h3>CEREBRO</h3><span class="d">Operations, verified.</span></div></div>
+        <span><span class="st live">In daily use</span></span>
+        <p>A chief-of-staff system that runs the founder’s day across four businesses. A scheduled agent drafts the morning brief at 5:45 AM from email, WhatsApp and calendar; a 15-minute ritual verifies it; a live dashboard tracks commitments, money states and habits.</p>
+        <ul><li>Scheduled agent + verification ritual</li><li>Source-precedence and money-state rules (verified / last known / ask)</li><li>Decision ledger and cross-project handoffs</li><li>Live dashboard published as a web artifact</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/MAGOS_Icon_Primary.svg" alt=""><div><h3>MAGOS</h3><span class="d">Growth, orchestrated.</span></div></div>
+        <span><span class="st">In build</span></span>
+        <p>A multi-agent orchestration system: the layer that turns business goals into coordinated work across specialized agents, with hard per-brand data separation and human-governed autonomy levels.</p>
+        <ul><li>Memory core and workflow orchestration</li><li>11 governed agent seats</li><li>Per-brand isolation</li><li>Human-in-the-loop autonomy ladder</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/FABI_Icon_Primary.svg" alt=""><div><h3>FABI</h3><span class="d">Agents that do the work.</span></div></div>
+        <span><span class="st">In build</span></span>
+        <p>The founder’s agents — the specialists MAGOS directs: listening, strategy, creative, launch, analytics, commerce, governance, reporting and transcreation — each with defined boundaries and measurable outputs.</p>
+        <ul><li>16 capability names over 11 governed seats</li><li>Spanish-first operating prompts</li><li>Reporting surface: “Ask FABI”</li><li>Claims and brand-safety gates</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/MULTA_Icon_Primary.svg" alt=""><div><h3>MULTA</h3><span class="d">Tolls and fines, handled.</span></div></div>
+        <span><span class="st">In design · co-built with a fleet operator</span></span>
+        <p>MULTA (Multi-Unit Liability &amp; Toll Agent) is an agent for car-sharing fleets of 10+ vehicles that matches every toll, ticket and fine to the right car, trip and guest — and answers the central question: who pays each charge.</p>
+        <ul><li>Discovery with an operator running ~150 cars</li><li>Toll and violation matching per trip</li><li>Liability assignment and recovery workflow</li><li>Built on the MAGOS / FABI stack</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+    </div>
+
+    <span class="k h2k">Tools built along the way</span>
+    <div class="tools">
+      <div><b>Interior design studio agents</b><p>A chain of agents for interior projects: style library, piece sourcing across a fixed store bank, scheme curation, space planning and client packages. <a href="/interior">See the studio</a></p></div>
+      <div><b>Brand systems as code</b><p>Logo and template generators that rebuild every master from source — like the system behind this site.</p></div>
+      <div><b>framecheck</b><p>Open source (Apache-2.0): tests whether an AI initiative is framed well enough to be judged.</p></div>
+      <div><b>m4a</b><p>Open source (Apache-2.0): experiment design for low-volume, high-ticket commerce. <a href="https://github.com/fortega78" rel="noopener" target="_blank">GitHub</a></p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="hw">
+    <span class="k lbl">How we work</span>
+    <h2 id="hw">Operator first. Human-governed. Verified, not claimed.</h2>
+    <div class="principles">
+      <div><b>Operator first</b><p>Every system starts inside a business we run, and is offered with its real status — never a prototype sold as a product.</p></div>
+      <div><b>Human-governed</b><p>Agents act within defined boundaries; people approve what is irreversible. Autonomy is earned level by level.</p></div>
+      <div><b>Verified, not claimed</b><p>Reports separate verified facts from last-known data and open questions. Nothing is marked done on someone’s word.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fq">
+    <span class="k lbl">Questions</span>
+    <h2 id="fq">What owners ask first.</h2>
+    <div class="faq">
+      <details><summary>What if AI isn’t the answer for my business?</summary><p>Then the diagnostic says so, in writing, and shows what to fix first without it. Many of the losses we find are solved by changing the work, not by adding a tool.</p></details>
+      <details><summary>Do I need clean data or an AI team before we start?</summary><p>No. Part of the diagnostic is finding out what data you actually have, where it lives and who owns it. We work with what is there.</p></details>
+      <details><summary>Will you try to sell me software?</summary><p>The diagnostic stands on its own. If it points to a system, we can build it — but the recommendation is yours to act on with us or with anyone.</p></details>
+      <details><summary>How do you keep our data safe?</summary><p>Rules are written before anything runs: what data an agent may see, hard separation between businesses, and people approving anything irreversible.</p></details>
+      <details><summary>How long does it take, and what does it cost?</summary><p>Scope, duration and fee are agreed before we start, sized to your business. The first call is where we set them.</p></details>
+      <details><summary>Can we work in Spanish?</summary><p>Yes — the diagnostic, the documents and the meetings, in English, Spanish or both.</p></details>
+    </div>
+  </section>
+
+
+  <section class="sec" id="start" aria-labelledby="st-h" data-hide-bar>
+    <div class="intake-wrap">
+      <div>
+        <span class="k lbl">Start</span>
+        <h2 id="st-h">Tell us where it hurts.</h2>
+        <p style="margin-top:18px;color:var(--graphite);max-width:40ch">Two minutes, then pick a time for the first call. Or go straight to the <a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-side" style="border-bottom:1px solid var(--line)">calendar</a>.</p>
+      </div>
+      <div>
+        <form class="intake" data-unit="technologies" data-subject="AI diagnostic · aka.holdings" novalidate>
+          <div><label for="t-name">Your name</label><input id="t-name" name="Name" autocomplete="name" required></div>
+          <div><label for="t-email">Email</label><input id="t-email" name="Email" type="email" autocomplete="email" required></div>
+          <div><label for="t-co">Company</label><input id="t-co" name="Company" autocomplete="organization" required></div>
+          <div><label for="t-size">Size</label><select id="t-size" name="Size" required><option value="">Choose</option><option>1–10 people</option><option>11–50 people</option><option>51–200 people</option><option>200+ people</option></select></div>
+          <div class="full"><label for="t-sector">Sector</label><select id="t-sector" name="Sector" required><option value="">Choose</option><option>Multi-site operations or franchise</option><option>Fleet, mobility or logistics</option><option>Brand, retail or e-commerce</option><option>Hospitality or real estate</option><option>Professional services</option><option>Other</option></select></div>
+          <div class="full"><label for="t-loss">Where do you think the business loses value?</label><textarea id="t-loss" name="Where value is lost" required placeholder="A handoff that breaks, a report nobody trusts, time spent chasing payments…"></textarea></div>
+          <div class="full"><button type="submit">Send and pick a time</button></div>
+        </form>
+        <div class="intake-done" tabindex="-1" hidden>
+          <span class="k">Thank you</span>
+          <p>Your details are ready to send to fabian@aka.holdings — if your email app opened, press send. Now pick a time for the first call:</p>
+          <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="form-done">Pick a time</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="founder-t" aria-labelledby="fo">
+    <div>
+      <span class="k lbl">Founder</span>
+      <h2 id="fo" style="font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em">Fabian J. Ortega A.</h2>
+      <p style="margin-top:18px">Business and AI transformation, from the owner’s seat. Inaugural cohort of Boston University’s MS in AI in Business.</p>
+      <div class="act"><a class="alt" href="/fabian" style="color:var(--klein)">Full profile</a></div>
+    </div>
+    <ul>
+      <li>President of a $100M+ vehicle distribution company with about 1,000 employees.</li>
+      <li>Co-founded a parts and distribution company and grew it from zero to about $30M, with 100+ franchised locations on one operating model.</li>
+      <li>Grew a hospitality platform from 3 to 200+ units across nine U.S. cities.</li>
+      <li>More than 15 years on boards in the United States and Latin America.</li>
+    </ul>
+  </section>
+</div>
+
+<section class="close-t on-blue" aria-labelledby="cl" data-hide-bar>
+  <div class="wrap grid">
+    <div>
+      <h2 id="cl">Start with where the value is lost.</h2>
+      <p>A first call to see whether a diagnostic makes sense for your business, in English or Spanish.</p>
+    </div>
+    <div class="right">
+      <a class="btn inv" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a>
+      <p>Miami · <a class="mail" href="mailto:fabian@aka.holdings?subject=AI%20diagnostic%20%E2%80%94%20aka.holdings%2Ftechnologies">fabian@aka.holdings</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="wrap">
+  <footer>
+    <div class="grid">
+      <img src="/assets/AKA_Technologies_Small_Primary.svg" alt="AKA Technologies">
+      <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub">MAGOS · FABI · MULTA · CEREBRO — by AKA Technologies</span></div>
+      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
+    </div>
+  </footer>
+</div>
+<nav class="mbar" aria-label="Quick actions"><a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="mbar">Book a diagnostic</a><a class="ghost" href="#start">Form</a></nav>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
