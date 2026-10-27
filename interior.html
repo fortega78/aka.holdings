@@ -120,6 +120,19 @@ figure img{display:block;width:100%;height:auto}
   .btn{width:100%;text-align:center}
   .story{padding-top:72px}
 }
+.index{margin:8px 0 0;border-top:1px solid var(--deep)}
+.index a{display:grid;grid-template-columns:2.2fr 1.4fr .6fr 1.2fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding-left .3s}
+.index a:hover{padding-left:10px}
+.index .t{font:400 clamp(20px,1.9vw,26px)/1.2 'Bodoni Moda',serif;color:var(--deep)}
+.index span{font-size:14px;color:var(--graphite)}
+.index .stt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--deep);text-align:right}
+.mline{display:block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.24em;font-size:11px;color:var(--deep);margin-top:16px}
+.credits{font-size:12.5px;color:var(--graphite);margin-top:28px;padding-top:14px;border-top:1px solid var(--line)}
+.next{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 28px;margin-top:28px}
+.contact-line{font-size:14px;color:var(--graphite);margin-top:14px;text-align:right}
+@media (max-width:900px){.contact-line{text-align:left}}
+@media (max-width:900px){.index a{grid-template-columns:1fr auto;gap:4px 16px}.index a span.loc{grid-column:1}.index a span.yr{display:none}.index .stt{grid-row:1;grid-column:2}
+  .g3>:nth-child(3):last-child{grid-column:1/-1}}
 </style>
 </head>
 <body class="interior">
@@ -143,7 +156,7 @@ figure img{display:block;width:100%;height:auto}
       <p class="lead">Complete homes in Miami and abroad: layout, millwork, light, furniture and art. Every piece is chosen for a reason — icons from the great design houses, vintage finds, work made to order, and the art you live with.</p>
       <div class="act">
         <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a>
-        <a class="alt" href="#work">See the work</a>
+        <a class="alt" href="#work-h">See the work</a>
       </div>
       <p class="where">Miami, Palm Beach and remote. English and Spanish.</p>
     </div>
@@ -168,11 +181,21 @@ figure img{display:block;width:100%;height:auto}
     </div>
   </section>
 
-  <section class="story" id="work" aria-labelledby="p1">
+
+  <section aria-labelledby="work-h" style="padding-top:24px">
+    <span class="k h2k" id="work-h" style="margin-top:0">Selected work</span>
+    <nav class="index" aria-label="Projects">
+      <a href="#edgewater"><b class="t">Edgewater Residence</b><span class="loc">Miami</span><span class="yr">2026</span><span class="stt">Full service</span></a>
+      <a href="#collector"><b class="t">Collector’s Apartment</b><span class="loc">Miami</span><span class="yr">2026</span><span class="stt">Proposal</span></a>
+      <a href="#quito"><b class="t">Quito Residence</b><span class="loc">Quito, Ecuador · remote</span><span class="yr">2026</span><span class="stt">Proposal</span></a>
+    </nav>
+  </section>
+
+  <section class="story" id="edgewater" aria-labelledby="p1">
     <div class="story-head">
-      <div><span class="no">Project 01 · Full service · 2026</span><h2 class="serif" id="p1">A bay-front residence, Edgewater.</h2></div>
+      <div><span class="no">Project 01</span><h2 class="serif" id="p1">Edgewater Residence, Miami.</h2><span class="mline">Miami · 2026 · Residential · Full service</span></div>
       <div>
-        <p>A bay-front apartment designed end to end: living room, kitchen, entry and study, with custom millwork throughout. A gradient relief above the sofa sets the palette for the whole home.</p>
+        <p>A bay-front apartment in Edgewater, designed end to end: living room, kitchen, entry and study, with custom millwork throughout. A gradient relief above the sofa sets the palette for the whole home; fluted oak, lit niches and a wine wall turn the media wall into one piece of furniture joined to the kitchen.</p>
         <p class="meta">Design · custom millwork · purchasing · installation and styling</p>
       </div>
     </div>
@@ -188,11 +211,13 @@ figure img{display:block;width:100%;height:auto}
       <figure><img loading="lazy" src="/img/interior/2026-10-26-e08-terrace.jpg" width="900" height="1124" alt="Terrace dining table in stone with woven chairs over the bay"><figcaption class="cap">Terrace.</figcaption></figure>
       <div style="align-self:end;padding-bottom:28px"><p style="font:italic 400 22px/1.35 'Bodoni Moda',serif;color:var(--deep)">Coordinated with the building’s requirements and a general contractor; purchasing, deliveries and installation run by the studio.</p></div>
     </div>
+    <p class="credits">Design: AKA Interior Design — Fabian Ortega · Custom millwork, purchasing and installation coordinated by the studio.</p>
+    <div class="next"><a class="alt" href="#collector">Next project: Collector’s Apartment</a><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a></div>
   </section>
 
-  <section class="story" aria-labelledby="p2">
+  <section class="story" id="collector" aria-labelledby="p2">
     <div class="story-head">
-      <div><span class="no">Project 02 · Curation · Proposal, 2026</span><h2 class="serif" id="p2">A collector’s apartment, Miami.</h2></div>
+      <div><span class="no">Project 02</span><h2 class="serif" id="p2">Collector’s Apartment, Miami.</h2><span class="mline">Miami · 2026 · Collection styling · Proposal</span></div>
       <div>
         <p>More than twenty works in an open-plan apartment. The brief: nothing leaves, nothing is added to the collection. It is rearranged and lit, and the layer around it is rewritten — few pieces with a signature, warm textures, and a single thread of colour taken from the art.</p>
         <p class="meta">Collection styling · lighting for the art · a written list of every piece</p>
@@ -218,13 +243,15 @@ figure img{display:block;width:100%;height:auto}
       <div class="piece"><div class="name"><b>Oxide planters</b><span>Ten Thousand Pots · glazed ceramic, made by hand</span></div><p>A glaze that runs from chocolate to rust, in the colour of the pine table and the leather of the lounge chair: it reads as studio ceramics, not as a nursery pot.</p></div>
       <div class="piece"><div class="name"><b>Picture lights</b><span>one family, polished chrome</span></div><p>A single family of lights for the works that need them, so the collection — not the fixtures — is what you see.</p></div>
     </div>
+    <p class="credits">Design and curation: AKA Interior Design — Fabian Ortega · Photographs show the apartment before the proposal.</p>
+    <div class="next"><a class="alt" href="#quito">Next project: Quito Residence</a><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a></div>
   </section>
 
-  <section class="story" aria-labelledby="p3">
+  <section class="story" id="quito" aria-labelledby="p3">
     <div class="story-head">
-      <div><span class="no">Project 03 · Remote curation · Proposal, 2026</span><h2 class="serif" id="p3">A family home in Quito, designed from Miami.</h2></div>
+      <div><span class="no">Project 03</span><h2 class="serif" id="p3">Quito Residence, Ecuador.</h2><span class="mline">Quito · 2026 · Remote curation · Proposal</span></div>
       <div>
-        <p>A full apartment furnished at a distance: a plan rebuilt from the architect’s drawings, every piece with its own sheet and a block that says why it is there, with online purchasing and shipping to Ecuador. Twenty-four people can sit at once, in four groups that see each other.</p>
+        <p>A family apartment in Quito, designed from Miami and furnished at a distance: a plan rebuilt from the architect’s drawings, every piece with its own sheet and a block that says why it is there, with online purchasing and shipping to Ecuador. Twenty-four people can sit at once, in four groups that see each other.</p>
         <p class="meta">Plan · furniture and art · a piece made to order · purchasing and shipping</p>
       </div>
     </div>
@@ -234,6 +261,8 @@ figure img{display:block;width:100%;height:auto}
       <div><b>A work over the only quiet corner.</b><p>A Kathmandu paper wall work by Jessica Stockholder, in burgundy, chosen against the palette: it completes the red thread of a Rosso Levanto marble side table and balances the two greens.</p></div>
       <div><b>A rug that stays quiet.</b><p>On the terrace, a flat weave that takes the whole seating area and stops 34 cm short of the fire — the fire is never over a rug.</p></div>
     </div>
+    <p class="credits">Design and curation: AKA Interior Design — Fabian Ortega · Text only: photographs follow when the home is installed.</p>
+    <div class="next"><a class="alt" href="#how">How we work</a><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a></div>
   </section>
 </div>
 
@@ -297,7 +326,7 @@ figure img{display:block;width:100%;height:auto}
       <h2 class="serif" id="start">Let’s start with your home.</h2>
       <p>Pick a time and tell me where your home is and what you want to solve. Or write to <a href="mailto:fabian@aka.holdings" style="border-bottom:1px solid var(--line)">fabian@aka.holdings</a>.</p>
     </div>
-    <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a></div>
+    <div><div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a consultation</a></div><p class="contact-line">Miami · <a href="mailto:fabian@aka.holdings">fabian@aka.holdings</a></p></div>
   </section>
 
   <footer>
