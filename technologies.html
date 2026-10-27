@@ -4,11 +4,120 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AKA Technologies — AI systems for real operations</title>
-<meta name="description" content="AKA Technologies builds AI systems for real operations: MAGOS, FABI, MULTA and CEREBRO. Part of AKA Holdings, Miami.">
+<meta name="description" content="AKA Technologies, Miami: a fixed-scope AI diagnostic for owners and operators, and the AI systems we run in our own businesses first — CEREBRO, MAGOS, FABI and MULTA, each with its real status.">
+<meta property="og:title" content="AKA Technologies — AI systems for real operations">
+<meta property="og:description" content="Find where the business loses value, redesign the work, then choose and govern the AI. Book a diagnostic.">
+<meta property="og:url" content="https://aka.holdings/technologies">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/aka.css">
+<style>
+/* /technologies v2 · ACA WEB · 2026-10-26 · brand v1.6.1: Klein #1725F5 and white, Archivo, JetBrains Mono only for status; no navy */
+body.technologies{background-image:none}
+.btn{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);background:var(--klein);color:#fff;transition:background .25s,color .25s}
+.btn:hover{background:#fff;color:var(--klein)}
+.btn.inv{background:#fff;color:var(--klein);border-color:#fff}
+.btn.inv:hover{background:transparent;color:#fff}
+.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;border-bottom:1px solid currentColor;padding-bottom:4px}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.on-blue a:focus-visible,.on-blue .btn:focus-visible{outline-color:#fff}
+.act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:34px}
+.lbl{display:block;margin-bottom:18px}
+.st{display:inline-block;font:400 12px 'JetBrains Mono',monospace;color:var(--klein);border:1px solid var(--klein);padding:3px 8px;letter-spacing:0;background:transparent}
+.st.live{background:var(--klein);color:#fff}
+
+/* hero on Klein */
+.hero-t{background:var(--klein);color:#fff;padding:clamp(56px,9vh,104px) 0 clamp(56px,8vh,88px)}
+.hero-t .k{color:#fff;opacity:.9}
+.hero-t h1{font:500 clamp(40px,5.6vw,80px)/1.02 Archivo,sans-serif;letter-spacing:-.025em;max-width:13ch}
+.hero-t .lead{margin-top:28px;font-size:clamp(17px,1.5vw,20px);line-height:1.55;max-width:46ch;color:rgba(255,255,255,.92)}
+.hero-t .grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
+.hero-t .facts{border-top:1px solid rgba(255,255,255,.5)}
+.hero-t .facts div{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.3);align-items:baseline}
+.hero-t .facts b{font:500 26px/1 Archivo,sans-serif;letter-spacing:-.02em}
+.hero-t .facts span{font-size:14px;line-height:1.45;color:rgba(255,255,255,.9)}
+.hero-t .facts a{border-bottom:1px solid rgba(255,255,255,.6)}
+.hero-t .where{margin-top:20px;font-size:14px;color:rgba(255,255,255,.85)}
+
+/* sections */
+.sec{padding:96px 0 24px}
+.sec h2{font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:20ch}
+.two-col{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.two-col p{color:var(--graphite);max-width:58ch}
+.two-col p+p{margin-top:12px}
+
+/* diagnostic */
+.qs{list-style:none;border-top:1px solid var(--klein);margin-top:8px}
+.qs li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.qs .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein);padding-top:5px}
+.qs b{display:block;font-weight:500;font-size:19px;color:var(--ink);margin-bottom:4px}
+.qs p{font-size:15px;color:var(--graphite)}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.terms div{border:1px solid var(--line);padding:22px}
+.terms b{display:block;font-weight:500;font-size:16px;margin-bottom:6px}
+.terms p{font-size:14.5px;color:var(--graphite)}
+
+/* governance */
+.gov{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px}
+.gov div{border-top:2px solid var(--klein);padding-top:16px}
+.gov b{display:block;font-weight:500;font-size:17px;margin-bottom:6px}
+.gov p{font-size:14.5px;color:var(--graphite)}
+
+/* systems */
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;font-size:13px;color:var(--graphite);align-items:center}
+.sys{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.card{border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;gap:14px;background:#fff}
+.card .head{display:flex;gap:18px;align-items:center}
+.card .head img{width:56px;height:56px}
+.card h3{font:500 26px/1 Archivo,sans-serif;letter-spacing:-.01em}
+.card .d{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.24em;font-size:11px;color:var(--slate);margin-top:6px;display:block}
+.card p{font-size:15px;color:var(--graphite)}
+.card ul{list-style:none;border-top:1px solid var(--line)}
+.card li{font-size:14px;color:var(--graphite);padding:9px 0;border-bottom:1px solid var(--line)}
+.card .sig{height:15px;width:auto;margin-top:auto;opacity:.9}
+.card.live{border-color:var(--klein)}
+
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:28px;border-top:1px solid var(--klein)}
+.tools div{padding:20px 0;border-bottom:1px solid var(--line)}
+.tools b{display:block;font-weight:500;font-size:16px;margin-bottom:4px}
+.tools p{font-size:14.5px;color:var(--graphite)}
+.tools a{border-bottom:1px solid var(--line)}
+
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px}
+.principles div{border-top:1px solid var(--klein);padding-top:18px}
+.principles b{display:block;font-weight:500;font-size:19px;margin-bottom:6px}
+.principles p{font-size:15px;color:var(--graphite)}
+
+.founder-t{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:96px 0 24px}
+.founder-t ul{list-style:none;border-top:1px solid var(--klein)}
+.founder-t li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--graphite)}
+.founder-t p{color:var(--graphite);max-width:56ch}
+
+.close-t{background:var(--klein);color:#fff;margin-top:96px;padding:72px 0}
+.close-t .grid{display:grid;grid-template-columns:7fr 5fr;gap:40px;align-items:center}
+.close-t h2{font:500 clamp(32px,3.8vw,52px)/1.05 Archivo,sans-serif;letter-spacing:-.02em;max-width:16ch}
+.close-t p{margin-top:14px;color:rgba(255,255,255,.9);max-width:50ch}
+.close-t .right{text-align:right}
+.close-t .right p{margin-top:14px;font-size:14px}
+.close-t a.mail{border-bottom:1px solid rgba(255,255,255,.6)}
+
+@media (max-width:900px){
+  .hero-t .grid,.two-col,.founder-t,.close-t .grid{grid-template-columns:1fr;gap:32px}
+  .terms,.principles,.tools{grid-template-columns:1fr}
+  .gov{grid-template-columns:1fr 1fr}
+  .sys{grid-template-columns:1fr}
+  .close-t .right{text-align:left}
+}
+@media (max-width:600px){
+  .hero-t h1{font-size:clamp(38px,11vw,48px)}
+  .gov{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+  .card{padding:22px}
+  .hero-t .facts div{grid-template-columns:96px 1fr}
+}
+</style>
 </head>
 <body class="technologies">
 <div class="wrap">
@@ -23,74 +132,153 @@
   </header>
 </div>
 
-<section class="tech-head rise d1">
-  <div class="wrap">
-    <img class="logo" src="/assets/AKA_Technologies_Reversed.svg" alt="AKA Technologies">
-    <p>AI systems for real operations — built first for our own art, design and commerce businesses, then for clients. Each system below was designed by the founder; its real status is shown on every card.</p>
-    <span class="k">Miami · Part of AKA Holdings — the intelligence behind art, design and commerce</span>
+<section class="hero-t on-blue" style="margin-top:28px">
+  <div class="wrap grid">
+    <div class="rise d1">
+      <span class="k" style="display:block;margin-bottom:22px">AKA Technologies · AI systems for real operations</span>
+      <h1>An AI diagnostic for owners and operators.</h1>
+      <p class="lead">We find where your business loses value, redesign the work, and only then choose the AI — and the rules it runs under. We build in our own businesses first, and show the real status of every system.</p>
+      <div class="act">
+        <a class="btn inv" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a>
+        <a class="alt" href="#systems">See the systems</a>
+      </div>
+      <p class="where">Miami · for owners and operators · English and Spanish</p>
+    </div>
+    <div class="facts rise d2" aria-label="Founder’s operating record"><span class="k" style="display:block;padding:0 0 12px;color:#fff">Founder’s operating record</span>
+      <div><b>$100M+</b><span>annual sales run as President of a vehicle distributor with about 1,000 people</span></div>
+      <div><b>100+</b><span>franchised locations built on one operating model</span></div>
+      <div><b>4</b><span>AI systems of our own, each shown with its real status</span></div>
+      <div><b>1</b><span>of our systems in daily use today. <a href="#systems" style="padding:6px 0">See which</a></span></div>
+    </div>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="band rise d2" style="border-top:0;padding-top:18px">
-    <span class="k">AI advisory · systems · agents</span>
-    <span class="k">01 / Technologies</span>
-  </div>
+  <section class="sec" id="diagnostic" aria-labelledby="dx">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">The AI diagnostic</span>
+        <h2 id="dx">Before any tool: where does the business lose value?</h2>
+        <p style="margin-top:20px">AI doesn’t transform a company. A company that changes how it works does — and AI makes that change faster, cheaper and easier to get wrong.</p>
+        <p>The diagnostic is a fixed-scope engagement for owners and operators, in English or Spanish. It answers four questions, in this order.</p>
+      </div>
+      <ol class="qs">
+        <li><span class="n">1</span><div><b>Where is value lost?</b><p>The handoffs, delays and blind spots that cost money or time — measured where possible, not assumed.</p></div></li>
+        <li><span class="n">2</span><div><b>Who owns the problem?</b><p>Every loss gets an owner. Without one, no system will fix it.</p></div></li>
+        <li><span class="n">3</span><div><b>How should the work change?</b><p>The work is redesigned on paper first. Many fixes need no AI at all.</p></div></li>
+        <li><span class="n">4</span><div><b>Which tool, under which rules?</b><p>Only then the tool — and what it may decide alone, what stays with a person, and how we will know it worked.</p></div></li>
+      </ol>
+    </div>
+    <div class="terms">
+      <div><b>Fixed scope</b><p>Scope, duration and fee are agreed before we start.</p></div>
+      <div><b>Operator-led</b><p>Run by someone who has carried a P&amp;L across multi-site businesses — not by a vendor with a product to place.</p></div>
+      <div><b>Built in-house first</b><p>What we recommend is what we run ourselves. The systems below are the proof — and the limits.</p></div>
+    </div>
+    <div class="act"><a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a></div>
+  </section>
 
-  <span class="k h2k">Systems</span>
-  <div class="cases">
-    <article class="case">
-      <img src="/assets/CEREBRO_Icon_Primary.svg" alt="">
-      <div><span class="st">In daily use</span><h3>CEREBRO</h3><div class="sub">Operations, verified.</div>
-      <p>A chief-of-staff system that runs the founder's day across four businesses, two academic programs and a job search. A scheduled agent drafts the morning brief at 5:45 AM from email, WhatsApp and calendar; a 15-minute ritual verifies it; a live dashboard tracks commitments, money states and habits.</p>
-      <ul><li>Scheduled agent + verification ritual</li><li>Source-precedence and money-state rules (verified / last known / ask)</li><li>Decision ledger and cross-project handoffs</li><li>Live dashboard published as a web artifact</li></ul>
-      <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies"></div>
-    </article>
-    <article class="case">
-      <img src="/assets/MAGOS_Icon_Primary.svg" alt="">
-      <div><span class="st">In build</span><h3>MAGOS</h3><div class="sub">Growth, orchestrated.</div>
-      <p>A multi-agent orchestration system: the layer that turns business goals into coordinated work across specialized agents, with hard per-brand data separation and human-governed autonomy levels.</p>
-      <ul><li>Memory core and workflow orchestration</li><li>11 governed agent seats</li><li>Per-brand isolation</li><li>Human-in-the-loop autonomy ladder</li></ul>
-      <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies"></div>
-    </article>
-    <article class="case">
-      <img src="/assets/FABI_Icon_Primary.svg" alt="">
-      <div><span class="st">In build</span><h3>FABI</h3><div class="sub">Agents that do the work.</div>
-      <p>The founder's agents — the specialists MAGOS directs: listening, strategy, creative, launch, analytics, commerce, governance, reporting and transcreation — each with defined boundaries and measurable outputs.</p>
-      <ul><li>16 capability names over 11 governed seats</li><li>Spanish-first operating prompts</li><li>Reporting surface: “Ask FABI”</li><li>Claims and brand-safety gates</li></ul>
-      <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies"></div>
-    </article>
-    <article class="case">
-      <img src="/assets/MULTA_Icon_Primary.svg" alt="">
-      <div><span class="st">In design · co-built with a fleet operator</span><h3>MULTA</h3><div class="sub">Tolls and fines, handled.</div>
-      <p>MULTA (Multi-Unit Liability &amp; Toll Agent) is an agent for car-sharing fleets of 10+ vehicles that matches every toll, ticket and fine to the right car, trip and guest — and answers the central question: who pays each charge.</p>
-      <ul><li>Discovery with an operator running ~150 cars</li><li>Toll and violation matching per trip</li><li>Liability assignment and recovery workflow</li><li>Built on the MAGOS / FABI stack</li></ul>
-      <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies"></div>
-    </article>
-  </div>
+  <section class="sec" aria-labelledby="gv">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Governance</span>
+        <h2 id="gv">Rules are written before the first agent runs.</h2>
+      </div>
+      <p>Budgets, approval thresholds, legal and privacy rules, data separation and escalation are on paper before anything runs. Agents act inside defined boundaries; people approve what is irreversible; autonomy is earned level by level.</p>
+    </div>
+    <div class="gov">
+      <div><b>Boundaries</b><p>Each agent has a defined seat, scope and measurable output.</p></div>
+      <div><b>Data separation</b><p>Hard separation by brand: one business never sees another’s data.</p></div>
+      <div><b>Autonomy ladder</b><p>Human-in-the-loop first; more autonomy only after it has been earned.</p></div>
+      <div><b>Verified, not claimed</b><p>Reports separate what is verified, what is last known and what is still a question.</p></div>
+    </div>
+  </section>
 
-  <span class="k h2k">Tools built along the way</span>
-  <div class="tools">
-    <div class="tool"><b>WhatsApp intelligence sync</b>Syncs active chats and transcribes voice notes so every report on a person or negotiation is grounded in the latest conversation.</div>
-    <div class="tool"><b>Course capture pipeline</b>Captures a graduate course (lessons, notebooks, video transcripts) into citable markdown with a hash manifest that flags revisions.</div>
-    <div class="tool"><b>Interior design studio agents</b>A chain of agents for interior projects: style library, piece sourcing across a fixed store bank, scheme curation, space planning and client packages.</div>
-    <div class="tool"><b>Brand systems as code</b>Logo and template generators that rebuild every master from source — like the system behind this site.</div>
-  </div>
+  <section class="sec" id="systems" aria-labelledby="sy">
+    <div class="two-col">
+      <div>
+        <span class="k lbl">Systems</span>
+        <h2 id="sy">Four systems, each with its real status.</h2>
+      </div>
+      <div>
+        <p>Built first for our own art, design and commerce businesses, then for clients. Each system was designed by the founder.</p>
+        <div class="legend"><span class="st live">In daily use</span> running in our operation · <span class="st">In build</span> being built · <span class="st">In design</span> being specified</div>
+      </div>
+    </div>
+    <div class="sys">
+      <article class="card live">
+        <div class="head"><img src="/assets/CEREBRO_Icon_Primary.svg" alt=""><div><h3>CEREBRO</h3><span class="d">Operations, verified.</span></div></div>
+        <span><span class="st live">In daily use</span></span>
+        <p>A chief-of-staff system that runs the founder’s day across four businesses. A scheduled agent drafts the morning brief at 5:45 AM from email, WhatsApp and calendar; a 15-minute ritual verifies it; a live dashboard tracks commitments, money states and habits.</p>
+        <ul><li>Scheduled agent + verification ritual</li><li>Source-precedence and money-state rules (verified / last known / ask)</li><li>Decision ledger and cross-project handoffs</li><li>Live dashboard published as a web artifact</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/MAGOS_Icon_Primary.svg" alt=""><div><h3>MAGOS</h3><span class="d">Growth, orchestrated.</span></div></div>
+        <span><span class="st">In build</span></span>
+        <p>A multi-agent orchestration system: the layer that turns business goals into coordinated work across specialized agents, with hard per-brand data separation and human-governed autonomy levels.</p>
+        <ul><li>Memory core and workflow orchestration</li><li>11 governed agent seats</li><li>Per-brand isolation</li><li>Human-in-the-loop autonomy ladder</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/FABI_Icon_Primary.svg" alt=""><div><h3>FABI</h3><span class="d">Agents that do the work.</span></div></div>
+        <span><span class="st">In build</span></span>
+        <p>The founder’s agents — the specialists MAGOS directs: listening, strategy, creative, launch, analytics, commerce, governance, reporting and transcreation — each with defined boundaries and measurable outputs.</p>
+        <ul><li>16 capability names over 11 governed seats</li><li>Spanish-first operating prompts</li><li>Reporting surface: “Ask FABI”</li><li>Claims and brand-safety gates</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+      <article class="card">
+        <div class="head"><img src="/assets/MULTA_Icon_Primary.svg" alt=""><div><h3>MULTA</h3><span class="d">Tolls and fines, handled.</span></div></div>
+        <span><span class="st">In design · co-built with a fleet operator</span></span>
+        <p>MULTA (Multi-Unit Liability &amp; Toll Agent) is an agent for car-sharing fleets of 10+ vehicles that matches every toll, ticket and fine to the right car, trip and guest — and answers the central question: who pays each charge.</p>
+        <ul><li>Discovery with an operator running ~150 cars</li><li>Toll and violation matching per trip</li><li>Liability assignment and recovery workflow</li><li>Built on the MAGOS / FABI stack</li></ul>
+        <img class="sig" src="/assets/Firma_by_AKA_Technologies_Primary.svg" alt="by AKA Technologies">
+      </article>
+    </div>
 
-  <span class="k h2k">AI advisory</span>
-  <section class="two" style="padding-top:0">
-    <div><p style="color:var(--graphite);max-width:52ch">We work with operators who want AI inside the business, not beside it: finding where the operation loses value, redesigning the work, choosing the tool and governing it — budgets, approval thresholds, data separation and escalation written down before the first agent runs.</p></div>
-    <div><p style="color:var(--graphite);max-width:52ch">Everything we offer has first run inside a business we operate.</p><a class="cta" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a call</a></div>
+    <span class="k h2k">Tools built along the way</span>
+    <div class="tools">
+      <div><b>Interior design studio agents</b><p>A chain of agents for interior projects: style library, piece sourcing across a fixed store bank, scheme curation, space planning and client packages. <a href="/interior">See the studio</a></p></div>
+      <div><b>Brand systems as code</b><p>Logo and template generators that rebuild every master from source — like the system behind this site.</p></div>
+      <div><b>framecheck</b><p>Open source (Apache-2.0): tests whether an AI initiative is framed well enough to be judged.</p></div>
+      <div><b>m4a</b><p>Open source (Apache-2.0): experiment design for low-volume, high-ticket commerce. <a href="https://github.com/fortega78" rel="noopener" target="_blank">GitHub</a></p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="hw">
+    <span class="k lbl">How we work</span>
+    <h2 id="hw">Operator first. Human-governed. Verified, not claimed.</h2>
+    <div class="principles">
+      <div><b>Operator first</b><p>Every system starts inside a business we run, and is offered with its real status — never a prototype sold as a product.</p></div>
+      <div><b>Human-governed</b><p>Agents act within defined boundaries; people approve what is irreversible. Autonomy is earned level by level.</p></div>
+      <div><b>Verified, not claimed</b><p>Reports separate verified facts from last-known data and open questions. Nothing is marked done on someone’s word.</p></div>
+    </div>
+  </section>
+
+  <section class="founder-t" aria-labelledby="fo">
+    <div>
+      <span class="k lbl">Founder</span>
+      <h2 id="fo" style="font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em">Fabian J. Ortega A.</h2>
+      <p style="margin-top:18px">Business and AI transformation, from the owner’s seat. Inaugural cohort of Boston University’s MS in AI in Business.</p>
+      <div class="act"><a class="alt" href="/fabian" style="color:var(--klein)">Full profile</a></div>
+    </div>
+    <ul>
+      <li>President of a $100M+ vehicle distribution company with about 1,000 employees.</li>
+      <li>Co-founded a parts and distribution company and grew it from zero to about $30M, with 100+ franchised locations on one operating model.</li>
+      <li>Grew a hospitality platform from 3 to 200+ units across nine U.S. cities.</li>
+      <li>More than 15 years on boards in the United States and Latin America.</li>
+    </ul>
   </section>
 </div>
 
-<section class="howd" style="margin-top:48px">
-  <div class="wrap">
-    <span class="k">How we work</span>
-    <div class="cols">
-      <div><b>Operator first</b><p>Every system starts inside a business we run. Clients get what already works, not a prototype.</p></div>
-      <div><b>Human-governed</b><p>Agents act within defined boundaries; people approve what is irreversible. Autonomy is earned level by level.</p></div>
-      <div><b>Verified, not claimed</b><p>Reports separate verified facts from last-known data and open questions. Nothing is marked done on someone’s word.</p></div>
+<section class="close-t on-blue" aria-labelledby="cl">
+  <div class="wrap grid">
+    <div>
+      <h2 id="cl">Start with where the value is lost.</h2>
+      <p>A first call to see whether a diagnostic makes sense for your business, in English or Spanish.</p>
+    </div>
+    <div class="right">
+      <a class="btn inv" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a diagnostic</a>
+      <p>Miami · <a class="mail" href="mailto:fabian@aka.holdings?subject=AI%20diagnostic%20%E2%80%94%20aka.holdings%2Ftechnologies">fabian@aka.holdings</a></p>
     </div>
   </div>
 </section>
@@ -100,7 +288,7 @@
     <div class="grid">
       <img src="/assets/AKA_Technologies_Small_Primary.svg" alt="AKA Technologies">
       <div class="mid"><span class="k">Part of AKA Holdings</span><span class="k sub">MAGOS · FABI · MULTA · CEREBRO — by AKA Technologies</span></div>
-      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Founder: Fabian J. Ortega A. · Miami</span></div>
+      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Miami</span></div>
     </div>
   </footer>
 </div>
