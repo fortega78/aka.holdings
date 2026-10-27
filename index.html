@@ -4,17 +4,77 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AKA Holdings — the intelligence behind art, design and commerce</title>
-<meta name="description" content="AKA Holdings builds and operates art, design and AI-run brands: AKA Interior Design, AKA Art Productions, AKA Technologies and TeHer Art Rugs. Miami.">
+<meta name="description" content="AKA Holdings, Miami: three houses — AKA Technologies (AI systems for real operations), AKA Art Productions (work made with artists and master craftspeople) and AKA Interior Design (interiors in Miami). TeHer Art Rugs is part of the group.">
+<meta property="og:title" content="AKA Holdings — the intelligence behind art, design and commerce">
+<meta property="og:description" content="AI systems, art productions and interiors. Miami.">
+<meta property="og:url" content="https://aka.holdings/">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/aka.css">
+<style>
+/* / home v2 · ACA WEB · 2026-10-26 · brand v1.6.1: Klein #1725F5 on white, Questrial + Archivo; each unit keeps its own colour only inside its own card image */
+.h-top{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:end;padding:clamp(56px,9vh,110px) 0 40px}
+.h-top .logo{width:min(300px,64vw);height:auto}
+.h-top .tag{display:block;margin-top:34px;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:clamp(12px,1.2vw,14px);line-height:2;color:var(--klein)}
+.h-top h1{font:500 clamp(30px,3.4vw,48px)/1.12 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:22ch}
+.h-top p{margin-top:18px;color:var(--graphite);max-width:54ch;font-size:clamp(16px,1.3vw,18px)}
+.router{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.door{display:flex;flex-direction:column;border:1px solid var(--line);background:#fff;transition:border-color .3s}
+.door:hover,.door:focus-visible{border-color:var(--klein)}
+.door:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
+.door .pic{aspect-ratio:4/3;overflow:hidden;background:var(--klein);display:flex;align-items:center;justify-content:center}
+.door .pic img{width:100%;height:100%;object-fit:cover}
+.door .pic.icons{gap:22px}
+.door .pic.icons img{width:52px;height:52px;object-fit:contain}
+.door .txt{padding:24px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.door .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
+.door h2{font-family:Questrial,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:15px;color:var(--klein);line-height:1.6}
+.door .for{font-size:13.5px;color:var(--slate)}
+.door p{font-size:15px;color:var(--graphite)}
+.door .go{margin-top:auto;padding-top:14px;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--klein)}
+.door .go::after{content:"\2192";margin-left:10px}
+.also{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.also a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;border:1px solid var(--line);padding:20px 24px;background:#fff}
+.also a:hover{border-color:var(--klein)}
+.also b{display:block;font-weight:500;font-size:16px}
+.also span{font-size:14px;color:var(--graphite)}
+.also .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--klein);white-space:nowrap}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:96px;border-top:1px solid var(--klein)}
+.facts div{padding:22px 0;border-bottom:1px solid var(--line)}
+.facts b{display:block;font:500 clamp(26px,2.6vw,36px)/1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--klein);margin-bottom:8px}
+.facts span{font-size:14px;color:var(--graphite)}
+.contact{display:grid;grid-template-columns:5fr 7fr;gap:56px;padding:88px 0 24px;align-items:start}
+.contact h2{font:500 clamp(28px,3vw,40px)/1.1 Archivo,sans-serif;letter-spacing:-.02em;max-width:14ch}
+.clist{border-top:1px solid var(--klein)}
+.clist a{display:grid;grid-template-columns:1fr auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.clist b{font-weight:500;font-size:16px}
+.clist span{font-size:14px;color:var(--graphite);display:block}
+.clist .go{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.26em;font-size:11px;color:var(--klein);white-space:nowrap}
+.clist a:hover b{color:var(--klein)}
+@media (max-width:900px){
+  .h-top,.contact{grid-template-columns:1fr;gap:24px}
+  .router{grid-template-columns:1fr}
+  .door{display:grid;grid-template-columns:2fr 3fr}
+  .door .pic{aspect-ratio:auto;min-height:100%}
+  .also{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .h-top{padding-top:36px}
+  .h-top .logo{width:190px}
+  .door{grid-template-columns:1fr}
+  .door .pic{aspect-ratio:16/9}
+  .door .txt{padding:18px 18px 20px}
+}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header class="top rise">
     <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings"></a>
-    <nav class="idx" aria-label="Units">
+    <nav class="idx" aria-label="Sections">
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
@@ -22,89 +82,86 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <img class="logo rise d1" src="/assets/AKA_Holdings_Primary.svg" alt="AKA Holdings" width="856" height="483">
-    <h1 class="rise d2">AKA — the intelligence behind<br>art, design and commerce.</h1>
-  </section>
-
-  <div class="band rise d3">
-    <span class="k">Miami</span>
-    <span class="k">00 / Holdings</span>
-  </div>
-
-  <section class="statement">
-    <p class="big">We build and operate brands in art, design and technology — and run them with the AI systems we build ourselves. <em>Four houses. One operator. One standard.</em></p>
-    <div class="aka-block">
-      <span class="k lg">Also known as</span>
-      <span class="k">the intelligence behind<br>art, design and commerce</span>
-      <p>Interiors that start with the art. Work produced with the artist's hand. Operations run by agents we govern. Everything here has run inside a business of our own before being offered to anyone else.</p>
+  <section class="h-top">
+    <div class="rise d1">
+      <img class="logo" src="/assets/AKA_Holdings_Primary.svg" alt="AKA Holdings">
+      <span class="tag">The intelligence behind art, design and commerce</span>
+    </div>
+    <div class="rise d2">
+      <h1>A Miami group of three houses: AI systems, art productions and interiors.</h1>
+      <p>We build and operate them with the AI systems we build ourselves. Choose the one you came for.</p>
     </div>
   </section>
 
-  <section class="rows" aria-label="The group">
-    <a class="row" href="/interior">
-      <span class="num">01</span>
-      <h2>AKA<br>Interior Design</h2>
-      <p>Interiors in Miami that begin with the art — style, scheme, plan and purchasing, with every source verified.</p>
-      <span class="go">Enter</span>
+  <nav class="router rise d3" aria-label="Choose a house">
+    <a class="door" href="/technologies">
+      <span class="pic icons" aria-hidden="true"><img src="/assets/CEREBRO_Icon_Reversed.svg" alt=""><img src="/assets/MAGOS_Icon_Reversed.svg" alt=""><img src="/assets/FABI_Icon_Reversed.svg" alt=""><img src="/assets/MULTA_Icon_Reversed.svg" alt=""></span>
+      <span class="txt">
+        <span class="n">01</span>
+        <h2>AKA Technologies</h2>
+        <span class="for">For owners and operators</span>
+        <p>AI systems for real operations, and a fixed-scope AI diagnostic. CEREBRO is in daily use; MAGOS and FABI are in build; MULTA is in design.</p>
+        <span class="go">Book a diagnostic</span>
+      </span>
     </a>
-    <a class="row" href="/productions">
-      <span class="num">02</span>
-      <h2>AKA<br>Art Productions</h2>
-      <p>Work produced with contemporary artists and master craftspeople in Nepal, India, Mexico, Uzbekistan and Mali. Includes AKA Editions — limited editions by AKA Art Productions.</p>
-      <span class="go">Enter</span>
+    <a class="door" href="/productions">
+      <span class="pic"><img src="/img/productions/2026-10-26-p01-temple-door.jpg" width="1800" height="1200" alt="A hand-knotted rug on the temple steps, Patan"></span>
+      <span class="txt">
+        <span class="n">02</span>
+        <h2>AKA Art Productions</h2>
+        <span class="for">For artists, galleries and collectors</span>
+        <p>Work produced with contemporary artists and master craftspeople in Nepal, India, Mexico, Uzbekistan and Mali. Includes AKA Editions.</p>
+        <span class="go">Propose a project</span>
+      </span>
     </a>
-    <a class="row" href="/technologies">
-      <span class="num">03</span>
-      <h2>AKA<br>Technologies</h2>
-      <div>
-        <p>AI systems for real operations — orchestration, agents and daily command, built first for our own businesses and offered as advisory to operators.</p>
-        <div class="prod" aria-label="Products">
-          <img src="/assets/MAGOS_Icon_Primary.svg" alt="MAGOS">
-          <img src="/assets/FABI_Icon_Primary.svg" alt="FABI">
-          <img src="/assets/MULTA_Icon_Primary.svg" alt="MULTA">
-          <img src="/assets/CEREBRO_Icon_Primary.svg" alt="CEREBRO">
-          <span class="k sub">MAGOS · FABI · MULTA · CEREBRO</span>
-        </div>
-      </div>
-      <span class="go">Enter</span>
+    <a class="door" href="/interior">
+      <span class="pic"><img src="/img/interior/2026-10-26-e01-living.jpg" width="1800" height="1317" alt="Living room facing the bay, Edgewater, Miami"></span>
+      <span class="txt">
+        <span class="n">03</span>
+        <h2>AKA Interior Design</h2>
+        <span class="for">For homeowners in Miami and abroad</span>
+        <p>Complete interiors, curated piece by piece: layout, millwork, light, furniture and art.</p>
+        <span class="go">Book a consultation</span>
+      </span>
     </a>
-    <a class="row" href="https://www.teherrugs.com" target="_blank" rel="noopener">
-      <span class="num">&nbsp;</span>
-      <h2>TeHer<br>Art Rugs</h2>
-      <p>Artist-designed, hand-knotted rugs and wall hangings. Part of AKA Holdings.</p>
-      <span class="go">teherrugs.com</span>
-    </a>
+  </nav>
+
+  <div class="also">
+    <a href="/fabian"><span><b>Fabian J. Ortega A.</b><span>Founder and operator. Business and AI transformation, from the owner’s seat.</span></span><span class="go">Profile</span></a>
+    <a href="https://teherrugs.com" rel="noopener" target="_blank"><span><b>TeHer Art Rugs</b><span>Artist-designed, hand-knotted rugs and wall hangings. Part of AKA Holdings.</span></span><span class="go">teherrugs.com</span></a>
+  </div>
+
+  <section class="facts" aria-label="The group in facts">
+    <div><b>3</b><span>houses, one operator</span></div>
+    <div><b>5</b><span>countries where we produce with master craftspeople</span></div>
+    <div><b>7</b><span>art fairs and museums where work we produced has been shown</span></div>
+    <div><b>4</b><span>AI systems of our own, each with its real status</span></div>
   </section>
 
-  <section class="how">
+  <section class="how" style="padding-top:88px">
     <span class="k">How we work</span>
     <div class="cols">
-      <div><b>Operator first</b><p>Every brand and every system starts inside a business we run ourselves. Clients get what already works.</p></div>
-      <div><b>Art as the door</b><p>Interiors, productions and editions begin with the artist and the piece, never with a catalogue.</p></div>
+      <div><b>Operator first</b><p>Every house and every system starts inside a business we run ourselves. Clients get what already works.</p></div>
+      <div><b>Made with care</b><p>Interiors chosen piece by piece; productions made by hand with the artist; systems governed by people.</p></div>
       <div><b>Verified, not claimed</b><p>What we report separates what is verified from what is last known and what is still a question.</p></div>
     </div>
   </section>
 
-  <a class="founder" href="/fabian">
-    <div>
-      <span class="k">Founder &amp; Operator</span>
-      <span class="name">Fabian J. Ortega A.</span>
+  <section class="contact" aria-labelledby="ct">
+    <div><span class="k" style="display:block;margin-bottom:18px">Contact</span><h2 id="ct">Start where it fits you.</h2></div>
+    <div class="clist">
+      <a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener"><span><b>An AI diagnostic for your business</b><span>AKA Technologies</span></span><span class="go">Book</span></a>
+      <a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener"><span><b>A production with an artist</b><span>AKA Art Productions</span></span><span class="go">Book</span></a>
+      <a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener"><span><b>A design consultation for your home</b><span>AKA Interior Design</span></span><span class="go">Book</span></a>
+      <a href="mailto:fabian@aka.holdings?subject=aka.holdings"><span><b>Anything else</b><span>fabian@aka.holdings</span></span><span class="go">Write</span></a>
     </div>
-    <span class="go">Profile</span>
-  </a>
+  </section>
 
   <footer>
     <div class="grid">
       <img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings">
-      <div class="mid">
-        <span class="k">Interior Design · Art Productions · Technologies · TeHer Art Rugs</span>
-        <span class="k sub">AKA Editions — limited editions by AKA Art Productions</span>
-      </div>
-      <div>
-        <a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a>
-        <span class="k sub">Est. Miami · 2026</span>
-      </div>
+      <div class="mid"><span class="k">Technologies · Art Productions · Interior Design · TeHer Art Rugs</span><span class="k sub">AKA Editions — limited editions by AKA Art Productions</span></div>
+      <div><a class="k" href="mailto:fabian@aka.holdings">fabian@aka.holdings</a><span class="k sub">Est. Miami · 2026</span></div>
     </div>
   </footer>
 </div>
