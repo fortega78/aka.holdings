@@ -28,6 +28,7 @@ def run(f):
     if 'rel="canonical"' not in t and name != '404':
         t = t.replace('<link rel="icon"', f'<link rel="canonical" href="https://aka.holdings/{slug}">\n<link rel="icon"', 1)
     t = t.replace('<header class="top rise">', '<header class="top">')
+    t = re.sub(r'<button class="menu-btn"[^>]*>.*?</button>\s*', '', t)
     t = re.sub(r'<nav class="idx"[^>]*>.*?</nav>', lambda m: nav(unit_of(name) if name != 'index' else None, name == 'index'), t, count=1, flags=re.S)
     # picture-ise images not already inside <picture>
     parts = re.split(r'(<picture>.*?</picture>)', t, flags=re.S)
