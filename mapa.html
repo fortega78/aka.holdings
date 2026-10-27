@@ -19,107 +19,151 @@
 <link rel="stylesheet" href="/aka.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"MAPA — AI advisory for owners and operators","serviceType":"Business and AI advisory","provider":{"@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/"},"url":"https://aka.holdings/mapa","description":"MAPA — Map the loss, Assign an owner, Plan the work, Automate under rules. An advisory method that takes a business from diagnosis to governed AI, with five written deliverables.","areaServed":"Remote","availableLanguage":["en","es"],"brand":{"@type":"Brand","name":"MAPA"},"founder":{"@type":"Person","name":"Fabian J. Ortega A.","url":"https://aka.holdings/fabian"}}</script>
 <style>
-/* /mapa v1 · ACA WEB · 2026-10-27 · brand v1.6.1: Klein #1725F5 + white, Archivo + Questrial. One blue. DEC-078/079/080. */
+/* /mapa v2 · ACA WEB · 2026-10-27 · RONDA 3 — the ESTUDIOS diagram skin: Klein as ACCENT on white/mist,
+   phase cards with blue headers joined by diamond gates, a slim-needle compass, samples as paper documents.
+   Brand v1.6.1: Klein #1725F5, white, mist #E8EBFE; Archivo + Questrial; mono only inside sample data. */
 body.technologies{background-image:none}
 .btn{display:inline-block;font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:12px;padding:17px 26px 16px;border:1px solid var(--klein);background:var(--klein);color:#fff;transition:background .25s,color .25s}
 .btn:hover{background:#fff;color:var(--klein)}
-.btn.inv{background:#fff;color:var(--klein);border-color:#fff}
-.btn.inv:hover{background:transparent;color:#fff}
-.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;border-bottom:1px solid currentColor;padding-bottom:4px}
+.alt{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:11px;border-bottom:1px solid currentColor;padding-bottom:4px;color:var(--klein)}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
 .on-blue a:focus-visible,.on-blue .btn:focus-visible{outline-color:#fff}
 .act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:30px}
 .lbl{display:block;margin-bottom:16px}
-.sec{padding:50px 0 8px}
+.sec{padding:64px 0 10px}
 .sec h2{font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:22ch}
 .two-col{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
 .two-col p{color:var(--graphite);max-width:58ch}
 .two-col p+p{margin-top:12px}
 
-/* hero */
-.hero-m{background:var(--klein);color:#fff;padding:clamp(48px,7vh,80px) 0 clamp(44px,6vh,64px)}
-.hero-m h1{font:500 clamp(64px,10vw,148px)/.95 Archivo,sans-serif;letter-spacing:-.03em}
-.hero-m .expand{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.3em;font-size:clamp(12px,1.3vw,15px);margin-top:18px;display:block;color:rgba(255,255,255,.95)}
-.hero-m .motto{font:500 clamp(21px,2.3vw,30px)/1.25 Archivo,sans-serif;letter-spacing:-.01em;margin-top:34px;max-width:22ch}
-.hero-m .lead{margin-top:18px;font-size:clamp(16px,1.4vw,19px);line-height:1.55;max-width:52ch;color:rgba(255,255,255,.92)}
-.hero-m .where{margin-top:20px;font-size:14px;color:rgba(255,255,255,.85)}
-.hero-m .grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
-.hero-m .route-mini{border-top:1px solid rgba(255,255,255,.5)}
-.hero-m .route-mini div{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.3);align-items:baseline}
-.hero-m .route-mini b{font:500 22px/1 Archivo,sans-serif}
-.hero-m .route-mini span{font-size:14px;color:rgba(255,255,255,.9)}
+/* ===== hero: white, Klein as accent, the route as a living diagram ===== */
+.hero-m{padding:clamp(40px,6vh,64px) 0 clamp(36px,5vh,56px);border-bottom:1px solid var(--klein)}
+.hero-m .grid{display:grid;grid-template-columns:6fr 6fr;gap:64px;align-items:center}
+.hero-m h1{font:500 clamp(64px,8.4vw,120px)/1 Archivo,sans-serif;letter-spacing:.14em;color:var(--klein)}
+.hero-m .expand{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.32em;font-size:clamp(12px,1.25vw,15px);margin-top:14px;display:block;color:var(--ink)}
+.hero-m .motto{font:400 clamp(19px,2vw,26px)/1.3 Archivo,sans-serif;font-style:italic;margin-top:22px;color:var(--graphite)}
+.hero-m .lead{margin-top:16px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.55;max-width:48ch;color:var(--graphite)}
+.hero-m .where{margin-top:18px;font-size:13.5px;color:var(--slate)}
+.routegram{width:100%;height:auto;display:block}
+@media (prefers-reduced-motion: no-preference){
+  .routegram .wire{stroke-dasharray:720;stroke-dashoffset:720;animation:wire 2.2s .3s ease-out forwards}
+  @keyframes wire{to{stroke-dashoffset:0}}
+  .routegram .gate{opacity:0;animation:gatein .45s ease-out forwards}
+  .routegram .gate:nth-of-type(1){animation-delay:.9s}
+  .routegram .gate:nth-of-type(2){animation-delay:1.4s}
+  .routegram .gate:nth-of-type(3){animation-delay:1.9s}
+  .routegram .gate:nth-of-type(4){animation-delay:2.4s}
+  @keyframes gatein{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+  .routegram .node{opacity:0;animation:nodein .5s ease-out forwards}
+  .routegram .node:nth-of-type(1){animation-delay:.15s}
+  .routegram .node:nth-of-type(2){animation-delay:.55s}
+  .routegram .node:nth-of-type(3){animation-delay:.95s}
+  .routegram .node:nth-of-type(4){animation-delay:1.35s}
+  @keyframes nodein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
 
-/* why a map */
-.why p{font-size:clamp(16px,1.45vw,19px);line-height:1.6;color:var(--ink);max-width:62ch}
-.why p+p{margin-top:14px}
-.why .sig{margin-top:18px;font-size:14px;color:var(--slate)}
-
-/* the route */
-.phase{border:1px solid var(--line);border-left:none;border-right:none;margin-top:-1px}
-.phase summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:17px 0;min-height:44px}
-.phase summary::-webkit-details-marker{display:none}
-.phase summary .l{font:500 clamp(28px,3vw,40px)/1 Archivo,sans-serif;color:var(--klein);letter-spacing:-.02em}
-.phase summary b{font:500 clamp(19px,2vw,26px)/1.2 Archivo,sans-serif;color:var(--ink)}
-.phase summary .q{display:block;font-weight:400;font-size:15px;color:var(--graphite);margin-top:4px;max-width:52ch}
-.phase summary::after{content:"+";font:400 26px/1 Archivo,sans-serif;color:var(--klein);align-self:center}
-.phase[open] summary::after{content:"–"}
-.phase .body{display:grid;grid-template-columns:1.5fr 1fr;gap:20px 48px;padding:4px 0 30px}
-.phase .fld{padding-top:14px;border-top:1px solid var(--line)}
-.phase .fld .k{font-size:10.5px;letter-spacing:.24em;display:block;margin-bottom:8px}
-.phase .fld p{font-size:15px;color:var(--graphite);max-width:60ch}
-.phase .fld.gate p{color:var(--ink);font-weight:500}
-.phase .side{display:flex;flex-direction:column;gap:20px}
-.verified{border:1px solid var(--klein);padding:22px 26px;margin-top:28px;display:grid;grid-template-columns:5fr 7fr;gap:40px;background:#fff}
-.verified h3{font:500 22px/1.2 Archivo,sans-serif}
-.verified p{font-size:15px;color:var(--graphite);margin-top:10px;max-width:46ch}
+/* ===== the route: phase cards joined by gates (diagram v2) ===== */
+.route-grid{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;gap:0 6px;margin-top:40px;align-items:stretch}
+.pcard{border:1.5px solid var(--klein);background:#fff;display:flex;flex-direction:column}
+.pcard .head{background:var(--klein);color:#fff;padding:14px 18px}
+.pcard .head .l{font:500 26px/1 Archivo,sans-serif;display:block}
+.pcard .head .nm{font:400 11px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;display:block;margin-top:6px}
+.pcard .q{font-style:italic;font-size:14.5px;line-height:1.5;color:var(--ink);padding:16px 18px 12px}
+.pcard ul{list-style:none;padding:0 18px;flex:0}
+.pcard li{font-size:13.5px;color:var(--graphite);padding:3px 0 3px 12px;position:relative}
+.pcard li::before{content:"·";position:absolute;left:0;color:var(--klein)}
+.pcard .take{margin:14px 18px 0;background:var(--mist);color:var(--klein);font:400 11px/1.4 Questrial,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:9px 12px}
+.pcard .take::before{content:"→ ";letter-spacing:0}
+.pcard details{margin:10px 18px 0}
+.pcard details summary{list-style:none;cursor:pointer;font:400 10.5px/1 Questrial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--klein);padding:8px 0;display:flex;gap:8px;align-items:center;min-height:34px}
+.pcard details summary::-webkit-details-marker{display:none}
+.pcard details summary::after{content:"+";font:400 15px/1 Archivo,sans-serif}
+.pcard details[open] summary::after{content:"–"}
+.pcard details p{font-size:13.5px;line-height:1.55;color:var(--graphite);padding-bottom:6px}
+.pcard .gateline{margin-top:auto;border-top:1.5px solid var(--klein);padding:12px 18px;position:relative}
+.pcard .gateline .k{font-size:10px;letter-spacing:.22em;display:block;margin-bottom:4px}
+.pcard .gateline p{font-size:13px;font-weight:500;color:var(--ink)}
+.pcard .bearing{padding:10px 18px 14px;font:400 10.5px/1.4 Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--slate)}
+@media (prefers-reduced-motion: no-preference){
+  .pcard details[open] p{animation:phIn .3s ease both}
+  @keyframes phIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .pcard details[open]~.gateline{animation:gateGlow 1s ease}
+  .pcard details[open]+.gateline::before,{}
+  @keyframes gateGlow{0%{background:var(--mist)}100%{background:#fff}}
+}
+.joint{display:flex;align-items:center;justify-content:center}
+.joint svg{width:26px;height:26px}
+.after-route{display:grid;grid-template-columns:34px 1fr;gap:0 6px;margin-top:6px;justify-content:end}
+.verified{background:var(--ink);color:#fff;padding:26px 30px;margin-top:34px;display:grid;grid-template-columns:5fr 7fr;gap:40px}
+.verified .k{color:#fff;opacity:.85}
+.verified h3{font:500 22px/1.2 Archivo,sans-serif;margin-top:10px}
+.verified p{font-size:14.5px;color:rgba(255,255,255,.85);margin-top:10px;max-width:46ch}
 .states{list-style:none;display:grid;gap:10px}
-.states li{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px;color:var(--graphite);align-items:baseline}
-.ladder{display:flex;gap:6px;margin-top:16px;align-items:flex-end}
-.ladder i{flex:1;background:var(--mist);border:1px solid var(--line);font:400 11px/1 Questrial,sans-serif;letter-spacing:.1em;color:var(--klein);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-style:normal}
-.ladder i:nth-child(1){height:28px}.ladder i:nth-child(2){height:40px}.ladder i:nth-child(3){height:52px}.ladder i:nth-child(4){height:64px}.ladder i:nth-child(5){height:76px}
-.ladder-cap{font-size:13px;color:var(--slate);margin-top:10px}
-
-/* state marks */
+.states li{display:grid;grid-template-columns:26px 1fr;gap:12px;font-size:14.5px;color:rgba(255,255,255,.88);align-items:baseline}
 .stv,.stl,.stq{display:inline-flex;width:18px;height:18px;border-radius:50%;align-items:center;justify-content:center;font:500 11px/1 Archivo,sans-serif;vertical-align:-3px}
-.stv{background:var(--klein);color:#fff}
-.stl{border:1px solid var(--klein);color:var(--klein);background:#fff}
-.stq{border:1px dashed var(--slate);color:var(--slate);background:#fff}
+.verified .stv{background:#fff;color:var(--ink)}
+.verified .stl{border:1px solid #fff;color:#fff}
+.verified .stq{border:1px dashed rgba(255,255,255,.7);color:rgba(255,255,255,.8)}
+.ladder{display:flex;gap:6px;margin-top:16px;align-items:flex-end;max-width:280px}
+.ladder i{flex:1;background:transparent;border:1px solid rgba(255,255,255,.6);font:400 11px/1 Questrial,sans-serif;color:#fff;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;font-style:normal}
+.ladder i:nth-child(1){height:24px}.ladder i:nth-child(2){height:34px}.ladder i:nth-child(3){height:44px;background:var(--klein);border-color:var(--klein)}.ladder i:nth-child(4){height:54px}.ladder i:nth-child(5){height:64px}
+.ladder-cap{font-size:12.5px;color:rgba(255,255,255,.75);margin-top:10px}
 
-/* compass */
-.compass{display:grid;grid-template-columns:minmax(230px,264px) 1fr;gap:48px;align-items:center;margin-top:28px}
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.cgrid div{border-top:2px solid var(--klein);padding-top:14px}
-.cgrid b{display:block;font-weight:500;font-size:17px}
-.cgrid p{font-size:14.5px;color:var(--graphite);margin-top:4px}
-.credit{font-size:13px;color:var(--slate);margin-top:20px}
+/* light-page state marks */
+.lstv{background:var(--klein);color:#fff}
+.lstl{border:1px solid var(--klein);color:var(--klein);background:#fff}
+.lstq{border:1px dashed var(--slate);color:var(--slate);background:#fff}
 
-/* deliverables + samples */
-.docs5{list-style:none;counter-reset:d;border-top:1px solid var(--klein);margin-top:28px}
-.docs5 li{counter-increment:d;display:grid;grid-template-columns:52px 1.1fr 1.9fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.docs5 li::before{content:"0" counter(d);font-family:Questrial,sans-serif;letter-spacing:.2em;font-size:12px;color:var(--klein)}
-.docs5 b{font-weight:500;font-size:17px}
-.docs5 span{font-size:14.5px;color:var(--graphite)}
-.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
-.sample{border:1px solid var(--line);background:#fff;padding:0;display:flex;flex-direction:column}
-.sample .head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
-.sample .head b{font:400 11px/1 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--klein)}
-.sample .tag{font:400 9.5px/1 Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);border:1px solid var(--line);padding:4px 7px}
-.sample .bd{padding:15px 16px;font-size:13px;color:var(--graphite);flex:1}
-.sample table{width:100%;border-collapse:collapse;font-size:13px}
-.sample th{font:400 10px/1.3 Questrial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);text-align:left;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
-.sample td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
+/* ===== compass ===== */
+.compass-wrap{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:64px;align-items:center;margin-top:36px}
+.compass-fig{position:relative;background:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;border:1px solid var(--line);padding:30px}
+.compass-fig svg{width:100%;height:auto;display:block}
+#needle{transform-origin:200px 200px}
+@media (prefers-reduced-motion: no-preference){#needle{transition:transform .7s cubic-bezier(.2,.7,.2,1)}}
+.c-read{cursor:pointer}
+.c-read text{font-family:Questrial,sans-serif;letter-spacing:3px;font-size:14px;fill:var(--ink)}
+.c-read.on text{fill:var(--klein)}
+.c-read .qq{font-size:10.5px;letter-spacing:1px;fill:var(--slate);font-style:italic}
+.c-read:focus{outline:none}
+.c-read:focus circle.hit{stroke:var(--klein);stroke-width:1.5}
+.c-side .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px}
+.c-side .cgrid>div{border-top:2px solid var(--line);padding-top:12px;cursor:pointer}
+.c-side .cgrid>div.on{border-top-color:var(--klein)}
+.c-side .cgrid b{display:block;font-weight:500;font-size:17px}
+.c-side .cgrid b::before{content:"";display:inline-block;width:8px;height:8px;background:var(--klein);transform:rotate(45deg);margin-right:10px;vertical-align:1px;opacity:0}
+.c-side .cgrid>div.on b::before{opacity:1}
+.c-side .cgrid p{font-size:14px;color:var(--graphite);margin-top:4px}
+.c-side .credit{font-size:13px;color:var(--slate);margin-top:22px}
+.c-side .thread{font:400 11px/1.6 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--slate);margin-top:18px}
+
+/* ===== samples as paper documents ===== */
+.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:34px}
+.sample{background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(17,17,17,.05),0 12px 28px -18px rgba(17,17,17,.25);position:relative;display:flex;flex-direction:column}
+.sample::after{content:"SAMPLE · FICTIONAL DATA";position:absolute;top:14px;right:-8px;transform:rotate(6deg);border:1.5px solid #B3261E;color:#B3261E;font:500 9.5px/1 Archivo,sans-serif;letter-spacing:.14em;padding:5px 8px;background:rgba(255,255,255,.85)}
+.sample .dochead{display:flex;justify-content:space-between;align-items:baseline;padding:16px 20px 12px;border-bottom:2px solid var(--klein)}
+.sample .dochead b{font:400 12px/1.4 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--klein)}
+.sample .dochead span{font:400 9.5px/1 'JetBrains Mono',Questrial,monospace;letter-spacing:.08em;color:var(--slate)}
+.sample .bd{padding:16px 20px 20px;font-size:13px;color:var(--graphite);flex:1}
+.sample .big{font:500 19px/1.2 Archivo,sans-serif;color:var(--ink)}
+.sample table{width:100%;border-collapse:collapse;font-size:12.5px}
+.sample th{font:400 9.5px/1.3 Questrial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);text-align:left;padding:0 10px 7px 0;border-bottom:1px solid var(--line)}
+.sample td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink)}
 .sample td.mut{color:var(--graphite)}
-.sample .big{font:500 21px/1.1 Archivo,sans-serif;color:var(--ink)}
 .zone{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:0}
-.z-g{background:#2E7D32}.z-y{background:#C99700}.z-r{background:#B3261E}.z-b{background:#111;outline:1px solid #111;position:relative}
-.zrow{display:grid;grid-template-columns:132px 1fr;gap:8px 14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
+.z-g{background:#2E7D32}.z-y{background:#C99700}.z-r{background:#B3261E}.z-b{background:#111}
+.zrow{display:grid;grid-template-columns:128px 1fr;gap:8px 14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:12.5px}
 .zrow b{font-weight:500;color:var(--ink)}
 .zrow span{color:var(--graphite)}
+.docs5{list-style:none;counter-reset:d;border-top:1px solid var(--klein);margin-top:28px}
+.docs5 li{counter-increment:d;display:grid;grid-template-columns:52px 1.1fr 1.9fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.docs5 li::before{content:"0" counter(d);font-family:Questrial,sans-serif;letter-spacing:.2em;font-size:12px;color:var(--klein)}
+.docs5 b{font-weight:500;font-size:16.5px}
+.docs5 span{font-size:14px;color:var(--graphite)}
 
-/* ways to work */
+/* ways / steps / duo / rules / srcs / prods / faq / instruments — refined spacing */
 .ways3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
-.ways3>div{border:1px solid var(--line);padding:22px;background:#fff;display:flex;flex-direction:column}
-.ways3>div:nth-child(2){border-color:var(--klein)}
+.ways3>div{border:1px solid var(--line);padding:24px;background:#fff;display:flex;flex-direction:column}
+.ways3>div:nth-child(2){border:1.5px solid var(--klein)}
 .ways3 .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein)}
 .ways3 b{display:block;font:500 25px/1.1 Archivo,sans-serif;margin:10px 0 6px}
 .ways3 .ph{font-size:13px;color:var(--slate);margin-bottom:12px}
@@ -128,37 +172,27 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .ways3 li{font-size:14px;color:var(--graphite);padding:8px 0;border-bottom:1px solid var(--line)}
 .ways3 .for{font-size:13.5px;color:var(--slate);margin-top:12px}
 .ways3 .act{margin-top:auto;padding-top:18px}
-
-/* first 30 days */
 .steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:24px;border-top:1px solid var(--klein);margin-top:30px}
 .steps li{padding-top:16px}
 .steps .n{font-family:Questrial,sans-serif;letter-spacing:.3em;font-size:11px;color:var(--klein);display:block;margin-bottom:8px}
 .steps b{display:block;font-weight:500;font-size:16.5px;margin-bottom:6px}
 .steps p{font-size:14px;color:var(--graphite)}
-
-/* need / don't */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
-.duo>div{border:1px solid var(--line);padding:18px 22px;background:#fff}
-.duo>div:first-child{border-color:var(--klein)}
+.duo>div{border:1px solid var(--line);padding:20px 24px;background:#fff}
+.duo>div:first-child{border:1.5px solid var(--klein)}
 .duo b{display:block;font-weight:500;font-size:17px;margin-bottom:10px}
 .duo ul{list-style:none}
 .duo li{font-size:15px;color:var(--graphite);padding:8px 0;border-top:1px solid var(--line)}
-
-/* rules */
 .rules{columns:2;column-gap:48px;margin-top:30px;border-top:1px solid var(--klein);padding-top:6px}
-.rules li{list-style:none;break-inside:avoid;display:grid;grid-template-columns:28px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--graphite)}
-.rules .n{font-family:Questrial,sans-serif;letter-spacing:.14em;font-size:11px;color:var(--klein);padding-top:3px}
+.rules li{list-style:none;break-inside:avoid;display:grid;grid-template-columns:28px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--graphite)}
+.rules .n{font-family:Questrial,sans-serif;letter-spacing:.14em;font-size:11px;color:var(--klein);padding-top:2px}
 .rules b{color:var(--ink);font-weight:500}
-
-/* sources */
 .srcs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
 .srcs>div{border-top:2px solid var(--klein);padding-top:16px}
 .srcs b{display:block;font-weight:500;font-size:17px}
 .srcs .s{display:block;font-size:12.5px;color:var(--slate);margin:2px 0 10px}
 .srcs p{font-size:14.5px;color:var(--graphite)}
 .insp{font-size:13px;color:var(--slate);margin-top:22px;max-width:72ch}
-
-/* products */
 .prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
 .prods>div{border:1px solid var(--line);background:#fff;padding:22px}
 .prods .st{display:inline-block;font:400 10.5px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--klein);border:1px solid var(--klein);padding:4px 8px 3px;margin-bottom:14px}
@@ -166,8 +200,6 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .prods b{display:block;font:500 23px/1.1 Archivo,sans-serif;margin-bottom:8px}
 .prods p{font-size:14.5px;color:var(--graphite)}
 .pat{font-size:13px;color:var(--slate);margin-top:20px;max-width:72ch}
-
-/* faq */
 .faq{margin-top:26px;border-top:1px solid var(--klein)}
 .faq details{border-bottom:1px solid var(--line);padding:16px 0}
 .faq summary{cursor:pointer;font-weight:500;font-size:16.5px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:28px}
@@ -175,19 +207,14 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .faq summary::after{content:"+";color:var(--klein);font-size:20px;line-height:1}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin-top:10px;font-size:15px;color:var(--graphite);max-width:64ch}
-
-/* instruments */
 .instr{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
 .instr ul{list-style:none;border-top:1px solid var(--klein)}
-.instr li{display:grid;grid-template-columns:44px 1fr auto;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);align-items:center}
-.instr li img{width:34px;height:34px}
-.instr b{font-weight:500;font-size:16px;display:block}
+.instr li{display:grid;grid-template-columns:52px 1fr auto;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.instr li img{width:40px;height:40px}
+.instr b{font-weight:500;font-size:17px;display:block}
 .instr span{font-size:13.5px;color:var(--graphite)}
 .instr .st2{font:400 10.5px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.18em;color:var(--klein);border:1px solid var(--klein);padding:3px 7px;white-space:nowrap}
 .instr .st2.live{background:var(--klein);color:#fff}
-.demo{margin-top:22px;border:1px solid var(--line);background:#fff;padding:10px;max-width:470px}
-.demo img{width:100%;height:auto;display:block}
-.demo figcaption{font-size:13px;color:var(--graphite);margin-top:10px;max-width:80ch}
 
 /* close + form */
 .close-m{background:var(--klein);color:#fff;margin-top:72px;padding:56px 0 64px}
@@ -203,6 +230,8 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .close-m .intake-done p{color:rgba(255,255,255,.92)}
 .close-m p.side{margin-top:16px;color:rgba(255,255,255,.9);max-width:40ch}
 .close-m a.mail{border-bottom:1px solid rgba(255,255,255,.6)}
+.close-m .btn.inv{background:#fff;color:var(--klein);border-color:#fff}
+.close-m .btn.inv:hover{background:transparent;color:#fff}
 
 details.acc>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:baseline;min-height:44px;padding-top:8px}
 details.acc>summary::-webkit-details-marker{display:none}
@@ -210,50 +239,43 @@ details.acc>summary::after{content:"+";font:400 20px/1 Archivo,sans-serif;color:
 details.acc[open]>summary::after{content:"–"}
 @media (min-width:761px){details.acc>summary{cursor:default;min-height:0;padding-top:0}details.acc>summary::after{display:none}}
 
+@media (max-width:1060px){
+  .route-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .joint{display:none}
+  .after-route{grid-template-columns:1fr}
+}
 @media (max-width:900px){
-  .hero-m .grid,.two-col,.verified,.compass,.instr,.close-m .intake-wrap{grid-template-columns:1fr;gap:28px}
+  .hero-m .grid,.two-col,.verified,.compass-wrap,.instr,.close-m .intake-wrap{grid-template-columns:1fr;gap:28px}
   .samples,.duo{grid-template-columns:1fr}
   .ways3,.srcs,.prods{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
   .rules{columns:1}
-  .phase summary{grid-template-columns:52px 1fr auto}
-  .phase .body{grid-template-columns:1fr}
   .docs5 li{grid-template-columns:40px 1fr}
   .docs5 li span{grid-column:2}
-}
-@media (max-width:600px){
-  .hero-m h1{font-size:clamp(72px,24vw,110px)}
-  .btn{width:100%;text-align:center}
-  .sec{padding:38px 0 6px}
-  .hero-m{padding:40px 0 40px}
+  .route-grid{grid-template-columns:1fr}
 }
 @media (max-width:760px){
+  .pcard ul{display:none}
+  .pcard .q{padding-bottom:4px}
+  .routegram{max-width:520px;margin:0 auto}
   .why p{font-size:15.5px}
-  .hero-m .route-mini div{padding:9px 0}
   .intake{gap:14px 20px}
-  .duo>div{padding:14px 18px}
-  .compass svg,.ladder,.ladder-cap,.insp,.pat{display:none}
   .steps{grid-template-columns:1fr 1fr;gap:18px 16px}
   .steps p{font-size:13.5px}
   .ways3 ul{display:none}
   .ways3>div{padding:18px}
-  .demo picture{display:block;max-height:440px;overflow:auto;-webkit-overflow-scrolling:touch}
   .prods>div{padding:18px}
+  .compass-fig{padding:16px}
 }
-
-/* motion (CEREBRO 12:06 #7): phases unfold, gate line completes, needle turns */
-@media (prefers-reduced-motion: no-preference){
-  .phase[open] .body{animation:phIn .35s ease both}
-  @keyframes phIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-  .phase .fld.gate{position:relative}
-  .phase[open] .fld.gate::before{content:"";position:absolute;top:-1px;left:0;height:2px;background:var(--klein);animation:gateIn .55s .25s both}
-  @keyframes gateIn{from{width:0}to{width:100%}}
-  #needle{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+@media (max-width:600px){
+  .hero-m h1{font-size:clamp(56px,17vw,84px)}
+  .btn{width:100%;text-align:center}
+  .sec{padding:40px 0 6px}
+  .sample::after{right:4px}
 }
-.cgrid [role=button]{cursor:pointer}
-.cgrid [role=button]:focus-visible{outline:2px solid var(--klein);outline-offset:4px}
-.cgrid .on{background:var(--mist)}
-.cgrid>div{padding:14px 10px 10px;margin:-14px -10px -10px;border-top-width:2px}
+.why p{font-size:clamp(16px,1.45vw,19px);line-height:1.6;color:var(--ink);max-width:62ch}
+.why p+p{margin-top:14px}
+.why .sig{margin-top:18px;font-size:14px;color:var(--slate)}
 </style>
 </head>
 <body class="technologies has-mbar">
@@ -273,7 +295,7 @@ details.acc[open]>summary::after{content:"–"}
 </div>
 
 <main id="main">
-<section class="hero-m on-blue" style="margin-top:28px" data-hide-bar>
+<section class="hero-m" data-hide-bar>
   <div class="wrap grid">
     <div class="rise d1">
       <h1>MAPA</h1>
@@ -281,16 +303,28 @@ details.acc[open]>summary::after{content:"–"}
       <p class="motto">Every engagement starts with a map.</p>
       <p class="lead">Before any tool, we locate where your business loses value, who owns it, how the work should change — and under which rules AI may run.</p>
       <div class="act">
-        <a class="btn inv" href="#start" data-place="hero">Get your map</a>
+        <a class="btn" href="#start" data-place="hero">Get your map</a>
         <a class="alt" href="#route">See how it works</a>
       </div>
       <p class="where">For owners and operators · Miami · English and Spanish</p>
     </div>
-    <div class="route-mini rise d2" aria-label="The four phases">
-      <div><b>M</b><span>Map the loss — measured, not assumed.</span></div>
-      <div><b>A</b><span>Assign an owner — with real authority.</span></div>
-      <div><b>P</b><span>Plan the work — on paper, before any tool.</span></div>
-      <div><b>A</b><span>Automate under rules — written and approved first.</span></div>
+    <div class="rise d2" aria-hidden="true">
+      <svg class="routegram" viewBox="0 0 560 300" role="img" aria-label="The MAPA route: four phases joined by control gates, ending in verified operation">
+        <line class="wire" x1="30" y1="70" x2="530" y2="70" stroke="#1725F5" stroke-width="1.5"/>
+        <g class="node"><rect x="10" y="40" width="60" height="60" fill="#1725F5"/><text x="40" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">M</text><text x="40" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">MAP THE</text><text x="40" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">LOSS</text></g>
+        <g class="node"><rect x="163" y="40" width="60" height="60" fill="#1725F5"/><text x="193" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">A</text><text x="193" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">ASSIGN AN</text><text x="193" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">OWNER</text></g>
+        <g class="node"><rect x="316" y="40" width="60" height="60" fill="#1725F5"/><text x="346" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">P</text><text x="346" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">PLAN THE</text><text x="346" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">WORK</text></g>
+        <g class="node"><rect x="469" y="40" width="60" height="60" fill="#1725F5"/><text x="499" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">A</text><text x="499" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">AUTOMATE</text><text x="499" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">UNDER RULES</text></g>
+        <path class="gate" d="M116 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:126px 70px"/>
+        <path class="gate" d="M269 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:279px 70px"/>
+        <path class="gate" d="M422 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:432px 70px"/>
+        <path class="gate" d="M499 160 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:509px 160px" transform="translate(-10,0)"/>
+        <line class="wire" x1="499" y1="100" x2="499" y2="200" stroke="#1725F5" stroke-width="1.5"/>
+        <rect x="150" y="200" width="380" height="64" fill="#111"/>
+        <text x="170" y="228" font-family="Questrial,sans-serif" font-size="12" letter-spacing="3" fill="#fff">VERIFIED OPERATION</text>
+        <text x="170" y="248" font-family="Archivo,sans-serif" font-size="11" fill="#9aa3b8">three states · earned autonomy · the weekly truth session</text>
+        <text x="30" y="178" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#5B6478">EACH ◆ IS A CONTROL GATE — NOBODY CROSSES WITHOUT IT</text>
+      </svg>
     </div>
   </div>
 </section>
@@ -305,73 +339,61 @@ details.acc[open]>summary::after{content:"–"}
   </section>
 
   <section class="sec" id="route" aria-labelledby="rt-h">
-    <div class="two-col" style="margin-bottom:34px">
+    <div class="two-col" style="margin-bottom:6px">
       <div>
         <span class="k lbl">How it works</span>
         <h2 id="rt-h">The route: four phases, each closed by a gate nobody skips.</h2>
       </div>
-      <p>Including us. Open each phase for what happens, what you take away, and the gate that closes it. The detail — every instrument and template — lives in the Manual.</p>
+      <p>Including us. Each ◆ is a control gate: the engagement does not cross it until the condition is met. Open a phase for the detail — the full instrument set lives in the Manual.</p>
     </div>
-
-    <details class="phase">
-      <summary><span class="l">M</span><span><b>Map the loss</b><span class="q">Where does this business lose value — measured, not assumed?</span></span></summary>
-      <div class="body">
-        <div>
-          <div class="fld"><span class="k">What we do</span><p>We interrogate the work as it actually happens, not as the org chart says it happens: six questions, pushed past the symptom until the answer names the condition producing the problem. Every loss gets coordinates on the nine elements where work can break — from roles and handoffs to data, timing and accountability — and a confidence state. Missing evidence never stops the map and never gets invented: it is logged as a gap, with what it blocks and who unblocks it.</p></div>
-          <div class="fld"><span class="k">What you take away</span><p>The loss map: one page per loss — its cost, its coordinates, who suffers it, since when — plus the gap register.</p></div>
-        </div>
-        <div class="side">
-          <div class="fld gate"><span class="k">The gate</span><p>Every loss has a figure or is honestly marked as a question. Nothing is “estimated.”</p></div>
-          <div class="fld"><span class="k">Compass bearing</span><p>Framing — what problem, for whom?</p></div>
-        </div>
+    <div class="route-grid">
+      <div class="pcard">
+        <div class="head"><span class="l">M</span><span class="nm">Map the loss</span></div>
+        <p class="q">Where does this business lose value — measured, not assumed?</p>
+        <ul><li>Problem first, tools second</li><li>Six questions, pushed past the symptom</li><li>Coordinates on the nine elements</li><li>A confidence state on every figure</li></ul>
+        <span class="take">The loss map</span>
+        <details><summary>What we do</summary><p>We interrogate the work as it actually happens, not as the org chart says it happens. Every loss gets coordinates on the nine elements where work can break — from roles and handoffs to data, timing and accountability. Missing evidence never stops the map and never gets invented: it is logged as a gap, with what it blocks and who unblocks it.</p></details>
+        <div class="gateline"><span class="k">The gate ◆</span><p>Every loss has a figure or is honestly marked as a question. Nothing is “estimated.”</p></div>
+        <span class="bearing">Bearing: framing</span>
       </div>
-    </details>
-    <details class="phase">
-      <summary><span class="l">A</span><span><b>Assign an owner</b><span class="q">Who owns each loss — with the authority to change what produces it?</span></span></summary>
-      <div class="body">
-        <div>
-          <div class="fld"><span class="k">What we do</span><p>Every loss gets one named owner — and we check the thing most diagnostics skip: whether that person has the authority to change what produces the loss. A target being met is not proof the system works; it is often the measure of someone’s heroics compensating for it. Both the authority gaps and the masking workarounds go on record, and the decision ledger opens: every decision the engagement takes or defers gets an ID, an owner, a deadline and the cost of not deciding.</p></div>
-          <div class="fld"><span class="k">What you take away</span><p>The owner table — one named person per loss, their real authority, the workarounds found — and the opened decision ledger.</p></div>
-        </div>
-        <div class="side">
-          <div class="fld gate"><span class="k">The gate</span><p>No loss without an owner. If nobody can own it, we don’t build anything for it.</p></div>
-          <div class="fld"><span class="k">Compass bearing</span><p>Accounting — who answers for it?</p></div>
-        </div>
+      <div class="joint" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M13 2 L24 13 L13 24 L2 13 Z" fill="#1725F5"/></svg></div>
+      <div class="pcard">
+        <div class="head"><span class="l">A</span><span class="nm">Assign an owner</span></div>
+        <p class="q">Who owns each loss — with the authority to change what produces it?</p>
+        <ul><li>Authority checked, not assumed</li><li>The workaround check</li><li>The decision ledger opens</li></ul>
+        <span class="take">The owner table</span>
+        <details><summary>What we do</summary><p>Every loss gets one named owner — and we check the thing most diagnostics skip: whether that person has the authority to change what produces the loss. A target being met is often the measure of someone’s heroics compensating for the system. Both the authority gaps and the masking workarounds go on record, and every decision the engagement takes or defers gets an ID, an owner, a deadline and the cost of not deciding.</p></details>
+        <div class="gateline"><span class="k">The gate ◆</span><p>No loss without a named owner. If nobody can own it, we don’t build anything for it.</p></div>
+        <span class="bearing">Bearing: accounting</span>
       </div>
-    </details>
-    <details class="phase">
-      <summary><span class="l">P</span><span><b>Plan the work</b><span class="q">How should the work happen — with or without AI — and which work first?</span></span></summary>
-      <div class="body">
-        <div>
-          <div class="fld"><span class="k">What we do</span><p>Before any tool is named, we redesign the work on paper and ask what capability the problem actually requires — description, explanation, prediction, recommendation, or generation. Many losses close right here, without AI: a sequence fix, a role fix. And because hours are the scarcest resource in an operator-led company, nothing gets ours — or yours — on a hunch: every candidate intervention is scored on our own impact model before it starts, ranked by expected value, and committed to in writing with its metric, its baseline and its kill criterion set in advance. Three initiatives active at most; one income priority at a time.</p></div>
-          <div class="fld"><span class="k">What you take away</span><p>The redesigned work on paper, plus the scored, ranked portfolio — at most three committed initiatives, pre-registered.</p></div>
-        </div>
-        <div class="side">
-          <div class="fld gate"><span class="k">The gate</span><p>The owner approves the redesign before a single tool is chosen — and no score, no hours.</p></div>
-          <div class="fld"><span class="k">Compass bearing</span><p>Orienting — what capability?</p></div>
-        </div>
+      <div class="joint" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M13 2 L24 13 L13 24 L2 13 Z" fill="#1725F5"/></svg></div>
+      <div class="pcard">
+        <div class="head"><span class="l">P</span><span class="nm">Plan the work</span></div>
+        <p class="q">How should the work happen — with or without AI — and which work first?</p>
+        <ul><li>The redesign, on paper first</li><li>Capability before tool</li><li>Scored on our impact model</li><li>≤ 3 initiatives · 1 income priority</li></ul>
+        <span class="take">The redesigned work + the portfolio</span>
+        <details><summary>What we do</summary><p>Before any tool is named, we redesign the work on paper and ask what capability the problem actually requires. Many losses close right here, without AI — a sequence fix, a role fix. And because hours are the scarcest resource in an operator-led company, every candidate intervention is scored on our own impact model before it starts, ranked by expected value, and committed to in writing with its metric, its baseline and its kill criterion set in advance.</p></details>
+        <div class="gateline"><span class="k">The gate ◆</span><p>The owner approves the redesign before a single tool is chosen — and no score, no hours.</p></div>
+        <span class="bearing">Bearing: orienting</span>
       </div>
-    </details>
-    <details class="phase">
-      <summary><span class="l">A</span><span><b>Automate under rules</b><span class="q">What runs, what does it decide alone, what stays with a person — and how will we know it worked?</span></span></summary>
-      <div class="body">
-        <div>
-          <div class="fld"><span class="k">What we do</span><p>Only now does AI enter, and it enters contained. We write the rulebook first: what the system may decide alone, what stays with a person, what it must never touch, what gets logged, and what fails closed. Any step that would combine untrusted input, sensitive data and the power to act on the world gets a human in the loop — no exceptions. Every automated action starts low on an autonomy ladder and earns each level with evidence; anything irreversible never runs without approval.</p></div>
-          <div class="fld"><span class="k">What you take away</span><p>The rulebook: every action classified into zones, the approval contract, the kill switches, the blocked list, and the success metrics with their baselines.</p></div>
-        </div>
-        <div class="side">
-          <div class="fld gate"><span class="k">The gate</span><p>The rules are written and approved before the first agent runs. No exceptions — our own systems included.</p></div>
-          <div class="fld"><span class="k">Compass bearing</span><p>Judging and accounting — is it working, and who answers?</p></div>
-        </div>
+      <div class="joint" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M13 2 L24 13 L13 24 L2 13 Z" fill="#1725F5"/></svg></div>
+      <div class="pcard">
+        <div class="head"><span class="l">A</span><span class="nm">Automate under rules</span></div>
+        <p class="q">What runs, what decides alone, what stays with a person?</p>
+        <ul><li>The rulebook written first</li><li>Risky steps keep a human</li><li>Autonomy earned, level by level</li><li>Everything fails closed</li></ul>
+        <span class="take">The rulebook</span>
+        <details><summary>What we do</summary><p>Only now does AI enter, and it enters contained. The rulebook says what the system may decide alone, what stays with a person, what it must never touch, what gets logged, and what fails closed. Any step that would combine untrusted input, sensitive data and the power to act on the world gets a human in the loop — no exceptions. Anything irreversible never runs without approval.</p></details>
+        <div class="gateline"><span class="k">The gate ◆</span><p>The rules are written and approved before the first agent runs. No exceptions — our own systems included.</p></div>
+        <span class="bearing">Bearing: judging + accounting</span>
       </div>
-    </details>
-
+    </div>
     <div class="verified">
       <div>
-        <h3>After the route: verified operation.</h3>
+        <span class="k">After the route</span>
+        <h3>Verified operation.</h3>
         <p>The system lives under the same compass we used to build it, reports in three states, and its autonomy moves one level at a time — in both directions. Autonomy is earned, never assumed.</p>
         <div class="ladder" aria-label="Autonomy ladder, levels 0 to 4"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i></div>
-        <p class="ladder-cap">The autonomy ladder: one level per four clean weeks, demotion on any incident. Irreversible actions cap at level 2 without approval.</p>
+        <p class="ladder-cap">One level per four clean weeks; demotion on any incident. Irreversible actions cap at level 2 without approval.</p>
       </div>
       <ul class="states">
         <li><span class="stv">✓</span><span><b>Verified</b> — confirmed against the log or the receiving system, not the agent’s self-report.</span></li>
@@ -387,31 +409,30 @@ details.acc[open]>summary::after{content:"–"}
         <span class="k lbl">The compass</span>
         <h2 id="cp-h">Four readings, taken at every point of the route.</h2>
       </div>
-      <p>Governance is not a gate at the end — it is a thread through the whole engagement. Four readings, each a question with a named answer.</p>
+      <p>Governance is not a gate at the end — it is a thread through the whole engagement. Touch a reading: the needle follows.</p>
     </div>
-    <div class="compass">
-      <svg viewBox="-12 -12 344 344" role="img" aria-label="The MAPA compass: framing north, orienting east, judging south, accounting west" style="width:100%;height:auto">
-        <circle cx="160" cy="160" r="150" fill="none" stroke="#1725F5" stroke-width="1.5"/>
-        <circle cx="160" cy="160" r="104" fill="none" stroke="#1725F5" stroke-width="1" opacity=".35"/>
-        <g stroke="#1725F5" stroke-width="1"><line x1="160" y1="22" x2="160" y2="80"/><line x1="160" y1="240" x2="160" y2="298"/><line x1="22" y1="160" x2="80" y2="160"/><line x1="240" y1="160" x2="298" y2="160"/></g>
-        <g id="needle" style="transform-origin:160px 160px"><polygon points="160,96 174,160 160,224 146,160" fill="#1725F5"/><polygon points="160,96 174,160 146,160" fill="#111"/></g>
-        <circle cx="160" cy="160" r="7" fill="#fff" stroke="#1725F5" stroke-width="2"/>
-        <g font-family="Questrial,sans-serif" font-size="12" letter-spacing="2.5" fill="#1725F5" text-anchor="middle">
-          <text x="160" y="10">FRAMING</text>
-          <text x="160" y="326">JUDGING</text>
-                  </g>
-        <g font-family="Questrial,sans-serif" font-size="12" letter-spacing="2.5" fill="#1725F5">
-          <text x="306" y="164" text-anchor="start" transform="rotate(90 306 160)">ORIENTING</text>
-          <text x="14" y="164" text-anchor="end" transform="rotate(-90 14 160)">ACCOUNTING</text>
-        </g>
-      </svg>
-      <div>
+    <div class="compass-wrap">
+      <div class="compass-fig">
+        <svg viewBox="0 0 400 400" role="img" aria-label="The MAPA compass: framing north, orienting east, judging south, accounting west">
+          <circle cx="200" cy="200" r="150" fill="none" stroke="#1725F5" stroke-width="1.5"/>
+          <circle cx="200" cy="200" r="108" fill="#E8EBFE" opacity=".55"/>
+          <g stroke="#1725F5" stroke-width="1" opacity=".6"><line x1="200" y1="36" x2="200" y2="62"/><line x1="200" y1="338" x2="200" y2="364"/><line x1="36" y1="200" x2="62" y2="200"/><line x1="338" y1="200" x2="364" y2="200"/></g>
+          <g id="needle"><polygon points="200,104 213,200 200,296 187,200" fill="#1725F5"/><polygon points="200,104 213,200 187,200" fill="#111"/></g>
+          <circle cx="200" cy="200" r="6.5" fill="#fff" stroke="#1725F5" stroke-width="2"/>
+          <g class="c-read on" data-deg="0" role="button" tabindex="0" aria-label="Framing: what problem, for whom?"><circle class="hit" cx="200" cy="18" r="0" fill="transparent"/><text x="200" y="18" text-anchor="middle">FRAMING</text><text class="qq" x="200" y="33" text-anchor="middle">what problem, for whom?</text></g>
+          <g class="c-read" data-deg="90" role="button" tabindex="0" aria-label="Orienting: what capability?"><text x="330" y="196" text-anchor="middle" transform="rotate(0)">ORIENTING</text><text class="qq" x="330" y="211" text-anchor="middle">what capability?</text></g>
+          <g class="c-read" data-deg="180" role="button" tabindex="0" aria-label="Judging: is it working?"><text x="200" y="388" text-anchor="middle">JUDGING</text><text class="qq" x="200" y="373" text-anchor="middle">is it working?</text></g>
+          <g class="c-read" data-deg="270" role="button" tabindex="0" aria-label="Accounting: who answers for it?"><text x="68" y="196" text-anchor="middle">ACCOUNTING</text><text class="qq" x="68" y="211" text-anchor="middle">who answers for it?</text></g>
+        </svg>
+      </div>
+      <div class="c-side">
         <div class="cgrid" id="cgrid">
           <div role="button" tabindex="0" data-deg="0" class="on"><b>Framing</b><p>What problem is this solving, and for whom?</p></div>
           <div role="button" tabindex="0" data-deg="90"><b>Orienting</b><p>What capability does it actually require?</p></div>
           <div role="button" tabindex="0" data-deg="180"><b>Judging</b><p>Is it working, against the criteria we set?</p></div>
           <div role="button" tabindex="0" data-deg="270"><b>Accounting</b><p>Who answers for it?</p></div>
         </div>
+        <p class="thread">Governance as a thread, not a gate</p>
         <p class="credit">The four readings come from the governance framework of Boston University’s MS in AI in Business.</p>
       </div>
     </div>
@@ -434,19 +455,19 @@ details.acc[open]>summary::after{content:"–"}
     </ol>
     <details class="acc"><summary><span class="k">The sample pages</span></summary><div class="samples">
       <div class="sample">
-        <div class="head"><b>Loss map · one page</b><span class="tag">Sample · fictional data</span></div>
+        <div class="dochead"><b>Loss map · one page</b><span>MAPA / M / L-03</span></div>
         <div class="bd">
           <span class="big">L-03 · Quotes answered too late</span>
-          <table style="margin-top:14px">
+          <table style="margin-top:12px">
             <tr><th>Cost</th><th>State</th><th>Coordinates</th></tr>
-            <tr><td>$9,400 / month in lost orders</td><td><span class="stv">✓</span> measured</td><td class="mut">Handoffs · timing · accountability</td></tr>
-            <tr><td>Hours lost chasing approvals</td><td><span class="stq">?</span> open question</td><td class="mut">Roles · judgment points</td></tr>
+            <tr><td>$9,400 / month in lost orders</td><td><span class="stv lstv">✓</span> measured</td><td class="mut">Handoffs · timing · accountability</td></tr>
+            <tr><td>Hours lost chasing approvals</td><td><span class="stq lstq">?</span> open question</td><td class="mut">Roles · judgment points</td></tr>
           </table>
           <p style="margin-top:10px">Structural answer: quotes wait on a price check only one person can give.</p>
         </div>
       </div>
       <div class="sample">
-        <div class="head"><b>Owner table · one row</b><span class="tag">Sample · fictional data</span></div>
+        <div class="dochead"><b>Owner table · one row</b><span>MAPA / A / L-03</span></div>
         <div class="bd">
           <table>
             <tr><th>Loss</th><th>Owner</th><th>Authority</th><th>Workaround found</th></tr>
@@ -456,7 +477,7 @@ details.acc[open]>summary::after{content:"–"}
         </div>
       </div>
       <div class="sample">
-        <div class="head"><b>Rulebook · one fragment</b><span class="tag">Sample · fictional data</span></div>
+        <div class="dochead"><b>Rulebook · one fragment</b><span>MAPA / A2 / zones</span></div>
         <div class="bd">
           <div class="zrow"><b><span class="zone z-g"></span>Auto-allowed</b><span>Draft the quote from the price list. Runs and logs its reason.</span></div>
           <div class="zrow"><b><span class="zone z-y"></span>Batch approval</b><span>Send quotes under $5,000 — one click reviews the batch.</span></div>
@@ -465,14 +486,14 @@ details.acc[open]>summary::after{content:"–"}
         </div>
       </div>
       <div class="sample">
-        <div class="head"><b>Operation board · one week</b><span class="tag">Sample · fictional data</span></div>
+        <div class="dochead"><b>Operation board · one week</b><span>MAPA / OP / W-43</span></div>
         <div class="bd">
           <table>
             <tr><th>Metric</th><th>This week</th><th>State</th></tr>
-            <tr><td>Quotes answered same day</td><td>41 of 44</td><td><span class="stv">✓</span> verified</td></tr>
-            <tr><td>Cost per quote drafted</td><td>$0.18</td><td><span class="stv">✓</span> verified</td></tr>
-            <tr><td>Reply rate on reminders</td><td>as of Oct 3</td><td><span class="stl">○</span> last known</td></tr>
-            <tr><td>Why Tuesday dipped</td><td>—</td><td><span class="stq">?</span> open question</td></tr>
+            <tr><td>Quotes answered same day</td><td>41 of 44</td><td><span class="stv lstv">✓</span> verified</td></tr>
+            <tr><td>Cost per quote drafted</td><td>$0.18</td><td><span class="stv lstv">✓</span> verified</td></tr>
+            <tr><td>Reply rate on reminders</td><td>as of Oct 3</td><td><span class="stl lstl">○</span> last known</td></tr>
+            <tr><td>Why Tuesday dipped</td><td>—</td><td><span class="stq lstq">?</span> open question</td></tr>
           </table>
           <p style="margin-top:10px">Autonomy this week: drafting at level 3 · sending at level 1.</p>
         </div>
@@ -486,7 +507,7 @@ details.acc[open]>summary::after{content:"–"}
         <span class="k lbl">How to hire it</span>
         <h2 id="wy-h">Three ways to work with us.</h2>
       </div>
-      <p>Each one ends with documents you keep, whoever you build with afterwards. Scope and fee are agreed in writing before we start.</p>
+      <p>Each one ends with documents you keep, whoever you build with afterwards. Scope and duration are set in writing after the first call — they depend on the size of the company and the number of losses on the map.</p>
     </div>
     <div class="ways3">
       <div>
@@ -518,7 +539,7 @@ details.acc[open]>summary::after{content:"–"}
     <h2 id="fd-h">From your message to a decision — in the open.</h2>
     <ol class="steps">
       <li><span class="n">1</span><b>A first call</b><p>Thirty minutes. How the business runs, where you suspect value is lost, whether a map makes sense.</p></li>
-      <li><span class="n">2</span><b>Written scope</b><p>What we will map, how long it takes, what we need from you — agreed before any work starts.</p></li>
+      <li><span class="n">2</span><b>Written scope</b><p>What we will map, the duration, what we need from you — agreed before any work starts.</p></li>
       <li><span class="n">3</span><b>The map</b><p>The work interrogated where it happens; every figure sourced or marked as a question.</p></li>
       <li><span class="n">4</span><b>The readout</b><p>The map read with you, the owner — losses, owners, and what they mean.</p></li>
       <li><span class="n">5</span><b>Your decision</b><p>Continue to the route, stop, or change course. The map is yours either way.</p></li>
@@ -632,7 +653,7 @@ details.acc[open]>summary::after{content:"–"}
       <details><summary>Are you going to sell me software?</summary><p>The map stands on its own and is yours to act on with anyone. If the route points to a system, we can build it — but nothing we build enters before the map exists, by our own rule.</p></details>
       <details><summary>Why not just use platform X?</summary><p>Own the brain, rent the muscles. The parts that determine the outcome — strategy, rules, measurement, memory — you should own; commodity capabilities you rent. A rented decision layer aligns your company to the industry average; an owned one aligns it to your business.</p></details>
       <details><summary>How do you treat our data?</summary><p>The rules are written before anything runs: what may be seen, by whom, hard separation between businesses, and a person approving anything irreversible. We run our own four businesses under the same rules.</p></details>
-      <details><summary>How long does it take, and what does it cost?</summary><p>Scope, duration and fee are agreed in writing before we start, sized to your business. The first call is where we set them.</p></details>
+      <details><summary>How long does it take, and what does it cost?</summary><p>Scope and duration are set in writing after the first call — they depend on the size of the company and the number of losses on the map. The fee is agreed with them, before any work starts.</p></details>
       <details><summary>Can we work in Spanish?</summary><p>Yes — the map, the documents and the meetings, in English, Spanish or both.</p></details>
     </div>
   </section>
@@ -643,20 +664,14 @@ details.acc[open]>summary::after{content:"–"}
         <span class="k lbl">The instruments</span>
         <h2 id="in-h">The method travels with its own systems.</h2>
         <p style="margin-top:18px;color:var(--graphite);max-width:44ch">CEREBRO, MAGOS, FABI and MULTA are instruments of the method, not the method. Each is shown with its real status — because that is rule number three.</p>
-        <div class="act"><a class="alt" href="/technologies" style="color:var(--klein)">See the systems</a></div>
+        <div class="act"><a class="alt" href="/technologies">See the systems, with their diagrams</a></div>
       </div>
-      <div>
-        <ul>
-          <li><img width="240" height="240" src="/assets/CEREBRO_Icon_Primary.svg" alt=""><span><b>CEREBRO</b><span>The founder’s verified morning brief and operations board.</span></span><span class="st2 live">In daily use</span></li>
-          <li><img width="240" height="240" src="/assets/MAGOS_Icon_Primary.svg" alt=""><span><b>MAGOS</b><span>Multi-agent orchestration with per-brand isolation.</span></span><span class="st2">In build</span></li>
-          <li><img width="240" height="240" src="/assets/FABI_Icon_Primary.svg" alt=""><span><b>FABI</b><span>The governed specialist agents MAGOS directs.</span></span><span class="st2">In build</span></li>
-          <li><img width="240" height="240" src="/assets/MULTA_Icon_Primary.svg" alt=""><span><b>MULTA</b><span>Tolls, tickets and fines for car-sharing fleets.</span></span><span class="st2">In design</span></li>
-        </ul>
-        <figure class="demo">
-          <picture><source media="(max-width:700px)" type="image/avif" srcset="/img/v2/cerebro-demo-m-390.avif 390w, /img/v2/cerebro-demo-m-780.avif 780w" sizes="calc(100vw - 40px)"><source type="image/avif" srcset="/img/v2/cerebro-demo-1360.avif 1360w, /img/v2/cerebro-demo-2720.avif 2720w" sizes="(max-width:1300px) 92vw, 640px"><img src="/img/v2/cerebro-demo-1360.jpg" width="1360" height="1100" alt="CEREBRO dashboard in presentation mode with demo data: the day’s one priority, commitments due today, decisions waiting, and one figure honestly marked as a question" loading="lazy" decoding="async"></picture>
-          <figcaption>CEREBRO in presentation mode. Demo data. Structure, states and rules are those of the system in daily use. It runs in Spanish, the founder’s working language.</figcaption>
-        </figure>
-      </div>
+      <ul>
+        <li><img width="240" height="240" src="/assets/CEREBRO_Icon_Primary.svg" alt=""><span><b>CEREBRO</b><span>The founder’s verified morning brief and operations board.</span></span><span class="st2 live">In daily use</span></li>
+        <li><img width="240" height="240" src="/assets/MAGOS_Icon_Primary.svg" alt=""><span><b>MAGOS</b><span>Multi-agent orchestration with per-brand isolation.</span></span><span class="st2">In build</span></li>
+        <li><img width="240" height="240" src="/assets/FABI_Icon_Primary.svg" alt=""><span><b>FABI</b><span>The governed specialist agents MAGOS directs.</span></span><span class="st2">In build</span></li>
+        <li><img width="240" height="240" src="/assets/MULTA_Icon_Primary.svg" alt=""><span><b>MULTA</b><span>Tolls, tickets and fines for car-sharing fleets.</span></span><span class="st2">In design</span></li>
+      </ul>
     </div>
   </section>
 </div>
@@ -704,10 +719,20 @@ details.acc[open]>summary::after{content:"–"}
 <nav class="mbar" aria-label="Quick actions"><a href="#start" data-place="mbar">Get your map</a><a class="ghost" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="mbar-cal">Call</a></nav>
 <script src="/assets/site.js" defer></script>
 <script>
-/* cgrid turn: the needle points to the reading you touch */
-(function(){var n=document.getElementById('needle');var g=document.getElementById('cgrid');if(!n||!g)return;
-g.querySelectorAll('[role=button]').forEach(function(c){function go(){g.querySelectorAll('.on').forEach(function(x){x.classList.remove('on')});c.classList.add('on');n.style.transform='rotate('+c.dataset.deg+'deg)'}
-c.addEventListener('click',go);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});});})();
+/* compass: the needle follows the reading you touch (svg labels + side grid) */
+(function(){
+  var n=document.getElementById('needle');if(!n)return;
+  var all=document.querySelectorAll('.c-read,[data-deg][role=button]');
+  function go(deg){
+    n.style.transform='rotate('+deg+'deg)';
+    all.forEach(function(x){x.classList.toggle('on',x.dataset.deg===String(deg))});
+  }
+  all.forEach(function(c){
+    function h(){go(+c.dataset.deg)}
+    c.addEventListener('click',h);
+    c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();h()}});
+  });
+})();
 </script>
 </body>
 </html>

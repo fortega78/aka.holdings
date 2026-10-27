@@ -626,5 +626,350 @@
    "contrast",
    "unsharp"
   ]
+ },
+ "r3-ant-dining-neon-closer": {
+  "w": 2576,
+  "h": 2315,
+  "avif": [
+   700,
+   1300,
+   2000
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-ant-dining-neon-closer.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-ant-dining-neon-wide": {
+  "w": 2576,
+  "h": 1932,
+  "avif": [
+   700,
+   1300,
+   2000
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-ant-dining-neon-wide.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-ant-red-opart-chair": {
+  "w": 1947,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-ant-red-opart-chair.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-col-bedroom-neon-close": {
+  "w": 1200,
+  "h": 1600,
+  "avif": [
+   600,
+   1200
+  ],
+  "jpg": [
+   600,
+   1200
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-col-bedroom-neon-close.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-col-bedroom-neon-wide": {
+  "w": 768,
+  "h": 1024,
+  "avif": [
+   600,
+   768
+  ],
+  "jpg": [
+   600,
+   768
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-col-bedroom-neon-wide.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-col-dining-to-living": {
+  "w": 768,
+  "h": 1024,
+  "avif": [
+   600,
+   768
+  ],
+  "jpg": [
+   600,
+   768
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-col-dining-to-living.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-col-living-round-work": {
+  "w": 768,
+  "h": 1024,
+  "avif": [
+   600,
+   768
+  ],
+  "jpg": [
+   600,
+   768
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-col-living-round-work.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-col-wave-entry": {
+  "w": 2576,
+  "h": 1932,
+  "avif": [
+   700,
+   1300,
+   2000
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-col-wave-entry.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-edg-kitchen-to-bay": {
+  "w": 1024,
+  "h": 768,
+  "avif": [
+   600,
+   1024
+  ],
+  "jpg": [
+   600,
+   1024
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-edg-kitchen-to-bay.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-edg-living-relief-day": {
+  "w": 1024,
+  "h": 768,
+  "avif": [
+   600,
+   1024
+  ],
+  "jpg": [
+   600,
+   1024
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-edg-living-relief-day.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-edg-media-wall-wide": {
+  "w": 2576,
+  "h": 1932,
+  "avif": [
+   700,
+   1300,
+   2000
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-edg-media-wall-wide.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-stockholder-lokta-work": {
+  "w": 1024,
+  "h": 1536,
+  "avif": [
+   600,
+   1024
+  ],
+  "jpg": [
+   600,
+   1024
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-stockholder-lokta-work.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-coffee-table": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-coffee-table.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-hall-lake-view": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-hall-lake-view.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-hall-round-ottoman": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-hall-round-ottoman.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-hall-symmetry-doors": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-hall-symmetry-doors.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-hall-vault-portrait": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-hall-vault-portrait.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-villa-living-grey-sofa": {
+  "w": 1932,
+  "h": 2576,
+  "avif": [
+   700,
+   1300
+  ],
+  "jpg": [
+   700,
+   1300
+  ],
+  "src": "_desde-cerebro/interior-nuevas/2026-10-27-villa-living-grey-sofa.jpg (Fabian, R3 14:10/14:25)",
+  "edits": [
+   "vibrance",
+   "contrast",
+   "unsharp"
+  ]
+ },
+ "r3-ant-study-crop": {
+  "w": 640,
+  "h": 500,
+  "avif": [
+   600,
+   640
+  ],
+  "jpg": [
+   600,
+   640
+  ],
+  "src": "img/interior/2026-10-27-g01-office-plaid.jpg, desk cropped out (R3 \u00a75.4)",
+  "edits": [
+   "crop (desk removed)",
+   "contrast"
+  ]
  }
 }

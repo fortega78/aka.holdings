@@ -71,14 +71,14 @@
       "value": 7,
       "list": [
         "Edgewater Residence",
-        "Collector's Apartment",
+        "Collector's Apartment (full design)",
         "Own homes (Coconut Cove)",
-        "Oceanfront Apartment",
+        "Penthouse Punta Barand\u00faa",
         "Apartment with Antiques",
-        "Quito Residence",
-        "Bristol Tower 505"
+        "Villa on the River",
+        "Quito Residence"
       ],
-      "source": "interior.html, 2026-10-27 v8"
+      "source": "interior.html, 2026-10-27 v9 (R3: Bristol removed, Villa added, Oceanfront renamed)"
     }
   },
   "technologies": {
