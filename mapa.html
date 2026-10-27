@@ -30,7 +30,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .on-blue a:focus-visible,.on-blue .btn:focus-visible{outline-color:#fff}
 .act{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:30px}
 .lbl{display:block;margin-bottom:16px}
-.sec{padding:64px 0 10px}
+.sec{padding:96px 0 0}
 .sec h2{font:500 clamp(30px,3.4vw,46px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);max-width:22ch}
 .two-col{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
 .two-col p{color:var(--graphite);max-width:58ch}
@@ -38,52 +38,53 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 
 /* ===== hero: white, Klein as accent, the route as a living diagram ===== */
 .hero-m{padding:clamp(40px,6vh,64px) 0 clamp(36px,5vh,56px);border-bottom:1px solid var(--klein)}
-.hero-m .grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center}
-.hero-m h1{font:500 clamp(60px,7.4vw,104px)/1 Archivo,sans-serif;letter-spacing:.14em;color:var(--klein)}
+.hero-m .grid{display:grid;grid-template-columns:41fr 59fr;gap:48px;align-items:center}
+.hero-m h1{font:500 clamp(56px,6.7vw,96px)/1 Archivo,sans-serif;letter-spacing:.14em;color:var(--klein)}
 .hero-m .expand{font-family:Questrial,sans-serif;text-transform:uppercase;letter-spacing:.32em;font-size:clamp(12px,1.25vw,15px);margin-top:14px;display:block;color:var(--ink)}
-.hero-m .motto{font:400 clamp(19px,2vw,26px)/1.3 Archivo,sans-serif;font-style:italic;margin-top:22px;color:var(--graphite)}
+.hero-m .motto{font:400 clamp(22px,2.1vw,30px)/1.3 Archivo,sans-serif;font-style:italic;margin-top:22px;color:var(--graphite)}
 .hero-m .lead{margin-top:16px;font-size:clamp(15.5px,1.3vw,18px);line-height:1.55;max-width:48ch;color:var(--graphite)}
 .hero-m .where{margin-top:18px;font-size:13.5px;color:var(--slate)}
 .routegram{width:100%;height:auto;display:block}
 @media (prefers-reduced-motion: no-preference){
-  .routegram .wire{stroke-dasharray:720;stroke-dashoffset:720;animation:wire 2.2s .3s ease-out forwards}
+  .routegram .wire-draw{stroke-dasharray:720;stroke-dashoffset:720;animation:wire 2.2s .3s ease-out forwards}
   @keyframes wire{to{stroke-dashoffset:0}}
-  .routegram .gate{opacity:0;animation:gatein .45s ease-out forwards}
+  .routegram .gate{animation:gatein .45s ease-out backwards}
   .routegram .gate:nth-of-type(1){animation-delay:.9s}
   .routegram .gate:nth-of-type(2){animation-delay:1.4s}
   .routegram .gate:nth-of-type(3){animation-delay:1.9s}
   .routegram .gate:nth-of-type(4){animation-delay:2.4s}
-  @keyframes gatein{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
-  .routegram .node{opacity:0;animation:nodein .5s ease-out forwards}
+  @keyframes gatein{from{transform:scale(.4)}to{transform:scale(1)}}
+  .routegram .node{animation:nodein .5s ease-out backwards}
   .routegram .node:nth-of-type(1){animation-delay:.15s}
   .routegram .node:nth-of-type(2){animation-delay:.55s}
   .routegram .node:nth-of-type(3){animation-delay:.95s}
   .routegram .node:nth-of-type(4){animation-delay:1.35s}
-  @keyframes nodein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes nodein{from{transform:translateY(8px)}to{transform:none}}
 }
 
 /* ===== the route: phase cards joined by gates (diagram v2) ===== */
 .route-grid{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;gap:0 6px;margin-top:40px;align-items:stretch}
 .pcard{border:1.5px solid var(--klein);background:#fff;display:flex;flex-direction:column}
 .pcard .head{background:var(--klein);color:#fff;padding:14px 18px}
-.pcard .head .l{font:500 26px/1 Archivo,sans-serif;display:block}
-.pcard .head .nm{font:400 11px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;display:block;margin-top:6px}
-.pcard .q{font-style:italic;font-size:14.5px;line-height:1.5;color:var(--ink);padding:16px 18px 12px}
+.pcard .head .l{font:400 13px/1 Questrial,sans-serif;letter-spacing:.22em;display:inline}
+.pcard .head .l::after{content:" · "}
+.pcard .head .nm{font:400 13px/1.4 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;display:inline}
+.pcard .q{font-style:italic;font-size:16px;line-height:1.5;color:var(--ink);padding:16px 18px 12px}
 .pcard ul{list-style:none;padding:0 18px;flex:0}
-.pcard li{font-size:13.5px;color:var(--graphite);padding:3px 0 3px 12px;position:relative}
+.pcard li{font-size:14px;color:var(--graphite);padding:3px 0 3px 12px;position:relative}
 .pcard li::before{content:"·";position:absolute;left:0;color:var(--klein)}
-.pcard .take{margin:14px 18px 0;background:var(--mist);color:var(--klein);font:400 11px/1.4 Questrial,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:9px 12px}
+.pcard .take{margin:14px 18px 0;background:var(--mist);color:var(--klein);font:400 13px/1.4 Questrial,sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:9px 12px}
 .pcard .take::before{content:"→ ";letter-spacing:0}
 .pcard details{margin:10px 18px 0}
-.pcard details summary{list-style:none;cursor:pointer;font:400 10.5px/1 Questrial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--klein);padding:8px 0;display:flex;gap:8px;align-items:center;min-height:34px}
+.pcard details summary{list-style:none;cursor:pointer;font:400 13px/1 Questrial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--klein);padding:8px 0;display:flex;gap:8px;align-items:center;min-height:34px}
 .pcard details summary::-webkit-details-marker{display:none}
 .pcard details summary::after{content:"+";font:400 15px/1 Archivo,sans-serif}
 .pcard details[open] summary::after{content:"–"}
-.pcard details p{font-size:13.5px;line-height:1.55;color:var(--graphite);padding-bottom:6px}
+.pcard details p{font-size:14px;line-height:1.55;color:var(--graphite);padding-bottom:6px}
 .pcard .gateline{margin-top:auto;border-top:1.5px solid var(--klein);padding:12px 18px;position:relative}
-.pcard .gateline .k{font-size:10px;letter-spacing:.22em;display:block;margin-bottom:4px}
-.pcard .gateline p{font-size:13px;font-weight:500;color:var(--ink)}
-.pcard .bearing{padding:10px 18px 14px;font:400 10.5px/1.4 Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--slate)}
+.pcard .gateline .k{font:400 13px/1 Questrial,sans-serif;text-transform:uppercase;letter-spacing:.22em;display:block;margin-bottom:6px;color:var(--klein)}
+.pcard .gateline p{font-size:14px;font-weight:500;color:var(--ink)}
+.pcard .bearing{padding:10px 18px 14px;font:400 13px/1.4 Questrial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--slate)}
 @media (prefers-reduced-motion: no-preference){
   .pcard details[open] p{animation:phIn .3s ease both}
   @keyframes phIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -115,7 +116,8 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .lstq{border:1px dashed var(--slate);color:var(--slate);background:#fff}
 
 /* ===== compass ===== */
-.compass-wrap{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:64px;align-items:center;margin-top:36px}
+.compass-wrap{display:grid;grid-template-columns:360px 1fr;gap:64px;align-items:center;margin-top:36px}
+.compass-fig{width:360px;box-sizing:border-box;padding:24px !important}
 .compass-fig{position:relative;background:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;border:1px solid var(--line);padding:30px}
 .compass-fig svg{width:100%;height:auto;display:block}
 #needle{transform-origin:200px 200px}
@@ -137,7 +139,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .c-side .thread{font:400 11px/1.6 Questrial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--slate);margin-top:18px}
 
 /* ===== samples as paper documents ===== */
-.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:34px}
+.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:34px;align-items:stretch;grid-auto-rows:1fr}
 .sample{background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(17,17,17,.05),0 12px 28px -18px rgba(17,17,17,.25);position:relative;display:flex;flex-direction:column}
 .sample::after{content:"SAMPLE · FICTIONAL DATA";position:absolute;top:14px;right:-8px;transform:rotate(6deg);border:1.5px solid #B3261E;color:#B3261E;font:500 9.5px/1 Archivo,sans-serif;letter-spacing:.14em;padding:5px 8px;background:rgba(255,255,255,.85)}
 .sample .dochead{display:flex;justify-content:space-between;align-items:baseline;padding:16px 20px 12px;border-bottom:2px solid var(--klein)}
@@ -217,7 +219,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--klein);outline-offset
 .instr .st2.live{background:var(--klein);color:#fff}
 
 /* close + form */
-.close-m{background:var(--klein);color:#fff;margin-top:72px;padding:56px 0 64px}
+.close-m{background:var(--klein);color:#fff;margin-top:96px;padding:56px 0 64px}
 .close-m h2{font:500 clamp(30px,3.6vw,48px)/1.08 Archivo,sans-serif;letter-spacing:-.02em;max-width:18ch}
 .close-m .intake-wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start;margin-top:8px}
 .close-m .intake label{color:#fff}
@@ -255,6 +257,8 @@ details.acc[open]>summary::after{content:"–"}
   .route-grid{grid-template-columns:1fr}
 }
 @media (max-width:760px){
+  .pcard .head .l,.pcard .head .nm,.pcard .take,.pcard details summary,.pcard .gateline .k,.pcard .bearing{font-size:14px}
+  .compass-fig{width:260px;margin:0 auto}
   .pcard ul{display:none}
   .pcard .q{padding-bottom:4px}
   .routegram{max-width:520px;margin:0 auto}
@@ -270,7 +274,7 @@ details.acc[open]>summary::after{content:"–"}
 @media (max-width:600px){
   .hero-m h1{font-size:clamp(56px,17vw,84px)}
   .btn{width:100%;text-align:center}
-  .sec{padding:40px 0 6px}
+  .sec{padding:64px 0 0}
   .sample::after{right:4px}
 }
 .why p{font-size:clamp(16px,1.45vw,19px);line-height:1.6;color:var(--ink);max-width:62ch}
@@ -297,7 +301,7 @@ details.acc[open]>summary::after{content:"–"}
 <main id="main">
 <section class="hero-m" data-hide-bar>
   <div class="wrap grid">
-    <div class="rise d1">
+    <div>
       <h1>MAPA</h1>
       <span class="expand">Map · Assign · Plan · Automate</span>
       <p class="motto">Every engagement starts with a map.</p>
@@ -308,9 +312,9 @@ details.acc[open]>summary::after{content:"–"}
       </div>
       <p class="where">For owners and operators · Miami · English and Spanish</p>
     </div>
-    <div class="rise d2" aria-hidden="true">
-      <svg class="routegram" viewBox="0 0 560 300" role="img" aria-label="The MAPA route: four phases joined by control gates, ending in verified operation">
-        <line class="wire" x1="30" y1="70" x2="530" y2="70" stroke="#1725F5" stroke-width="1.5"/>
+    <div aria-hidden="true">
+      <svg class="routegram" viewBox="0 0 572 300" role="img" aria-label="The MAPA route: four phases joined by control gates, ending in verified operation">
+        <line class="wire" x1="30" y1="70" x2="554" y2="70" stroke="#1725F5" stroke-width="1.5"/><line class="wire-draw" x1="30" y1="70" x2="554" y2="70" stroke="#1725F5" stroke-width="2.5"/>
         <g class="node"><rect x="10" y="40" width="60" height="60" fill="#1725F5"/><text x="40" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">M</text><text x="40" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">MAP THE</text><text x="40" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">LOSS</text></g>
         <g class="node"><rect x="163" y="40" width="60" height="60" fill="#1725F5"/><text x="193" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">A</text><text x="193" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">ASSIGN AN</text><text x="193" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">OWNER</text></g>
         <g class="node"><rect x="316" y="40" width="60" height="60" fill="#1725F5"/><text x="346" y="79" text-anchor="middle" font-family="Archivo,sans-serif" font-size="30" font-weight="500" fill="#fff">P</text><text x="346" y="124" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">PLAN THE</text><text x="346" y="138" text-anchor="middle" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#111">WORK</text></g>
@@ -318,9 +322,9 @@ details.acc[open]>summary::after{content:"–"}
         <path class="gate" d="M116 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:126px 70px"/>
         <path class="gate" d="M269 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:279px 70px"/>
         <path class="gate" d="M422 70 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:432px 70px"/>
-        <path class="gate" d="M519 165 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:529px 165px"/>
-        <line class="wire" x1="529" y1="100" x2="529" y2="200" stroke="#1725F5" stroke-width="1.5"/>
-        <rect x="150" y="200" width="380" height="64" fill="#111"/>
+        <path class="gate" d="M544 165 l10 -10 l10 10 l-10 10 z" fill="#1725F5" style="transform-origin:554px 165px"/>
+        <line class="wire" x1="554" y1="70" x2="554" y2="200" stroke="#1725F5" stroke-width="1.5"/>
+        <rect x="150" y="200" width="405" height="64" fill="#111"/>
         <text x="170" y="228" font-family="Questrial,sans-serif" font-size="12" letter-spacing="3" fill="#fff">VERIFIED OPERATION</text>
         <text x="170" y="248" font-family="Archivo,sans-serif" font-size="11" fill="#9aa3b8">three states · earned autonomy · the weekly truth session</text>
         <text x="30" y="178" font-family="Questrial,sans-serif" font-size="9.5" letter-spacing="2" fill="#5B6478">EACH ◆ IS A CONTROL GATE — NOBODY CROSSES WITHOUT IT</text>
