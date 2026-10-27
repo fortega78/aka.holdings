@@ -412,5 +412,22 @@
   ],
   "src": "q/render-01-recibidor.png",
   "edits": []
+ },
+ "fabian-portrait": {
+  "w": 819,
+  "h": 1024,
+  "avif": [
+   400,
+   800
+  ],
+  "jpg": [
+   400,
+   800
+  ],
+  "src": "Claude/Projects/AI Career Transformation Operating System \u2014 Fabian Ortega/Headshots Profesionales Fabian Ortega/EvZMxZcG6TQ.jpeg",
+  "edits": [
+   "crop 4:5 centred",
+   "resize"
+  ]
  }
 }

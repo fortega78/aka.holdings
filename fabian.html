@@ -18,6 +18,7 @@
 <link rel="icon" type="image/svg+xml" href="/assets/AKA_Mark_Small_Primary.svg">
 <link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/aka.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Fabian J. Ortega A.","jobTitle":"Founder & Operator, AKA Holdings","url":"https://aka.holdings/fabian","image":"https://aka.holdings/img/v2/fabian-portrait-800.jpg","email":"fabian@aka.holdings","address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},"worksFor":{"@type":"Organization","name":"AKA Holdings","url":"https://aka.holdings/"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Miami"},{"@type":"CollegeOrUniversity","name":"Boston University Questrom School of Business"}],"sameAs":["https://www.linkedin.com/in/fabianortegaa","https://github.com/fortega78"],"knowsLanguage":["en","es"]}</script>
 <style>
 /* /fabian v2 · ACA WEB · 2026-10-26 */
 .fx-hero{display:grid;grid-template-columns:7fr 5fr;gap:64px;padding:clamp(56px,9vh,104px) 0 clamp(48px,7vh,72px);align-items:start}
@@ -53,9 +54,13 @@
   .ledger b{font-size:22px}
   .btn{width:100%;text-align:center}
 }
+.ledger .face{width:160px;margin-bottom:18px}
+.ledger .face img{aspect-ratio:4/5;object-fit:cover}
+footer a.k{display:inline-block;padding:12px 0}
+@media (max-width:600px){.ledger .face{width:120px}}
 </style>
 </head>
-<body>
+<body class="fabian has-mbar">
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
   <header class="top">
@@ -72,18 +77,20 @@
   </header>
 
   <main id="main">
-<section class="fx-hero">
-    <div class="rise d1">
+<section class="fx-hero" data-hide-bar>
+    <div>
       <span class="k who">Fabian J. Ortega A.</span>
       <h1>Business and AI transformation, from the owner's seat.</h1>
-      <p class="lead">Former President of a $100M+ vehicle distributor with about 1,000 people and co-founding CEO of a company grown from zero to about $30M. Open to Director and VP roles in business and AI transformation and operations.</p>
+      <p class="lead">Former President of a $100M+ vehicle distributor with about 1,000 people and co-founding CEO of a company grown from zero to about $30M.</p>
       <div class="fx-act">
-        <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener">Book a call</a>
+        <a class="btn" href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="hero">Book a call</a>
         <a class="alt" href="/cv/2026-10-26-Fabian-Ortega-CV.pdf" download>Download CV (PDF)</a>
+        <a class="alt" href="https://www.linkedin.com/in/fabianortegaa" rel="me noopener" target="_blank">LinkedIn</a>
       </div>
       <p class="logi">Based in Miami. Remote or hybrid; onsite in Florida. English and Spanish, native.</p>
     </div>
-    <div class="ledger rise d2" aria-label="Operating record">
+    <div class="ledger" aria-label="Operating record">
+      <figure class="face"><picture><source type="image/avif" srcset="/img/v2/fabian-portrait-400.avif 400w, /img/v2/fabian-portrait-800.avif 800w" sizes="160px"><img src="/img/v2/fabian-portrait-800.jpg" srcset="/img/v2/fabian-portrait-400.jpg 400w, /img/v2/fabian-portrait-800.jpg 800w" sizes="160px" width="800" height="1000" alt="Fabian J. Ortega A." fetchpriority="high"></picture></figure>
       <div><b>$100M+</b><span>annual sales as President of a vehicle distributor with about 1,000 employees</span></div>
       <div><b>0 → ~$30M</b><span>parts and distribution company I co-founded and led as CEO</span></div>
       <div><b>100+</b><span>franchised locations built and run on one operating model</span></div>
@@ -163,6 +170,7 @@
     </div>
   </footer>
 </div>
+<nav class="mbar" aria-label="Quick actions"><a href="https://calendar.app.google/4LDyrF8XGdGuoazj6" target="_blank" rel="noopener" data-place="mbar">Book a call</a><a class="ghost" href="/cv/2026-10-26-Fabian-Ortega-CV.pdf" download>CV</a></nav>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>
