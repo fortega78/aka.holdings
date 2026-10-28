@@ -35,10 +35,12 @@
 .ledger div{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
 .ledger b{font:500 clamp(26px,2.5vw,34px)/1 Archivo,sans-serif;letter-spacing:-.02em;color:var(--klein);white-space:nowrap}
 .ledger span{font-size:14.5px;line-height:1.45;color:var(--graphite)}
-.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;border-top:1px solid var(--klein);padding-top:24px}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;border-top:1px solid var(--klein);padding-top:24px}
 .steps li{color:var(--graphite);font-size:15.5px;max-width:34ch}
 .steps .k{display:block;margin-bottom:10px}
 .steps b{display:block;color:var(--ink);font-weight:500;font-size:17px;margin-bottom:6px}
+.steps-more{margin-top:22px}
+@media (max-width:900px) and (min-width:761px){.steps{grid-template-columns:1fr 1fr}}
 .close{border-top:1px solid var(--klein);border-bottom:1px solid var(--klein);padding:44px 0;margin-top:72px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
 .close h2{font:500 clamp(24px,2.6vw,34px)/1.2 Archivo,sans-serif;letter-spacing:-.015em;max-width:24ch}
 .close p{margin-top:10px;color:var(--graphite);font-size:15px;max-width:56ch}
@@ -100,19 +102,21 @@ footer a.k{display:inline-block;padding:12px 0}
 
   <span class="k h2k" style="margin-top:8px">How I lead change</span>
   <ol class="steps">
-    <li><span class="k">1</span><b>Find the loss</b>Where the business actually loses value, and who owns the problem.</li>
-    <li><span class="k">2</span><b>Redesign the work</b>Change how the work is done before choosing any tool.</li>
-    <li><span class="k">3</span><b>Choose the tool and govern it</b>What the system may decide alone, what stays with a person, and how we'll know it worked.</li>
+    <li><span class="k">M</span><b>Map the loss</b>Where the business loses value — measured, not assumed.</li>
+    <li><span class="k">A</span><b>Assign an owner</b>One owner per loss, with the authority to change what produces it.</li>
+    <li><span class="k">P</span><b>Plan the work</b>How the work should happen — with or without AI — and which work first.</li>
+    <li><span class="k">A</span><b>Automate under rules</b>What runs, what decides alone, and what stays with a person.</li>
   </ol>
+  <p class="steps-more"><a class="alt" href="/mapa">The method in full: MAPA</a></p>
 
   <span class="k h2k">Profile</span>
   <section class="cv" style="padding-top:0">
     <div>
       <p class="summary">I have run and built multi-site businesses from the owner's seat: President of a vehicle distributor with about 1,000 people and $100M+ in annual sales, co-founder and CEO of a parts company grown from zero to about $30M with a 100+ site franchise network, and co-founder of a hospitality platform grown to 200+ units in nine U.S. cities. More than 15 years on boards in the United States and Latin America.</p>
-      <p class="summary" style="margin-top:18px">I lead change the same way every time: find where the business loses value and who owns the problem, redesign the work, then choose the tool — increasingly AI — and govern it. Today I own and operate AKA Holdings and build its AI systems; inaugural cohort of Boston University's MS in AI in Business. Bilingual English and Spanish.</p>
+      <p class="summary" style="margin-top:18px">I lead change the same way every time, with MAPA: map where the business loses value, assign an owner to every loss, plan the work, and only then automate — increasingly with AI — under written rules. Today I own and operate AKA Holdings and build its AI systems; inaugural cohort of Boston University's MS in AI in Business. Bilingual English and Spanish.</p>
     </div>
     <aside>
-      <div class="block"><span class="k">Now</span><p>Founder &amp; Operator, AKA Holdings — AKA Interior Design, AKA Art Productions, AKA Technologies; TeHer Art Rugs, part of AKA Holdings.</p></div>
+      <div class="block"><span class="k">Now</span><p>Founder &amp; Operator, AKA Holdings — AKA Technologies, AKA Art Productions, AKA Interior Design; TeHer Art Rugs, part of AKA Holdings.</p></div>
       <div class="block"><span class="k">Studying</span><p>MS in AI in Business, Boston University Questrom (in progress, inaugural cohort).</p></div>
       <div class="block"><span class="k">Open source</span><p>framecheck — tests whether an AI initiative is framed well enough to be judged. m4a — experiment design for low-volume, high-ticket commerce (Apache-2.0, 2026). <a href="https://github.com/fortega78" rel="me noopener" target="_blank" style="border-bottom:1px solid var(--line)">GitHub</a></p></div>
     </aside>
@@ -140,7 +144,7 @@ footer a.k{display:inline-block;padding:12px 0}
 
   <span class="k h2k">Boards</span>
   <section class="two" style="padding-top:0;padding-bottom:24px">
-    <p style="color:var(--graphite);max-width:52ch">More than 15 years of board-level work across automotive, mobility, real estate, hospitality, education, services, social impact and art: objectives and metrics, budgets, restructuring, execution tracking and growth. Boards include AngloAutomotriz, Cetivehiculos, Motortrack, MB Motors, Nuovo Properties, Cetitur Ecuador, Colegio Espíritu Santo, Tecnológico Espíritu Santo and Inlingua Language Centers.</p>
+    <p style="color:var(--graphite);max-width:52ch">More than 15 years of board-level work across automotive, mobility, real estate, hospitality, education, services, social impact and art: objectives and metrics, budgets, restructuring, execution tracking and growth. Boards include AngloAutomotriz, Cetivehiculos, Motortrack, MB Motors, Nuovo Properties, Cetitur Ecuador, Colegio Espíritu Santo and Tecnológico Espíritu Santo.</p>
     <p style="color:var(--graphite);max-width:52ch">Alternate Director, Fundación Leónidas Ortega Moreira (more than 2,000 full student scholarships granted). Board of Directors, Picolini's Animal Rescue, Miami. Founding Member, Young Presidents' Organization, Guayaquil Chapter.</p>
   </section>
 
@@ -165,7 +169,7 @@ footer a.k{display:inline-block;padding:12px 0}
 <footer>
     <div class="grid">
       <img width="214" height="135" src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings">
-      <div class="mid"><span class="k">Interior Design · Art Productions · Technologies · TeHer Art Rugs</span><span class="k sub">AKA — the intelligence behind art, design and commerce</span></div>
+      <div class="mid"><span class="k">Technologies · Art Productions · Interior Design · TeHer Art Rugs</span><span class="k sub">AKA — the intelligence behind art, design and commerce</span></div>
       <div><a class="k" href="https://www.linkedin.com/in/fabianortegaa" rel="me noopener" target="_blank">LinkedIn</a><a class="k" href="https://github.com/fortega78" rel="me noopener" target="_blank">GitHub</a><span class="k sub">Miami</span></div>
     </div>
   </footer>
