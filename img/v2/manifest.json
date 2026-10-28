@@ -978,11 +978,13 @@
   "avif": [
    700,
    1300,
+   1600,
    2400
   ],
   "jpg": [
    700,
    1300,
+   1600,
    2400
   ],
   "src": "o-er_fotos-septiembre_0035.jpg",
@@ -1001,11 +1003,13 @@
   "avif": [
    700,
    1300,
+   1600,
    1800
   ],
   "jpg": [
    700,
    1300,
+   1600,
    1800
   ],
   "src": "o-er_fotos-septiembre_0032.jpg",
@@ -1112,11 +1116,13 @@
   "avif": [
    700,
    1300,
+   1600,
    2400
   ],
   "jpg": [
    700,
    1300,
+   1600,
    2400
   ],
   "src": "o-IMG_1858.jpg",
@@ -1252,19 +1258,21 @@
   "r4": true
  },
  "r4-pb-living-floral-chairs": {
-  "w": 1200,
-  "h": 1600,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-living-floral-chairs.jpg",
+  "src": "2026-10-28-pb-living-floral-chairs-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [170, 170, 170])",
+   "white balance (neutral patch [168, 168, 168])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1282,9 +1290,9 @@
    700,
    900
   ],
-  "src": "2026-10-27-pb-living-floral-chairs.jpg",
+  "src": "2026-10-28-pb-living-floral-chairs-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [169, 170, 169])",
+   "white balance (neutral patch [167, 167, 168])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1292,20 +1300,21 @@
   "r4": true
  },
  "r4-pb-living-geometric-wall-sofas": {
-  "w": 958,
-  "h": 1024,
+  "w": 1600,
+  "h": 1600,
   "avif": [
    700,
-   958
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   958
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-living-geometric-wall-sofas.jpg",
+  "src": "2026-10-28-pb-living-geometric-wall-sofas-ORIG.jpg",
   "edits": [
-   "verticals",
-   "white balance (neutral patch [203, 203, 203])",
+   "white balance (neutral patch [202, 202, 203])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1313,20 +1322,22 @@
   "r4": true
  },
  "r4-pb-dining-wood-table-pendants": {
-  "w": 1087,
-  "h": 1600,
+  "w": 1600,
+  "h": 2354,
   "avif": [
    700,
-   1087
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1087
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-dining-wood-table-pendants.jpg",
+  "src": "2026-10-28-pb-dining-wood-table-pendants-ORIG.jpg",
   "edits": [
    "verticals",
-   "white balance (neutral patch [178, 178, 178])",
+   "white balance (neutral patch [179, 179, 179])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1334,19 +1345,21 @@
   "r4": true
  },
  "r4-pb-sunburst-geometric-wall": {
-  "w": 1200,
-  "h": 1600,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-sunburst-geometric-wall.jpg",
+  "src": "2026-10-28-pb-sunburst-geometric-wall-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [184, 184, 184])",
+   "white balance (neutral patch [188, 187, 187])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1354,19 +1367,21 @@
   "r4": true
  },
  "r4-pb-stair-ink-splashes": {
-  "w": 768,
-  "h": 532,
+  "w": 1600,
+  "h": 1109,
   "avif": [
    700,
-   768
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   768
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-stair-ink-splashes.jpg",
+  "src": "2026-10-28-pb-stair-ink-splashes-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [204, 204, 204])",
+   "white balance (neutral patch [202, 200, 202])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1374,19 +1389,21 @@
   "r4": true
  },
  "r4-pb-terrace-oars-sunset": {
-  "w": 960,
-  "h": 1280,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   960
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   960
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-terrace-oars-sunset.jpg",
+  "src": "2026-10-28-pb-terrace-oars-sunset-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [184, 189, 189])",
+   "white balance (neutral patch [184, 185, 183])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1394,19 +1411,21 @@
   "r4": true
  },
  "r4-pb-tree-bed": {
-  "w": 1200,
-  "h": 1600,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-tree-bed.jpg",
+  "src": "2026-10-28-pb-tree-bed-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [182, 182, 182])",
+   "white balance (neutral patch [179, 180, 180])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1414,19 +1433,21 @@
   "r4": true
  },
  "r4-pb-roof-pergola-lounge": {
-  "w": 768,
-  "h": 1024,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   768
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   768
+   1300,
+   1600
   ],
-  "src": "2026-10-27-pb-roof-pergola-lounge.jpg",
+  "src": "2026-10-28-pb-roof-pergola-lounge-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [193, 193, 193])",
+   "white balance (neutral patch [193, 193, 192])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1434,17 +1455,19 @@
   "r4": true
  },
  "r4-ant-sunset-living": {
-  "w": 640,
-  "h": 799,
+  "w": 960,
+  "h": 1200,
   "avif": [
-   640
+   700,
+   960
   ],
   "jpg": [
-   640
+   700,
+   960
   ],
-  "src": "2026-10-27-g09-sunset-living.jpg",
+  "src": "2026-10-27-ant-sunset-living-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [172, 171, 170])",
+   "white balance (neutral patch [190, 190, 189])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1452,17 +1475,19 @@
   "r4": true
  },
  "r4-ant-sunset-45": {
-  "w": 639,
-  "h": 799,
+  "w": 960,
+  "h": 1200,
   "avif": [
-   639
+   700,
+   960
   ],
   "jpg": [
-   639
+   700,
+   960
   ],
-  "src": "2026-10-27-g09-sunset-living.jpg",
+  "src": "2026-10-27-ant-sunset-living-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [172, 171, 170])",
+   "white balance (neutral patch [190, 190, 189])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1482,10 +1507,10 @@
    1300,
    1600
   ],
-  "src": "2026-10-27-ant-dining-neon-wide.jpg",
+  "src": "2026-10-27-ant-dining-neon-wide-ORIG.jpg",
   "edits": [
    "verticals",
-   "white balance (neutral patch [176, 172, 168])",
+   "white balance (neutral patch [160, 161, 160])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1493,17 +1518,19 @@
   "r4": true
  },
  "r4-ant-red-opart-chair": {
-  "w": 1200,
-  "h": 1599,
+  "w": 1600,
+  "h": 2150,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-ant-red-opart-chair.jpg",
+  "src": "2026-10-27-ant-red-opart-chair-ORIG.jpg",
   "edits": [
    "verticals",
    "white balance (neutral patch [171, 171, 171])",
@@ -1514,17 +1541,19 @@
   "r4": true
  },
  "r4-ant-gold-ceiling": {
-  "w": 640,
-  "h": 799,
+  "w": 1125,
+  "h": 1406,
   "avif": [
-   640
+   700,
+   1125
   ],
   "jpg": [
-   640
+   700,
+   1125
   ],
-  "src": "2026-10-27-g08-gold-ceiling.jpg",
+  "src": "2026-10-27-ant-gold-ceiling-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [174, 174, 174])",
+   "white balance (neutral patch [180, 179, 179])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1570,19 +1599,19 @@
   "r4": true
  },
  "r4-villa-hall-vault-portrait": {
-  "w": 1400,
-  "h": 2040,
+  "w": 1600,
+  "h": 2339,
   "avif": [
    700,
    1300,
-   1400
+   1600
   ],
   "jpg": [
    700,
    1300,
-   1400
+   1600
   ],
-  "src": "2026-10-27-villa-hall-vault-portrait.jpg",
+  "src": "2026-10-28-villa-hall-vault-portrait-ORIG.jpg",
   "edits": [
    "verticals",
    "white balance (neutral patch [173, 173, 173])",
@@ -1603,10 +1632,10 @@
    700,
    900
   ],
-  "src": "2026-10-27-villa-hall-vault-portrait.jpg",
+  "src": "2026-10-28-villa-hall-vault-portrait-ORIG.jpg",
   "edits": [
    "verticals",
-   "white balance (neutral patch [173, 174, 175])",
+   "white balance (neutral patch [172, 173, 174])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1614,19 +1643,21 @@
   "r4": true
  },
  "r4-villa-hall-symmetry-doors": {
-  "w": 1200,
-  "h": 1600,
+  "w": 1600,
+  "h": 2133,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-villa-hall-symmetry-doors.jpg",
+  "src": "2026-10-28-villa-hall-symmetry-doors-ORIG.jpg",
   "edits": [
-   "white balance (neutral patch [151, 151, 152])",
+   "white balance (neutral patch [151, 151, 151])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
@@ -1634,17 +1665,19 @@
   "r4": true
  },
  "r4-villa-living-grey-sofa": {
-  "w": 1200,
-  "h": 1766,
+  "w": 1600,
+  "h": 2355,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-villa-living-grey-sofa.jpg",
+  "src": "2026-10-28-villa-living-grey-sofa-ORIG.jpg",
   "edits": [
    "verticals",
    "white balance (neutral patch [160, 155, 149])",
@@ -1655,20 +1688,22 @@
   "r4": true
  },
  "r4-villa-hall-round-ottoman": {
-  "w": 1200,
-  "h": 1765,
+  "w": 1600,
+  "h": 2355,
   "avif": [
    700,
-   1200
+   1300,
+   1600
   ],
   "jpg": [
    700,
-   1200
+   1300,
+   1600
   ],
-  "src": "2026-10-27-villa-hall-round-ottoman.jpg",
+  "src": "2026-10-28-villa-hall-round-ottoman-ORIG.jpg",
   "edits": [
    "verticals",
-   "white balance (neutral patch [188, 188, 188])",
+   "white balance (neutral patch [189, 188, 188])",
    "shadows/highlights",
    "vibrance",
    "unsharp"
