@@ -1750,5 +1750,22 @@
    "unsharp"
   ],
   "r4": true
+ },
+ "r4-stockholder-crop": {
+  "w": 827,
+  "h": 1171,
+  "avif": [
+   600,
+   827
+  ],
+  "jpg": [
+   600,
+   827
+  ],
+  "src": "stockholder-lokta-work (crop to the work and its box)",
+  "edits": [
+   "crop"
+  ],
+  "r4": true
  }
 }

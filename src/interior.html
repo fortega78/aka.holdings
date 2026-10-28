@@ -102,7 +102,8 @@ figure{margin:0}
 /* D · Antiques — formal: the photograph at its true size, words and the dining room beside it */
 .chD .split{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:56px;align-items:start}
 .chD .lead-ph{max-width:560px}
-.chD .side .g2{margin-top:14px}
+.chD .leftcol .g2{margin-top:14px}
+.chD .leftcol{max-width:560px}
 .chD .side .wide-ph{margin-top:30px}
 /* E · Villa — minimal: air, symmetry, one photograph, three quiet ones */
 .chE .split{display:grid;grid-template-columns:4fr 8fr;gap:56px;align-items:center}
@@ -126,8 +127,10 @@ figure{margin:0}
 .diff h3{font:400 clamp(24px,2.2vw,32px)/1.15 'Bodoni Moda',serif;color:var(--deep);max-width:24ch}
 .diff p{font-size:16px;line-height:1.6;color:var(--ink2);margin-top:10px;max-width:52ch}
 .diff .fr{width:280px}
-.diff .fr.cream{background:var(--bone)}
-.diff .fr.cream img{object-fit:contain;mix-blend-mode:multiply}
+.diff .fr.cream{background:#ECE6DB}
+.diff .fr.cream{display:flex;align-items:center;justify-content:center}
+.diff .fr.cream picture{width:auto;height:85%}
+.diff .fr.cream img{width:auto;height:100%;object-fit:contain;mix-blend-mode:multiply}
 
 /* how we work + what you can ask — one block, two columns */
 .work{margin-top:96px;border-top:1px solid var(--deep);padding-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:64px}
@@ -157,8 +160,8 @@ figure{margin:0}
   .chD .lead-ph{max-width:none}
   .chA .top2>div{order:-1}
   .chD .split{display:flex;flex-direction:column;gap:0}
-  .chD .split>.side{display:contents}
-  .chD .lead-ph{order:1;margin-top:24px}.chD .wide-ph{order:2}.chD .side>.g2{order:3}.chD .side>.more{order:4}
+  .chD .split>.side,.chD .split>.leftcol{display:contents}
+  .chD .lead-ph{order:1;margin-top:24px}.chD .wide-ph{order:2}.chD .leftcol>.g2{order:3}.chD .side>.more{order:4}
   .ch{padding-top:88px}
   .g4{grid-template-columns:1fr 1fr}
 }
@@ -329,10 +332,16 @@ figure{margin:0}
 
   <section class="ch chD" id="antiques" aria-labelledby="p4">
     <div class="split">
+      <div class="leftcol">
       <figure class="whole lead-ph">
         {{pic:r4-ant-sunset-living|A formal living room at sunset: a draped tufted sofa, a chair of stacked wood, a gold stool, a bracket clock and the dining room beyond|(max-width:980px) 100vw, 560px}}
         <figcaption class="cap">At sunset: draped silk, stacked wood, a bracket clock.</figcaption>
       </figure>
+      <div class="g2">
+          <figure><div class="fr r1">{{pic:r4-ant-red-opart-chair|A red op-art work beside a woven-leather safari chair|(max-width:980px) 50vw, 350px}}</div><figcaption class="cap">The work decides the chair.</figcaption></figure>
+          <figure><div class="fr r1">{{pic:r4-ant-gold-ceiling|A gold-leaf ceiling with a Murano chandelier over a large colourful abstract work|(max-width:980px) 50vw, 350px}}</div><figcaption class="cap">Gold leaf above, colour below.</figcaption></figure>
+        </div>
+      </div>
       <div class="side">
         <span class="lab">D · Formal</span>
         <h2 id="p4">Apartment with antiques, Samborondón</h2>
@@ -340,11 +349,7 @@ figure{margin:0}
         <p class="body">Over the river: family antiques against contemporary work — draped silk sofas, a dining room where a red light box by Alfredo Jaar meets a crystal chandelier, and a gold-leaf ceiling over a work of pure colour.</p>
         <p class="diffl"><b>What makes it different</b>Family antiques facing contemporary art, in a home that allows itself to be formal.</p>
         <figure class="wide-ph"><div class="fr r32">{{pic:r4-ant-dining-neon-wide|The dining room: a red light box by Alfredo Jaar over the table, a crystal chandelier, a large blue work and two striped Up chairs in the foreground|(max-width:980px) 100vw, 720px}}</div><figcaption class="cap">The dining room: the Alfredo Jaar light box, the chandelier, the striped Up chairs.</figcaption></figure>
-        <div class="g2">
-          <figure><div class="fr r1">{{pic:r4-ant-red-opart-chair|A red op-art work beside a woven-leather safari chair|(max-width:980px) 50vw, 350px}}</div><figcaption class="cap">The work decides the chair.</figcaption></figure>
-          <figure><div class="fr r1">{{pic:r4-ant-gold-ceiling|A gold-leaf ceiling with a Murano chandelier over a large colourful abstract work|(max-width:980px) 50vw, 350px}}</div><figcaption class="cap">Gold leaf above, colour below.</figcaption></figure>
-        </div>
-        <p class="more"><a class="tl" href="/interior-antiques">See the whole apartment</a></p>
+                <p class="more"><a class="tl" href="/interior-antiques">See the whole apartment</a></p>
       </div>
     </div>
   </section>
@@ -407,7 +412,7 @@ figure{margin:0}
       <li><span class="n">I</span><div><h3>We enter through the art.</h3><p>The first question is never the sofa — it is the piece the room answers to. In Samborondón, a red op-art work chose the chair beside it.</p></div><div class="fr r32">{{pic:r4-ant-red-opart-chair|A red op-art work beside a woven-leather safari chair|(max-width:700px) 100vw, 330px}}</div></li>
       <li><span class="n">II</span><div><h3>Every piece carries its reason, in writing.</h3><p>You approve reasons, not moods. In the collector’s apartment, the round work set the axis of the living room — and the list says why.</p></div><div class="fr r32">{{pic:r4-col-living-round-work|A round collaged work in a living room, on axis with the bedroom|(max-width:700px) 100vw, 330px}}</div></li>
       <li><span class="n">III</span><div><h3>The plan is verified before a dollar is spent.</h3><p>Every piece is placed to scale first. In Quito that meant six dining chairs instead of eight — caught on paper, not in the freight elevator.</p></div><div class="fr r32">{{pic:r4-qto-plan-32|Detail of the furnished Quito plan: living room, dining room and kitchen, every piece numbered|(max-width:700px) 100vw, 330px}}</div></li>
-      <li><span class="n">IV</span><div><h3>We can make the piece that doesn’t exist.</h3><p>Through AKA Art Productions, with master craftspeople in eight countries. For the Quito nook: Jessica Stockholder, lokta paper, made in Kathmandu with us.</p></div><div class="fr r32 cream">{{pic:r4-stockholder-lokta-work|A burgundy work in handmade lokta paper with embroidered threads, in an acrylic box|(max-width:700px) 100vw, 330px}}</div></li>
+      <li><span class="n">IV</span><div><h3>We can make the piece that doesn’t exist.</h3><p>Through AKA Art Productions, with master craftspeople in eight countries. For the Quito nook: Jessica Stockholder, lokta paper, made in Kathmandu with us.</p></div><div class="fr r32 cream">{{pic:r4-stockholder-crop|A burgundy work in handmade lokta paper with embroidered threads, in an acrylic box|(max-width:700px) 100vw, 330px}}</div></li>
       <li><span class="n">V</span><div><h3>One person, from the first plan to the last book.</h3><p>Measuring, proposal, purchasing, installers and styling — one interlocutor for all of it. Edgewater ran this way, end to end.</p></div><div class="fr r32">{{pic:r4-edg-living-relief-day|The finished Edgewater living room by day|(max-width:700px) 100vw, 330px}}</div></li>
     </ol>
   </section>

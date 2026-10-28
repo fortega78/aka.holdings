@@ -280,6 +280,10 @@ details.acc[open]>summary::after{content:"–"}
 .why p{font-size:clamp(16px,1.45vw,19px);line-height:1.6;color:var(--ink);max-width:62ch}
 .why p+p{margin-top:14px}
 .why .sig{margin-top:18px;font-size:14px;color:var(--slate)}
+.top .book{display:none}
+@media (min-width:761px){.top .book{display:inline-block;padding:13px 16px 12px;font-size:10.5px;letter-spacing:.18em;white-space:nowrap}}
+.top nav.idx{margin-left:auto}
+.top{gap:24px}
 </style>
 </head>
 <body class="technologies has-mbar">
@@ -289,12 +293,14 @@ details.acc[open]>summary::after{content:"–"}
     <a href="/" aria-label="AKA Holdings"><img src="/assets/AKA_Holdings_Small_Primary.svg" alt="AKA Holdings" width="57" height="36"></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><i></i>Menu</button>
     <nav class="idx" id="site-nav" aria-label="Main">
+      <a href="/">AKA Holdings</a>
       <a href="/mapa" aria-current="page">MAPA Advisory</a>
       <a href="/technologies">01 / Technologies</a>
       <a href="/productions">02 / Art Productions</a>
       <a href="/interior">03 / Interior Design</a>
       <a href="/fabian">Fabian</a>
     </nav>
+    <a class="btn book" href="#start" data-place="header">Get your map</a>
   </header>
 </div>
 
